@@ -10,7 +10,16 @@
       <link>https://blog.themostmoon.today/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 17 Mar 2023 12:41:22 +0800</lastBuildDate><atom:link href="https://blog.themostmoon.today/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 17 Mar 2023 15:04:00 +0800</lastBuildDate><atom:link href="https://blog.themostmoon.today/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>软件架构设计总结</title>
+      <link>https://blog.themostmoon.today/architecture/concluding-thoughts-on-software-architecture-design/</link>
+      <pubDate>Fri, 17 Mar 2023 15:04:00 +0800</pubDate>
+      
+      <guid>https://blog.themostmoon.today/architecture/concluding-thoughts-on-software-architecture-design/</guid>
+      <description>Desc Text.</description>
+    </item>
+    
     <item>
       <title>探究C#编程中string和StringBuilder的区别、各自的应用场景和性能比较</title>
       <link>https://blog.themostmoon.today/csharp/difference-between-string-and-stringbuilder-in-csharp/</link>

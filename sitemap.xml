@@ -2,16 +2,25 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://blog.themostmoon.today/architecture/</loc>
+    <lastmod>2023-03-17T15:04:00+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.themostmoon.today/</loc>
+    <lastmod>2023-03-17T15:04:00+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.themostmoon.today/tags/first/</loc>
+    <lastmod>2023-03-17T15:04:00+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.themostmoon.today/tags/</loc>
+    <lastmod>2023-03-17T15:04:00+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.themostmoon.today/architecture/concluding-thoughts-on-software-architecture-design/</loc>
+    <lastmod>2023-03-17T15:04:00+08:00</lastmod>
+  </url><url>
     <loc>https://blog.themostmoon.today/tags/csharp/</loc>
     <lastmod>2023-03-17T12:41:22+08:00</lastmod>
   </url><url>
     <loc>https://blog.themostmoon.today/csharp/</loc>
-    <lastmod>2023-03-17T12:41:22+08:00</lastmod>
-  </url><url>
-    <loc>https://blog.themostmoon.today/</loc>
-    <lastmod>2023-03-17T12:41:22+08:00</lastmod>
-  </url><url>
-    <loc>https://blog.themostmoon.today/tags/</loc>
     <lastmod>2023-03-17T12:41:22+08:00</lastmod>
   </url><url>
     <loc>https://blog.themostmoon.today/csharp/difference-between-string-and-stringbuilder-in-csharp/</loc>
