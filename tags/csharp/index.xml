@@ -13,10 +13,10 @@
     <lastBuildDate>Mon, 20 Mar 2023 09:12:41 +0800</lastBuildDate><atom:link href="https://blog.themostmoon.today/tags/csharp/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>C#中ZipArchive的用法</title>
-      <link>https://blog.themostmoon.today/csharp/usage-of-ziparchive-in-csharp/</link>
+      <link>https://blog.themostmoon.today/usage-of-ziparchive-in-csharp/</link>
       <pubDate>Mon, 20 Mar 2023 09:12:41 +0800</pubDate>
       
-      <guid>https://blog.themostmoon.today/csharp/usage-of-ziparchive-in-csharp/</guid>
+      <guid>https://blog.themostmoon.today/usage-of-ziparchive-in-csharp/</guid>
       <description>C# 的 System.IO.Compression 命名空间中提供了 ZipArchive 类，它可以用于创建、打开和操作 ZIP 文件。下面是一些常见的用法示例：
 创建ZIP文件 要创建一个 ZIP 文件，需要使用 ZipArchive 类的构造函数来创建一个实例，并将其与输出流（例如文件流）相关联。然后使用 CreateEntry 方法在 ZIP 文件中添加条目。
 using System.IO.Compression; using var stream = new FileStream(&amp;#34;example.zip&amp;#34;, FileMode.Create); using var zip = new ZipArchive(stream, ZipArchiveMode.Create); var entry = zip.CreateEntry(&amp;#34;example.txt&amp;#34;); using var writer = new StreamWriter(entry.Open()); writer.Write(&amp;#34;Hello world!&amp;#34;); 从ZIP文件中读取条目 要从 ZIP 文件中读取条目，需要使用 ZipArchive 类的构造函数来创建一个实例，并将其与输入流（例如文件流）相关联。然后使用 GetEntry 方法来获取条目，并使用 Open 方法来获取条目的输入流。
@@ -25,10 +25,10 @@ using System.IO.Compression; using var stream = new FileStream(&amp;#34;example.
     
     <item>
       <title>探究C#编程中string和StringBuilder的区别、各自的应用场景和性能比较</title>
-      <link>https://blog.themostmoon.today/csharp/difference-between-string-and-stringbuilder-in-csharp/</link>
+      <link>https://blog.themostmoon.today/difference-between-string-and-stringbuilder-in-csharp/</link>
       <pubDate>Fri, 17 Mar 2023 12:41:22 +0800</pubDate>
       
-      <guid>https://blog.themostmoon.today/csharp/difference-between-string-and-stringbuilder-in-csharp/</guid>
+      <guid>https://blog.themostmoon.today/difference-between-string-and-stringbuilder-in-csharp/</guid>
       <description>1、介绍 在C#编程中，string和StringBuilder是两种常用的字符串类型，它们在应用场景和性能上有着明显的差异。string是不可变的字符串类型，一旦创建就不能修改，因此它适用于需要频繁读取而不需要修改的场景；而StringBuilder是可变的字符串类型，可以在原有的字符串上进行修改，适用于需要频繁修改字符串的场景。
 本文将从定义、区别、应用场景和性能等方面介绍string和StringBuilder的差异，并进行性能比较，希望能够帮助读者更好地理解和应用这两种字符串类型
 2、string和StringBuilder的基本概念 string string是C#中的一种不可变字符串类型，表示一个字符串对象，它存储在堆内存中。一旦创建了一个string对象，就不能修改它的值，而是创建一个新的string对象。这种不可变性带来了一些优点，例如更安全、更容易缓存、更容易共享等，但也带来了一些性能问题，例如频繁地创建和销毁对象会占用大量的内存和CPU时间。
