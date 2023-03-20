@@ -13,10 +13,10 @@
     <lastBuildDate>Mon, 20 Mar 2023 09:12:41 +0800</lastBuildDate><atom:link href="https://blog.themostmoon.today/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>C#中ZipArchive的用法</title>
-      <link>https://blog.themostmoon.today/usage-of-ziparchive-in-csharp/</link>
+      <link>https://blog.themostmoon.today/posts/usage-of-ziparchive-in-csharp/</link>
       <pubDate>Mon, 20 Mar 2023 09:12:41 +0800</pubDate>
       
-      <guid>https://blog.themostmoon.today/usage-of-ziparchive-in-csharp/</guid>
+      <guid>https://blog.themostmoon.today/posts/usage-of-ziparchive-in-csharp/</guid>
       <description>C# 的 System.IO.Compression 命名空间中提供了 ZipArchive 类，它可以用于创建、打开和操作 ZIP 文件。下面是一些常见的用法示例：
 创建ZIP文件 要创建一个 ZIP 文件，需要使用 ZipArchive 类的构造函数来创建一个实例，并将其与输出流（例如文件流）相关联。然后使用 CreateEntry 方法在 ZIP 文件中添加条目。
 using System.IO.Compression; using var stream = new FileStream(&amp;#34;example.zip&amp;#34;, FileMode.Create); using var zip = new ZipArchive(stream, ZipArchiveMode.Create); var entry = zip.CreateEntry(&amp;#34;example.txt&amp;#34;); using var writer = new StreamWriter(entry.Open()); writer.Write(&amp;#34;Hello world!&amp;#34;); 从ZIP文件中读取条目 要从 ZIP 文件中读取条目，需要使用 ZipArchive 类的构造函数来创建一个实例，并将其与输入流（例如文件流）相关联。然后使用 GetEntry 方法来获取条目，并使用 Open 方法来获取条目的输入流。
@@ -25,10 +25,10 @@ using System.IO.Compression; using var stream = new FileStream(&amp;#34;example.
     
     <item>
       <title>软件架构设计总结</title>
-      <link>https://blog.themostmoon.today/concluding-thoughts-on-software-architecture-design/</link>
+      <link>https://blog.themostmoon.today/posts/concluding-thoughts-on-software-architecture-design/</link>
       <pubDate>Fri, 17 Mar 2023 15:04:00 +0800</pubDate>
       
-      <guid>https://blog.themostmoon.today/concluding-thoughts-on-software-architecture-design/</guid>
+      <guid>https://blog.themostmoon.today/posts/concluding-thoughts-on-software-architecture-design/</guid>
       <description>第一原理 定义 用最小的人力成本，最大化地满足用户需求。
 属性 复杂性：数据、逻辑和算法 遵从性：接口和规范 可变性：需求变更、可扩展 不可见性：诊断工具、日志记录、性能监控 能力地图 整洁代码 易于阅读、理解和维护的高质量代码
 保持代码简洁清晰：使用有意义的变量名、函数名和注释，避免冗余代码和过度复杂化的逻辑结构。 遵循 SOLID 设计原则：将大型问题分解为小问题进行解决，单一职责原则、开放封闭原则等可以帮助提高代码的可扩展性和可维护性。 编写干净的函数：函数应该只做一件事情，并且要短小精悍，依据函数名称即可推断出其作用。 做好异常处理：处理和抛出异常时，需要清晰明确地说明问题所在，避免不必要的歧义和误解。 编写自动化测试：自动化测试可以帮助发现隐藏的问题和预防后续产生的问题，同时也可以增加代码的可靠性。 使用合适的代码结构：避免长文件、长函数、深层次嵌套等导致代码难以维护的问题，可以采用模块化、面向对象等方式来组织代码结构。 编程范式 面向对象编程：以类和对象为中心，通过定义类来描述对象的属性和方法。程序通过继承和多态等机制实现代码重用和扩展。 过程式编程：以过程为中心，程序按照顺序执行。通过编写一系列函数或过程来完成任务，并通过参数传递数据。 函数式编程：以函数为中心，程序没有共享状态，可以作为参数传递和返回值使用。函数式编程遵循函数应该只做一件事情的原则，可以帮助减少代码量和提高可读性。 设计原则 SOLID 单一职责原则（Single Responsibility Principle, SRP）：一个类或模块应该只有一个单一的职责，不要把太多的功能放到同一个类或模块中。 开闭原则（Open-Closed Principle, OCP）：软件实体（类、模块等）应该对扩展开放，对修改关闭，即通过扩展代码来实现新的功能，而不是直接修改代码。 里氏替换原则（Liskov Substitution Principle, LSP）：任何使用基类对象的地方，都应该能够使用其子类对象，子类对象不能影响父类对象的行为。 接口隔离原则（Interface Segregation Principle, ISP）：客户端不应该强制依赖它们不需要的接口，将一个大型的接口拆分成多个小接口，以符合单一职责原则。 依赖倒置原则（Dependency Inversion Principle, DIP）：高层模块不应该依赖低层模块，两者都应该依赖于抽象；抽象不应该依赖于具体实现。 DRY Don&amp;rsquo;t Repeat Yourself.
@@ -40,10 +40,10 @@ using System.IO.Compression; using var stream = new FileStream(&amp;#34;example.
     
     <item>
       <title>探究C#编程中string和StringBuilder的区别、各自的应用场景和性能比较</title>
-      <link>https://blog.themostmoon.today/difference-between-string-and-stringbuilder-in-csharp/</link>
+      <link>https://blog.themostmoon.today/posts/difference-between-string-and-stringbuilder-in-csharp/</link>
       <pubDate>Fri, 17 Mar 2023 12:41:22 +0800</pubDate>
       
-      <guid>https://blog.themostmoon.today/difference-between-string-and-stringbuilder-in-csharp/</guid>
+      <guid>https://blog.themostmoon.today/posts/difference-between-string-and-stringbuilder-in-csharp/</guid>
       <description>1、介绍 在C#编程中，string和StringBuilder是两种常用的字符串类型，它们在应用场景和性能上有着明显的差异。string是不可变的字符串类型，一旦创建就不能修改，因此它适用于需要频繁读取而不需要修改的场景；而StringBuilder是可变的字符串类型，可以在原有的字符串上进行修改，适用于需要频繁修改字符串的场景。
 本文将从定义、区别、应用场景和性能等方面介绍string和StringBuilder的差异，并进行性能比较，希望能够帮助读者更好地理解和应用这两种字符串类型
 2、string和StringBuilder的基本概念 string string是C#中的一种不可变字符串类型，表示一个字符串对象，它存储在堆内存中。一旦创建了一个string对象，就不能修改它的值，而是创建一个新的string对象。这种不可变性带来了一些优点，例如更安全、更容易缓存、更容易共享等，但也带来了一些性能问题，例如频繁地创建和销毁对象会占用大量的内存和CPU时间。
