@@ -10,7 +10,19 @@
       <link>https://blog.themostmoon.today/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 17 Mar 2023 12:41:22 +0800</lastBuildDate><atom:link href="https://blog.themostmoon.today/tags/csharp/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 20 Mar 2023 09:12:41 +0800</lastBuildDate><atom:link href="https://blog.themostmoon.today/tags/csharp/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>C#中ZipArchive的用法</title>
+      <link>https://blog.themostmoon.today/csharp/usage-of-ziparchive-in-csharp/</link>
+      <pubDate>Mon, 20 Mar 2023 09:12:41 +0800</pubDate>
+      
+      <guid>https://blog.themostmoon.today/csharp/usage-of-ziparchive-in-csharp/</guid>
+      <description>C# 的 System.IO.Compression 命名空间中提供了 ZipArchive 类，它可以用于创建、打开和操作 ZIP 文件。下面是一些常见的用法示例：
+创建ZIP文件 要创建一个 ZIP 文件，需要使用 ZipArchive 类的构造函数来创建一个实例，并将其与输出流（例如文件流）相关联。然后使用 CreateEntry 方法在 ZIP 文件中添加条目。
+using System.IO.Compression; using var stream = new FileStream(&amp;#34;example.zip&amp;#34;, FileMode.Create); using var zip = new ZipArchive(stream, ZipArchiveMode.Create); var entry = zip.CreateEntry(&amp;#34;example.txt&amp;#34;); using var writer = new StreamWriter(entry.Open()); writer.Write(&amp;#34;Hello world!&amp;#34;); 从ZIP文件中读取条目 要从 ZIP 文件中读取条目，需要使用 ZipArchive 类的构造函数来创建一个实例，并将其与输入流（例如文件流）相关联。然后使用 GetEntry 方法来获取条目，并使用 Open 方法来获取条目的输入流。
+using System.IO.Compression; using var stream = new FileStream(&amp;#34;example.zip&amp;#34;, FileMode.Open); using var zip = new ZipArchive(stream, ZipArchiveMode.</description>
+    </item>
+    
     <item>
       <title>探究C#编程中string和StringBuilder的区别、各自的应用场景和性能比较</title>
       <link>https://blog.themostmoon.today/csharp/difference-between-string-and-stringbuilder-in-csharp/</link>
