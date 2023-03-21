@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>CSharp on Edison&#39;s Blog</title>
-    <link>https://blog.themostmoon.today/tags/csharp/</link>
-    <description>Recent content in CSharp on Edison&#39;s Blog</description>
+    <title>📚文章 on Edison&#39;s Blog</title>
+    <link>https://blog.themostmoon.today/posts/tech/</link>
+    <description>Recent content in 📚文章 on Edison&#39;s Blog</description>
     <image>
       <title>Edison&#39;s Blog</title>
       <url>https://blog.themostmoon.today/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
@@ -11,7 +11,7 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 20 Mar 2023 09:12:41 +0800</lastBuildDate><atom:link href="https://blog.themostmoon.today/tags/csharp/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 20 Mar 2023 09:12:41 +0800</lastBuildDate><atom:link href="https://blog.themostmoon.today/posts/tech/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>C#中ZipArchive的用法</title>
       <link>https://blog.themostmoon.today/posts/tech/usage-of-ziparchive-in-csharp/</link>
@@ -19,6 +19,15 @@
       
       <guid>https://blog.themostmoon.today/posts/tech/usage-of-ziparchive-in-csharp/</guid>
       <description>C# 的 System.IO.Compression 命名空间中提供了 ZipArchive 类，它可以用于创建、打开和操作 ZIP 文件。下面是一些常见的用法示例： 创建ZIP文件 要创建一个 ZIP 文件，需要使用 ZipArchive 类的构造函</description>
+    </item>
+    
+    <item>
+      <title>软件架构设计总结</title>
+      <link>https://blog.themostmoon.today/posts/tech/concluding-thoughts-on-software-architecture-design/</link>
+      <pubDate>Fri, 17 Mar 2023 15:04:00 +0800</pubDate>
+      
+      <guid>https://blog.themostmoon.today/posts/tech/concluding-thoughts-on-software-architecture-design/</guid>
+      <description>第一原理 定义 用最小的人力成本，最大化地满足用户需求。 属性 复杂性：数据、逻辑和算法 遵从性：接口和规范 可变性：需求变更、可扩展 不可见性：诊断工具</description>
     </item>
     
     <item>
