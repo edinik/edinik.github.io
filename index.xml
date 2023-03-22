@@ -18,11 +18,11 @@
       <pubDate>Wed, 22 Mar 2023 03:29:57 +0800</pubDate>
       
       <guid>https://blog.themostmoon.today/links/</guid>
-      <description>Edison&amp;#39;s Blog 一个记录技术、阅读、生活的博客 Peter&amp;#39;s Blog 累点滴技术，品百味人生。 👉友链格式 名称： Edison&amp;rsquo;s Blog 网址： https://blog.themostmoon.today 图标： https://blog.themostmoon.today/img/logo.gif 描述： 一个记录技术、阅读、生活的博客 👉友链</description>
+      <description>Edison&amp;#39;s Blog 一个记录技术、阅读、生活的博客 Peter&amp;#39;s Blog 累点滴技术，品百味人生。 👉友链格式 名称： Edison&amp;rsquo;s Blog 网址： https://blog.themostmoon.today 图标： https://blog.themostmoon.today/img/logo.gif 描述： 一个记录技术、阅读、生活的博客 👉友链申请要求 秉承互换友链原则、文章定期更新、不能有太多广告、个人描述字数控制在15字内</description>
     </item>
     
     <item>
-      <title>About</title>
+      <title>🙋🏻‍♂️关于</title>
       <link>https://blog.themostmoon.today/about/</link>
       <pubDate>Tue, 21 Mar 2023 23:18:23 +0800</pubDate>
       
@@ -36,7 +36,7 @@
       <pubDate>Mon, 20 Mar 2023 09:12:41 +0800</pubDate>
       
       <guid>https://blog.themostmoon.today/posts/tech/usage-of-ziparchive-in-csharp/</guid>
-      <description>C# 的 System.IO.Compression 命名空间中提供了 ZipArchive 类，它可以用于创建、打开和操作 ZIP 文件。下面是一些常见的用法示例： 创建ZIP文件 要创建一个 ZIP 文件，需要使用 ZipArchive 类的构造函</description>
+      <description>C# 的 System.IO.Compression 命名空间中提供了 ZipArchive 类，它可以用于创建、打开和操作 ZIP 文件。下面是一些常见的用法示例： 创建ZIP文件 要创建一个 ZIP 文件，需要使用 ZipArchive 类的构造函数来创建一个实例，并将其与输出流（例如文件流）相关联。然后使用 CreateEntry 方法在 ZIP 文件中添加条目。 1 2 3 4 5 6 7 using System.IO.Compression; using var stream = new FileStream(&amp;#34;example.zip&amp;#34;, FileMode.Create); using var zip = new ZipArchive(stream, ZipArchiveMode.Create); var entry =</description>
     </item>
     
     <item>
@@ -45,7 +45,7 @@
       <pubDate>Fri, 17 Mar 2023 15:04:00 +0800</pubDate>
       
       <guid>https://blog.themostmoon.today/posts/tech/concluding-thoughts-on-software-architecture-design/</guid>
-      <description>第一原理 定义 用最小的人力成本，最大化地满足用户需求。 属性 复杂性：数据、逻辑和算法 遵从性：接口和规范 可变性：需求变更、可扩展 不可见性：诊断工具</description>
+      <description>第一原理 定义 用最小的人力成本，最大化地满足用户需求。 属性 复杂性：数据、逻辑和算法 遵从性：接口和规范 可变性：需求变更、可扩展 不可见性：诊断工具、日志记录、性能监控 能力地图 整洁代码 易于阅读、理解和维护的高质量代码 保持代码简洁清晰：使用有意义的变量名、函数名和注释，避免冗余代码和过度复</description>
     </item>
     
     <item>
@@ -54,7 +54,7 @@
       <pubDate>Fri, 17 Mar 2023 12:41:22 +0800</pubDate>
       
       <guid>https://blog.themostmoon.today/posts/tech/difference-between-string-and-stringbuilder-in-csharp/</guid>
-      <description>介绍 在C#编程中，string和StringBuilder是两种常用的字符串类型，它们在应用场景和性能上有着明显的差异。string是不可变</description>
+      <description>介绍 在C#编程中，string和StringBuilder是两种常用的字符串类型，它们在应用场景和性能上有着明显的差异。string是不可变的字符串类型，一旦创建就不能修改，因此它适用于需要频繁读取而不需要修改的场景；而StringBuilder是可变的字符串类型，可以在原有的字</description>
     </item>
     
     
