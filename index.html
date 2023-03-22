@@ -9,13 +9,9 @@
 <title>Edison&#39;s Blog</title>
 <meta name="keywords" content="编程，.NET, 博客, 架构, 开发技巧, 行业动态, 开发者社区, 技术分享, 最佳实践, 编码经验">
 <meta name="description" content="">
-<meta name="author" content="
-作者:&nbsp;Edison">
+<meta name="author" content="Edison">
 <link rel="canonical" href="https://blog.themostmoon.today/">
-
-<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-  <meta name="referrer" content="no-referrer-when-downgrade">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.9f598d4748ab26df114c0f86539fda6ae260ab89c7ea0b42a48d44896cf99737.css" integrity="sha256-n1mNR0irJt8RTA&#43;GU5/aauJgq4nH6gtCpI1EiWz5lzc=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.bbeda8e1e549176967769f270888cf40bc16afa3aac9319d0bc6aa5e815ed5e8.css" integrity="sha256-u&#43;2o4eVJF2lndp8nCIjPQLwWr6OqyTGdC8aqXoFe1eg=" rel="preload stylesheet" as="style">
 <link rel="icon" href="img%09otoro.jpg">
 <link rel="icon" type="image/png" sizes="16x16" href="https://blog.themostmoon.today/img/totoro.jpg">
 <link rel="icon" type="image/png" sizes="32x32" href="https://blog.themostmoon.today/img/totoro.jpg">
@@ -62,6 +58,22 @@
 
     </style>
 </noscript>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
+<script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.min.js"></script>
+
+
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = ""; 
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
 <script type="application/javascript">
 var doNotTrack = false;
 if (!doNotTrack) {
@@ -101,6 +113,20 @@ if (!doNotTrack) {
 
 <body class="list" id="top">
 <script>
+    (function () {
+        let  arr,reg = new RegExp("(^| )"+"change-themes"+"=([^;]*)(;|$)");
+        if(arr = document.cookie.match(reg)) {
+        } else {
+            if (new Date().getHours() >= 19 || new Date().getHours() < 6) {
+                document.body.classList.add('dark');
+                localStorage.setItem("pref-theme", 'dark');
+            } else {
+                document.body.classList.remove('dark');
+                localStorage.setItem("pref-theme", 'light');
+            }
+        }
+    })()
+
     if (localStorage.getItem("pref-theme") === "dark") {
         document.body.classList.add('dark');
     } else if (localStorage.getItem("pref-theme") === "light") {
@@ -108,25 +134,24 @@ if (!doNotTrack) {
     } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
         document.body.classList.add('dark');
     }
-
 </script>
 
 <header class="header">
     <nav class="nav">
         <div class="logo">
             <a href="https://blog.themostmoon.today" accesskey="h" title="Edison&#39;s Blog (Alt + H)">
-                <img src="https://blog.themostmoon.today/img/logo.gif" alt="" aria-label="logo"
-                    height="40">Edison&#39;s Blog</a>
+            <img src="https://blog.themostmoon.today/img/logo.gif" alt="logo" aria-label="logo"
+                 height="40">Edison&#39;s Blog</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)">
-                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                         stroke-linejoin="round">
                         <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
                     </svg>
-                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                         stroke-linejoin="round">
                         <circle cx="12" cy="12" r="5"></circle>
                         <line x1="12" y1="1" x2="12" y2="3"></line>
                         <line x1="12" y1="21" x2="12" y2="23"></line>
@@ -143,94 +168,86 @@ if (!doNotTrack) {
         <ul id="menu">
             <li>
                 <a href="https://blog.themostmoon.today/search" title="🔍 搜索 (Alt &#43; /)" accesskey=/>
-                    <span>🔍 搜索</span>
+                <span>🔍 搜索</span>
                 </a>
             </li>
             <li>
                 <a href="https://blog.themostmoon.today/" title="🏠 主页">
-                    <span class="active">🏠 主页</span>
+                <span class="active">🏠 主页</span>
                 </a>
             </li>
             <li>
                 <a href="https://blog.themostmoon.today/posts" title="📚 文章">
-                    <span>📚 文章</span>
+                <span>📚 文章</span>
                 </a>
             </li>
             <li>
                 <a href="https://blog.themostmoon.today/tags" title="🔖 标签">
-                    <span>🔖 标签</span>
+                <span>🔖 标签</span>
                 </a>
             </li>
             <li>
                 <a href="https://blog.themostmoon.today/archives/" title="⏱ 时间轴">
-                    <span>⏱ 时间轴</span>
+                <span>⏱ 时间轴</span>
                 </a>
             </li>
             <li>
                 <a href="https://blog.themostmoon.today/about" title="🙋🏻‍♂️ 关于">
-                    <span>🙋🏻‍♂️ 关于</span>
+                <span>🙋🏻‍♂️ 关于</span>
                 </a>
             </li>
             <li>
                 <a href="https://blog.themostmoon.today/links" title="🤝 友链">
-                    <span>🤝 友链</span>
+                <span>🤝 友链</span>
                 </a>
             </li>
         </ul>
     </nav>
 </header>
-
 <main class="main"><div class="profile">
     <div class="profile_inner">
         <img draggable="false" src="https://blog.themostmoon.today/img/logo.gif" alt="profile image" title=""
-            height="150" width="150" />
+        height="150" width="150" />
         <h1>Edison&rsquo;s Blog</h1>
         <span></span><div class="social-icons">
     <a href="https://github.com/EdisonMoon" target="_blank" rel="noopener noreferrer me" title="Github">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-    stroke-linecap="round" stroke-linejoin="round">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+     stroke-linecap="round" stroke-linejoin="round">
     <path
-        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
     </path>
 </svg>
     </a>
     <a href="https://stackoverflow.com/users/7035652/ryanchu" target="_blank" rel="noopener noreferrer me" title="Stackoverflow">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-    stroke-linecap="round" stroke-linejoin="round">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+     stroke-linecap="round" stroke-linejoin="round">
     <path
-        d="M2.913 16.041v6.848h17.599v-6.848M7.16 18.696h8.925M7.65 13.937l8.675 1.8M9.214 9.124l8.058 3.758M12.086 4.65l6.849 5.66M15.774 1.111l5.313 7.162" />
+            d="M2.913 16.041v6.848h17.599v-6.848M7.16 18.696h8.925M7.65 13.937l8.675 1.8M9.214 9.124l8.058 3.758M12.086 4.65l6.849 5.66M15.774 1.111l5.313 7.162" />
 </svg>
     </a>
     <a href="mailto:mickeyjosezmj@gmail.com" target="_blank" rel="noopener noreferrer me" title="Email">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 21" fill="none" stroke="currentColor" stroke-width="2"
-    stroke-linecap="round" stroke-linejoin="round">
-    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-    <polyline points="22,6 12,13 2,6"></polyline>
-</svg>
+    <svg t="1636858389384" class="icon" viewBox="0 0 1318 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="24657" width="24" height="24"><path d="M730.958199 603.743935a174.508039 174.508039 0 0 1-69.444022 14.068401 179.596609 179.596609 0 0 1-74.83192-16.163695L0 333.15171v571.117217a119.731073 119.731073 0 0 0 119.731073 119.731073h1079.375621a119.731073 119.731073 0 0 0 119.731073-119.731073V356.798597z" fill="#f2a355" p-id="24658"></path><path d="M636.66998 492.693365a59.865536 59.865536 0 0 0 47.892429 0l634.275358-266.401637V119.731073a119.731073 119.731073 0 0 0-119.731073-119.731073H119.731073a119.731073 119.731073 0 0 0-119.731073 119.731073v81.716457z" fill="#f2a355" p-id="24659"></path></svg>
+
     </a>
     <a href="index.xml" target="_blank" rel="noopener noreferrer me" title="Rss">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-    stroke-linecap="round" stroke-linejoin="round">
-    <path d="M4 11a9 9 0 0 1 9 9" />
-    <path d="M4 4a16 16 0 0 1 16 16" />
-    <circle cx="5" cy="19" r="1" />
-</svg>
+    <svg t="1636858141530" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="14103" width="24" height="24"><path d="M170.666667 810.666667m-128 0a128 128 0 1 0 256 0 128 128 0 1 0-256 0Z" fill="#FF6600" p-id="14104"></path><path d="M938.666667 938.666667h-170.666667c0-399.957333-325.376-725.333333-725.333333-725.333334V42.666667c494.037333 0 896 401.92 896 896z" fill="#FF6600" p-id="14105"></path><path d="M640 938.666667h-170.666667c0-235.264-191.424-426.666667-426.666666-426.666667v-170.666667c329.386667 0 597.333333 267.946667 597.333333 597.333334z" fill="#FF6600" p-id="14106"></path></svg>
+
     </a>
 </div>
 
         <div class="buttons">
             <a class="button" href="posts/tech" rel="noopener" title="👨🏻‍💻 技术">
-                <span class="button-inner">
+            <span class="button-inner">
                     👨🏻‍💻 技术
                 </span>
             </a>
             <a class="button" href="posts/read" rel="noopener" title="📕 阅读">
-                <span class="button-inner">
+            <span class="button-inner">
                     📕 阅读
                 </span>
             </a>
             <a class="button" href="posts/life" rel="noopener" title="☕ 生活">
-                <span class="button-inner">
+            <span class="button-inner">
                     ☕ 生活
                 </span>
             </a>
@@ -238,29 +255,47 @@ if (!doNotTrack) {
     </div>
 </div>
 
-    </main>
-    
+</main>
+
 <footer class="footer">
-    <span>&copy; 2023 <a href="https://blog.themostmoon.today">Edison&#39;s Blog</a></span>
     <span>
-        Powered by
-        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
-        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+        Copyright
+        &copy;
+        2023-2023
+        <a href="https://blog.themostmoon.today" style="color:#939393;">Edison&#39;s Blog</a>
+        All Rights Reserved
     </span>
-    
-<div class="busuanzi-footer">
-  <span id="busuanzi_container_site_pv">
-    本站总访问量<span id="busuanzi_value_site_pv"></span>次
-  </span>
-  <span id="busuanzi_container_site_uv">
-    本站访客数<span id="busuanzi_value_site_uv"></span>人次
-  </span>
-</div></footer>
+    <a href="https://beian.miit.gov.cn/" target="_blank" style="color:#939393;"></a>&nbsp;
+    <span>
+        <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=null"
+           style="display:inline-block;text-decoration:none;height:20px;color:#939393;">
+            <img src="" style="float:left;margin: 0px 5px 0px 0px;"/>
+            
+        </a>
+    </span>
+    <span id="busuanzi_container">
+        <span class="fa fa-user"></span> <span id="busuanzi_value_site_uv"></span>
+        <span class="fa fa-eye"></span> <span id="busuanzi_value_site_pv"></span>
+    </span>
+</footer>
 <a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
-        <path d="M12 6H0l6-6z" />
-    </svg>
+    <span class="topInner">
+        <svg class="topSvg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+            <path d="M12 6H0l6-6z"/>
+        </svg>
+        <span id="read_progress"></span>
+    </span>
 </a>
+
+<script>
+    document.addEventListener('scroll', function (e) {
+        const readProgress = document.getElementById("read_progress");
+        const scrollHeight = document.documentElement.scrollHeight;
+        const clientHeight = document.documentElement.clientHeight;
+        const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+        readProgress.innerText = ((scrollTop / (scrollHeight - clientHeight)).toFixed(2) * 100).toFixed(0);
+    })
+</script>
 
 <script>
     let menu = document.getElementById('menu')
@@ -289,12 +324,11 @@ if (!doNotTrack) {
             }
         });
     });
-
 </script>
 <script>
-    var mybutton = document.getElementById("top-link");
+    let mybutton = document.getElementById("top-link");
     window.onscroll = function () {
-        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+        if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
             mybutton.style.visibility = "visible";
             mybutton.style.opacity = "1";
         } else {
@@ -302,10 +336,13 @@ if (!doNotTrack) {
             mybutton.style.opacity = "0";
         }
     };
-
 </script>
 <script>
     document.getElementById("theme-toggle").addEventListener("click", () => {
+        (function() {
+            document.cookie = "change-themes" + "="+ escape ("false");
+        })()
+
         if (document.body.className.includes("dark")) {
             document.body.classList.remove('dark');
             localStorage.setItem("pref-theme", 'light');
@@ -313,8 +350,40 @@ if (!doNotTrack) {
             document.body.classList.add('dark');
             localStorage.setItem("pref-theme", 'dark');
         }
-    })
+    });
+</script>
 
+<script>
+    document.body.addEventListener('copy', function (e) {
+        if (window.getSelection().toString() && window.getSelection().toString().length > 50) {
+            let clipboardData = e.clipboardData || window.clipboardData;
+            if (clipboardData) {
+                e.preventDefault();
+                let htmlData = window.getSelection().toString() +
+                    '\r\n\n————————————————\r\n' +
+                    '版权声明：本文为「'+"Edison's Blog"+'」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。' +
+                '\r\n原文链接：' + location.href;
+                let textData = window.getSelection().toString() +
+                    '\r\n\n————————————————\r\n' +
+                    '版权声明：本文为「'+"Edison's Blog"+'」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。' +
+                '\r\n原文链接：' + location.href;
+                clipboardData.setData('text/html', htmlData);
+                clipboardData.setData('text/plain', textData);
+            }
+        }
+    });
+</script>
+
+<script>
+    $("code[class^=language] ").on("mouseover", function () {
+        if (this.clientWidth < this.scrollWidth) {
+            $(this).css("width", "135%")
+            $(this).css("border-top-right-radius", "var(--radius)")
+        }
+    }).on("mouseout", function () {
+        $(this).css("width", "100%")
+        $(this).css("border-top-right-radius", "unset")
+    })
 </script>
 </body>
 
