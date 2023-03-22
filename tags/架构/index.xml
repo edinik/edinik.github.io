@@ -18,7 +18,7 @@
       <pubDate>Fri, 17 Mar 2023 15:04:00 +0800</pubDate>
       
       <guid>https://blog.themostmoon.today/posts/tech/concluding-thoughts-on-software-architecture-design/</guid>
-      <description>第一原理 定义 用最小的人力成本，最大化地满足用户需求。 属性 复杂性：数据、逻辑和算法 遵从性：接口和规范 可变性：需求变更、可扩展 不可见性：诊断工具、日志记录、性能监控 能力地图 整洁代码 易于阅读、理解和维护的高质量代码 保持代码简洁清晰：使用有意义的变量名、函数名和注释，避免冗余代码和过度复</description>
+      <description>第一原理、整洁代码、编程范式、设计原则及设计模式 </description>
     </item>
     
   </channel>
