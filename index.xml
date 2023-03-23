@@ -11,7 +11,16 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 20 Mar 2023 09:12:41 +0800</lastBuildDate><atom:link href="https://blog.themostmoon.today/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 23 Mar 2023 10:07:13 +0800</lastBuildDate><atom:link href="https://blog.themostmoon.today/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mermaid使用指南---流程图</title>
+      <link>https://blog.themostmoon.today/posts/tech/guide-to-using-mermaid-flowcharts/</link>
+      <pubDate>Thu, 23 Mar 2023 10:07:13 +0800</pubDate>
+      
+      <guid>https://blog.themostmoon.today/posts/tech/guide-to-using-mermaid-flowcharts/</guid>
+      <description>本篇指南旨在介绍如何使用Mermaid创建流程图，并提供基本语法、样式和配置选项的详细说明。</description>
+    </item>
+    
     <item>
       <title>🤝 友链</title>
       <link>https://blog.themostmoon.today/links/</link>

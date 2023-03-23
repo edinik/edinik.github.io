@@ -1,0 +1,1151 @@
+<!DOCTYPE html>
+<html lang="zh" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Mermaid使用指南---流程图 | Edison&#39;s Blog</title>
+<meta name="keywords" content="Mermaid">
+<meta name="description" content="本篇指南旨在介绍如何使用Mermaid创建流程图，并提供基本语法、样式和配置选项的详细说明。">
+<meta name="author" content="Edison">
+<link rel="canonical" href="https://blog.themostmoon.today/posts/tech/guide-to-using-mermaid-flowcharts/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.bbeda8e1e549176967769f270888cf40bc16afa3aac9319d0bc6aa5e815ed5e8.css" integrity="sha256-u&#43;2o4eVJF2lndp8nCIjPQLwWr6OqyTGdC8aqXoFe1eg=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.f413e19d0714851f6474e7ee9632408e58ac146fbdbe62747134bea2fa3415e0.js" integrity="sha256-9BPhnQcUhR9kdOfuljJAjlisFG&#43;9vmJ0cTS&#43;ovo0FeA="
+        onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="img%09otoro.jpg">
+<link rel="icon" type="image/png" sizes="16x16" href="https://blog.themostmoon.today/img/totoro.jpg">
+<link rel="icon" type="image/png" sizes="32x32" href="https://blog.themostmoon.today/img/totoro.jpg">
+<link rel="apple-touch-icon" href="https://blog.themostmoon.today/img/totoro.jpg">
+<link rel="mask-icon" href="https://blog.themostmoon.today/img/totoro.jpg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+<script defer src="https://unpkg.com/mermaid@8.8.1/dist/mermaid.min.js"></script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
+<script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.min.js"></script>
+
+
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = ""; 
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-123-45', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script><meta property="og:title" content="Mermaid使用指南---流程图" />
+<meta property="og:description" content="本篇指南旨在介绍如何使用Mermaid创建流程图，并提供基本语法、样式和配置选项的详细说明。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://blog.themostmoon.today/posts/tech/guide-to-using-mermaid-flowcharts/" /><meta property="og:image" content="https://blog.themostmoon.today/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-03-23T10:07:13+08:00" />
+<meta property="article:modified_time" content="2023-03-23T10:07:13+08:00" /><meta property="og:site_name" content="Edison" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://blog.themostmoon.today/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E"/>
+
+<meta name="twitter:title" content="Mermaid使用指南---流程图"/>
+<meta name="twitter:description" content="本篇指南旨在介绍如何使用Mermaid创建流程图，并提供基本语法、样式和配置选项的详细说明。"/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+
+        {
+          "@type": "ListItem",
+          "position":  2 ,
+          "name": "📚 文章",
+          "item": "https://blog.themostmoon.today/posts/"
+        },
+
+        {
+          "@type": "ListItem",
+          "position":  3 ,
+          "name": "👨🏻‍💻 技术",
+          "item": "https://blog.themostmoon.today/posts/tech/"
+        }, 
+    {
+      "@type": "ListItem",
+      "position":  4 ,
+      "name": "Mermaid使用指南---流程图",
+      "item": "https://blog.themostmoon.today/posts/tech/guide-to-using-mermaid-flowcharts/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Mermaid使用指南---流程图",
+  "name": "Mermaid使用指南---流程图",
+  "description": "本篇指南旨在介绍如何使用Mermaid创建流程图，并提供基本语法、样式和配置选项的详细说明。",
+  "keywords": [
+    "Mermaid"
+  ],
+  "articleBody": "一个节点 --- title: 地点 --- flowchart LR 北京 --- title: 地点 --- flowchart LR 北京 一个带文本的节点 --- title: 地点 --- flowchart LR 北京[北京是中国的首都] --- title: 地点 --- flowchart LR 北京[北京是中国的首都] 流程图方向 从左到右 flowchart LR 北京--\u003e上海 flowchart LR 北京--\u003e上海 从右到左 flowchart RL 北京--\u003e上海 flowchart RL 北京--\u003e上海 从上到下 flowchart TB 北京--\u003e上海 flowchart TB 北京--\u003e上海 从下到上 flowchart BT 北京--\u003e上海 flowchart BT 北京--\u003e上海 节点样式 圆角节点 flowchart LR 北京(北京是中国的首都) flowchart LR 北京(北京是中国的首都) 半圆弧节点 flowchart LR 开始([开始]) flowchart LR 开始([开始流程]) 子流程节点 flowchart LR 子流程[[这是一个子流程]] flowchart LR 子流程[[这是一个子流程]] 圆柱形节点 flowchart LR 数据库[(数据库)] flowchart LR 数据库[(数据库)] 圆形节点 flowchart LR 圆形((这是一个圆形)) flowchart LR 圆形((这是一个圆形)) 非对称形状节点 flowchart LR 非对称形状\u003e这是一个非对称形状] flowchart LR 非对称形状\u003e这是一个非对称形状] 菱形节点 flowchart LR 菱形{这是一个菱形} flowchart LR 菱形{这是一个菱形} 六边形节点 flowchart LR 六边形{{这是一个六边形}} flowchart LR 六边形{{这是一个六边形}} 平行四边形节点 flowchart LR 平行四边形[/这是一个平行四边形/] flowchart LR 平行四边形[/这是一个平行四边形/] flowchart LR 平行四边形[\\这是一个平行四边形\\] flowchart LR 平行四边形[\\这是一个平行四边形\\] 梯形节点 flowchart LR 梯形[/这是一个梯形\\] flowchart LR 梯形[/这是一个梯形\\] flowchart LR 梯形[\\这是一个梯形/] flowchart LR 梯形[\\这是一个梯形/] 双重圆环节点 flowchart LR 双重圆环(((这是一个双重圆环))) flowchart LR 双重圆环(((这是一个双重圆环))) 节点之间的链接 带箭头的链接 flowchart LR 北京--\u003e上海 flowchart LR 北京--\u003e上海 开放的链接 flowchart LR 北京---上海 flowchart LR 北京---上海 链接上的文字 flowchart LR 北京---|G30|上海 flowchart LR 北京---|G30|上海 带有箭头和文本的链接 flowchart LR 北京--\u003e|G30|上海 flowchart LR 北京--\u003e|G30|上海 虚线链接 flowchart LR 北京-.-\u003e上海 flowchart LR 北京-.-\u003e上海 带文本的虚线链接 flowchart LR 北京-.-\u003e|G30|上海 flowchart LR 北京-.-\u003e|G30|上海 加粗链接 flowchart LR 北京==\u003e上海 flowchart LR 北京==\u003e上海 带文本的加粗链接 flowchart LR 北京==\u003e|G30|上海 flowchart LR 北京==\u003e|G30|上海 链式链接 flowchart LR 北京--\u003e上海--\u003e广州 flowchart LR 北京--\u003e|G30|上海--\u003e|G40|广州 flowchart LR 北京--\u003e上海 \u0026 杭州--\u003e广州 flowchart LR 北京--\u003e上海 \u0026 杭州--\u003e广州 flowchart LR 上海 \u0026 杭州--\u003e广州 \u0026 深圳 flowchart TB 上海 \u0026 杭州--\u003e广州 \u0026 深圳 新型箭头链接 flowchart LR 北京 --o 上海 --x 广州 flowchart LR 北京 --o 上海 --x 广州 双向箭头 flowchart LR 北京\u003c--\u003e上海o--o广州x--x深圳 flowchart LR 北京 \u003c--\u003e 上海 o--o 广州 x--x 深圳 链接的最小长度 flowchart TB A[开始] --\u003e B[输入用户名和密码] B --\u003e C{认证成功 ?} C --\u003e|是| D[登录成功] C --\u003e|否| E[登录失败] D --\u003e F[进入系统] F ----\u003e I E --\u003e G{是否重新登录 ?} G --\u003e|是| B G --\u003e|否| H[退出系统] H --\u003e I[结束] flowchart TB A[开始] --\u003e B[输入用户名和密码] B --\u003e C{认证成功 ?} C --\u003e|是| D[登录成功] C --\u003e|否| E[登录失败] D --\u003e F[进入系统] F ----\u003e I E --\u003e G{是否重新登录 ?} G --\u003e|是| B G --\u003e|否| H[退出系统] H --\u003e I[结束] 特殊字符 flowchart LR A[\"这是一个(括号)字符\"] flowchart LR A[\"这是一个(括号)字符\"] 转义字符的代码 flowchart LR A[\"这是一个双引号:#quot;\"] --\u003e B[\"这是一个单引号:#39;\"] --\u003e C[\"这是一个爱心:#9829;\"] flowchart LR A[\"这是一个双引号:#quot;\"] --\u003e B[\"这是一个单引号:#39;\"] --\u003e C[\"这是一个爱心:#9829;\"] ",
+  "wordCount" : "1522",
+  "inLanguage": "zh",
+  "datePublished": "2023-03-23T10:07:13+08:00",
+  "dateModified": "2023-03-23T10:07:13+08:00",
+  "author":[{
+    "@type": "Person",
+    "name": "Edison"
+  }],
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://blog.themostmoon.today/posts/tech/guide-to-using-mermaid-flowcharts/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Edison's Blog",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "img\totoro.jpg"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    (function () {
+        let  arr,reg = new RegExp("(^| )"+"change-themes"+"=([^;]*)(;|$)");
+        if(arr = document.cookie.match(reg)) {
+        } else {
+            if (new Date().getHours() >= 19 || new Date().getHours() < 6) {
+                document.body.classList.add('dark');
+                localStorage.setItem("pref-theme", 'dark');
+            } else {
+                document.body.classList.remove('dark');
+                localStorage.setItem("pref-theme", 'light');
+            }
+        }
+    })()
+
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://blog.themostmoon.today" accesskey="h" title="Edison&#39;s Blog (Alt + H)">
+            <img src="https://blog.themostmoon.today/img/logo.gif" alt="logo" aria-label="logo"
+                 height="40">Edison&#39;s Blog</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                         stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                         stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://blog.themostmoon.today/search" title="🔍 搜索 (Alt &#43; /)" accesskey=/>
+                <span>🔍 搜索</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://blog.themostmoon.today/" title="🏠 主页">
+                <span>🏠 主页</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://blog.themostmoon.today/posts" title="📚 文章">
+                <span>📚 文章</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://blog.themostmoon.today/tags" title="🔖 标签">
+                <span>🔖 标签</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://blog.themostmoon.today/archives/" title="⏱ 时间轴">
+                <span>⏱ 时间轴</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://blog.themostmoon.today/about" title="🙋🏻‍♂️ 关于">
+                <span>🙋🏻‍♂️ 关于</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://blog.themostmoon.today/links" title="🤝 友链">
+                <span>🤝 友链</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+
+
+<script async src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+
+<main class="main page">
+<style>
+    i[id*="post_meta_style"] {
+        display: flex;
+        align-items: center;
+        margin: 0 0 10px 0;
+    }
+</style>
+
+<article class="post-single">
+    <div id="single-content">
+        <header class="post-header">
+            <div class="breadcrumbs"><a href="https://blog.themostmoon.today">🏠 主页</a>&nbsp;»&nbsp;<a href="https://blog.themostmoon.today/posts/">📚 文章</a>&nbsp;»&nbsp;<a href="https://blog.themostmoon.today/posts/tech/">👨🏻‍💻 技术</a></div>
+            <h1 class="post-title">
+                Mermaid使用指南---流程图
+            </h1>
+            <div class="post-description">
+                本篇指南旨在介绍如何使用Mermaid创建流程图，并提供基本语法、样式和配置选项的详细说明。
+            </div>
+            <div class="post-meta"><style>
+    i[id*="post_meta_style"] {
+        display: flex;
+        align-items: center;
+        margin: 0 0 10px 0;
+    }
+
+    .parent-post-meta {
+        display: flex;
+        flex-wrap: wrap;
+        opacity: 0.8;
+    }
+</style>
+
+<span class="parent-post-meta">
+    <span id="post_meta_style_1">
+        <span class="fa fa-calendar-check-o"></span>
+        <span>2023-03-23
+            &nbsp;&nbsp;
+        </span>
+    </span>
+    
+    
+    
+    
+    
+    
+    
+    <span id="post_meta_style_3">
+        <span class="fa fa-file-word-o"></span>
+        <span>1522字
+            &nbsp;&nbsp;
+        </span>
+    </span>
+    <span id="post_meta_style_4">
+        <span class="fa fa-clock-o"></span>
+        <span>4分钟
+            &nbsp;&nbsp;
+        </span>
+    </span>
+    <span id="post_meta_style_5">
+        <span class="fa fa-user-o"></span>
+        <span>Edison
+            &nbsp;&nbsp;
+        </span>
+    </span>
+    <span id="post_meta_style_6">
+        <span class="fa fa-tags" style="opacity: 0.8"></span>
+        <span>
+            <span class="post-tags-meta">
+                <a href="https://blog.themostmoon.today/tags/mermaid/" style="color: var(--secondary)!important;">Mermaid</a>
+            </span>
+        </span>
+    </span>
+</span>
+<span style="opacity: 0.8;">
+                    <span id="post_meta_style_7">
+                        &nbsp;&nbsp;
+                        <span class="fa fa-eye" ></span>
+                        <span>
+                            <span id="busuanzi_container_page_pv"><span id="busuanzi_value_page_pv"></span></span>
+                            &nbsp;&nbsp;
+                        </span>
+                    </span>
+                    <span id="post_meta_style_8">
+                        <span class="fa fa-commenting-o"></span>
+                        <span>
+                            <script src="https://cdn.staticfile.org/twikoo/1.6.10/twikoo.all.min.js"></script>
+                            <script>
+                                let url = document.documentURI
+                                
+                                let dnsUrl = "https://blog.themostmoon.today"
+                                let urlSplit = url.split(dnsUrl)
+                                let finalUrl = urlSplit[1]
+                                if (finalUrl[0] !== '/') {
+                                    finalUrl = '/'+finalUrl
+                                }
+                                twikoo.getCommentsCount({
+                                    envId: "https://twikoo-rust-chi.vercel.app", 
+                                region: "ap-beijing", 
+                                urls: [ 
+                                    
+                                    finalUrl,
+                                ],
+                                    includeReply: false 
+                                }).then(function (res) {
+                                    let count = res[0].count
+                                    const obj = document.getElementById("comment_count");
+                                    obj.innerText = count
+                                    
+                                    
+                                    
+                                }).catch(function (err) {
+                                    
+                                    console.error(err);
+                                });
+                            </script>
+                            <span id="comment_count"></span>
+                        </span>
+                    </span>
+                </span>
+
+</div>
+        </header> <aside id="toc-container" class="toc-container wide">
+    <div class="toc">
+        <details  open>
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">目录</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#%e4%b8%80%e4%b8%aa%e8%8a%82%e7%82%b9" aria-label="一个节点">一个节点</a></li>
+                <li>
+                    <a href="#%e4%b8%80%e4%b8%aa%e5%b8%a6%e6%96%87%e6%9c%ac%e7%9a%84%e8%8a%82%e7%82%b9" aria-label="一个带文本的节点">一个带文本的节点</a></li>
+                <li>
+                    <a href="#%e6%b5%81%e7%a8%8b%e5%9b%be%e6%96%b9%e5%90%91" aria-label="流程图方向">流程图方向</a><ul>
+                        
+                <li>
+                    <a href="#%e4%bb%8e%e5%b7%a6%e5%88%b0%e5%8f%b3" aria-label="从左到右">从左到右</a></li>
+                <li>
+                    <a href="#%e4%bb%8e%e5%8f%b3%e5%88%b0%e5%b7%a6" aria-label="从右到左">从右到左</a></li>
+                <li>
+                    <a href="#%e4%bb%8e%e4%b8%8a%e5%88%b0%e4%b8%8b" aria-label="从上到下">从上到下</a></li>
+                <li>
+                    <a href="#%e4%bb%8e%e4%b8%8b%e5%88%b0%e4%b8%8a" aria-label="从下到上">从下到上</a></li></ul>
+                </li>
+                <li>
+                    <a href="#%e8%8a%82%e7%82%b9%e6%a0%b7%e5%bc%8f" aria-label="节点样式">节点样式</a><ul>
+                        
+                <li>
+                    <a href="#%e5%9c%86%e8%a7%92%e8%8a%82%e7%82%b9" aria-label="圆角节点">圆角节点</a></li>
+                <li>
+                    <a href="#%e5%8d%8a%e5%9c%86%e5%bc%a7%e8%8a%82%e7%82%b9" aria-label="半圆弧节点">半圆弧节点</a></li>
+                <li>
+                    <a href="#%e5%ad%90%e6%b5%81%e7%a8%8b%e8%8a%82%e7%82%b9" aria-label="子流程节点">子流程节点</a></li>
+                <li>
+                    <a href="#%e5%9c%86%e6%9f%b1%e5%bd%a2%e8%8a%82%e7%82%b9" aria-label="圆柱形节点">圆柱形节点</a></li>
+                <li>
+                    <a href="#%e5%9c%86%e5%bd%a2%e8%8a%82%e7%82%b9" aria-label="圆形节点">圆形节点</a></li>
+                <li>
+                    <a href="#%e9%9d%9e%e5%af%b9%e7%a7%b0%e5%bd%a2%e7%8a%b6%e8%8a%82%e7%82%b9" aria-label="非对称形状节点">非对称形状节点</a></li>
+                <li>
+                    <a href="#%e8%8f%b1%e5%bd%a2%e8%8a%82%e7%82%b9" aria-label="菱形节点">菱形节点</a></li>
+                <li>
+                    <a href="#%e5%85%ad%e8%be%b9%e5%bd%a2%e8%8a%82%e7%82%b9" aria-label="六边形节点">六边形节点</a></li>
+                <li>
+                    <a href="#%e5%b9%b3%e8%a1%8c%e5%9b%9b%e8%be%b9%e5%bd%a2%e8%8a%82%e7%82%b9" aria-label="平行四边形节点">平行四边形节点</a></li>
+                <li>
+                    <a href="#%e6%a2%af%e5%bd%a2%e8%8a%82%e7%82%b9" aria-label="梯形节点">梯形节点</a></li>
+                <li>
+                    <a href="#%e5%8f%8c%e9%87%8d%e5%9c%86%e7%8e%af%e8%8a%82%e7%82%b9" aria-label="双重圆环节点">双重圆环节点</a></li></ul>
+                </li>
+                <li>
+                    <a href="#%e8%8a%82%e7%82%b9%e4%b9%8b%e9%97%b4%e7%9a%84%e9%93%be%e6%8e%a5" aria-label="节点之间的链接">节点之间的链接</a><ul>
+                        
+                <li>
+                    <a href="#%e5%b8%a6%e7%ae%ad%e5%a4%b4%e7%9a%84%e9%93%be%e6%8e%a5" aria-label="带箭头的链接">带箭头的链接</a></li>
+                <li>
+                    <a href="#%e5%bc%80%e6%94%be%e7%9a%84%e9%93%be%e6%8e%a5" aria-label="开放的链接">开放的链接</a></li>
+                <li>
+                    <a href="#%e9%93%be%e6%8e%a5%e4%b8%8a%e7%9a%84%e6%96%87%e5%ad%97" aria-label="链接上的文字">链接上的文字</a></li>
+                <li>
+                    <a href="#%e5%b8%a6%e6%9c%89%e7%ae%ad%e5%a4%b4%e5%92%8c%e6%96%87%e6%9c%ac%e7%9a%84%e9%93%be%e6%8e%a5" aria-label="带有箭头和文本的链接">带有箭头和文本的链接</a></li>
+                <li>
+                    <a href="#%e8%99%9a%e7%ba%bf%e9%93%be%e6%8e%a5" aria-label="虚线链接">虚线链接</a></li>
+                <li>
+                    <a href="#%e5%b8%a6%e6%96%87%e6%9c%ac%e7%9a%84%e8%99%9a%e7%ba%bf%e9%93%be%e6%8e%a5" aria-label="带文本的虚线链接">带文本的虚线链接</a></li>
+                <li>
+                    <a href="#%e5%8a%a0%e7%b2%97%e9%93%be%e6%8e%a5" aria-label="加粗链接">加粗链接</a></li>
+                <li>
+                    <a href="#%e5%b8%a6%e6%96%87%e6%9c%ac%e7%9a%84%e5%8a%a0%e7%b2%97%e9%93%be%e6%8e%a5" aria-label="带文本的加粗链接">带文本的加粗链接</a></li>
+                <li>
+                    <a href="#%e9%93%be%e5%bc%8f%e9%93%be%e6%8e%a5" aria-label="链式链接">链式链接</a></li>
+                <li>
+                    <a href="#%e6%96%b0%e5%9e%8b%e7%ae%ad%e5%a4%b4%e9%93%be%e6%8e%a5" aria-label="新型箭头链接">新型箭头链接</a></li>
+                <li>
+                    <a href="#%e5%8f%8c%e5%90%91%e7%ae%ad%e5%a4%b4" aria-label="双向箭头">双向箭头</a></li>
+                <li>
+                    <a href="#%e9%93%be%e6%8e%a5%e7%9a%84%e6%9c%80%e5%b0%8f%e9%95%bf%e5%ba%a6" aria-label="链接的最小长度">链接的最小长度</a></li></ul>
+                </li>
+                <li>
+                    <a href="#%e7%89%b9%e6%ae%8a%e5%ad%97%e7%ac%a6" aria-label="特殊字符">特殊字符</a><ul>
+                        
+                <li>
+                    <a href="#%e8%bd%ac%e4%b9%89%e5%ad%97%e7%ac%a6%e7%9a%84%e4%bb%a3%e7%a0%81" aria-label="转义字符的代码">转义字符的代码</a>
+                </li>
+            </ul>
+            </li>
+            </ul>
+        </div>
+        </details>
+    </div>
+</aside>
+<script>
+    let activeElement;
+    let elements;
+    window.addEventListener('DOMContentLoaded', function (event) {
+        checkTocPosition();
+
+        elements = document.querySelectorAll('h1[id],h2[id],h3[id],h4[id],h5[id],h6[id]');
+        
+        activeElement = elements[0];
+        const id = encodeURI(activeElement.getAttribute('id')).toLowerCase();
+        document.querySelector(`.inner ul li a[href="#${id}"]`).classList.add('active');
+    }, false);
+
+    window.addEventListener('resize', function(event) {
+        checkTocPosition();
+    }, false);
+
+    window.addEventListener('scroll', () => {
+        
+        activeElement = Array.from(elements).find((element) => {
+            if ((getOffsetTop(element) - window.pageYOffset) > 0 &&
+                (getOffsetTop(element) - window.pageYOffset) < window.innerHeight/2) {
+                return element;
+            }
+        }) || activeElement
+
+        elements.forEach(element => {
+            const id = encodeURI(element.getAttribute('id')).toLowerCase();
+            if (element === activeElement){
+                document.querySelector(`.inner ul li a[href="#${id}"]`).classList.add('active');
+            } else {
+                document.querySelector(`.inner ul li a[href="#${id}"]`).classList.remove('active');
+            }
+        })
+    }, false);
+
+    const main = parseInt(getComputedStyle(document.body).getPropertyValue('--article-width'), 10);
+    const toc = parseInt(getComputedStyle(document.body).getPropertyValue('--toc-width'), 10);
+    const gap = parseInt(getComputedStyle(document.body).getPropertyValue('--gap'), 10);
+
+    function checkTocPosition() {
+        const width = document.body.scrollWidth;
+        if (width - main - (toc * 2) - (gap * 4) > 0) {
+            document.getElementById("toc-container").classList.add("wide");
+        } else {
+            document.getElementById("toc-container").classList.remove("wide");
+        }
+    }
+
+    function getOffsetTop(element) {
+        if (!element.getClientRects().length) {
+            return 0;
+        }
+        let rect = element.getBoundingClientRect();
+        let win = element.ownerDocument.defaultView;
+        return rect.top + win.pageYOffset;
+    }
+</script>
+        <div class="post-content"><h2 id="一个节点">一个节点<a hidden class="anchor" aria-hidden="true" href="#一个节点">#</a></h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span>title: 地点
+</span></span><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span>flowchart LR
+</span></span><span style="display:flex;"><span>北京
+</span></span></code></pre></div><div class="mermaid">
+  
+---
+title: 地点
+---
+flowchart LR
+北京
+
+</div>
+<h2 id="一个带文本的节点">一个带文本的节点<a hidden class="anchor" aria-hidden="true" href="#一个带文本的节点">#</a></h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span>title: 地点
+</span></span><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span>flowchart LR
+</span></span><span style="display:flex;"><span>北京[北京是中国的首都]
+</span></span></code></pre></div><div class="mermaid">
+  
+---
+title: 地点
+---
+flowchart LR
+北京[北京是中国的首都]
+
+</div>
+<h2 id="流程图方向">流程图方向<a hidden class="anchor" aria-hidden="true" href="#流程图方向">#</a></h2>
+<h3 id="从左到右">从左到右<a hidden class="anchor" aria-hidden="true" href="#从左到右">#</a></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span>flowchart LR
+</span></span><span style="display:flex;"><span>北京--&gt;上海
+</span></span></code></pre></div><div class="mermaid">
+  
+flowchart LR
+北京-->上海
+
+</div>
+<h3 id="从右到左">从右到左<a hidden class="anchor" aria-hidden="true" href="#从右到左">#</a></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span>flowchart RL
+</span></span><span style="display:flex;"><span>北京--&gt;上海
+</span></span></code></pre></div><div class="mermaid">
+  
+flowchart RL
+北京-->上海
+
+</div>
+<h3 id="从上到下">从上到下<a hidden class="anchor" aria-hidden="true" href="#从上到下">#</a></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span>flowchart TB
+</span></span><span style="display:flex;"><span>北京--&gt;上海
+</span></span></code></pre></div><div class="mermaid">
+  
+flowchart TB
+北京-->上海
+
+</div>
+<h3 id="从下到上">从下到上<a hidden class="anchor" aria-hidden="true" href="#从下到上">#</a></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span>flowchart BT
+</span></span><span style="display:flex;"><span>北京--&gt;上海
+</span></span></code></pre></div><div class="mermaid">
+  
+flowchart BT
+北京-->上海
+
+</div>
+<h2 id="节点样式">节点样式<a hidden class="anchor" aria-hidden="true" href="#节点样式">#</a></h2>
+<h3 id="圆角节点">圆角节点<a hidden class="anchor" aria-hidden="true" href="#圆角节点">#</a></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span>flowchart LR
+</span></span><span style="display:flex;"><span>北京(北京是中国的首都)
+</span></span></code></pre></div><div class="mermaid">
+  
+flowchart LR
+北京(北京是中国的首都)
+
+</div>
+<h3 id="半圆弧节点">半圆弧节点<a hidden class="anchor" aria-hidden="true" href="#半圆弧节点">#</a></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span>flowchart LR
+</span></span><span style="display:flex;"><span>开始([开始])
+</span></span></code></pre></div><div class="mermaid">
+  
+flowchart LR
+开始([开始流程])
+
+</div>
+<h3 id="子流程节点">子流程节点<a hidden class="anchor" aria-hidden="true" href="#子流程节点">#</a></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span>flowchart LR
+</span></span><span style="display:flex;"><span>子流程[[这是一个子流程]]
+</span></span></code></pre></div><div class="mermaid">
+  
+flowchart LR
+子流程[[这是一个子流程]]
+
+</div>
+<h3 id="圆柱形节点">圆柱形节点<a hidden class="anchor" aria-hidden="true" href="#圆柱形节点">#</a></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span>flowchart LR
+</span></span><span style="display:flex;"><span>数据库[(数据库)]
+</span></span></code></pre></div><div class="mermaid">
+  
+flowchart LR
+数据库[(数据库)]
+
+</div>
+<h3 id="圆形节点">圆形节点<a hidden class="anchor" aria-hidden="true" href="#圆形节点">#</a></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span>flowchart LR
+</span></span><span style="display:flex;"><span>圆形((这是一个圆形))
+</span></span></code></pre></div><div class="mermaid">
+  
+flowchart LR
+圆形((这是一个圆形))
+
+</div>
+<h3 id="非对称形状节点">非对称形状节点<a hidden class="anchor" aria-hidden="true" href="#非对称形状节点">#</a></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span>flowchart LR
+</span></span><span style="display:flex;"><span>非对称形状&gt;这是一个非对称形状]
+</span></span></code></pre></div><div class="mermaid">
+  
+flowchart LR
+非对称形状>这是一个非对称形状]
+
+</div>
+<h3 id="菱形节点">菱形节点<a hidden class="anchor" aria-hidden="true" href="#菱形节点">#</a></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span>flowchart LR
+</span></span><span style="display:flex;"><span>菱形{这是一个菱形}
+</span></span></code></pre></div><div class="mermaid">
+  
+flowchart LR
+菱形{这是一个菱形}
+
+</div>
+<h3 id="六边形节点">六边形节点<a hidden class="anchor" aria-hidden="true" href="#六边形节点">#</a></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span>flowchart LR
+</span></span><span style="display:flex;"><span>六边形{{这是一个六边形}}
+</span></span></code></pre></div><div class="mermaid">
+  
+flowchart LR
+六边形{{这是一个六边形}}
+
+</div>
+<h3 id="平行四边形节点">平行四边形节点<a hidden class="anchor" aria-hidden="true" href="#平行四边形节点">#</a></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span>flowchart LR
+</span></span><span style="display:flex;"><span>平行四边形[/这是一个平行四边形/] 
+</span></span></code></pre></div><div class="mermaid">
+  
+flowchart LR
+平行四边形[/这是一个平行四边形/] 
+
+</div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span>flowchart LR
+</span></span><span style="display:flex;"><span>平行四边形[\这是一个平行四边形\] 
+</span></span></code></pre></div><div class="mermaid">
+  
+flowchart LR
+平行四边形[\这是一个平行四边形\] 
+
+</div>
+<h3 id="梯形节点">梯形节点<a hidden class="anchor" aria-hidden="true" href="#梯形节点">#</a></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span>flowchart LR
+</span></span><span style="display:flex;"><span>梯形[/这是一个梯形\] 
+</span></span></code></pre></div><div class="mermaid">
+  
+flowchart LR
+梯形[/这是一个梯形\] 
+
+</div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span>flowchart LR
+</span></span><span style="display:flex;"><span>梯形[\这是一个梯形/] 
+</span></span></code></pre></div><div class="mermaid">
+  
+flowchart LR
+梯形[\这是一个梯形/] 
+
+</div>
+<h3 id="双重圆环节点">双重圆环节点<a hidden class="anchor" aria-hidden="true" href="#双重圆环节点">#</a></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span>flowchart LR
+</span></span><span style="display:flex;"><span>双重圆环(((这是一个双重圆环)))
+</span></span></code></pre></div><div class="mermaid">
+  
+flowchart LR
+双重圆环(((这是一个双重圆环)))
+
+</div>
+<h2 id="节点之间的链接">节点之间的链接<a hidden class="anchor" aria-hidden="true" href="#节点之间的链接">#</a></h2>
+<h3 id="带箭头的链接">带箭头的链接<a hidden class="anchor" aria-hidden="true" href="#带箭头的链接">#</a></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span>flowchart LR
+</span></span><span style="display:flex;"><span>北京--&gt;上海
+</span></span></code></pre></div><div class="mermaid">
+  
+flowchart LR
+北京-->上海
+
+</div>
+<h3 id="开放的链接">开放的链接<a hidden class="anchor" aria-hidden="true" href="#开放的链接">#</a></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span>flowchart LR
+</span></span><span style="display:flex;"><span>北京---上海
+</span></span></code></pre></div><div class="mermaid">
+  
+flowchart LR
+北京---上海
+
+</div>
+<h3 id="链接上的文字">链接上的文字<a hidden class="anchor" aria-hidden="true" href="#链接上的文字">#</a></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span>flowchart LR
+</span></span><span style="display:flex;"><span>北京---|G30|上海
+</span></span></code></pre></div><div class="mermaid">
+  
+flowchart LR
+北京---|G30|上海
+
+</div>
+<h3 id="带有箭头和文本的链接">带有箭头和文本的链接<a hidden class="anchor" aria-hidden="true" href="#带有箭头和文本的链接">#</a></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span>flowchart LR
+</span></span><span style="display:flex;"><span>北京--&gt;|G30|上海
+</span></span></code></pre></div><div class="mermaid">
+  
+flowchart LR
+北京-->|G30|上海
+
+</div>
+<h3 id="虚线链接">虚线链接<a hidden class="anchor" aria-hidden="true" href="#虚线链接">#</a></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span>flowchart LR
+</span></span><span style="display:flex;"><span>北京-.-&gt;上海
+</span></span></code></pre></div><div class="mermaid">
+  
+flowchart LR
+北京-.->上海
+
+</div>
+<h3 id="带文本的虚线链接">带文本的虚线链接<a hidden class="anchor" aria-hidden="true" href="#带文本的虚线链接">#</a></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span>flowchart LR
+</span></span><span style="display:flex;"><span>北京-.-&gt;|G30|上海
+</span></span></code></pre></div><div class="mermaid">
+  
+flowchart LR
+北京-.->|G30|上海
+
+</div>
+<h3 id="加粗链接">加粗链接<a hidden class="anchor" aria-hidden="true" href="#加粗链接">#</a></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span>flowchart LR
+</span></span><span style="display:flex;"><span>北京==&gt;上海
+</span></span></code></pre></div><div class="mermaid">
+  
+flowchart LR
+北京==>上海
+
+</div>
+<h3 id="带文本的加粗链接">带文本的加粗链接<a hidden class="anchor" aria-hidden="true" href="#带文本的加粗链接">#</a></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span>flowchart LR
+</span></span><span style="display:flex;"><span>北京==&gt;|G30|上海
+</span></span></code></pre></div><div class="mermaid">
+  
+flowchart LR
+北京==>|G30|上海
+
+</div>
+<h3 id="链式链接">链式链接<a hidden class="anchor" aria-hidden="true" href="#链式链接">#</a></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span>flowchart LR
+</span></span><span style="display:flex;"><span>北京--&gt;上海--&gt;广州
+</span></span></code></pre></div><div class="mermaid">
+  
+flowchart LR
+北京-->|G30|上海-->|G40|广州
+
+</div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span>flowchart LR
+</span></span><span style="display:flex;"><span>北京--&gt;上海 &amp; 杭州--&gt;广州
+</span></span></code></pre></div><div class="mermaid">
+  
+flowchart LR
+北京-->上海 & 杭州-->广州
+
+</div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span>flowchart LR
+</span></span><span style="display:flex;"><span>上海 &amp; 杭州--&gt;广州 &amp; 深圳
+</span></span></code></pre></div><div class="mermaid">
+  
+flowchart TB
+上海 & 杭州-->广州 & 深圳
+
+</div>
+<h3 id="新型箭头链接">新型箭头链接<a hidden class="anchor" aria-hidden="true" href="#新型箭头链接">#</a></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span>flowchart LR
+</span></span><span style="display:flex;"><span>北京 --o 上海 --x 广州
+</span></span></code></pre></div><div class="mermaid">
+  
+flowchart LR
+北京 --o 上海 --x 广州
+
+</div>
+<h3 id="双向箭头">双向箭头<a hidden class="anchor" aria-hidden="true" href="#双向箭头">#</a></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span>flowchart LR
+</span></span><span style="display:flex;"><span>北京&lt;--&gt;上海o--o广州x--x深圳
+</span></span></code></pre></div><div class="mermaid">
+  
+flowchart LR
+北京 <--> 上海 o--o 广州 x--x 深圳
+
+</div>
+<h3 id="链接的最小长度">链接的最小长度<a hidden class="anchor" aria-hidden="true" href="#链接的最小长度">#</a></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span>flowchart TB
+</span></span><span style="display:flex;"><span>A[开始] --&gt; B[输入用户名和密码]
+</span></span><span style="display:flex;"><span>B --&gt; C{认证成功 ?}
+</span></span><span style="display:flex;"><span>C --&gt;|是| D[登录成功]
+</span></span><span style="display:flex;"><span>C --&gt;|否| E[登录失败]
+</span></span><span style="display:flex;"><span>D --&gt; F[进入系统]
+</span></span><span style="display:flex;"><span>F ----&gt; I
+</span></span><span style="display:flex;"><span>E --&gt; G{是否重新登录 ?}
+</span></span><span style="display:flex;"><span>G --&gt;|是| B
+</span></span><span style="display:flex;"><span>G --&gt;|否| H[退出系统]
+</span></span><span style="display:flex;"><span>H --&gt; I[结束]
+</span></span></code></pre></div><div class="mermaid">
+  
+flowchart TB
+A[开始] --> B[输入用户名和密码]
+B --> C{认证成功 ?}
+C -->|是| D[登录成功]
+C -->|否| E[登录失败]
+D --> F[进入系统]
+F ----> I
+E --> G{是否重新登录 ?}
+G -->|是| B
+G -->|否| H[退出系统]
+H --> I[结束]
+
+</div>
+<h2 id="特殊字符">特殊字符<a hidden class="anchor" aria-hidden="true" href="#特殊字符">#</a></h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span>flowchart LR
+</span></span><span style="display:flex;"><span>A[&#34;这是一个(括号)字符&#34;]
+</span></span></code></pre></div><div class="mermaid">
+  
+flowchart LR
+A["这是一个(括号)字符"]
+
+</div>
+<h3 id="转义字符的代码">转义字符的代码<a hidden class="anchor" aria-hidden="true" href="#转义字符的代码">#</a></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span>flowchart LR
+</span></span><span style="display:flex;"><span>A[&#34;这是一个双引号:#quot;&#34;] --&gt; B[&#34;这是一个单引号:#39;&#34;] --&gt; C[&#34;这是一个爱心:#9829;&#34;]
+</span></span></code></pre></div><div class="mermaid">
+  
+flowchart LR
+A["这是一个双引号:#quot;"] --> B["这是一个单引号:#39;"] --> C["这是一个爱心:#9829;"]
+
+</div>
+
+
+        </div>
+        <div class="post-reward">
+            <div style="padding: 0 0 0 0; margin: 0 0 0 0; width: 100%; font-size:16px; text-align: center;">
+                <div id="QR" style="opacity: 0;">
+                    <div id="wechat" style="display: inline-block">
+                        <a class="fancybox" rel="group">
+                            <img id="wechat_qr" src="https://blog.themostmoon.today/img/wechat_pay.png" alt="wechat_pay"></a>
+                        <p>微信</p>
+                    </div>
+                    <div id="alipay" style="display: inline-block">
+                        <a class="fancybox" rel="group">
+                            <img id="alipay_qr" src="https://blog.themostmoon.today/img/alipay.png" alt="alipay"></a>
+                        <p>支付宝</p>
+                    </div>
+                </div>
+                <button id="rewardButton"
+                        onclick="
+                    var qr = document.getElementById('QR');
+                    if (qr.style.opacity === '0') {
+                        qr.style.opacity='1';
+                    } else {
+                        qr.style.opacity='0'
+                    }"
+                >
+                    <span>🧧 鼓励</span>
+                </button>
+            </div>
+        </div>
+
+        <footer class="post-footer">
+            
+<nav class="paginav">
+  <a class="next" href="https://blog.themostmoon.today/posts/tech/usage-of-ziparchive-in-csharp/">
+    <span class="title">下一页 »</span>
+    <br>
+    <span>C#中ZipArchive的用法</span>
+  </a>
+</nav>
+
+        </footer>
+    </div>
+
+<style>
+    .comments_details summary::marker {
+        font-size: 20px;
+        content: '👉展开评论';
+        color: var(--content);
+    }
+    .comments_details[open] summary::marker{
+        font-size: 20px;
+        content: '👇关闭评论';
+        color: var(--content);
+    }
+</style>
+
+
+<div>
+    <details class="comments_details">
+        <summary style="cursor: pointer; margin: 50px 0 20px 0;width: 130px;">
+            <span style="font-size: 20px;color: var(--content);">...</span>
+        </summary>
+        <div id="tcomment"></div>
+    </details>
+    <script src="https://cdn.staticfile.org/twikoo/1.6.10/twikoo.all.min.js">
+    </script>
+    <script>
+        twikoo.init({
+            envId: "https://twikoo-rust-chi.vercel.app",
+        el: "#tcomment",
+            lang: 'zh-CN',
+            region: "ap-beijing",
+        path: window.TWIKOO_MAGIC_PATH||window.location.pathname,
+        })
+    </script>
+</div>
+</article>
+</main>
+
+<footer class="footer">
+    <span>
+        Copyright
+        &copy;
+        2023-2023
+        <a href="https://blog.themostmoon.today" style="color:#939393;">Edison&#39;s Blog</a>
+        All Rights Reserved
+    </span>
+    <span id="busuanzi_container">
+        <span class="fa fa-user"></span> <span id="busuanzi_value_site_uv"></span>
+        <span class="fa fa-eye"></span> <span id="busuanzi_value_site_pv"></span>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <span class="topInner">
+        <svg class="topSvg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+            <path d="M12 6H0l6-6z"/>
+        </svg>
+        <span id="read_progress"></span>
+    </span>
+</a>
+
+<script>
+    document.addEventListener('scroll', function (e) {
+        const readProgress = document.getElementById("read_progress");
+        const scrollHeight = document.documentElement.scrollHeight;
+        const clientHeight = document.documentElement.clientHeight;
+        const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+        readProgress.innerText = ((scrollTop / (scrollHeight - clientHeight)).toFixed(2) * 100).toFixed(0);
+    })
+</script>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+</script>
+<script>
+    let mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        (function() {
+            document.cookie = "change-themes" + "="+ escape ("false");
+        })()
+
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    });
+</script>
+
+<script>
+    document.body.addEventListener('copy', function (e) {
+        if (window.getSelection().toString() && window.getSelection().toString().length > 50) {
+            let clipboardData = e.clipboardData || window.clipboardData;
+            if (clipboardData) {
+                e.preventDefault();
+                let htmlData = window.getSelection().toString() +
+                    '\r\n\n————————————————\r\n' +
+                    '版权声明：本文为「'+"Edison's Blog"+'」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。' +
+                '\r\n原文链接：' + location.href;
+                let textData = window.getSelection().toString() +
+                    '\r\n\n————————————————\r\n' +
+                    '版权声明：本文为「'+"Edison's Blog"+'」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。' +
+                '\r\n原文链接：' + location.href;
+                clipboardData.setData('text/html', htmlData);
+                clipboardData.setData('text/plain', textData);
+            }
+        }
+    });
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerText = '复制';
+
+        function copyingDone() {
+            copybutton.innerText = '已复制！';
+            setTimeout(() => {
+                copybutton.innerText = '复制';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                let text = codeblock.textContent +
+                    '\r\n————————————————\r\n' +
+                    '版权声明：本文为「'+"Edison's Blog"+'」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。' +
+                '\r\n原文链接：' + location.href;
+                navigator.clipboard.writeText(text);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) {}
+            selection.removeRange(range);
+        });
+
+        let language = codeblock.className.replaceAll("language-", "")
+        let macTool = document.createElement("div")
+        let macTool1 = document.createElement("div")
+        let macTool2 = document.createElement("div")
+        let macTool3 = document.createElement("div")
+        let languageType = document.createElement("div")
+        languageType.innerText = language
+        macTool.setAttribute('class', 'mac-tool')
+        macTool1.setAttribute('class', 'mac bb1')
+        macTool2.setAttribute('class', 'mac bb2')
+        macTool3.setAttribute('class', 'mac bb3')
+        languageType.setAttribute('class', 'language-type')
+        macTool.appendChild(macTool1)
+        macTool.appendChild(macTool2)
+        macTool.appendChild(macTool3)
+        macTool.appendChild(languageType)
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+            container.appendChild(macTool)
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+            container.appendChild(macTool)
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+            container.appendChild(macTool)
+        }
+    });
+</script>
+
+<script>
+    $("code[class^=language] ").on("mouseover", function () {
+        if (this.clientWidth < this.scrollWidth) {
+            $(this).css("width", "135%")
+            $(this).css("border-top-right-radius", "var(--radius)")
+        }
+    }).on("mouseout", function () {
+        $(this).css("width", "100%")
+        $(this).css("border-top-right-radius", "unset")
+    })
+</script>
+</body>
+
+</html>
