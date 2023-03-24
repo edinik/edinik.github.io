@@ -5,9 +5,9 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
-<title>C#中String和StringBuilder的区别 | Edison&#39;s Blog</title>
-<meta name="keywords" content="CSharp">
-<meta name="description" content="探究C#编程中string和StringBuilder的区别、各自的应用场景和性能比较">
+<title>csharp | string vs stringbuilder | Edison&#39;s Blog</title>
+<meta name="keywords" content="csharp, string, stringbuilder">
+<meta name="description" content="csharp中string和stringbuilder的区别、各自的应用场景和性能比较">
 <meta name="author" content="Edison">
 <link rel="canonical" href="https://blog.themostmoon.today/posts/tech/difference-between-string-and-stringbuilder-in-csharp/">
 <meta name="google-site-verification" content="6A-1RsLBWSgG_uBmVVQzBmGE8k2mxcJwZErLRJMpk4I">
@@ -86,8 +86,8 @@ if (!doNotTrack) {
 	
 	ga('send', 'pageview');
 }
-</script><meta property="og:title" content="C#中String和StringBuilder的区别" />
-<meta property="og:description" content="探究C#编程中string和StringBuilder的区别、各自的应用场景和性能比较" />
+</script><meta property="og:title" content="csharp | string vs stringbuilder" />
+<meta property="og:description" content="csharp中string和stringbuilder的区别、各自的应用场景和性能比较" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://blog.themostmoon.today/posts/tech/difference-between-string-and-stringbuilder-in-csharp/" /><meta property="og:image" content="https://blog.themostmoon.today/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E"/><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2023-03-17T12:41:22+08:00" />
@@ -96,8 +96,8 @@ if (!doNotTrack) {
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://blog.themostmoon.today/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E"/>
 
-<meta name="twitter:title" content="C#中String和StringBuilder的区别"/>
-<meta name="twitter:description" content="探究C#编程中string和StringBuilder的区别、各自的应用场景和性能比较"/>
+<meta name="twitter:title" content="csharp | string vs stringbuilder"/>
+<meta name="twitter:description" content="csharp中string和stringbuilder的区别、各自的应用场景和性能比较"/>
 
 
 <script type="application/ld+json">
@@ -122,7 +122,7 @@ if (!doNotTrack) {
     {
       "@type": "ListItem",
       "position":  4 ,
-      "name": "C#中String和StringBuilder的区别",
+      "name": "csharp | string vs stringbuilder",
       "item": "https://blog.themostmoon.today/posts/tech/difference-between-string-and-stringbuilder-in-csharp/"
     }
   ]
@@ -132,11 +132,11 @@ if (!doNotTrack) {
 {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  "headline": "C#中String和StringBuilder的区别",
-  "name": "C#中String和StringBuilder的区别",
-  "description": "探究C#编程中string和StringBuilder的区别、各自的应用场景和性能比较",
+  "headline": "csharp | string vs stringbuilder",
+  "name": "csharp | string vs stringbuilder",
+  "description": "csharp中string和stringbuilder的区别、各自的应用场景和性能比较",
   "keywords": [
-    "CSharp"
+    "csharp", "string", "stringbuilder"
   ],
   "articleBody": "介绍 在C#编程中，string和StringBuilder是两种常用的字符串类型，它们在应用场景和性能上有着明显的差异。string是不可变的字符串类型，一旦创建就不能修改，因此它适用于需要频繁读取而不需要修改的场景；而StringBuilder是可变的字符串类型，可以在原有的字符串上进行修改，适用于需要频繁修改字符串的场景。\n本文将从定义、区别、应用场景和性能等方面介绍string和StringBuilder的差异，并进行性能比较，希望能够帮助读者更好地理解和应用这两种字符串类型\nstring和StringBuilder的基本概念 string string是C#中的一种不可变字符串类型，表示一个字符串对象，它存储在堆内存中。一旦创建了一个string对象，就不能修改它的值，而是创建一个新的string对象。这种不可变性带来了一些优点，例如更安全、更容易缓存、更容易共享等，但也带来了一些性能问题，例如频繁地创建和销毁对象会占用大量的内存和CPU时间。\nStringBuilder StringBuilder是C#中的一种可变字符串类型，表示一个字符串缓冲区，它也存储在堆内存中。与string不同，StringBuilder对象可以在原有的字符串缓冲区上进行修改，而不需要创建新的对象。因此，StringBuilder适用于需要频繁修改字符串的场景，例如字符串连接、替换、插入等。\n需要注意的是，StringBuilder对象是可变的，但不是线程安全的，因此在多线程环境下，需要采取措施来确保线程安全。可以使用锁或者使用ThreadLocal类创建多个StringBuilder对象，每个线程独立使用一个StringBuilder对象，以确保线程安全。\n区别 string和StringBuilder的定义和用法 在C#中，string和StringBuilder都是用于表示字符串的类型。它们的定义和用法有所不同：\nstring:\nstring str = \"hello\"; StringBuilder：\nStringBuilder sb = new StringBuilder(\"hello\"); string对象是不可变的，一旦创建了一个string对象，就不能修改它的值，而是创建一个新的string对象。StringBuilder对象是可变的，可以在原有的字符串缓冲区上进行修改，而不需要创建新的对象。\n内存分配和管理 string和StringBuilder的内存分配和管理方式也不同。\nstring对象的内存是在堆内存上分配的，它的生命周期由垃圾回收器控制。当string对象不再被引用时，它的内存将被垃圾回收器自动回收。\nStringBuilder对象也是在堆内存上分配的，但是它使用了可变大小的内部缓冲区。当StringBuilder对象的缓冲区不足以存储新的字符时，它会自动重新分配一个更大的缓冲区，同时将旧的缓冲区释放掉。这个过程会导致一定的性能开销，但是可以避免频繁创建和销毁对象，从而减少了内存压力。\n字符串连接和修改方式 string和StringBuilder的字符串连接和修改方式也不同。\n对于string对象，每次连接两个字符串时，都会创建一个新的string对象，这样会导致频繁地创建和销毁对象，从而占用大量的内存和CPU时间。\n例如：\nstring str = \"hello\"; str += \" world\"; 上述代码会创建两个string对象，一个是\"hello\"，另一个是\" world\"，然后再将它们连接起来，创建一个新的string对象\"hello world\"。这个过程中创建了三个string对象，即\"hello\"、\" world\"和\"hello world\"。\n对于StringBuilder对象，每次连接两个字符串时，它会在原有的字符串缓冲区上进行修改，而不需要创建新的对象。这样可以避免频繁地创建和销毁对象，从而减少了内存和CPU的开销。\n例如：\nStringBuilder sb = new StringBuilder(\"hello\"); sb.Append(\" world\"); 上述代码只创建了一个StringBuilder对象，然后在它的缓冲区上添加了一个新的字符串\" world\"，最终得到的字符串是\"hello world\"。这个过程中只创建了一个StringBuilder对象，没有创建任何新的string对象。\n总之，string适用于需要频繁读取而不需要修改的场景，而StringBuilder适用于需要频繁修改字符串的场景。需要根据实际的业务需求选择合适的字符串类型。\n应用场景 string的适用场景 string适用于需要频繁读取而不需要修改的场景，例如：\n字符串常量 字符串的比较、查找、截取等操作 字符串的格式化输出 例如：\nstring str1 = \"hello\"; // 字符串常量 string str2 = \"world\"; string str3 = str1 + \" \" + str2; // 字符串连接 if (str1.Equals(\"hello\")) // 字符串比较 { Console.WriteLine(\"str1 equals hello\"); } string substr = str3.Substring(0, 5); // 字符串截取 Console.WriteLine(substr); string formatstr = string.Format(\"str1={0}, str2={1}\", str1, str2); // 字符串格式化输出 Console.WriteLine(formatstr); StringBuilder的适用场景 StringBuilder适用于需要频繁修改字符串的场景，例如：\n大量字符串的连接 大量字符串的替换、插入等操作 例如：\nStringBuilder sb = new StringBuilder(\"hello\"); for (int i = 0; i \u003c 10000; i++) { sb.Append(\" world\"); // 大量字符串的连接 } string str = sb.ToString(); Console.WriteLine(str); sb.Replace(\"world\", \"csharp\"); // 大量字符串的替换 sb.Insert(0, \"welcome to \"); // 大量字符串的插入 string newstr = sb.ToString(); Console.WriteLine(newstr); 总之，需要根据实际的业务需求选择合适的字符串类型，避免不必要的性能开销。如果需要频繁修改字符串，建议使用StringBuilder，否则可以使用string。同时，对于大量的字符串操作，建议使用StringBuilder，可以避免频繁地创建和销毁string对象，提高性能。\n性能比较 对于字符串的操作，性能是一个非常重要的指标。下面通过实验对比string和StringBuilder的性能。\n实验方法 通过一个循环，分别使用string和StringBuilder对字符串进行10000次的连接操作，然后计算每次操作的耗时。具体代码如下：\nusing System; using System.Diagnostics; using System.Text; namespace StringTest { class Program { static void Main(string[] args) { // test string string str = \"\"; Stopwatch sw = new Stopwatch(); sw.Start(); for (int i = 0; i \u003c 10000; i++) { str += \"hello world\"; } sw.Stop(); Console.WriteLine(\"test string: \" + sw.ElapsedMilliseconds + \" ms\"); // test StringBuilder StringBuilder sb = new StringBuilder(); sw.Reset(); sw.Start(); for (int i = 0; i \u003c 10000; i++) { sb.Append(\"hello world\"); } sw.Stop(); Console.WriteLine(\"test StringBuilder: \" + sw.ElapsedMilliseconds + \" ms\"); } } } 比较结果 在我的机器上，运行以上代码，得到的实验结果如下：\ntest string: 235 ms test StringBuilder: 0 ms 可以看到，使用string进行字符串连接的耗时是235毫秒，而使用StringBuilder进行字符串连接的耗时只有0毫秒，相差非常明显。\n这是因为，string在进行字符串连接时，每次连接都会创建一个新的string对象，而原有的string对象则成为垃圾对象，需要进行垃圾回收。而StringBuilder则通过修改自身的内部缓冲区来进行字符串连接，避免了频繁创建和销毁string对象，因此速度更快。\n因此，对于大量字符串的连接操作，建议使用StringBuilder，可以显著提高性能。\n总结 本文介绍了C#编程中string和StringBuilder的区别、各自的应用场景和性能比较。\n可以看到，string适用于需要频繁读取而不需要修改的场景，例如字符串常量、比较、查找、截取、格式化输出等操作。而StringBuilder适用于需要频繁修改字符串的场景，例如大量字符串的连接、替换、插入等操作。\n在性能方面，使用string进行字符串连接的耗时是比较大的，而使用StringBuilder进行字符串连接的耗时则很小，可以显著提高性能。因此，对于大量字符串的连接操作，建议使用StringBuilder，避免不必要的性能开销。\n总之，根据实际的业务需求选择合适的字符串类型，可以有效地提高程序的性能和效率。\n参考文献 [1] Microsoft Docs. String Class. https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-6.0\n[2] Microsoft Docs. StringBuilder Class. https://docs.microsoft.com/en-us/dotnet/api/system.text.stringbuilder?view=net-6.0\n[3] C# Program Examples. Difference between String and StringBuilder in C#. https://www.c-sharpcorner.com/article/difference-between-string-and-stringbuilder-in-c-sharp/\n",
   "wordCount" : "3059",
@@ -272,10 +272,10 @@ if (!doNotTrack) {
         <header class="post-header">
             <div class="breadcrumbs"><a href="https://blog.themostmoon.today">🏠 主页</a>&nbsp;»&nbsp;<a href="https://blog.themostmoon.today/posts/">📚 文章</a>&nbsp;»&nbsp;<a href="https://blog.themostmoon.today/posts/tech/">👨🏻‍💻 技术</a></div>
             <h1 class="post-title">
-                C#中String和StringBuilder的区别
+                csharp | string vs stringbuilder
             </h1>
             <div class="post-description">
-                探究C#编程中string和StringBuilder的区别、各自的应用场景和性能比较
+                csharp中string和stringbuilder的区别、各自的应用场景和性能比较
             </div>
             <div class="post-meta"><style>
     i[id*="post_meta_style"] {
@@ -327,7 +327,7 @@ if (!doNotTrack) {
         <span class="fa fa-tags" style="opacity: 0.8"></span>
         <span>
             <span class="post-tags-meta">
-                <a href="https://blog.themostmoon.today/tags/csharp/" style="color: var(--secondary)!important;">CSharp</a>
+                <a href="https://blog.themostmoon.today/tags/csharp/" style="color: var(--secondary)!important;">csharp</a>
             </span>
         </span>
     </span>
@@ -626,10 +626,10 @@ if (!doNotTrack) {
         <footer class="post-footer">
             
 <nav class="paginav">
-  <a class="prev" href="https://blog.themostmoon.today/posts/tech/concluding-thoughts-on-software-architecture-design/">
+  <a class="prev" href="https://blog.themostmoon.today/posts/tech/architecture-design-patterns-principles/">
     <span class="title">« 上一页</span>
     <br>
-    <span>软件架构设计总结</span>
+    <span>架构设计 | 设计模式 &amp; 设计原则</span>
   </a>
 </nav>
 

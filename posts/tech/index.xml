@@ -13,16 +13,16 @@
     <language>zh-cn</language>
     <lastBuildDate>Thu, 23 Mar 2023 10:07:13 +0800</lastBuildDate><atom:link href="https://blog.themostmoon.today/posts/tech/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Mermaid使用指南---流程图</title>
+      <title>mermaid | 流程图</title>
       <link>https://blog.themostmoon.today/posts/tech/guide-to-using-mermaid-flowcharts/</link>
       <pubDate>Thu, 23 Mar 2023 10:07:13 +0800</pubDate>
       
       <guid>https://blog.themostmoon.today/posts/tech/guide-to-using-mermaid-flowcharts/</guid>
-      <description>本篇指南旨在介绍如何使用Mermaid创建流程图，并提供基本语法、样式和配置选项的详细说明。</description>
+      <description>使用Mermaid创建流程图的基本语法、样式和配置选项。</description>
     </item>
     
     <item>
-      <title>C#中ZipArchive的用法</title>
+      <title>csharp | ziparchive的用法</title>
       <link>https://blog.themostmoon.today/posts/tech/usage-of-ziparchive-in-csharp/</link>
       <pubDate>Mon, 20 Mar 2023 09:12:41 +0800</pubDate>
       
@@ -31,21 +31,21 @@
     </item>
     
     <item>
-      <title>软件架构设计总结</title>
-      <link>https://blog.themostmoon.today/posts/tech/concluding-thoughts-on-software-architecture-design/</link>
+      <title>架构设计 | 设计模式 &amp; 设计原则</title>
+      <link>https://blog.themostmoon.today/posts/tech/architecture-design-patterns-principles/</link>
       <pubDate>Fri, 17 Mar 2023 15:04:00 +0800</pubDate>
       
-      <guid>https://blog.themostmoon.today/posts/tech/concluding-thoughts-on-software-architecture-design/</guid>
+      <guid>https://blog.themostmoon.today/posts/tech/architecture-design-patterns-principles/</guid>
       <description>第一原理、整洁代码、编程范式、设计原则及设计模式 </description>
     </item>
     
     <item>
-      <title>C#中String和StringBuilder的区别</title>
+      <title>csharp | string vs stringbuilder</title>
       <link>https://blog.themostmoon.today/posts/tech/difference-between-string-and-stringbuilder-in-csharp/</link>
       <pubDate>Fri, 17 Mar 2023 12:41:22 +0800</pubDate>
       
       <guid>https://blog.themostmoon.today/posts/tech/difference-between-string-and-stringbuilder-in-csharp/</guid>
-      <description>探究C#编程中string和StringBuilder的区别、各自的应用场景和性能比较</description>
+      <description>csharp中string和stringbuilder的区别、各自的应用场景和性能比较</description>
     </item>
     
   </channel>

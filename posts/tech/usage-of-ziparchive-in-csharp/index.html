@@ -5,8 +5,8 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
-<title>C#中ZipArchive的用法 | Edison&#39;s Blog</title>
-<meta name="keywords" content="CSharp">
+<title>csharp | ziparchive的用法 | Edison&#39;s Blog</title>
+<meta name="keywords" content="csharp, ziparchive">
 <meta name="description" content="ZipArchive的基础用法：创建、读取和修改文件">
 <meta name="author" content="Edison">
 <link rel="canonical" href="https://blog.themostmoon.today/posts/tech/usage-of-ziparchive-in-csharp/">
@@ -86,7 +86,7 @@ if (!doNotTrack) {
 	
 	ga('send', 'pageview');
 }
-</script><meta property="og:title" content="C#中ZipArchive的用法" />
+</script><meta property="og:title" content="csharp | ziparchive的用法" />
 <meta property="og:description" content="ZipArchive的基础用法：创建、读取和修改文件" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://blog.themostmoon.today/posts/tech/usage-of-ziparchive-in-csharp/" /><meta property="og:image" content="https://blog.themostmoon.today/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E"/><meta property="article:section" content="posts" />
@@ -96,7 +96,7 @@ if (!doNotTrack) {
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://blog.themostmoon.today/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E"/>
 
-<meta name="twitter:title" content="C#中ZipArchive的用法"/>
+<meta name="twitter:title" content="csharp | ziparchive的用法"/>
 <meta name="twitter:description" content="ZipArchive的基础用法：创建、读取和修改文件"/>
 
 
@@ -122,7 +122,7 @@ if (!doNotTrack) {
     {
       "@type": "ListItem",
       "position":  4 ,
-      "name": "C#中ZipArchive的用法",
+      "name": "csharp | ziparchive的用法",
       "item": "https://blog.themostmoon.today/posts/tech/usage-of-ziparchive-in-csharp/"
     }
   ]
@@ -132,11 +132,11 @@ if (!doNotTrack) {
 {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  "headline": "C#中ZipArchive的用法",
-  "name": "C#中ZipArchive的用法",
+  "headline": "csharp | ziparchive的用法",
+  "name": "csharp | ziparchive的用法",
   "description": "ZipArchive的基础用法：创建、读取和修改文件",
   "keywords": [
-    "CSharp"
+    "csharp", "ziparchive"
   ],
   "articleBody": "C# 的 System.IO.Compression 命名空间中提供了 ZipArchive 类，它可以用于创建、打开和操作 ZIP 文件。下面是一些常见的用法示例：\n创建ZIP文件 要创建一个 ZIP 文件，需要使用 ZipArchive 类的构造函数来创建一个实例，并将其与输出流（例如文件流）相关联。然后使用 CreateEntry 方法在 ZIP 文件中添加条目。\nusing System.IO.Compression; using var stream = new FileStream(\"example.zip\", FileMode.Create); using var zip = new ZipArchive(stream, ZipArchiveMode.Create); var entry = zip.CreateEntry(\"example.txt\"); using var writer = new StreamWriter(entry.Open()); writer.Write(\"Hello world!\"); 从ZIP文件中读取条目 要从 ZIP 文件中读取条目，需要使用 ZipArchive 类的构造函数来创建一个实例，并将其与输入流（例如文件流）相关联。然后使用 GetEntry 方法来获取条目，并使用 Open 方法来获取条目的输入流。\nusing System.IO.Compression; using var stream = new FileStream(\"example.zip\", FileMode.Open); using var zip = new ZipArchive(stream, ZipArchiveMode.Read); foreach (var entry in zip.Entries) { Console.WriteLine($\"Entry:{entry.FullName},Size:{entry.Length} bytes\"); using var reader = new StreamReader(entry.Open()); Console.WriteLine(reader.ReadToEnd()); } 修改 ZIP 文件 要修改一个 ZIP 文件，可以使用 ZipArchive 类的 CreateEntry 方法创建新条目，或者使用 GetEntry 方法获取现有条目并修改其内容。可以使用 Delete 方法删除现有条目。\nusing System.IO.Compression; using var stream = new FileStream(\"example.zip\", FileMode.OpenOrCreate); using var zip = new ZipArchive(stream, ZipArchiveMode.Update); // 添加一个新的条目 var entry1 = zip.CreateEntry(\"new.txt\"); using (var writer = new StreamWriter(entry1.Open())) { writer.Write(\"This is a new file.\"); } // 修改一个已存在的条目 var entry2 = zip.GetEntry(\"example.txt\"); if (entry2 != null) { using var writer = new StreamWriter(entry2.Open()); writer.Write(\"This file has been modified.\"); } // 删除一个已存在的条目 var entry3 = zip.GetEntry(\"old.txt\"); entry3?.Delete(); ",
   "wordCount" : "416",
@@ -272,7 +272,7 @@ if (!doNotTrack) {
         <header class="post-header">
             <div class="breadcrumbs"><a href="https://blog.themostmoon.today">🏠 主页</a>&nbsp;»&nbsp;<a href="https://blog.themostmoon.today/posts/">📚 文章</a>&nbsp;»&nbsp;<a href="https://blog.themostmoon.today/posts/tech/">👨🏻‍💻 技术</a></div>
             <h1 class="post-title">
-                C#中ZipArchive的用法
+                csharp | ziparchive的用法
             </h1>
             <div class="post-description">
                 ZipArchive的基础用法：创建、读取和修改文件
@@ -327,7 +327,7 @@ if (!doNotTrack) {
         <span class="fa fa-tags" style="opacity: 0.8"></span>
         <span>
             <span class="post-tags-meta">
-                <a href="https://blog.themostmoon.today/tags/csharp/" style="color: var(--secondary)!important;">CSharp</a>
+                <a href="https://blog.themostmoon.today/tags/csharp/" style="color: var(--secondary)!important;">csharp</a>
             </span>
         </span>
     </span>
@@ -515,12 +515,12 @@ if (!doNotTrack) {
   <a class="prev" href="https://blog.themostmoon.today/posts/tech/guide-to-using-mermaid-flowcharts/">
     <span class="title">« 上一页</span>
     <br>
-    <span>Mermaid使用指南---流程图</span>
+    <span>mermaid | 流程图</span>
   </a>
-  <a class="next" href="https://blog.themostmoon.today/posts/tech/concluding-thoughts-on-software-architecture-design/">
+  <a class="next" href="https://blog.themostmoon.today/posts/tech/architecture-design-patterns-principles/">
     <span class="title">下一页 »</span>
     <br>
-    <span>软件架构设计总结</span>
+    <span>架构设计 | 设计模式 &amp; 设计原则</span>
   </a>
 </nav>
 

@@ -5,9 +5,9 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
-<title>Mermaid使用指南---流程图 | Edison&#39;s Blog</title>
-<meta name="keywords" content="Mermaid">
-<meta name="description" content="本篇指南旨在介绍如何使用Mermaid创建流程图，并提供基本语法、样式和配置选项的详细说明。">
+<title>mermaid | 流程图 | Edison&#39;s Blog</title>
+<meta name="keywords" content="mermaid, flowchart">
+<meta name="description" content="使用Mermaid创建流程图的基本语法、样式和配置选项。">
 <meta name="author" content="Edison">
 <link rel="canonical" href="https://blog.themostmoon.today/posts/tech/guide-to-using-mermaid-flowcharts/">
 <meta name="google-site-verification" content="6A-1RsLBWSgG_uBmVVQzBmGE8k2mxcJwZErLRJMpk4I">
@@ -88,8 +88,8 @@ if (!doNotTrack) {
 	
 	ga('send', 'pageview');
 }
-</script><meta property="og:title" content="Mermaid使用指南---流程图" />
-<meta property="og:description" content="本篇指南旨在介绍如何使用Mermaid创建流程图，并提供基本语法、样式和配置选项的详细说明。" />
+</script><meta property="og:title" content="mermaid | 流程图" />
+<meta property="og:description" content="使用Mermaid创建流程图的基本语法、样式和配置选项。" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://blog.themostmoon.today/posts/tech/guide-to-using-mermaid-flowcharts/" /><meta property="og:image" content="https://blog.themostmoon.today/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E"/><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2023-03-23T10:07:13+08:00" />
@@ -98,8 +98,8 @@ if (!doNotTrack) {
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://blog.themostmoon.today/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E"/>
 
-<meta name="twitter:title" content="Mermaid使用指南---流程图"/>
-<meta name="twitter:description" content="本篇指南旨在介绍如何使用Mermaid创建流程图，并提供基本语法、样式和配置选项的详细说明。"/>
+<meta name="twitter:title" content="mermaid | 流程图"/>
+<meta name="twitter:description" content="使用Mermaid创建流程图的基本语法、样式和配置选项。"/>
 
 
 <script type="application/ld+json">
@@ -124,7 +124,7 @@ if (!doNotTrack) {
     {
       "@type": "ListItem",
       "position":  4 ,
-      "name": "Mermaid使用指南---流程图",
+      "name": "mermaid | 流程图",
       "item": "https://blog.themostmoon.today/posts/tech/guide-to-using-mermaid-flowcharts/"
     }
   ]
@@ -134,11 +134,11 @@ if (!doNotTrack) {
 {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  "headline": "Mermaid使用指南---流程图",
-  "name": "Mermaid使用指南---流程图",
-  "description": "本篇指南旨在介绍如何使用Mermaid创建流程图，并提供基本语法、样式和配置选项的详细说明。",
+  "headline": "mermaid | 流程图",
+  "name": "mermaid | 流程图",
+  "description": "使用Mermaid创建流程图的基本语法、样式和配置选项。",
   "keywords": [
-    "Mermaid"
+    "mermaid", "flowchart"
   ],
   "articleBody": "一个节点 flowchart LR 北京 flowchart LR 北京 一个带文本的节点 flowchart LR 北京[北京是中国的首都] flowchart LR 北京[北京是中国的首都] 流程图方向 从左到右 flowchart LR 北京--\u003e上海 flowchart LR 北京--\u003e上海 从右到左 flowchart RL 北京--\u003e上海 flowchart RL 北京--\u003e上海 从上到下 flowchart TB 北京--\u003e上海 flowchart TB 北京--\u003e上海 从下到上 flowchart BT 北京--\u003e上海 flowchart BT 北京--\u003e上海 节点样式 圆角节点 flowchart LR 北京(北京是中国的首都) flowchart LR 北京(北京是中国的首都) 半圆弧节点 flowchart LR 开始([开始]) flowchart LR 开始([开始流程]) 子流程节点 flowchart LR 子流程[[这是一个子流程]] flowchart LR 子流程[[这是一个子流程]] 圆柱形节点 flowchart LR 数据库[(数据库)] flowchart LR 数据库[(数据库)] 圆形节点 flowchart LR 圆形((这是一个圆形)) flowchart LR 圆形((这是一个圆形)) 非对称形状节点 flowchart LR 非对称形状\u003e这是一个非对称形状] flowchart LR 非对称形状\u003e这是一个非对称形状] 菱形节点 flowchart LR 菱形{这是一个菱形} flowchart LR 菱形{这是一个菱形} 六边形节点 flowchart LR 六边形{{这是一个六边形}} flowchart LR 六边形{{这是一个六边形}} 平行四边形节点 flowchart LR 平行四边形[/这是一个平行四边形/] flowchart LR 平行四边形[/这是一个平行四边形/] flowchart LR 平行四边形[\\这是一个平行四边形\\] flowchart LR 平行四边形[\\这是一个平行四边形\\] 梯形节点 flowchart LR 梯形[/这是一个梯形\\] flowchart LR 梯形[/这是一个梯形\\] flowchart LR 梯形[\\这是一个梯形/] flowchart LR 梯形[\\这是一个梯形/] 双重圆环节点 flowchart LR 双重圆环(((这是一个双重圆环))) flowchart LR 双重圆环(((这是一个双重圆环))) 节点之间的链接 带箭头的链接 flowchart LR 北京--\u003e上海 flowchart LR 北京--\u003e上海 开放的链接 flowchart LR 北京---上海 flowchart LR 北京---上海 链接上的文字 flowchart LR 北京---|G30|上海 flowchart LR 北京---|G30|上海 带有箭头和文本的链接 flowchart LR 北京--\u003e|G30|上海 flowchart LR 北京--\u003e|G30|上海 虚线链接 flowchart LR 北京-.-\u003e上海 flowchart LR 北京-.-\u003e上海 带文本的虚线链接 flowchart LR 北京-.-\u003e|G30|上海 flowchart LR 北京-.-\u003e|G30|上海 加粗链接 flowchart LR 北京==\u003e上海 flowchart LR 北京==\u003e上海 带文本的加粗链接 flowchart LR 北京==\u003e|G30|上海 flowchart LR 北京==\u003e|G30|上海 链式链接 flowchart LR 北京--\u003e上海--\u003e广州 flowchart LR 北京--\u003e|G30|上海--\u003e|G40|广州 flowchart LR 北京--\u003e上海 \u0026 杭州--\u003e广州 flowchart LR 北京--\u003e上海 \u0026 杭州--\u003e广州 flowchart LR 上海 \u0026 杭州--\u003e广州 \u0026 深圳 flowchart TB 上海 \u0026 杭州--\u003e广州 \u0026 深圳 新型箭头链接 flowchart LR 北京 --o 上海 --x 广州 flowchart LR 北京 --o 上海 --x 广州 双向箭头 flowchart LR 北京\u003c--\u003e上海o--o广州x--x深圳 flowchart LR 北京 \u003c--\u003e 上海 o--o 广州 x--x 深圳 链接的最小长度 flowchart TB A[开始] --\u003e B[输入用户名和密码] B --\u003e C{认证成功 ?} C --\u003e|是| D[登录成功] C --\u003e|否| E[登录失败] D --\u003e F[进入系统] F ----\u003e I E --\u003e G{是否重新登录 ?} G --\u003e|是| B G --\u003e|否| H[退出系统] H --\u003e I[结束] flowchart TB A[开始] --\u003e B[输入用户名和密码] B --\u003e C{认证成功 ?} C --\u003e|是| D[登录成功] C --\u003e|否| E[登录失败] D --\u003e F[进入系统] F ----\u003e I E --\u003e G{是否重新登录 ?} G --\u003e|是| B G --\u003e|否| H[退出系统] H --\u003e I[结束] 特殊字符 flowchart LR A[\"这是一个(括号)字符\"] flowchart LR A[\"这是一个(括号)字符\"] 转义字符的代码 flowchart LR A[\"这是一个双引号:#quot;\"] --\u003e B[\"这是一个单引号:#39;\"] --\u003e C[\"这是一个爱心:#9829;\"] flowchart LR A[\"这是一个双引号:#quot;\"] --\u003e B[\"这是一个单引号:#39;\"] --\u003e C[\"这是一个爱心:#9829;\"] ",
   "wordCount" : "1502",
@@ -277,10 +277,10 @@ if (!doNotTrack) {
         <header class="post-header">
             <div class="breadcrumbs"><a href="https://blog.themostmoon.today">🏠 主页</a>&nbsp;»&nbsp;<a href="https://blog.themostmoon.today/posts/">📚 文章</a>&nbsp;»&nbsp;<a href="https://blog.themostmoon.today/posts/tech/">👨🏻‍💻 技术</a></div>
             <h1 class="post-title">
-                Mermaid使用指南---流程图
+                mermaid | 流程图
             </h1>
             <div class="post-description">
-                本篇指南旨在介绍如何使用Mermaid创建流程图，并提供基本语法、样式和配置选项的详细说明。
+                使用Mermaid创建流程图的基本语法、样式和配置选项。
             </div>
             <div class="post-meta"><style>
     i[id*="post_meta_style"] {
@@ -332,7 +332,7 @@ if (!doNotTrack) {
         <span class="fa fa-tags" style="opacity: 0.8"></span>
         <span>
             <span class="post-tags-meta">
-                <a href="https://blog.themostmoon.today/tags/mermaid/" style="color: var(--secondary)!important;">Mermaid</a>
+                <a href="https://blog.themostmoon.today/tags/mermaid/" style="color: var(--secondary)!important;">mermaid</a>
             </span>
         </span>
     </span>
@@ -903,7 +903,7 @@ A["这是一个双引号:#quot;"] --> B["这是一个单引号:#39;"] --> C["这
   <a class="next" href="https://blog.themostmoon.today/posts/tech/usage-of-ziparchive-in-csharp/">
     <span class="title">下一页 »</span>
     <br>
-    <span>C#中ZipArchive的用法</span>
+    <span>csharp | ziparchive的用法</span>
   </a>
 </nav>
 
