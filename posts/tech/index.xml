@@ -11,7 +11,16 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 05 Apr 2023 06:51:31 +0800</lastBuildDate><atom:link href="https://blog.themostmoon.today/posts/tech/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 05 Apr 2023 20:33:30 +0800</lastBuildDate><atom:link href="https://blog.themostmoon.today/posts/tech/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Alist | 在线播放服务搭建</title>
+      <link>https://blog.themostmoon.today/posts/tech/build-online-player-alist/</link>
+      <pubDate>Wed, 05 Apr 2023 20:33:30 +0800</pubDate>
+      
+      <guid>https://blog.themostmoon.today/posts/tech/build-online-player-alist/</guid>
+      <description>如何利用小雅docker搭建在线播放服务</description>
+    </item>
+    
     <item>
       <title>vaultwarden  | 个人密码管理器搭建</title>
       <link>https://blog.themostmoon.today/posts/tech/establishing-bitwarden-server/</link>

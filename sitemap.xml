@@ -3,18 +3,24 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://blog.themostmoon.today/posts/tech/</loc>
-    <lastmod>2023-04-05T06:51:31+08:00</lastmod>
+    <lastmod>2023-04-05T20:33:30+08:00</lastmod>
   </url><url>
     <loc>https://blog.themostmoon.today/posts/</loc>
-    <lastmod>2023-04-05T06:51:31+08:00</lastmod>
+    <lastmod>2023-04-05T20:33:30+08:00</lastmod>
   </url><url>
     <loc>https://blog.themostmoon.today/tags/</loc>
-    <lastmod>2023-04-05T06:51:31+08:00</lastmod>
+    <lastmod>2023-04-05T20:33:30+08:00</lastmod>
   </url><url>
-    <loc>https://blog.themostmoon.today/tags/bitwarden/</loc>
-    <lastmod>2023-04-05T06:51:31+08:00</lastmod>
+    <loc>https://blog.themostmoon.today/tags/alist/</loc>
+    <lastmod>2023-04-05T20:33:30+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.themostmoon.today/posts/tech/build-online-player-alist/</loc>
+    <lastmod>2023-04-05T20:33:30+08:00</lastmod>
   </url><url>
     <loc>https://blog.themostmoon.today/</loc>
+    <lastmod>2023-04-05T20:33:30+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.themostmoon.today/tags/bitwarden/</loc>
     <lastmod>2023-04-05T06:51:31+08:00</lastmod>
   </url><url>
     <loc>https://blog.themostmoon.today/posts/tech/establishing-bitwarden-server/</loc>
