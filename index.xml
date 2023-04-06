@@ -2,76 +2,76 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Edison&#39;s Blog</title>
-    <link>https://blog.themostmoon.today/</link>
+    <link>https://edinik.com/</link>
     <description>Recent content on Edison&#39;s Blog</description>
     <image>
       <title>Edison&#39;s Blog</title>
-      <url>https://blog.themostmoon.today/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://blog.themostmoon.today/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://edinik.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://edinik.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 05 Apr 2023 20:33:30 +0800</lastBuildDate><atom:link href="https://blog.themostmoon.today/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 05 Apr 2023 20:33:30 +0800</lastBuildDate><atom:link href="https://edinik.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Alist | 在线播放服务搭建</title>
-      <link>https://blog.themostmoon.today/posts/tech/build-online-player-alist/</link>
+      <link>https://edinik.com/posts/tech/build-online-player-alist/</link>
       <pubDate>Wed, 05 Apr 2023 20:33:30 +0800</pubDate>
       
-      <guid>https://blog.themostmoon.today/posts/tech/build-online-player-alist/</guid>
+      <guid>https://edinik.com/posts/tech/build-online-player-alist/</guid>
       <description>如何利用小雅docker搭建在线播放服务</description>
     </item>
     
     <item>
       <title>vaultwarden  | 个人密码管理器搭建</title>
-      <link>https://blog.themostmoon.today/posts/tech/establishing-bitwarden-server/</link>
+      <link>https://edinik.com/posts/tech/establishing-bitwarden-server/</link>
       <pubDate>Wed, 05 Apr 2023 06:51:31 +0800</pubDate>
       
-      <guid>https://blog.themostmoon.today/posts/tech/establishing-bitwarden-server/</guid>
+      <guid>https://edinik.com/posts/tech/establishing-bitwarden-server/</guid>
       <description>如何通过vaultwarden搭建个人密码管理器</description>
     </item>
     
     <item>
       <title>mermaid | 流程图</title>
-      <link>https://blog.themostmoon.today/posts/tech/guide-to-using-mermaid-flowcharts/</link>
+      <link>https://edinik.com/posts/tech/guide-to-using-mermaid-flowcharts/</link>
       <pubDate>Thu, 23 Mar 2023 10:07:13 +0800</pubDate>
       
-      <guid>https://blog.themostmoon.today/posts/tech/guide-to-using-mermaid-flowcharts/</guid>
+      <guid>https://edinik.com/posts/tech/guide-to-using-mermaid-flowcharts/</guid>
       <description>使用Mermaid创建流程图的基本语法、样式和配置选项。</description>
     </item>
     
     <item>
       <title>🤝 友链</title>
-      <link>https://blog.themostmoon.today/links/</link>
+      <link>https://edinik.com/links/</link>
       <pubDate>Wed, 22 Mar 2023 03:29:57 +0800</pubDate>
       
-      <guid>https://blog.themostmoon.today/links/</guid>
+      <guid>https://edinik.com/links/</guid>
       <description>Edison&amp;#39;s Blog 一个记录技术、阅读、生活的博客 Peter&amp;#39;s Blog 累点滴技术，品百味人生。 👉友链格式 名称： Edison&amp;rsquo;s Blog 网址： https://blog.themostmoon.today 图标： https://blog.themostmoon.today/img/logo.gif 描述： 一个记录技术、阅读、生活的博客 👉友链申请要求 秉承互换友链原则、文章定期更新、不能有太多广告、个人描述字数控制在15字内</description>
     </item>
     
     <item>
       <title>🙋🏻‍♂️ 关于</title>
-      <link>https://blog.themostmoon.today/about/</link>
+      <link>https://edinik.com/about/</link>
       <pubDate>Tue, 21 Mar 2023 23:18:23 +0800</pubDate>
       
-      <guid>https://blog.themostmoon.today/about/</guid>
+      <guid>https://edinik.com/about/</guid>
       <description>英文名: Edison Chu 职业: 程序员 爱好: 摄影、爬山、骑行</description>
     </item>
     
     <item>
       <title>csharp | ziparchive的用法</title>
-      <link>https://blog.themostmoon.today/posts/tech/usage-of-ziparchive-in-csharp/</link>
+      <link>https://edinik.com/posts/tech/usage-of-ziparchive-in-csharp/</link>
       <pubDate>Mon, 20 Mar 2023 09:12:41 +0800</pubDate>
       
-      <guid>https://blog.themostmoon.today/posts/tech/usage-of-ziparchive-in-csharp/</guid>
+      <guid>https://edinik.com/posts/tech/usage-of-ziparchive-in-csharp/</guid>
       <description>ZipArchive的基础用法：创建、读取和修改文件</description>
     </item>
     
     <item>
       <title>csharp | string vs stringbuilder</title>
-      <link>https://blog.themostmoon.today/posts/tech/difference-between-string-and-stringbuilder-in-csharp/</link>
+      <link>https://edinik.com/posts/tech/difference-between-string-and-stringbuilder-in-csharp/</link>
       <pubDate>Fri, 17 Mar 2023 12:41:22 +0800</pubDate>
       
-      <guid>https://blog.themostmoon.today/posts/tech/difference-between-string-and-stringbuilder-in-csharp/</guid>
+      <guid>https://edinik.com/posts/tech/difference-between-string-and-stringbuilder-in-csharp/</guid>
       <description>csharp中string和stringbuilder的区别、各自的应用场景和性能比较</description>
     </item>
     
