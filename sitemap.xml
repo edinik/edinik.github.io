@@ -2,22 +2,31 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://edinik.com/posts/tech/</loc>
-    <lastmod>2023-04-05T20:33:30+08:00</lastmod>
+    <loc>https://edinik.com/posts/life/</loc>
+    <lastmod>2023-04-07T22:32:27+08:00</lastmod>
   </url><url>
     <loc>https://edinik.com/posts/</loc>
-    <lastmod>2023-04-05T20:33:30+08:00</lastmod>
+    <lastmod>2023-04-07T22:32:27+08:00</lastmod>
   </url><url>
     <loc>https://edinik.com/tags/</loc>
+    <lastmod>2023-04-07T22:32:27+08:00</lastmod>
+  </url><url>
+    <loc>https://edinik.com/</loc>
+    <lastmod>2023-04-07T22:32:27+08:00</lastmod>
+  </url><url>
+    <loc>https://edinik.com/tags/table-tennis/</loc>
+    <lastmod>2023-04-07T22:32:27+08:00</lastmod>
+  </url><url>
+    <loc>https://edinik.com/posts/life/table-tennis-serve-receive/</loc>
+    <lastmod>2023-04-07T22:32:27+08:00</lastmod>
+  </url><url>
+    <loc>https://edinik.com/posts/tech/</loc>
     <lastmod>2023-04-05T20:33:30+08:00</lastmod>
   </url><url>
     <loc>https://edinik.com/tags/alist/</loc>
     <lastmod>2023-04-05T20:33:30+08:00</lastmod>
   </url><url>
     <loc>https://edinik.com/posts/tech/build-online-player-alist/</loc>
-    <lastmod>2023-04-05T20:33:30+08:00</lastmod>
-  </url><url>
-    <loc>https://edinik.com/</loc>
     <lastmod>2023-04-05T20:33:30+08:00</lastmod>
   </url><url>
     <loc>https://edinik.com/tags/bitwarden/</loc>
@@ -48,8 +57,6 @@
     <lastmod>2023-03-17T12:41:22+08:00</lastmod>
   </url><url>
     <loc>https://edinik.com/archives/</loc>
-  </url><url>
-    <loc>https://edinik.com/posts/life/</loc>
   </url><url>
     <loc>https://edinik.com/posts/read/</loc>
   </url><url>

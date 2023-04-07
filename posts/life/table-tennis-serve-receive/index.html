@@ -5,11 +5,11 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
-<title>Alist | 在线播放服务搭建 | Edison&#39;s Blog</title>
-<meta name="keywords" content="alist, 在线播放">
-<meta name="description" content="如何利用小雅docker搭建在线播放服务">
+<title>乒乓球 | 接发球 | Edison&#39;s Blog</title>
+<meta name="keywords" content="">
+<meta name="description" content="乒乓球如何更好地接发球">
 <meta name="author" content="Edison">
-<link rel="canonical" href="https://edinik.com/posts/tech/build-online-player-alist/">
+<link rel="canonical" href="https://edinik.com/posts/life/table-tennis-serve-receive/">
 <meta name="google-site-verification" content="6A-1RsLBWSgG_uBmVVQzBmGE8k2mxcJwZErLRJMpk4I">
 <meta name="baidu-site-verification" content="codeva-I9cG7LIaz4">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.e6d4a5f9f1949321f80c3397fc340b85fa62e28f17dd6d7bb02e0c64514109fc.css" integrity="sha256-5tSl&#43;fGUkyH4DDOX/DQLhfpi4o8X3W17sC4MZFFBCfw=" rel="preload stylesheet" as="style">
@@ -88,18 +88,18 @@ if (!doNotTrack) {
 	
 	ga('send', 'pageview');
 }
-</script><meta property="og:title" content="Alist | 在线播放服务搭建" />
-<meta property="og:description" content="如何利用小雅docker搭建在线播放服务" />
+</script><meta property="og:title" content="乒乓球 | 接发球" />
+<meta property="og:description" content="乒乓球如何更好地接发球" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://edinik.com/posts/tech/build-online-player-alist/" /><meta property="og:image" content="https://edinik.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E"/><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2023-04-05T20:33:30+08:00" />
-<meta property="article:modified_time" content="2023-04-05T20:33:30+08:00" /><meta property="og:site_name" content="Edison" />
+<meta property="og:url" content="https://edinik.com/posts/life/table-tennis-serve-receive/" /><meta property="og:image" content="https://edinik.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-04-07T22:32:27+08:00" />
+<meta property="article:modified_time" content="2023-04-07T22:32:27+08:00" /><meta property="og:site_name" content="Edison" />
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://edinik.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E"/>
 
-<meta name="twitter:title" content="Alist | 在线播放服务搭建"/>
-<meta name="twitter:description" content="如何利用小雅docker搭建在线播放服务"/>
+<meta name="twitter:title" content="乒乓球 | 接发球"/>
+<meta name="twitter:description" content="乒乓球如何更好地接发球"/>
 
 
 <script type="application/ld+json">
@@ -118,14 +118,14 @@ if (!doNotTrack) {
         {
           "@type": "ListItem",
           "position":  3 ,
-          "name": "👨🏻‍💻 技术",
-          "item": "https://edinik.com/posts/tech/"
+          "name": "☕ 生活",
+          "item": "https://edinik.com/posts/life/"
         }, 
     {
       "@type": "ListItem",
       "position":  4 ,
-      "name": "Alist | 在线播放服务搭建",
-      "item": "https://edinik.com/posts/tech/build-online-player-alist/"
+      "name": "乒乓球 | 接发球",
+      "item": "https://edinik.com/posts/life/table-tennis-serve-receive/"
     }
   ]
 }
@@ -134,24 +134,24 @@ if (!doNotTrack) {
 {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  "headline": "Alist | 在线播放服务搭建",
-  "name": "Alist | 在线播放服务搭建",
-  "description": "如何利用小雅docker搭建在线播放服务",
+  "headline": "乒乓球 | 接发球",
+  "name": "乒乓球 | 接发球",
+  "description": "乒乓球如何更好地接发球",
   "keywords": [
-    "alist", "在线播放"
+    ""
   ],
-  "articleBody": "云服务器/VPS 的配置 1、方式一：使用一键脚本安装 缺点：无法自定义配置，只能使用脚本默认设置\n1、推荐非host模式下执行以下脚本（可以共享主机端口）\nhost模式无法映射docker端口到主机 非host模式下会将docker的80端口映射到主机的8443端口\n# 非host模式安装 bash -c \"$(curl -s http://docker.xiaoya.pro/update_new.sh)\" # host模式安装 bash -c \"$(curl -s http://docker.xiaoya.pro/update_new.sh)\" -s host 2、输入阿里云盘的Token\n阿里云盘的Token获取教程\n3、输入阿里云盘Open的Token\n阿里云盘Open的Token获取教程\n4、设置转存目录ID\n打开阿里云盘 进入转存目录 拷贝地址栏中fold/后一串ID 5、设置强制登录\n也可以通过vim等编辑器创建一个guestlogin.txt文件，内容可为空 若需要取消强制登录，则可以删除guestlogin.txt文件\ntouch /etc/xiaoya/guestlogin.txt 6、设置自定义密码\n默认用户名：dav\nvim /etc/xiaoya/guestpass.txt 在guestpass.txt文件中输入自定义密码，最好不要包含特殊字符\n7、重启docker\nsudo systemctl restart docker 8、通过Cloudfare或其它DNS解析服务将域名解析到服务器\n9、通过宝塔界面将域名反代到8443端口，并开启https\n10、访问域名即可\n网站需要对资源进行索引，大概会持续十几分钟\n2、方式二：手动安装 1、拉取xiaoya的docker\nrm -rf /etc/xiaoyaAlist/mytoken.txt # 删除旧的token文件 mkdir -p /etc/xiaoyaAlist # 创建配置文件夹 touch /etc/xiaoyaAlist/guestlogin.txt # 创建强制登录文件，若不需要强制登录则不创建该文件 touch /etc/xiaoyaAlist/guestpass.txt # 创建自定义密码文件 touch /etc/xiaoyaAlist/mytoken.txt # 创建token文件 touch /etc/xiaoyaAlist/myopentoken.txt # 创建open token文件 touch /etc/xiaoyaAlist/temp_transfer_folder_id.txt # 创建转存目录ID文件 # 格式：\"xxxxxxxx\" \"yyyyyyyy\" 账号可以是邮箱和手机号，手机号前面要加区号，也就是 \"+86xxxx\" 这样，注册如果用谷歌快捷方式登入的话是无法使用谷歌邮箱登入的（alist不支持） touch /etc/xiaoyaAlist/pikpak.txt touch /etc/xiaoyaAlist/show_my_ali.txt # 通过此文件的存在与否来决定是否加载自己的阿里云盘，若不需要加载则不创建该文件 # 配合 TVBOX的alist搜索，配置地址 https://你的域名/tvbox/my.json，格式：https://你的域名 （最后不要加 /) touch /etc/xiaoyaAlist/docker_address.txt # 挂载自己一个或多个 pikpak账号，挂载名 \"账号\" \"密码\" ，用空格分开（pikpak2 “abc@hotmail.com\" \"123456\"），每行一个 挂载名不能有空格 touch /etc/xiaoyaAlist/pikpak_list.txt # 挂载自己一个或多个 pikpak分享 格式：挂载名 分享ID 分享目录 ，用空格分开（赵霸道 VNRT8Wr8BGyw1kt1HkijKR4Qo1 VNQf6ZmWE3pVWGpuFriGqyPzo1），每行一个 挂载名不能有空格 touch /etc/xiaoyaAlist/pikpakshare_list.txt # 挂载自定义分享ID 格式：挂载名 阿里分享ID(/folder前) 文件folder id(/folder后)，用空格分开，每行一个 (120T电影资源 ZpevUcDZ2Pn 636c8ba0703acd24cd44b19dd00312ef15b1e8) 挂载名不能有空格 touch /etc/xiaoyaAlist/pikpakshare_list.txt docker stop xiaoyaAlist # 停止旧的docker docker rm xiaoyaAlist # 删除旧的docker docker pull xiaoyaliu/alist:latest # 拉取最新的docker # 将配置文件夹/etc/xiaoyaAlist挂载到docker内部的/data文件夹,将docker的80端口映射到主机的8888端口,设置自动重启,设置docker名称为xiaoyaAlist,并启动docker docker run -d -p 8888:80 -v /etc/xiaoyaAlist:/data --restart=always --name=xiaoyaAlist xiaoyaliu/alist:latest 2、设置阿里云盘Token\n阿里云盘的Token获取教程\nvim /etc/xiaoyaAlist/mytoken.txt 3、设置阿里云盘Open Token\n阿里云盘Open的Token获取教程\nvim /etc/xiaoyaAlist/myopentoken.txt 4、设置转存目录ID\n打开阿里云盘 进入转存目录 拷贝地址栏中fold/后一串ID vim /etc/xiaoyaAlist/temp_transfer_folder_id.txt 5、设置自定义密码\n默认用户名：dav\nvim /etc/xiaoyaAlist/guestpass.txt 在guestpass.txt文件中输入自定义密码，最好不要包含特殊字符\n6、重启docker\nsudo systemctl restart docker 7、通过Cloudfare或其它DNS解析服务将域名解析到服务器\n8、通过宝塔界面将域名反代到8443端口，并开启https\n9、访问域名即可\n网站需要对资源进行索引，大概会持续十几分钟\n定时与网站同步数据 crontab -e 0 6 * * * docker restart xiaoya 如何使用 1、potplayer 2、nplayer 参考资料 [1] 如何设置xiaoya的docker [2] AList文档\n",
-  "wordCount" : "1614",
+  "articleBody": "\u003c!DOCTYPE HTML\u003e 接发球 长球和短球 观察对方发球的第一个落点，如果比较靠近台内的话，就是短球，如果比较靠近台外的话，就是长球。\n旋转的判断 旋转球 在对方球拍接触球时的一刹那，观察发力方向。\n如果接触球时，没有发力摩擦，只是碰过来的，那么就是没有加转的球。 如果接触球时，有发力摩擦，那么就是有加转的球。 侧旋球 三个特征：\n1、看发力方向：\n往上发力，则侧上旋 往下发力，则侧下旋 2、看第一个落点之后的弧线：\n有点往上蹦，弧线比较高的为侧上旋 贴着台面运行，弧线比较低的为侧下旋 3、看到己方台面落点之后的弧线：\n往上蹦的为侧上旋 往下走的为侧下旋 策略 1、上策：\n积极主动，先上手为主 2、中策：\n控制对手，用摆短制约对手打发球抢攻，不让对手抢先上手 3、下策：\n主动劈长，对方轻拉之后，再来衔接第二板的反冲，主动去防守 注意事项 接正手位短球时，上半身的重心要保持稳定，下半身的重心要提起来，脚后跟抬起。这样拉球可以抢到高点，搓球时也有空间可以能控制住球。 在接短球的时候，手不能低，否则球容易冒高。重心要插到台子里。 接发球时要根据来球灵活调整步法，对方发短球可以通过并步上台内接。对方发长球，可以用小碎步往后退，找到最佳位置从容出手。 在接发球练习中，步法站位不要定在一点，短球可以上，长球也可以下。 对方发来长球之后，自己要在步法上做出调整，往后退半步再出手，才能充分发力。 接发球时如果判断准确了，等好的球就可以下手凶一点，等不好的球还是以稳为主。 参考资料 接发球练习注意事项 ",
+  "wordCount" : "608",
   "inLanguage": "zh",
-  "datePublished": "2023-04-05T20:33:30+08:00",
-  "dateModified": "2023-04-05T20:33:30+08:00",
+  "datePublished": "2023-04-07T22:32:27+08:00",
+  "dateModified": "2023-04-07T22:32:27+08:00",
   "author":[{
     "@type": "Person",
     "name": "Edison"
   }],
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://edinik.com/posts/tech/build-online-player-alist/"
+    "@id": "https://edinik.com/posts/life/table-tennis-serve-receive/"
   },
   "publisher": {
     "@type": "Organization",
@@ -275,12 +275,12 @@ if (!doNotTrack) {
 <article class="post-single">
     <div id="single-content">
         <header class="post-header">
-            <div class="breadcrumbs"><a href="https://edinik.com">🏠 主页</a>&nbsp;»&nbsp;<a href="https://edinik.com/posts/">📚 文章</a>&nbsp;»&nbsp;<a href="https://edinik.com/posts/tech/">👨🏻‍💻 技术</a></div>
+            <div class="breadcrumbs"><a href="https://edinik.com">🏠 主页</a>&nbsp;»&nbsp;<a href="https://edinik.com/posts/">📚 文章</a>&nbsp;»&nbsp;<a href="https://edinik.com/posts/life/">☕ 生活</a></div>
             <h1 class="post-title">
-                Alist | 在线播放服务搭建
+                乒乓球 | 接发球
             </h1>
             <div class="post-description">
-                如何利用小雅docker搭建在线播放服务
+                乒乓球如何更好地接发球
             </div>
             <div class="post-meta"><style>
     i[id*="post_meta_style"] {
@@ -299,7 +299,7 @@ if (!doNotTrack) {
 <span class="parent-post-meta">
     <span id="post_meta_style_1">
         <span class="fa fa-calendar-check-o"></span>
-        <span>2023-04-05
+        <span>2023-04-07
             &nbsp;&nbsp;
         </span>
     </span>
@@ -312,13 +312,13 @@ if (!doNotTrack) {
     
     <span id="post_meta_style_3">
         <span class="fa fa-file-word-o"></span>
-        <span>1614字
+        <span>608字
             &nbsp;&nbsp;
         </span>
     </span>
     <span id="post_meta_style_4">
         <span class="fa fa-clock-o"></span>
-        <span>4分钟
+        <span>2分钟
             &nbsp;&nbsp;
         </span>
     </span>
@@ -332,7 +332,7 @@ if (!doNotTrack) {
         <span class="fa fa-tags" style="opacity: 0.8"></span>
         <span>
             <span class="post-tags-meta">
-                <a href="https://edinik.com/tags/alist/" style="color: var(--secondary)!important;">alist</a>
+                <a href="https://edinik.com/tags/table-tennis/" style="color: var(--secondary)!important;">table-tennis</a>
             </span>
         </span>
     </span>
@@ -394,22 +394,22 @@ if (!doNotTrack) {
 
         <div class="inner"><ul>
                 <li>
-                    <a href="#%e4%ba%91%e6%9c%8d%e5%8a%a1%e5%99%a8vps-%e7%9a%84%e9%85%8d%e7%bd%ae" aria-label="云服务器/VPS 的配置">云服务器/VPS 的配置</a><ul>
+                    <a href="#%e6%8e%a5%e5%8f%91%e7%90%83" aria-label="接发球">接发球</a><ul>
                         
                 <li>
-                    <a href="#1%e6%96%b9%e5%bc%8f%e4%b8%80%e4%bd%bf%e7%94%a8%e4%b8%80%e9%94%ae%e8%84%9a%e6%9c%ac%e5%ae%89%e8%a3%85" aria-label="1、方式一：使用一键脚本安装">1、方式一：使用一键脚本安装</a></li>
+                    <a href="#%e9%95%bf%e7%90%83%e5%92%8c%e7%9f%ad%e7%90%83" aria-label="长球和短球">长球和短球</a></li>
                 <li>
-                    <a href="#2%e6%96%b9%e5%bc%8f%e4%ba%8c%e6%89%8b%e5%8a%a8%e5%ae%89%e8%a3%85" aria-label="2、方式二：手动安装">2、方式二：手动安装</a></li></ul>
+                    <a href="#%e6%97%8b%e8%bd%ac%e7%9a%84%e5%88%a4%e6%96%ad" aria-label="旋转的判断">旋转的判断</a><ul>
+                        
+                <li>
+                    <a href="#%e6%97%8b%e8%bd%ac%e7%90%83" aria-label="旋转球">旋转球</a></li>
+                <li>
+                    <a href="#%e4%be%a7%e6%97%8b%e7%90%83" aria-label="侧旋球">侧旋球</a></li></ul>
                 </li>
                 <li>
-                    <a href="#%e5%ae%9a%e6%97%b6%e4%b8%8e%e7%bd%91%e7%ab%99%e5%90%8c%e6%ad%a5%e6%95%b0%e6%8d%ae" aria-label="定时与网站同步数据">定时与网站同步数据</a></li>
+                    <a href="#%e7%ad%96%e7%95%a5" aria-label="策略">策略</a></li>
                 <li>
-                    <a href="#%e5%a6%82%e4%bd%95%e4%bd%bf%e7%94%a8" aria-label="如何使用">如何使用</a><ul>
-                        
-                <li>
-                    <a href="#1potplayer" aria-label="1、potplayer">1、potplayer</a></li>
-                <li>
-                    <a href="#2nplayer" aria-label="2、nplayer">2、nplayer</a></li></ul>
+                    <a href="#%e6%b3%a8%e6%84%8f%e4%ba%8b%e9%a1%b9" aria-label="注意事项">注意事项</a></li></ul>
                 </li>
                 <li>
                     <a href="#%e5%8f%82%e8%80%83%e8%b5%84%e6%96%99" aria-label="参考资料">参考资料</a>
@@ -477,125 +477,104 @@ if (!doNotTrack) {
         return rect.top + win.pageYOffset;
     }
 </script>
-        <div class="post-content"><h2 id="云服务器vps-的配置">云服务器/VPS 的配置<a hidden class="anchor" aria-hidden="true" href="#云服务器vps-的配置">#</a></h2>
-<h3 id="1方式一使用一键脚本安装">1、方式一：使用一键脚本安装<a hidden class="anchor" aria-hidden="true" href="#1方式一使用一键脚本安装">#</a></h3>
-<blockquote>
-<p>缺点：无法自定义配置，只能使用脚本默认设置</p>
-</blockquote>
-<p>1、推荐非host模式下执行以下脚本（<code>可以共享主机端口</code>）</p>
-<blockquote>
-<p>host模式无法映射docker端口到主机
-非host模式下会将docker的80端口映射到主机的8443端口</p>
-</blockquote>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># 非host模式安装</span>
-</span></span><span style="display:flex;"><span>bash -c <span style="color:#e6db74">&#34;</span><span style="color:#66d9ef">$(</span>curl -s http://docker.xiaoya.pro/update_new.sh<span style="color:#66d9ef">)</span><span style="color:#e6db74">&#34;</span> 
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># host模式安装</span>
-</span></span><span style="display:flex;"><span>bash -c <span style="color:#e6db74">&#34;</span><span style="color:#66d9ef">$(</span>curl -s http://docker.xiaoya.pro/update_new.sh<span style="color:#66d9ef">)</span><span style="color:#e6db74">&#34;</span>  -s host
-</span></span></code></pre></div><p>2、输入阿里云盘的Token</p>
-<blockquote>
-<p><a href="https://alist.nn.ci/zh/guide/drivers/aliyundrive.html">阿里云盘的Token获取教程</a></p>
-</blockquote>
-<p>3、输入阿里云盘Open的Token</p>
-<blockquote>
-<p><a href="https://alist.nn.ci/zh/guide/drivers/aliyundrive_open.html">阿里云盘Open的Token获取教程</a></p>
-</blockquote>
-<p>4、设置转存目录ID</p>
+        <div class="post-content"><!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <style type="text/css">
+        .youtube_shortcodes {
+            position: relative;
+            width: 100%;
+            height: 0;
+            padding-bottom: 66%;
+            margin: auto;
+            overflow: hidden;
+            text-align: center;
+             
+        }
+
+        .youtube_shortcodes iframe {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+        }
+    </style>
+    <title></title>
+</head>
+<body>
+<div class="youtube_shortcodes">
+    <iframe
+            class="youtube-player"
+            type="text/html"
+            width="640"
+            height="385"
+            src="https://www.youtube.com/embed/oXNVn7-_0Gg?autoplay=0"
+            style="
+                 position: absolute;
+                 top: 0;
+                 left: 0;
+                 width: 100%;
+                 height: 100%;
+                 border:0;"
+            allowfullscreen frameborder="0">
+    </iframe>
+</div>
+</body>
+</html>
+<h2 id="接发球">接发球<a hidden class="anchor" aria-hidden="true" href="#接发球">#</a></h2>
+<h3 id="长球和短球">长球和短球<a hidden class="anchor" aria-hidden="true" href="#长球和短球">#</a></h3>
+<p>观察对方发球的第一个落点，如果比较靠近台内的话，就是短球，如果比较靠近台外的话，就是长球。</p>
+<h3 id="旋转的判断">旋转的判断<a hidden class="anchor" aria-hidden="true" href="#旋转的判断">#</a></h3>
+<h4 id="旋转球">旋转球<a hidden class="anchor" aria-hidden="true" href="#旋转球">#</a></h4>
+<p>在对方球拍接触球时的一刹那，观察发力方向。</p>
 <ul>
-<li>打开阿里云盘</li>
-<li>进入转存目录</li>
-<li>拷贝地址栏中<code>fold/</code>后一串ID</li>
+<li>如果接触球时，没有发力摩擦，只是碰过来的，那么就是没有加转的球。</li>
+<li>如果接触球时，有发力摩擦，那么就是有加转的球。</li>
 </ul>
-<p>5、设置强制登录</p>
-<blockquote>
-<p>也可以通过vim等编辑器创建一个guestlogin.txt文件，内容可为空
-若需要取消强制登录，则可以删除guestlogin.txt文件</p>
-</blockquote>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>touch /etc/xiaoya/guestlogin.txt
-</span></span></code></pre></div><p>6、设置自定义密码</p>
-<blockquote>
-<p>默认用户名：<code>dav</code></p>
-</blockquote>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>vim /etc/xiaoya/guestpass.txt
-</span></span></code></pre></div><p>在guestpass.txt文件中输入自定义密码，最好不要包含特殊字符</p>
-<p>7、重启docker</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo systemctl restart docker
-</span></span></code></pre></div><p>8、通过Cloudfare或其它DNS解析服务将域名解析到服务器</p>
-<p>9、通过宝塔界面将域名反代到8443端口，并开启https</p>
-<p>10、访问域名即可</p>
-<blockquote>
-<p>网站需要对资源进行索引，大概会持续十几分钟</p>
-</blockquote>
-<h3 id="2方式二手动安装">2、方式二：手动安装<a hidden class="anchor" aria-hidden="true" href="#2方式二手动安装">#</a></h3>
-<p>1、拉取xiaoya的docker</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>rm -rf /etc/xiaoyaAlist/mytoken.txt <span style="color:#75715e"># 删除旧的token文件</span>
-</span></span><span style="display:flex;"><span>mkdir -p /etc/xiaoyaAlist <span style="color:#75715e"># 创建配置文件夹</span>
-</span></span><span style="display:flex;"><span>touch /etc/xiaoyaAlist/guestlogin.txt <span style="color:#75715e"># 创建强制登录文件，若不需要强制登录则不创建该文件</span>
-</span></span><span style="display:flex;"><span>touch /etc/xiaoyaAlist/guestpass.txt <span style="color:#75715e"># 创建自定义密码文件</span>
-</span></span><span style="display:flex;"><span>touch /etc/xiaoyaAlist/mytoken.txt <span style="color:#75715e"># 创建token文件</span>
-</span></span><span style="display:flex;"><span>touch /etc/xiaoyaAlist/myopentoken.txt <span style="color:#75715e"># 创建open token文件</span>
-</span></span><span style="display:flex;"><span>touch /etc/xiaoyaAlist/temp_transfer_folder_id.txt <span style="color:#75715e"># 创建转存目录ID文件</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># 格式：&#34;xxxxxxxx&#34; &#34;yyyyyyyy&#34; 账号可以是邮箱和手机号，手机号前面要加区号，也就是 &#34;+86xxxx&#34; 这样，注册如果用谷歌快捷方式登入的话是无法使用谷歌邮箱登入的（alist不支持）</span>
-</span></span><span style="display:flex;"><span>touch /etc/xiaoyaAlist/pikpak.txt 
-</span></span><span style="display:flex;"><span>touch /etc/xiaoyaAlist/show_my_ali.txt <span style="color:#75715e"># 通过此文件的存在与否来决定是否加载自己的阿里云盘，若不需要加载则不创建该文件</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># 配合 TVBOX的alist搜索，配置地址 https://你的域名/tvbox/my.json，格式：https://你的域名 （最后不要加 /)</span>
-</span></span><span style="display:flex;"><span>touch /etc/xiaoyaAlist/docker_address.txt 
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># 挂载自己一个或多个 pikpak账号，挂载名  &#34;账号&#34; &#34;密码&#34;  ，用空格分开（pikpak2  “abc@hotmail.com&#34; &#34;123456&#34;），每行一个 挂载名不能有空格</span>
-</span></span><span style="display:flex;"><span>touch /etc/xiaoyaAlist/pikpak_list.txt 
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># 挂载自己一个或多个 pikpak分享 格式：挂载名 分享ID 分享目录  ，用空格分开（赵霸道  VNRT8Wr8BGyw1kt1HkijKR4Qo1  VNQf6ZmWE3pVWGpuFriGqyPzo1），每行一个 挂载名不能有空格</span>
-</span></span><span style="display:flex;"><span>touch /etc/xiaoyaAlist/pikpakshare_list.txt
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># 挂载自定义分享ID 格式：挂载名 阿里分享ID(/folder前) 文件folder id(/folder后)，用空格分开，每行一个 (120T电影资源 ZpevUcDZ2Pn 636c8ba0703acd24cd44b19dd00312ef15b1e8) 挂载名不能有空格</span>
-</span></span><span style="display:flex;"><span>touch /etc/xiaoyaAlist/pikpakshare_list.txt
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>docker stop xiaoyaAlist <span style="color:#75715e"># 停止旧的docker</span>
-</span></span><span style="display:flex;"><span>docker rm xiaoyaAlist <span style="color:#75715e"># 删除旧的docker</span>
-</span></span><span style="display:flex;"><span>docker pull xiaoyaliu/alist:latest <span style="color:#75715e"># 拉取最新的docker</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># 将配置文件夹/etc/xiaoyaAlist挂载到docker内部的/data文件夹,将docker的80端口映射到主机的8888端口,设置自动重启,设置docker名称为xiaoyaAlist,并启动docker</span>
-</span></span><span style="display:flex;"><span>docker run -d -p 8888:80 -v /etc/xiaoyaAlist:/data --restart<span style="color:#f92672">=</span>always --name<span style="color:#f92672">=</span>xiaoyaAlist xiaoyaliu/alist:latest 
-</span></span></code></pre></div><p>2、设置阿里云盘Token</p>
-<blockquote>
-<p><a href="https://alist.nn.ci/zh/guide/drivers/aliyundrive.html">阿里云盘的Token获取教程</a></p>
-</blockquote>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>vim /etc/xiaoyaAlist/mytoken.txt
-</span></span></code></pre></div><p>3、设置阿里云盘Open Token</p>
-<blockquote>
-<p><a href="https://alist.nn.ci/zh/guide/drivers/aliyundrive_open.html">阿里云盘Open的Token获取教程</a></p>
-</blockquote>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>vim /etc/xiaoyaAlist/myopentoken.txt
-</span></span></code></pre></div><p>4、设置转存目录ID</p>
+<h4 id="侧旋球">侧旋球<a hidden class="anchor" aria-hidden="true" href="#侧旋球">#</a></h4>
+<p>三个特征：</p>
+<p>1、看发力方向：</p>
 <ul>
-<li>打开阿里云盘</li>
-<li>进入转存目录</li>
-<li>拷贝地址栏中<code>fold/</code>后一串ID</li>
+<li>往上发力，则侧上旋</li>
+<li>往下发力，则侧下旋</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>vim /etc/xiaoyaAlist/temp_transfer_folder_id.txt
-</span></span></code></pre></div><p>5、设置自定义密码</p>
-<blockquote>
-<p>默认用户名：<code>dav</code></p>
-</blockquote>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>vim /etc/xiaoyaAlist/guestpass.txt
-</span></span></code></pre></div><p>在guestpass.txt文件中输入自定义密码，最好不要包含特殊字符</p>
-<p>6、重启docker</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo systemctl restart docker
-</span></span></code></pre></div><p>7、通过Cloudfare或其它DNS解析服务将域名解析到服务器</p>
-<p>8、通过宝塔界面将域名反代到8443端口，并开启https</p>
-<p>9、访问域名即可</p>
-<blockquote>
-<p>网站需要对资源进行索引，大概会持续十几分钟</p>
-</blockquote>
-<h2 id="定时与网站同步数据">定时与网站同步数据<a hidden class="anchor" aria-hidden="true" href="#定时与网站同步数据">#</a></h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>crontab -e
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ae81ff">0</span> <span style="color:#ae81ff">6</span> * * * docker restart xiaoya
-</span></span></code></pre></div><h2 id="如何使用">如何使用<a hidden class="anchor" aria-hidden="true" href="#如何使用">#</a></h2>
-<h3 id="1potplayer">1、potplayer<a hidden class="anchor" aria-hidden="true" href="#1potplayer">#</a></h3>
-<p><img loading="lazy" src="https://raw.githubusercontent.com/EdisonMoon/cloudimg/main/data/20230405231854.png" alt="Potplayer设置"  />
-</p>
-<h3 id="2nplayer">2、nplayer<a hidden class="anchor" aria-hidden="true" href="#2nplayer">#</a></h3>
-<p><img loading="lazy" src="https://raw.githubusercontent.com/EdisonMoon/cloudimg/main/data/20230405232846.png" alt="nplayer设置"  />
-</p>
+<p>2、看第一个落点之后的弧线：</p>
+<ul>
+<li>有点往上蹦，弧线比较高的为侧上旋</li>
+<li>贴着台面运行，弧线比较低的为侧下旋</li>
+</ul>
+<p>3、看到己方台面落点之后的弧线：</p>
+<ul>
+<li>往上蹦的为侧上旋</li>
+<li>往下走的为侧下旋</li>
+</ul>
+<h3 id="策略">策略<a hidden class="anchor" aria-hidden="true" href="#策略">#</a></h3>
+<p>1、上策：</p>
+<ul>
+<li>积极主动，先上手为主</li>
+</ul>
+<p>2、中策：</p>
+<ul>
+<li>控制对手，用摆短制约对手打发球抢攻，不让对手抢先上手</li>
+</ul>
+<p>3、下策：</p>
+<ul>
+<li>主动劈长，对方轻拉之后，再来衔接第二板的反冲，主动去防守</li>
+</ul>
+<h3 id="注意事项">注意事项<a hidden class="anchor" aria-hidden="true" href="#注意事项">#</a></h3>
+<ul>
+<li>接正手位短球时，上半身的重心要保持稳定，下半身的重心要提起来，脚后跟抬起。这样拉球可以抢到高点，搓球时也有空间可以能控制住球。</li>
+<li>在接短球的时候，手不能低，否则球容易冒高。重心要插到台子里。</li>
+<li>接发球时要根据来球灵活调整步法，对方发短球可以通过并步上台内接。对方发长球，可以用小碎步往后退，找到最佳位置从容出手。</li>
+<li>在接发球练习中，步法站位不要定在一点，短球可以上，长球也可以下。</li>
+<li>对方发来长球之后，自己要在步法上做出调整，往后退半步再出手，才能充分发力。</li>
+<li>接发球时如果判断准确了，等好的球就可以下手凶一点，等不好的球还是以稳为主。</li>
+</ul>
 <h2 id="参考资料">参考资料<a hidden class="anchor" aria-hidden="true" href="#参考资料">#</a></h2>
-<p>[1] <a href="https://www.notion.so/xiaoya-docker-69404af849504fa5bcf9f2dd5ecaa75f">如何设置xiaoya的docker</a>
-[2] <a href="https://alist.nn.ci/zh/">AList文档</a></p>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=oXNVn7-_0Gg&amp;list=PLv8hyYaXsdit_MsGDzrha66ma6wz1XpnV&amp;index=1&amp;ab_channel=%E5%8D%8E%E4%BA%BA%E5%BC%80%E6%94%BE%E5%BC%8F%E8%AF%BE%E7%A8%8BMOOC">接发球练习注意事项</a></li>
+</ul>
 
 
         </div>
@@ -630,15 +609,10 @@ if (!doNotTrack) {
         <footer class="post-footer">
             
 <nav class="paginav">
-  <a class="prev" href="https://edinik.com/posts/life/table-tennis-serve-receive/">
-    <span class="title">« 上一页</span>
-    <br>
-    <span>乒乓球 | 接发球</span>
-  </a>
-  <a class="next" href="https://edinik.com/posts/tech/establishing-bitwarden-server/">
+  <a class="next" href="https://edinik.com/posts/tech/build-online-player-alist/">
     <span class="title">下一页 »</span>
     <br>
-    <span>vaultwarden  | 个人密码管理器搭建</span>
+    <span>Alist | 在线播放服务搭建</span>
   </a>
 </nav>
 
