@@ -140,8 +140,8 @@ if (!doNotTrack) {
   "keywords": [
     ""
   ],
-  "articleBody": "解析域名 准备两个域名并在Cloudflare解析域名到服务器IP：\n域名1：开启CDN，用于访问前端页面，如：“https://cdn.example.com” 域名2：不开启CDN，用于Agent访问后端API，如：“https://api.example.com” 获取Github的Client ID和Client Secret 登录Github，点击右上角头像，选择Settings， 点击Developer settings，点击New OAuth App 填写注册信息： Application name - 随意填写，如：“nezha-monitoring” Homepage URL - 填写面板的访问域名，如：“https://cdn.example.com” Authorization callback URL - 填写回调地址，如：“https://cdn.example.com/oauth2/callback\" 点击Register application 保存页面中的 Client ID，然后点击 “Generate a new client secret“，创建一个新的 Client Secret，新建的密钥仅会显示一次，请妥善保存 在服务器中安装 Dashboard 在面板服务器中，运行安装脚本：\ncurl -L https://raw.githubusercontent.com/naiba/nezha/master/script/install.sh -o nezha.sh \u0026\u0026 chmod +x nezha.sh \u0026\u0026 sudo ./nezha.sh 等待Docker安装完毕后，分别输入以下值：\nOAuth提供商：Github Client ID - 之前保存的 Client ID Client Secret - 之前保存的密钥 用户名 - OAuth 提供商中的用户名 站点标题 - 自定义站点标题 访问端口 - 公开访问端口，可自定义，默认 8008 Agent的通信端口 - Agent与Dashboard的通信端口，默认 5555 输入完成后，等待拉取镜像。\n将来如果需要再次运行脚本，可以运行：\n./nezha.sh 开启反向代理和SSL 通过宝塔界面分别对两个域名配置反向代理和SSL，配置完成后，访问面板域名，即可看到面板。\n安装Agent 首先在管理面板中添加一台服务器 点击新添加的服务器旁，绿色的 Linux 图标按钮，复制一键安装命令 在被控端服务器中运行复制的一键安装命令，等待安装完成后返回到 Dashboard 主页查看服务器是否上线 参考资料 哪吒监控官方文档 ",
-  "wordCount" : "838",
+  "articleBody": "解析域名 准备两个域名并在Cloudflare解析域名到服务器IP：\n域名1：开启CDN，用于访问前端页面，如：“https://cdn.example.com” 域名2：不开启CDN，用于Agent访问后端API，如：“https://api.example.com” 获取Github的Client ID和Client Secret 登录Github，点击右上角头像，选择Settings， 点击Developer settings，点击New OAuth App 填写注册信息： Application name - 随意填写，如：“nezha-monitoring” Homepage URL - 填写面板的访问域名，如：“https://cdn.example.com” Authorization callback URL - 填写回调地址，如：“https://cdn.example.com/oauth2/callback\" 点击Register application 保存页面中的 Client ID，然后点击 “Generate a new client secret“，创建一个新的 Client Secret，新建的密钥仅会显示一次，请妥善保存 在服务器中安装 Dashboard 在面板服务器中，运行安装脚本：\ncurl -L https://raw.githubusercontent.com/naiba/nezha/master/script/install.sh -o nezha.sh \u0026\u0026 chmod +x nezha.sh \u0026\u0026 sudo ./nezha.sh 等待Docker安装完毕后，分别输入以下值：\nOAuth提供商：Github Client ID - 之前保存的 Client ID Client Secret - 之前保存的密钥 用户名 - OAuth 提供商中的用户名 站点标题 - 自定义站点标题 访问端口 - 公开访问端口，可自定义，默认 8008 Agent的通信端口 - Agent与Dashboard的通信端口，默认 5555 输入完成后，等待拉取镜像。\n将来如果需要再次运行脚本，可以运行：\n./nezha.sh 开启反向代理和SSL 通过宝塔界面分别对两个域名配置反向代理和SSL，配置完成后，访问面板域名，即可看到面板。\n配置未接入CDN的域名 后台管理 - 设置 - 未接入CDN的面板服务器域名/IP：输入未接入CDN的域名，如：“https://api.example.com” 安装Agent 首先在管理面板中添加一台服务器 点击新添加的服务器旁，绿色的 Linux 图标按钮，复制一键安装命令 在被控端服务器中运行复制的一键安装命令，等待安装完成后返回到 Dashboard 主页查看服务器是否上线 参考资料 哪吒监控官方文档 ",
+  "wordCount" : "926",
   "inLanguage": "zh",
   "datePublished": "2023-04-08T23:39:46+08:00",
   "dateModified": "2023-04-08T23:39:46+08:00",
@@ -312,7 +312,7 @@ if (!doNotTrack) {
     
     <span id="post_meta_style_3">
         <span class="fa fa-file-word-o"></span>
-        <span>838字
+        <span>926字
             &nbsp;&nbsp;
         </span>
     </span>
@@ -401,6 +401,8 @@ if (!doNotTrack) {
                     <a href="#%e5%9c%a8%e6%9c%8d%e5%8a%a1%e5%99%a8%e4%b8%ad%e5%ae%89%e8%a3%85-dashboard" aria-label="在服务器中安装 Dashboard">在服务器中安装 Dashboard</a></li>
                 <li>
                     <a href="#%e5%bc%80%e5%90%af%e5%8f%8d%e5%90%91%e4%bb%a3%e7%90%86%e5%92%8cssl" aria-label="开启反向代理和SSL">开启反向代理和SSL</a></li>
+                <li>
+                    <a href="#%e9%85%8d%e7%bd%ae%e6%9c%aa%e6%8e%a5%e5%85%a5cdn%e7%9a%84%e5%9f%9f%e5%90%8d" aria-label="配置未接入CDN的域名">配置未接入CDN的域名</a></li>
                 <li>
                     <a href="#%e5%ae%89%e8%a3%85agent" aria-label="安装Agent">安装Agent</a></li>
                 <li>
@@ -516,6 +518,10 @@ if (!doNotTrack) {
 </ol>
 <h2 id="开启反向代理和ssl">开启反向代理和SSL<a hidden class="anchor" aria-hidden="true" href="#开启反向代理和ssl">#</a></h2>
 <p>通过宝塔界面分别对两个域名配置反向代理和SSL，配置完成后，访问面板域名，即可看到面板。</p>
+<h2 id="配置未接入cdn的域名">配置未接入CDN的域名<a hidden class="anchor" aria-hidden="true" href="#配置未接入cdn的域名">#</a></h2>
+<ul>
+<li>后台管理 - 设置 - 未接入CDN的面板服务器域名/IP：输入未接入CDN的域名，如：&ldquo;<a href="https://api.example.com">https://api.example.com</a>&rdquo;</li>
+</ul>
 <h2 id="安装agent">安装Agent<a hidden class="anchor" aria-hidden="true" href="#安装agent">#</a></h2>
 <ul>
 <li>首先在管理面板中添加一台服务器</li>
