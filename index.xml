@@ -11,7 +11,16 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 08 Apr 2023 23:39:46 +0800</lastBuildDate><atom:link href="https://edinik.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 10 Apr 2023 22:16:13 +0800</lastBuildDate><atom:link href="https://edinik.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>设计模式 | 简介</title>
+      <link>https://edinik.com/posts/tech/design-pattern-introduction/</link>
+      <pubDate>Mon, 10 Apr 2023 22:16:13 +0800</pubDate>
+      
+      <guid>https://edinik.com/posts/tech/design-pattern-introduction/</guid>
+      <description>设计模式简介</description>
+    </item>
+    
     <item>
       <title>哪吒监控 | 服务端搭建</title>
       <link>https://edinik.com/posts/tech/nezha-monitoring-server-build/</link>

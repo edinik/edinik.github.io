@@ -5,11 +5,11 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
-<title>哪吒监控 | 服务端搭建 | Edison&#39;s Blog</title>
-<meta name="keywords" content="">
-<meta name="description" content="哪吒监控服务端搭建">
+<title>设计模式 | 简介 | Edison&#39;s Blog</title>
+<meta name="keywords" content="设计模式">
+<meta name="description" content="设计模式简介">
 <meta name="author" content="Edison">
-<link rel="canonical" href="https://edinik.com/posts/tech/nezha-monitoring-server-build/">
+<link rel="canonical" href="https://edinik.com/posts/tech/design-pattern-introduction/">
 <meta name="google-site-verification" content="6A-1RsLBWSgG_uBmVVQzBmGE8k2mxcJwZErLRJMpk4I">
 <meta name="baidu-site-verification" content="codeva-I9cG7LIaz4">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.e6d4a5f9f1949321f80c3397fc340b85fa62e28f17dd6d7bb02e0c64514109fc.css" integrity="sha256-5tSl&#43;fGUkyH4DDOX/DQLhfpi4o8X3W17sC4MZFFBCfw=" rel="preload stylesheet" as="style">
@@ -88,18 +88,18 @@ if (!doNotTrack) {
 	
 	ga('send', 'pageview');
 }
-</script><meta property="og:title" content="哪吒监控 | 服务端搭建" />
-<meta property="og:description" content="哪吒监控服务端搭建" />
+</script><meta property="og:title" content="设计模式 | 简介" />
+<meta property="og:description" content="设计模式简介" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://edinik.com/posts/tech/nezha-monitoring-server-build/" /><meta property="og:image" content="https://edinik.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E"/><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2023-04-08T23:39:46+08:00" />
-<meta property="article:modified_time" content="2023-04-08T23:39:46+08:00" /><meta property="og:site_name" content="Edison" />
+<meta property="og:url" content="https://edinik.com/posts/tech/design-pattern-introduction/" /><meta property="og:image" content="https://edinik.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-04-10T22:16:13+08:00" />
+<meta property="article:modified_time" content="2023-04-10T22:16:13+08:00" /><meta property="og:site_name" content="Edison" />
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://edinik.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E"/>
 
-<meta name="twitter:title" content="哪吒监控 | 服务端搭建"/>
-<meta name="twitter:description" content="哪吒监控服务端搭建"/>
+<meta name="twitter:title" content="设计模式 | 简介"/>
+<meta name="twitter:description" content="设计模式简介"/>
 
 
 <script type="application/ld+json">
@@ -124,8 +124,8 @@ if (!doNotTrack) {
     {
       "@type": "ListItem",
       "position":  4 ,
-      "name": "哪吒监控 | 服务端搭建",
-      "item": "https://edinik.com/posts/tech/nezha-monitoring-server-build/"
+      "name": "设计模式 | 简介",
+      "item": "https://edinik.com/posts/tech/design-pattern-introduction/"
     }
   ]
 }
@@ -134,24 +134,24 @@ if (!doNotTrack) {
 {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  "headline": "哪吒监控 | 服务端搭建",
-  "name": "哪吒监控 | 服务端搭建",
-  "description": "哪吒监控服务端搭建",
+  "headline": "设计模式 | 简介",
+  "name": "设计模式 | 简介",
+  "description": "设计模式简介",
   "keywords": [
-    ""
+    "设计模式"
   ],
-  "articleBody": "解析域名 准备两个域名并在Cloudflare解析域名到服务器IP：\n域名1：开启CDN，用于访问前端页面，如：“https://cdn.example.com” 域名2：不开启CDN，用于Agent访问后端API，如：“https://api.example.com” 获取Github的Client ID和Client Secret 登录Github，点击右上角头像，选择Settings， 点击Developer settings，点击New OAuth App 填写注册信息： Application name - 随意填写，如：“nezha-monitoring” Homepage URL - 填写面板的访问域名，如：“https://cdn.example.com” Authorization callback URL - 填写回调地址，如：“https://cdn.example.com/oauth2/callback\" 点击Register application 保存页面中的 Client ID，然后点击 “Generate a new client secret“，创建一个新的 Client Secret，新建的密钥仅会显示一次，请妥善保存 在服务器中安装 Dashboard 在面板服务器中，运行安装脚本：\ncurl -L https://raw.githubusercontent.com/naiba/nezha/master/script/install.sh -o nezha.sh \u0026\u0026 chmod +x nezha.sh \u0026\u0026 sudo ./nezha.sh 等待Docker安装完毕后，分别输入以下值：\nOAuth提供商：Github Client ID - 之前保存的 Client ID Client Secret - 之前保存的密钥 用户名 - OAuth 提供商中的用户名 站点标题 - 自定义站点标题 访问端口 - 公开访问端口，可自定义，默认 8008 Agent的通信端口 - Agent与Dashboard的通信端口，默认 5555 输入完成后，等待拉取镜像。\n将来如果需要再次运行脚本，可以运行：\n./nezha.sh 开启反向代理和SSL 通过宝塔界面分别对两个域名配置反向代理和SSL，配置完成后，访问面板域名，即可看到面板。\n配置未接入CDN的域名 后台管理 - 设置 - 未接入CDN的面板服务器域名/IP：输入未接入CDN的域名，如：“https://api.example.com” 安装Agent 首先在管理面板中添加一台服务器 点击新添加的服务器旁，绿色的 Linux 图标按钮，复制一键安装命令 在被控端服务器中运行复制的一键安装命令，等待安装完成后返回到 Dashboard 主页查看服务器是否上线 参考资料 哪吒监控官方文档 ",
-  "wordCount" : "926",
+  "articleBody": "引言 设计模式是软件设计中常见问题的典型解决方案。它们就像能根据需求进行调整的预制蓝图，可用于解决代码中反复出现的设计问题。\n创建型模式 提供创建对象的机制， 增加已有代码的灵活性和可复用性。\n1、单例模式 英文表述：Singleton /ˈsɪŋɡltən/\n能够保证一个类只有一个实例，并提供一个访问该实例的全局节点。\n2、工厂方法模式 英文表述：Factory Method /ˈfæktri/ /ˈmeθəd/\n在父类中提供一个创建对象的方法， 允许子类决定实例化对象的类型。\n3、抽象工厂模式 英文表述：Abstract Factory /ˈæbstrækt/ /ˈfæktri/\n能创建一系列相关的对象， 而无需指定其具体类。\n4、建造者模式 英文表述：Builder /ˈbɪldə(r)/\n能够分步骤创建复杂对象。允许使用相同的创建代码生成不同类型和形式的对象。\n5、原型模式 英文表述：Prototype /ˈprəʊtətaɪp/\n能够复制已有对象， 而又无需使代码依赖它们所属的类。\n结构型模式 将对象和类组装成较大的结构， 并同时保持结构的灵活和高效。\n1、适配器模式 英文表述：Adapter /əˈdæptə(r)/\n使接口不兼容的对象能够相互合作。\n2、桥接模式 英文表述：Bridge /brɪdʒ/\n可将一个大类或一系列紧密相关的类拆分为抽象和实现两个独立的层次结构， 从而能在开发时分别使用。\n3、组合模式 英文表述：Composite /ˈkɒmpəzɪt/\n允许将对象组合成树形结构， 并且能像使用独立对象一样使用它们。\n4、装饰模式 英文表述：Decorator /ˈdekəreɪtə(r)/\n允许将对象放入包含行为的特殊封装对象中来为原对象绑定新的行为。\n5、外观模式 英文表述：Facade /fəˈsɑːd/\n为程序库、 框架或其他复杂类提供一个简单的接口。\n6、享元模式 英文表述：Flyweight /ˈflaɪweɪt/\n摒弃了在每个对象中保存所有数据的方式，通过共享多个对象所共有的相同状态，能在有限的内存容量中载入更多对象。\n7、代理模式 英文表述：Proxy /ˈprɒksi/\n能够提供对象的替代品或其占位符。代理控制着对于原对象的访问，并允许在将请求提交给对象前后进行一些处理。\n行为型模式 负责对象间的高效沟通和职责委派。\n1、职责链模式 英文表述：Chain of Responsibility /ˈtʃeɪn/ /əv/ /rɪˌspɒnsəˈbɪləti/\n允许将请求沿着处理者链进行发送。收到请求后，每个处理者均可对请求进行处理，或将其传递给链上的下个处理者。\n2、命令模式 英文表述：Command /kəˈmɑːnd/\n可将请求转换为一个包含与请求相关的所有信息的独立对象。该转换能根据不同的请求将方法参数化、延迟请求执行或将其放入队列中，且能实现可撤销操作。\n3、迭代器模式 英文表述：Iterator /ˈɪtəreɪtə(r)/\n能在不暴露集合底层表现形式（列表、栈和树等）的情况下遍历集合中所有的元素。\n4、中介者模式 英文表述：Mediator /ˈmiː.di.eɪ.t̬ɚ/\n能减少对象之间混乱无序的依赖关系。会限制对象之间的直接交互，迫使它们通过一个中介者对象进行合作。\n5、备忘录模式 英文表述：Memento /məˈmentəʊ/\n允许在不暴露对象实现细节的情况下保存和恢复对象之前的状态。\n6、观察者模式 英文表述：Observer /əbˈzɜːvə(r)/\n允许定义一种订阅机制，可在对象事件发生时通知多个 “观察” 该对象的其他对象。\n7、状态模式 英文表述：State /steɪt/\n能在一个对象的内部状态变化时改变其行为，使其看上去就像改变了自身所属的类一样。\n8、策略模式 英文表述：Strategy /ˈstrætədʒi/\n能定义一系列算法，并将每种算法分别放入独立的类中，以使算法的对象能够相互替换。\n9、模板方法模式 英文表述：Template Method /ˈtempleɪt/ /ˈmeθəd/\n在超类中定义了一个算法的框架，允许子类在不修改结构的情况下重写算法的特定步骤。\n10、访问者模式 英文表述：Visitor /ˈvɪzɪtə(r)/\n能将算法与其所作用的对象隔离开来。\n11、解释器模式 英文表述：Interpreter /ɪnˈtɜːprətə(r)/\n可以将复杂的语言转化为易于处理的数据结构，从而使得语言的解释更加容易。\n参考资料 [1] refactoringguru-design-patterns\n",
+  "wordCount" : "1742",
   "inLanguage": "zh",
-  "datePublished": "2023-04-08T23:39:46+08:00",
-  "dateModified": "2023-04-08T23:39:46+08:00",
+  "datePublished": "2023-04-10T22:16:13+08:00",
+  "dateModified": "2023-04-10T22:16:13+08:00",
   "author":[{
     "@type": "Person",
     "name": "Edison"
   }],
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://edinik.com/posts/tech/nezha-monitoring-server-build/"
+    "@id": "https://edinik.com/posts/tech/design-pattern-introduction/"
   },
   "publisher": {
     "@type": "Organization",
@@ -277,10 +277,10 @@ if (!doNotTrack) {
         <header class="post-header">
             <div class="breadcrumbs"><a href="https://edinik.com">🏠 主页</a>&nbsp;»&nbsp;<a href="https://edinik.com/posts/">📚 文章</a>&nbsp;»&nbsp;<a href="https://edinik.com/posts/tech/">👨🏻‍💻 技术</a></div>
             <h1 class="post-title">
-                哪吒监控 | 服务端搭建
+                设计模式 | 简介
             </h1>
             <div class="post-description">
-                哪吒监控服务端搭建
+                设计模式简介
             </div>
             <div class="post-meta"><style>
     i[id*="post_meta_style"] {
@@ -299,7 +299,7 @@ if (!doNotTrack) {
 <span class="parent-post-meta">
     <span id="post_meta_style_1">
         <span class="fa fa-calendar-check-o"></span>
-        <span>2023-04-08
+        <span>2023-04-10
             &nbsp;&nbsp;
         </span>
     </span>
@@ -312,13 +312,13 @@ if (!doNotTrack) {
     
     <span id="post_meta_style_3">
         <span class="fa fa-file-word-o"></span>
-        <span>926字
+        <span>1742字
             &nbsp;&nbsp;
         </span>
     </span>
     <span id="post_meta_style_4">
         <span class="fa fa-clock-o"></span>
-        <span>2分钟
+        <span>4分钟
             &nbsp;&nbsp;
         </span>
     </span>
@@ -332,7 +332,7 @@ if (!doNotTrack) {
         <span class="fa fa-tags" style="opacity: 0.8"></span>
         <span>
             <span class="post-tags-meta">
-                <a href="https://edinik.com/tags/nezha-monitoring/" style="color: var(--secondary)!important;">nezha-monitoring</a>
+                <a href="https://edinik.com/tags/design-pattern/" style="color: var(--secondary)!important;">design-pattern</a>
             </span>
         </span>
     </span>
@@ -394,17 +394,65 @@ if (!doNotTrack) {
 
         <div class="inner"><ul>
                 <li>
-                    <a href="#%e8%a7%a3%e6%9e%90%e5%9f%9f%e5%90%8d" aria-label="解析域名">解析域名</a></li>
+                    <a href="#%e5%bc%95%e8%a8%80" aria-label="引言">引言</a></li>
                 <li>
-                    <a href="#%e8%8e%b7%e5%8f%96github%e7%9a%84client-id%e5%92%8cclient-secret" aria-label="获取Github的Client ID和Client Secret">获取Github的Client ID和Client Secret</a></li>
+                    <a href="#%e5%88%9b%e5%bb%ba%e5%9e%8b%e6%a8%a1%e5%bc%8f" aria-label="创建型模式">创建型模式</a><ul>
+                        
                 <li>
-                    <a href="#%e5%9c%a8%e6%9c%8d%e5%8a%a1%e5%99%a8%e4%b8%ad%e5%ae%89%e8%a3%85-dashboard" aria-label="在服务器中安装 Dashboard">在服务器中安装 Dashboard</a></li>
+                    <a href="#1%e5%8d%95%e4%be%8b%e6%a8%a1%e5%bc%8f" aria-label="1、单例模式">1、单例模式</a></li>
                 <li>
-                    <a href="#%e5%bc%80%e5%90%af%e5%8f%8d%e5%90%91%e4%bb%a3%e7%90%86%e5%92%8cssl" aria-label="开启反向代理和SSL">开启反向代理和SSL</a></li>
+                    <a href="#2%e5%b7%a5%e5%8e%82%e6%96%b9%e6%b3%95%e6%a8%a1%e5%bc%8f" aria-label="2、工厂方法模式">2、工厂方法模式</a></li>
                 <li>
-                    <a href="#%e9%85%8d%e7%bd%ae%e6%9c%aa%e6%8e%a5%e5%85%a5cdn%e7%9a%84%e5%9f%9f%e5%90%8d" aria-label="配置未接入CDN的域名">配置未接入CDN的域名</a></li>
+                    <a href="#3%e6%8a%bd%e8%b1%a1%e5%b7%a5%e5%8e%82%e6%a8%a1%e5%bc%8f" aria-label="3、抽象工厂模式">3、抽象工厂模式</a></li>
                 <li>
-                    <a href="#%e5%ae%89%e8%a3%85agent" aria-label="安装Agent">安装Agent</a></li>
+                    <a href="#4%e5%bb%ba%e9%80%a0%e8%80%85%e6%a8%a1%e5%bc%8f" aria-label="4、建造者模式">4、建造者模式</a></li>
+                <li>
+                    <a href="#5%e5%8e%9f%e5%9e%8b%e6%a8%a1%e5%bc%8f" aria-label="5、原型模式">5、原型模式</a></li></ul>
+                </li>
+                <li>
+                    <a href="#%e7%bb%93%e6%9e%84%e5%9e%8b%e6%a8%a1%e5%bc%8f" aria-label="结构型模式">结构型模式</a><ul>
+                        
+                <li>
+                    <a href="#1%e9%80%82%e9%85%8d%e5%99%a8%e6%a8%a1%e5%bc%8f" aria-label="1、适配器模式">1、适配器模式</a></li>
+                <li>
+                    <a href="#2%e6%a1%a5%e6%8e%a5%e6%a8%a1%e5%bc%8f" aria-label="2、桥接模式">2、桥接模式</a></li>
+                <li>
+                    <a href="#3%e7%bb%84%e5%90%88%e6%a8%a1%e5%bc%8f" aria-label="3、组合模式">3、组合模式</a></li>
+                <li>
+                    <a href="#4%e8%a3%85%e9%a5%b0%e6%a8%a1%e5%bc%8f" aria-label="4、装饰模式">4、装饰模式</a></li>
+                <li>
+                    <a href="#5%e5%a4%96%e8%a7%82%e6%a8%a1%e5%bc%8f" aria-label="5、外观模式">5、外观模式</a></li>
+                <li>
+                    <a href="#6%e4%ba%ab%e5%85%83%e6%a8%a1%e5%bc%8f" aria-label="6、享元模式">6、享元模式</a></li>
+                <li>
+                    <a href="#7%e4%bb%a3%e7%90%86%e6%a8%a1%e5%bc%8f" aria-label="7、代理模式">7、代理模式</a></li></ul>
+                </li>
+                <li>
+                    <a href="#%e8%a1%8c%e4%b8%ba%e5%9e%8b%e6%a8%a1%e5%bc%8f" aria-label="行为型模式">行为型模式</a><ul>
+                        
+                <li>
+                    <a href="#1%e8%81%8c%e8%b4%a3%e9%93%be%e6%a8%a1%e5%bc%8f" aria-label="1、职责链模式">1、职责链模式</a></li>
+                <li>
+                    <a href="#2%e5%91%bd%e4%bb%a4%e6%a8%a1%e5%bc%8f" aria-label="2、命令模式">2、命令模式</a></li>
+                <li>
+                    <a href="#3%e8%bf%ad%e4%bb%a3%e5%99%a8%e6%a8%a1%e5%bc%8f" aria-label="3、迭代器模式">3、迭代器模式</a></li>
+                <li>
+                    <a href="#4%e4%b8%ad%e4%bb%8b%e8%80%85%e6%a8%a1%e5%bc%8f" aria-label="4、中介者模式">4、中介者模式</a></li>
+                <li>
+                    <a href="#5%e5%a4%87%e5%bf%98%e5%bd%95%e6%a8%a1%e5%bc%8f" aria-label="5、备忘录模式">5、备忘录模式</a></li>
+                <li>
+                    <a href="#6%e8%a7%82%e5%af%9f%e8%80%85%e6%a8%a1%e5%bc%8f" aria-label="6、观察者模式">6、观察者模式</a></li>
+                <li>
+                    <a href="#7%e7%8a%b6%e6%80%81%e6%a8%a1%e5%bc%8f" aria-label="7、状态模式">7、状态模式</a></li>
+                <li>
+                    <a href="#8%e7%ad%96%e7%95%a5%e6%a8%a1%e5%bc%8f" aria-label="8、策略模式">8、策略模式</a></li>
+                <li>
+                    <a href="#9%e6%a8%a1%e6%9d%bf%e6%96%b9%e6%b3%95%e6%a8%a1%e5%bc%8f" aria-label="9、模板方法模式">9、模板方法模式</a></li>
+                <li>
+                    <a href="#10%e8%ae%bf%e9%97%ae%e8%80%85%e6%a8%a1%e5%bc%8f" aria-label="10、访问者模式">10、访问者模式</a></li>
+                <li>
+                    <a href="#11%e8%a7%a3%e9%87%8a%e5%99%a8%e6%a8%a1%e5%bc%8f" aria-label="11、解释器模式">11、解释器模式</a></li></ul>
+                </li>
                 <li>
                     <a href="#%e5%8f%82%e8%80%83%e8%b5%84%e6%96%99" aria-label="参考资料">参考资料</a>
                 </li>
@@ -471,67 +519,131 @@ if (!doNotTrack) {
         return rect.top + win.pageYOffset;
     }
 </script>
-        <div class="post-content"><h2 id="解析域名">解析域名<a hidden class="anchor" aria-hidden="true" href="#解析域名">#</a></h2>
-<p>准备两个域名并在Cloudflare解析域名到服务器IP：</p>
-<ul>
-<li>域名1：开启CDN，用于访问前端页面，如：&ldquo;<a href="https://cdn.example.com">https://cdn.example.com</a>&rdquo;</li>
-<li>域名2：不开启CDN，用于Agent访问后端API，如：&ldquo;<a href="https://api.example.com">https://api.example.com</a>&rdquo;</li>
-</ul>
-<h2 id="获取github的client-id和client-secret">获取Github的Client ID和Client Secret<a hidden class="anchor" aria-hidden="true" href="#获取github的client-id和client-secret">#</a></h2>
-<ol>
-<li>登录Github，点击右上角头像，选择Settings， 点击<a href="https://github.com/settings/developers">Developer settings</a>，点击New OAuth App</li>
-<li>填写注册信息：
-<ul>
-<li>Application name - 随意填写，如：&ldquo;nezha-monitoring&rdquo;</li>
-<li>Homepage URL - 填写面板的访问域名，如：&ldquo;<a href="https://cdn.example.com">https://cdn.example.com</a>&rdquo;</li>
-<li>Authorization callback URL - 填写回调地址，如：&ldquo;<a href="https://cdn.example.com/oauth2/callback%22">https://cdn.example.com/oauth2/callback&quot;</a></li>
-</ul>
-</li>
-<li>点击Register application</li>
-<li>保存页面中的 Client ID，然后点击 “Generate a new client secret“，创建一个新的 Client Secret，新建的密钥仅会显示一次，请妥善保存</li>
-</ol>
-<h2 id="在服务器中安装-dashboard">在服务器中安装 Dashboard<a hidden class="anchor" aria-hidden="true" href="#在服务器中安装-dashboard">#</a></h2>
-<ol>
-<li>
-<p>在面板服务器中，运行安装脚本：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>curl -L https://raw.githubusercontent.com/naiba/nezha/master/script/install.sh  -o nezha.sh <span style="color:#f92672">&amp;&amp;</span> chmod +x nezha.sh <span style="color:#f92672">&amp;&amp;</span> sudo ./nezha.sh
-</span></span></code></pre></div></li>
-<li>
-<p>等待Docker安装完毕后，分别输入以下值：</p>
-<ul>
-<li>OAuth提供商：Github</li>
-<li>Client ID - 之前保存的 Client ID</li>
-<li>Client Secret - 之前保存的密钥</li>
-<li>用户名 - OAuth 提供商中的用户名</li>
-<li>站点标题 - 自定义站点标题</li>
-<li>访问端口 - 公开访问端口，可自定义，默认 8008</li>
-<li>Agent的通信端口 - Agent与Dashboard的通信端口，默认 5555</li>
-</ul>
-</li>
-<li>
-<p>输入完成后，等待拉取镜像。</p>
-</li>
-<li>
-<p>将来如果需要再次运行脚本，可以运行：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>./nezha.sh
-</span></span></code></pre></div></li>
-</ol>
-<h2 id="开启反向代理和ssl">开启反向代理和SSL<a hidden class="anchor" aria-hidden="true" href="#开启反向代理和ssl">#</a></h2>
-<p>通过宝塔界面分别对两个域名配置反向代理和SSL，配置完成后，访问面板域名，即可看到面板。</p>
-<h2 id="配置未接入cdn的域名">配置未接入CDN的域名<a hidden class="anchor" aria-hidden="true" href="#配置未接入cdn的域名">#</a></h2>
-<ul>
-<li>后台管理 - 设置 - 未接入CDN的面板服务器域名/IP：输入未接入CDN的域名，如：&ldquo;<a href="https://api.example.com">https://api.example.com</a>&rdquo;</li>
-</ul>
-<h2 id="安装agent">安装Agent<a hidden class="anchor" aria-hidden="true" href="#安装agent">#</a></h2>
-<ul>
-<li>首先在管理面板中添加一台服务器</li>
-<li>点击新添加的服务器旁，绿色的 Linux 图标按钮，复制一键安装命令</li>
-<li>在被控端服务器中运行复制的一键安装命令，等待安装完成后返回到 Dashboard 主页查看服务器是否上线</li>
-</ul>
+        <div class="post-content"><h2 id="引言">引言<a hidden class="anchor" aria-hidden="true" href="#引言">#</a></h2>
+<p>设计模式是软件设计中常见问题的典型解决方案。它们就像能根据需求进行调整的预制蓝图，可用于解决代码中反复出现的设计问题。</p>
+<h2 id="创建型模式">创建型模式<a hidden class="anchor" aria-hidden="true" href="#创建型模式">#</a></h2>
+<p>提供创建对象的机制， 增加已有代码的灵活性和可复用性。</p>
+<h3 id="1单例模式">1、单例模式<a hidden class="anchor" aria-hidden="true" href="#1单例模式">#</a></h3>
+<blockquote>
+<p>英文表述：Singleton <code>/ˈsɪŋɡltən/</code></p>
+</blockquote>
+<p>能够保证一个类只有一个实例，并提供一个访问该实例的全局节点。</p>
+<h3 id="2工厂方法模式">2、工厂方法模式<a hidden class="anchor" aria-hidden="true" href="#2工厂方法模式">#</a></h3>
+<blockquote>
+<p>英文表述：Factory Method <code>/ˈfæktri/</code> <code>/ˈmeθəd/</code></p>
+</blockquote>
+<p>在父类中提供一个创建对象的方法， 允许子类决定实例化对象的类型。</p>
+<h3 id="3抽象工厂模式">3、抽象工厂模式<a hidden class="anchor" aria-hidden="true" href="#3抽象工厂模式">#</a></h3>
+<blockquote>
+<p>英文表述：Abstract Factory <code>/ˈæbstrækt/</code> <code>/ˈfæktri/</code></p>
+</blockquote>
+<p>能创建一系列相关的对象， 而无需指定其具体类。</p>
+<h3 id="4建造者模式">4、建造者模式<a hidden class="anchor" aria-hidden="true" href="#4建造者模式">#</a></h3>
+<blockquote>
+<p>英文表述：Builder <code>/ˈbɪldə(r)/</code></p>
+</blockquote>
+<p>能够分步骤创建复杂对象。允许使用相同的创建代码生成不同类型和形式的对象。</p>
+<h3 id="5原型模式">5、原型模式<a hidden class="anchor" aria-hidden="true" href="#5原型模式">#</a></h3>
+<blockquote>
+<p>英文表述：Prototype <code>/ˈprəʊtətaɪp/</code></p>
+</blockquote>
+<p>能够复制已有对象， 而又无需使代码依赖它们所属的类。</p>
+<h2 id="结构型模式">结构型模式<a hidden class="anchor" aria-hidden="true" href="#结构型模式">#</a></h2>
+<p>将对象和类组装成较大的结构， 并同时保持结构的灵活和高效。</p>
+<h3 id="1适配器模式">1、适配器模式<a hidden class="anchor" aria-hidden="true" href="#1适配器模式">#</a></h3>
+<blockquote>
+<p>英文表述：Adapter <code>/əˈdæptə(r)/</code></p>
+</blockquote>
+<p>使接口不兼容的对象能够相互合作。</p>
+<h3 id="2桥接模式">2、桥接模式<a hidden class="anchor" aria-hidden="true" href="#2桥接模式">#</a></h3>
+<blockquote>
+<p>英文表述：Bridge <code>/brɪdʒ/</code></p>
+</blockquote>
+<p>可将一个大类或一系列紧密相关的类拆分为抽象和实现两个独立的层次结构， 从而能在开发时分别使用。</p>
+<h3 id="3组合模式">3、组合模式<a hidden class="anchor" aria-hidden="true" href="#3组合模式">#</a></h3>
+<blockquote>
+<p>英文表述：Composite <code>/ˈkɒmpəzɪt/</code></p>
+</blockquote>
+<p>允许将对象组合成树形结构， 并且能像使用独立对象一样使用它们。</p>
+<h3 id="4装饰模式">4、装饰模式<a hidden class="anchor" aria-hidden="true" href="#4装饰模式">#</a></h3>
+<blockquote>
+<p>英文表述：Decorator <code>/ˈdekəreɪtə(r)/</code></p>
+</blockquote>
+<p>允许将对象放入包含行为的特殊封装对象中来为原对象绑定新的行为。</p>
+<h3 id="5外观模式">5、外观模式<a hidden class="anchor" aria-hidden="true" href="#5外观模式">#</a></h3>
+<blockquote>
+<p>英文表述：Facade <code>/fəˈsɑːd/</code></p>
+</blockquote>
+<p>为程序库、 框架或其他复杂类提供一个简单的接口。</p>
+<h3 id="6享元模式">6、享元模式<a hidden class="anchor" aria-hidden="true" href="#6享元模式">#</a></h3>
+<blockquote>
+<p>英文表述：Flyweight <code>/ˈflaɪweɪt/</code></p>
+</blockquote>
+<p>摒弃了在每个对象中保存所有数据的方式，通过共享多个对象所共有的相同状态，能在有限的内存容量中载入更多对象。</p>
+<h3 id="7代理模式">7、代理模式<a hidden class="anchor" aria-hidden="true" href="#7代理模式">#</a></h3>
+<blockquote>
+<p>英文表述：Proxy <code>/ˈprɒksi/</code></p>
+</blockquote>
+<p>能够提供对象的替代品或其占位符。代理控制着对于原对象的访问，并允许在将请求提交给对象前后进行一些处理。</p>
+<h2 id="行为型模式">行为型模式<a hidden class="anchor" aria-hidden="true" href="#行为型模式">#</a></h2>
+<p>负责对象间的高效沟通和职责委派。</p>
+<h3 id="1职责链模式">1、职责链模式<a hidden class="anchor" aria-hidden="true" href="#1职责链模式">#</a></h3>
+<blockquote>
+<p>英文表述：Chain of Responsibility <code>/ˈtʃeɪn/</code> <code>/əv/</code> <code>/rɪˌspɒnsəˈbɪləti/</code></p>
+</blockquote>
+<p>允许将请求沿着处理者链进行发送。收到请求后，每个处理者均可对请求进行处理，或将其传递给链上的下个处理者。</p>
+<h3 id="2命令模式">2、命令模式<a hidden class="anchor" aria-hidden="true" href="#2命令模式">#</a></h3>
+<blockquote>
+<p>英文表述：Command <code>/kəˈmɑːnd/</code></p>
+</blockquote>
+<p>可将请求转换为一个包含与请求相关的所有信息的独立对象。该转换能根据不同的请求将方法参数化、延迟请求执行或将其放入队列中，且能实现可撤销操作。</p>
+<h3 id="3迭代器模式">3、迭代器模式<a hidden class="anchor" aria-hidden="true" href="#3迭代器模式">#</a></h3>
+<blockquote>
+<p>英文表述：Iterator <code>/ˈɪtəreɪtə(r)/</code></p>
+</blockquote>
+<p>能在不暴露集合底层表现形式（列表、栈和树等）的情况下遍历集合中所有的元素。</p>
+<h3 id="4中介者模式">4、中介者模式<a hidden class="anchor" aria-hidden="true" href="#4中介者模式">#</a></h3>
+<blockquote>
+<p>英文表述：Mediator <code>/ˈmiː.di.eɪ.t̬ɚ/</code></p>
+</blockquote>
+<p>能减少对象之间混乱无序的依赖关系。会限制对象之间的直接交互，迫使它们通过一个中介者对象进行合作。</p>
+<h3 id="5备忘录模式">5、备忘录模式<a hidden class="anchor" aria-hidden="true" href="#5备忘录模式">#</a></h3>
+<blockquote>
+<p>英文表述：Memento <code>/məˈmentəʊ/</code></p>
+</blockquote>
+<p>允许在不暴露对象实现细节的情况下保存和恢复对象之前的状态。</p>
+<h3 id="6观察者模式">6、观察者模式<a hidden class="anchor" aria-hidden="true" href="#6观察者模式">#</a></h3>
+<blockquote>
+<p>英文表述：Observer <code>/əbˈzɜːvə(r)/</code></p>
+</blockquote>
+<p>允许定义一种订阅机制，可在对象事件发生时通知多个 “观察” 该对象的其他对象。</p>
+<h3 id="7状态模式">7、状态模式<a hidden class="anchor" aria-hidden="true" href="#7状态模式">#</a></h3>
+<blockquote>
+<p>英文表述：State <code>/steɪt/</code></p>
+</blockquote>
+<p>能在一个对象的内部状态变化时改变其行为，使其看上去就像改变了自身所属的类一样。</p>
+<h3 id="8策略模式">8、策略模式<a hidden class="anchor" aria-hidden="true" href="#8策略模式">#</a></h3>
+<blockquote>
+<p>英文表述：Strategy <code>/ˈstrætədʒi/</code></p>
+</blockquote>
+<p>能定义一系列算法，并将每种算法分别放入独立的类中，以使算法的对象能够相互替换。</p>
+<h3 id="9模板方法模式">9、模板方法模式<a hidden class="anchor" aria-hidden="true" href="#9模板方法模式">#</a></h3>
+<blockquote>
+<p>英文表述：Template Method <code>/ˈtempleɪt/</code> <code>/ˈmeθəd/</code></p>
+</blockquote>
+<p>在超类中定义了一个算法的框架，允许子类在不修改结构的情况下重写算法的特定步骤。</p>
+<h3 id="10访问者模式">10、访问者模式<a hidden class="anchor" aria-hidden="true" href="#10访问者模式">#</a></h3>
+<blockquote>
+<p>英文表述：Visitor <code>/ˈvɪzɪtə(r)/</code></p>
+</blockquote>
+<p>能将算法与其所作用的对象隔离开来。</p>
+<h3 id="11解释器模式">11、解释器模式<a hidden class="anchor" aria-hidden="true" href="#11解释器模式">#</a></h3>
+<blockquote>
+<p>英文表述：Interpreter <code>/ɪnˈtɜːprətə(r)/</code></p>
+</blockquote>
+<p>可以将复杂的语言转化为易于处理的数据结构，从而使得语言的解释更加容易。</p>
 <h2 id="参考资料">参考资料<a hidden class="anchor" aria-hidden="true" href="#参考资料">#</a></h2>
-<ul>
-<li><a href="https://nezha.wiki/guide/dashboard.html">哪吒监控官方文档</a></li>
-</ul>
+<p>[1] <a href="https://refactoring.guru/design-patterns">refactoringguru-design-patterns</a></p>
 
 
         </div>
@@ -566,15 +678,10 @@ if (!doNotTrack) {
         <footer class="post-footer">
             
 <nav class="paginav">
-  <a class="prev" href="https://edinik.com/posts/tech/design-pattern-introduction/">
-    <span class="title">« 上一页</span>
-    <br>
-    <span>设计模式 | 简介</span>
-  </a>
-  <a class="next" href="https://edinik.com/posts/life/table-tennis-serve-receive/">
+  <a class="next" href="https://edinik.com/posts/tech/nezha-monitoring-server-build/">
     <span class="title">下一页 »</span>
     <br>
-    <span>乒乓球 | 接发球</span>
+    <span>哪吒监控 | 服务端搭建</span>
   </a>
 </nav>
 
