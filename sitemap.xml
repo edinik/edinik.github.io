@@ -2,19 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://edinik.com/posts/read/</loc>
+    <lastmod>2023-04-11T21:56:25+08:00</lastmod>
+  </url><url>
+    <loc>https://edinik.com/posts/</loc>
+    <lastmod>2023-04-11T21:56:25+08:00</lastmod>
+  </url><url>
+    <loc>https://edinik.com/tags/</loc>
+    <lastmod>2023-04-11T21:56:25+08:00</lastmod>
+  </url><url>
+    <loc>https://edinik.com/</loc>
+    <lastmod>2023-04-11T21:56:25+08:00</lastmod>
+  </url><url>
+    <loc>https://edinik.com/tags/%E4%BA%BA%E9%97%B4%E8%AF%8D%E8%AF%9D/</loc>
+    <lastmod>2023-04-11T21:56:25+08:00</lastmod>
+  </url><url>
+    <loc>https://edinik.com/posts/read/%E4%BA%BA%E9%97%B4%E8%AF%8D%E8%AF%9D-%E8%9D%B6%E6%81%8B%E8%8A%B1-%E5%BA%AD%E9%99%A2%E6%B7%B1%E6%B7%B1%E6%B7%B1%E5%87%A0%E8%AE%B8/</loc>
+    <lastmod>2023-04-11T21:56:25+08:00</lastmod>
+  </url><url>
     <loc>https://edinik.com/posts/tech/</loc>
     <lastmod>2023-04-10T22:16:13+08:00</lastmod>
   </url><url>
-    <loc>https://edinik.com/posts/</loc>
-    <lastmod>2023-04-10T22:16:13+08:00</lastmod>
-  </url><url>
-    <loc>https://edinik.com/tags/</loc>
-    <lastmod>2023-04-10T22:16:13+08:00</lastmod>
-  </url><url>
     <loc>https://edinik.com/tags/design-pattern/</loc>
-    <lastmod>2023-04-10T22:16:13+08:00</lastmod>
-  </url><url>
-    <loc>https://edinik.com/</loc>
     <lastmod>2023-04-10T22:16:13+08:00</lastmod>
   </url><url>
     <loc>https://edinik.com/posts/tech/design-pattern-introduction/</loc>
@@ -69,8 +78,6 @@
     <lastmod>2023-03-17T12:41:22+08:00</lastmod>
   </url><url>
     <loc>https://edinik.com/archives/</loc>
-  </url><url>
-    <loc>https://edinik.com/posts/read/</loc>
   </url><url>
     <loc>https://edinik.com/search/</loc>
   </url><url>
