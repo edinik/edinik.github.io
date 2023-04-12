@@ -2,16 +2,25 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://edinik.com/posts/read/</loc>
-    <lastmod>2023-04-11T21:56:25+08:00</lastmod>
+    <loc>https://edinik.com/posts/life/</loc>
+    <lastmod>2023-04-12T20:31:53+08:00</lastmod>
   </url><url>
     <loc>https://edinik.com/posts/</loc>
-    <lastmod>2023-04-11T21:56:25+08:00</lastmod>
+    <lastmod>2023-04-12T20:31:53+08:00</lastmod>
   </url><url>
     <loc>https://edinik.com/tags/</loc>
-    <lastmod>2023-04-11T21:56:25+08:00</lastmod>
+    <lastmod>2023-04-12T20:31:53+08:00</lastmod>
   </url><url>
     <loc>https://edinik.com/</loc>
+    <lastmod>2023-04-12T20:31:53+08:00</lastmod>
+  </url><url>
+    <loc>https://edinik.com/tags/%E9%B2%9C%E8%8A%B1%E7%99%BE%E7%A7%91/</loc>
+    <lastmod>2023-04-12T20:31:53+08:00</lastmod>
+  </url><url>
+    <loc>https://edinik.com/posts/life/introduction-to-tulips/</loc>
+    <lastmod>2023-04-12T20:31:53+08:00</lastmod>
+  </url><url>
+    <loc>https://edinik.com/posts/read/</loc>
     <lastmod>2023-04-11T21:56:25+08:00</lastmod>
   </url><url>
     <loc>https://edinik.com/tags/%E4%BA%BA%E9%97%B4%E8%AF%8D%E8%AF%9D/</loc>
@@ -34,9 +43,6 @@
   </url><url>
     <loc>https://edinik.com/posts/tech/nezha-monitoring-server-build/</loc>
     <lastmod>2023-04-08T23:39:46+08:00</lastmod>
-  </url><url>
-    <loc>https://edinik.com/posts/life/</loc>
-    <lastmod>2023-04-07T22:32:27+08:00</lastmod>
   </url><url>
     <loc>https://edinik.com/tags/table-tennis/</loc>
     <lastmod>2023-04-07T22:32:27+08:00</lastmod>
