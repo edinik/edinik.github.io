@@ -142,8 +142,8 @@ if (!doNotTrack) {
   "keywords": [
     "权力的游戏", "人物关系图"
   ],
-  "articleBody": "",
-  "wordCount" : "0",
+  "articleBody": "史塔克家族 英文名：House Stark of Winterfell\n封地：\n临冬城 卡林湾 家徽：\n白色雪原上银灰色的一只冰原奔狼 箴言：\n凛冬将至 mindmap root((艾德·史塔克)) 妻子：凯特琳·徒利 弟弟：班扬 长子：罗柏 妻子：简妮·维斯特林 长女：珊莎 冰原狼：淑女 未婚夫：乔佛里 丈夫：提利昂·兰尼斯特 次女：艾莉亚 次子：布兰登 冰原狼：夏天 幼子：瑞肯 私生子：琼恩·雪诺 冰原狼：白灵 ",
+  "wordCount" : "162",
   "inLanguage": "zh",
   "datePublished": "2023-04-16T20:42:54+08:00",
   "dateModified": "2023-04-16T20:42:54+08:00",
@@ -314,13 +314,13 @@ if (!doNotTrack) {
     
     <span id="post_meta_style_3">
         <span class="fa fa-file-word-o"></span>
-        <span>0字
+        <span>162字
             &nbsp;&nbsp;
         </span>
     </span>
     <span id="post_meta_style_4">
         <span class="fa fa-clock-o"></span>
-        <span>0分钟
+        <span>1分钟
             &nbsp;&nbsp;
         </span>
     </span>
@@ -387,7 +387,120 @@ if (!doNotTrack) {
                 </span>
 
 </div>
-        </header> 
+        </header> <aside id="toc-container" class="toc-container wide">
+    <div class="toc">
+        <details  open>
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">目录</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#%e5%8f%b2%e5%a1%94%e5%85%8b%e5%ae%b6%e6%97%8f" aria-label="史塔克家族">史塔克家族</a>
+                </li>
+            </ul>
+        </div>
+        </details>
+    </div>
+</aside>
+<script>
+    let activeElement;
+    let elements;
+    window.addEventListener('DOMContentLoaded', function (event) {
+        checkTocPosition();
+
+        elements = document.querySelectorAll('h1[id],h2[id],h3[id],h4[id],h5[id],h6[id]');
+        
+        activeElement = elements[0];
+        const id = encodeURI(activeElement.getAttribute('id')).toLowerCase();
+        document.querySelector(`.inner ul li a[href="#${id}"]`).classList.add('active');
+    }, false);
+
+    window.addEventListener('resize', function(event) {
+        checkTocPosition();
+    }, false);
+
+    window.addEventListener('scroll', () => {
+        
+        activeElement = Array.from(elements).find((element) => {
+            if ((getOffsetTop(element) - window.pageYOffset) > 0 &&
+                (getOffsetTop(element) - window.pageYOffset) < window.innerHeight/2) {
+                return element;
+            }
+        }) || activeElement
+
+        elements.forEach(element => {
+            const id = encodeURI(element.getAttribute('id')).toLowerCase();
+            if (element === activeElement){
+                document.querySelector(`.inner ul li a[href="#${id}"]`).classList.add('active');
+            } else {
+                document.querySelector(`.inner ul li a[href="#${id}"]`).classList.remove('active');
+            }
+        })
+    }, false);
+
+    const main = parseInt(getComputedStyle(document.body).getPropertyValue('--article-width'), 10);
+    const toc = parseInt(getComputedStyle(document.body).getPropertyValue('--toc-width'), 10);
+    const gap = parseInt(getComputedStyle(document.body).getPropertyValue('--gap'), 10);
+
+    function checkTocPosition() {
+        const width = document.body.scrollWidth;
+        if (width - main - (toc * 2) - (gap * 4) > 0) {
+            document.getElementById("toc-container").classList.add("wide");
+        } else {
+            document.getElementById("toc-container").classList.remove("wide");
+        }
+    }
+
+    function getOffsetTop(element) {
+        if (!element.getClientRects().length) {
+            return 0;
+        }
+        let rect = element.getBoundingClientRect();
+        let win = element.ownerDocument.defaultView;
+        return rect.top + win.pageYOffset;
+    }
+</script>
+        <div class="post-content"><h2 id="史塔克家族">史塔克家族<a hidden class="anchor" aria-hidden="true" href="#史塔克家族">#</a></h2>
+<blockquote>
+<p>英文名：House Stark of Winterfell</p>
+</blockquote>
+<p>封地：</p>
+<ul>
+<li>临冬城</li>
+<li>卡林湾</li>
+</ul>
+<p>家徽：</p>
+<ul>
+<li>白色雪原上银灰色的一只冰原奔狼</li>
+</ul>
+<p>箴言：</p>
+<ul>
+<li>凛冬将至</li>
+</ul>
+<div class="mermaid">
+  
+mindmap
+  root((艾德·史塔克))
+        妻子：凯特琳·徒利
+        弟弟：班扬
+        长子：罗柏
+          妻子：简妮·维斯特林
+        长女：珊莎
+          冰原狼：淑女
+          未婚夫：乔佛里
+          丈夫：提利昂·兰尼斯特
+        次女：艾莉亚
+        次子：布兰登
+          冰原狼：夏天
+        幼子：瑞肯
+        私生子：琼恩·雪诺
+          冰原狼：白灵
+
+</div>
+
+
+        </div>
         <div class="post-reward">
             <div style="padding: 0 0 0 0; margin: 0 0 0 0; width: 100%; font-size:16px; text-align: center;">
                 <div id="QR" style="opacity: 0;">
