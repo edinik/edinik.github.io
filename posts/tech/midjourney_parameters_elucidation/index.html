@@ -5,11 +5,11 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
-<title>图床 | lsky图床平台搭建 | Edison&#39;s Blog</title>
-<meta name="keywords" content="图床, 相册, lsky, 兰空">
-<meta name="description" content="图床 | lsky图床平台搭建">
+<title>midjourney | Image Weight | Edison&#39;s Blog</title>
+<meta name="keywords" content="midjourney, parameters">
+<meta name="description" content="midjourney参数详解之Image Weight">
 <meta name="author" content="Edison">
-<link rel="canonical" href="https://edinik.com/posts/tech/build-lsky-image-hosting-platform/">
+<link rel="canonical" href="https://edinik.com/posts/tech/midjourney_parameters_elucidation/">
 <meta name="google-site-verification" content="6A-1RsLBWSgG_uBmVVQzBmGE8k2mxcJwZErLRJMpk4I">
 <meta name="baidu-site-verification" content="codeva-I9cG7LIaz4">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.e273849ed7932f32c89b3da33afd02c39cb41bb8ef51182141fa585b591521fe.css" integrity="sha256-4nOEnteTLzLImz2jOv0Cw5y0G7jvURghQfpYW1kVIf4=" rel="preload stylesheet" as="style">
@@ -90,18 +90,18 @@ if (!doNotTrack) {
 	
 	ga('send', 'pageview');
 }
-</script><meta property="og:title" content="图床 | lsky图床平台搭建" />
-<meta property="og:description" content="图床 | lsky图床平台搭建" />
+</script><meta property="og:title" content="midjourney | Image Weight" />
+<meta property="og:description" content="midjourney参数详解之Image Weight" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://edinik.com/posts/tech/build-lsky-image-hosting-platform/" /><meta property="og:image" content="https://edinik.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E"/><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2023-04-22T21:45:23+08:00" />
-<meta property="article:modified_time" content="2023-04-22T21:45:23+08:00" /><meta property="og:site_name" content="Edison" />
+<meta property="og:url" content="https://edinik.com/posts/tech/midjourney_parameters_elucidation/" /><meta property="og:image" content="https://edinik.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-04-27T22:58:08+08:00" />
+<meta property="article:modified_time" content="2023-04-27T22:58:08+08:00" /><meta property="og:site_name" content="Edison" />
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://edinik.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E"/>
 
-<meta name="twitter:title" content="图床 | lsky图床平台搭建"/>
-<meta name="twitter:description" content="图床 | lsky图床平台搭建"/>
+<meta name="twitter:title" content="midjourney | Image Weight"/>
+<meta name="twitter:description" content="midjourney参数详解之Image Weight"/>
 
 
 <script type="application/ld+json">
@@ -126,8 +126,8 @@ if (!doNotTrack) {
     {
       "@type": "ListItem",
       "position":  4 ,
-      "name": "图床 | lsky图床平台搭建",
-      "item": "https://edinik.com/posts/tech/build-lsky-image-hosting-platform/"
+      "name": "midjourney | Image Weight",
+      "item": "https://edinik.com/posts/tech/midjourney_parameters_elucidation/"
     }
   ]
 }
@@ -136,24 +136,24 @@ if (!doNotTrack) {
 {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  "headline": "图床 | lsky图床平台搭建",
-  "name": "图床 | lsky图床平台搭建",
-  "description": "图床 | lsky图床平台搭建",
+  "headline": "midjourney | Image Weight",
+  "name": "midjourney | Image Weight",
+  "description": "midjourney参数详解之Image Weight",
   "keywords": [
-    "图床", "相册", "lsky", "兰空"
+    "midjourney", "parameters"
   ],
-  "articleBody": " 兰空图床(Lsky Pro)官方项目地址 兰空图床(Lsky Pro)第三方Docker项目地址 官方Wiki\nDocker容器构建命令 docker run -d \\ --name lsky-pro \\ --restart unless-stopped \\ -p 8089:8089 \\ -v $PWD/lsky/web:/var/www/html \\ -e WEB_PORT=8089 \\ halcyonazure/lsky-pro-docker:latest 反代/套CDN后无法加载静态文件(css, js)，安装时点击无反应 进入root/lsky/web目录，编辑 .env 文件，追加一行： ASSET_URL=https://你的域名 但是接口域名还是 http 的，所以编辑app/Providers/AppServiceProvider.php文件 public function boot() { // 是否需要生成 env 文件 if (! file_exists(base_path('.env'))) { file_put_contents(base_path('.env'), file_get_contents(base_path('.env.example'))); // 生成 key Artisan::call('key:generate'); } // 如果已经安装程序，初始化一些配置 if (file_exists(base_path('installed.lock'))) { // 覆盖默认配置 Config::set('app.name', Utils::config(ConfigKey::AppName)); Config::set('mail', array_merge(\\config('mail'), Utils::config(ConfigKey::Mail)-\u003etoArray())); View::composer('*', function (\\Illuminate\\View\\View $view) { /** @var Group $group */ $group = Auth::check() ? Auth::user()-\u003egroup : Group::query()-\u003ewhere('is_guest', true)-\u003efirst(); $view-\u003ewith('_group', $group); }); } } 在第三行追加一行 \\Illuminate\\Support\\Facades\\URL::forceScheme('https'); PicGo插件配置 picgo-plugin-lankong插件项目地址\n获取Token curl -X POST -F \"email=your_email@address\" -F \"password=your_passwd\" https://your.domain/api/v1/tokens ",
-  "wordCount" : "360",
+  "articleBody": "Imagine命令 基本格式：/imagine + 文字提示 高级格式：/imagine + 图片提示 + 文字提示 + 参数 1、图片提示\n格式要求：jpg、png、gif 2、提示词最低要求：两张图片，或者一张图片+提示词\n参数 Image Weight (图像权重) --iw\n越高的图像权重意味着图像提示对生成图像的影响越大。\n不同的版本有不同的图像权重范围：\nVersion 5 Version 4 Version 3 Test / Testp niji Stylize default 1 NA .25 NA NA Stylize Range .5–2 NA -10000–10000 NA NA 提示例子：/imagine https://s.mj.run/AtXbPf5hENw lamp --iw .5 --v 5 --q 2\nImage Prompt –iw .5 –iw .75 –iw 1 –iw 1.25 –iw 1.5 –iw 1.75 –iw 2 ",
+  "wordCount" : "227",
   "inLanguage": "zh",
-  "datePublished": "2023-04-22T21:45:23+08:00",
-  "dateModified": "2023-04-22T21:45:23+08:00",
+  "datePublished": "2023-04-27T22:58:08+08:00",
+  "dateModified": "2023-04-27T22:58:08+08:00",
   "author":[{
     "@type": "Person",
     "name": "Edison"
   }],
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://edinik.com/posts/tech/build-lsky-image-hosting-platform/"
+    "@id": "https://edinik.com/posts/tech/midjourney_parameters_elucidation/"
   },
   "publisher": {
     "@type": "Organization",
@@ -279,10 +279,10 @@ if (!doNotTrack) {
         <header class="post-header">
             <div class="breadcrumbs"><a href="https://edinik.com">🏠 主页</a>&nbsp;»&nbsp;<a href="https://edinik.com/posts/">📚 文章</a>&nbsp;»&nbsp;<a href="https://edinik.com/posts/tech/">👨🏻‍💻 技术</a></div>
             <h1 class="post-title">
-                图床 | lsky图床平台搭建
+                midjourney | Image Weight
             </h1>
             <div class="post-description">
-                图床 | lsky图床平台搭建
+                midjourney参数详解之Image Weight
             </div>
             <div class="post-meta"><style>
     i[id*="post_meta_style"] {
@@ -301,7 +301,7 @@ if (!doNotTrack) {
 <span class="parent-post-meta">
     <span id="post_meta_style_1">
         <span class="fa fa-calendar-check-o"></span>
-        <span>2023-04-22
+        <span>2023-04-27
             &nbsp;&nbsp;
         </span>
     </span>
@@ -314,7 +314,7 @@ if (!doNotTrack) {
     
     <span id="post_meta_style_3">
         <span class="fa fa-file-word-o"></span>
-        <span>360字
+        <span>227字
             &nbsp;&nbsp;
         </span>
     </span>
@@ -334,7 +334,7 @@ if (!doNotTrack) {
         <span class="fa fa-tags" style="opacity: 0.8"></span>
         <span>
             <span class="post-tags-meta">
-                <a href="https://edinik.com/tags/image-hosting-platform/" style="color: var(--secondary)!important;">image-hosting-platform</a>
+                <a href="https://edinik.com/tags/midjourney/" style="color: var(--secondary)!important;">midjourney</a>
             </span>
         </span>
     </span>
@@ -396,12 +396,21 @@ if (!doNotTrack) {
 
         <div class="inner"><ul>
                 <li>
-                    <a href="#docker%e5%ae%b9%e5%99%a8%e6%9e%84%e5%bb%ba%e5%91%bd%e4%bb%a4" aria-label="Docker容器构建命令">Docker容器构建命令</a></li>
+                    <a href="#imagine%e5%91%bd%e4%bb%a4" aria-label="Imagine命令">Imagine命令</a><ul>
+                        
                 <li>
-                    <a href="#%e5%8f%8d%e4%bb%a3%e5%a5%97cdn%e5%90%8e%e6%97%a0%e6%b3%95%e5%8a%a0%e8%bd%bd%e9%9d%99%e6%80%81%e6%96%87%e4%bb%b6css-js%e5%ae%89%e8%a3%85%e6%97%b6%e7%82%b9%e5%87%bb%e6%97%a0%e5%8f%8d%e5%ba%94" aria-label="反代/套CDN后无法加载静态文件(css, js)，安装时点击无反应">反代/套CDN后无法加载静态文件(css, js)，安装时点击无反应</a></li>
+                    <a href="#%e5%9f%ba%e6%9c%ac%e6%a0%bc%e5%bc%8fimagine--%e6%96%87%e5%ad%97%e6%8f%90%e7%a4%ba" aria-label="基本格式：/imagine &#43; 文字提示">基本格式：<code>/imagine + 文字提示</code></a></li>
                 <li>
-                    <a href="#picgo%e6%8f%92%e4%bb%b6%e9%85%8d%e7%bd%ae" aria-label="PicGo插件配置">PicGo插件配置</a>
+                    <a href="#%e9%ab%98%e7%ba%a7%e6%a0%bc%e5%bc%8fimagine--%e5%9b%be%e7%89%87%e6%8f%90%e7%a4%ba--%e6%96%87%e5%ad%97%e6%8f%90%e7%a4%ba--%e5%8f%82%e6%95%b0" aria-label="高级格式：/imagine &#43; 图片提示 &#43; 文字提示 &#43; 参数">高级格式：<code>/imagine + 图片提示 + 文字提示 + 参数</code></a></li></ul>
                 </li>
+                <li>
+                    <a href="#%e5%8f%82%e6%95%b0" aria-label="参数">参数</a><ul>
+                        
+                <li>
+                    <a href="#image-weight-%e5%9b%be%e5%83%8f%e6%9d%83%e9%87%8d" aria-label="Image Weight (图像权重)">Image Weight (图像权重)</a>
+                </li>
+            </ul>
+            </li>
             </ul>
         </div>
         </details>
@@ -465,62 +474,88 @@ if (!doNotTrack) {
         return rect.top + win.pageYOffset;
     }
 </script>
-        <div class="post-content"><blockquote>
-<p><a href="https://github.com/lsky-org/lsky-pro">兰空图床(Lsky Pro)官方项目地址</a>
-<a href="https://github.com/HalcyonAzure/lsky-pro-docker">兰空图床(Lsky Pro)第三方Docker项目地址</a>
-<a href="https://github.com/lsky-org/lsky-pro/discussions">官方Wiki</a></p>
-</blockquote>
-<h2 id="docker容器构建命令">Docker容器构建命令<a hidden class="anchor" aria-hidden="true" href="#docker容器构建命令">#</a></h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>docker run -d <span style="color:#ae81ff">\
-</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    --name lsky-pro <span style="color:#ae81ff">\
-</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    --restart unless-stopped <span style="color:#ae81ff">\
-</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    -p 8089:8089 <span style="color:#ae81ff">\
-</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    -v $PWD/lsky/web:/var/www/html <span style="color:#ae81ff">\
-</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    -e WEB_PORT<span style="color:#f92672">=</span><span style="color:#ae81ff">8089</span> <span style="color:#ae81ff">\
-</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    halcyonazure/lsky-pro-docker:latest
-</span></span></code></pre></div><h2 id="反代套cdn后无法加载静态文件css-js安装时点击无反应">反代/套CDN后无法加载静态文件(css, js)，安装时点击无反应<a hidden class="anchor" aria-hidden="true" href="#反代套cdn后无法加载静态文件css-js安装时点击无反应">#</a></h2>
+        <div class="post-content"><h2 id="imagine命令">Imagine命令<a hidden class="anchor" aria-hidden="true" href="#imagine命令">#</a></h2>
+<h3 id="基本格式imagine--文字提示">基本格式：<code>/imagine + 文字提示</code><a hidden class="anchor" aria-hidden="true" href="#基本格式imagine--文字提示">#</a></h3>
+<p><img loading="lazy" src="https://lsky.edinik.com/i/2023/04/27/644a8f6f5cb78.webp" alt="1682607982813.webp"  />
+</p>
+<h3 id="高级格式imagine--图片提示--文字提示--参数">高级格式：<code>/imagine + 图片提示 + 文字提示 + 参数</code><a hidden class="anchor" aria-hidden="true" href="#高级格式imagine--图片提示--文字提示--参数">#</a></h3>
+<p><img loading="lazy" src="https://lsky.edinik.com/i/2023/04/27/644a8fa98ef20.webp" alt="1682608041007.webp"  />
+</p>
+<p>1、图片提示</p>
 <ul>
-<li>进入<code>root/lsky/web</code>目录，编辑 .env 文件，追加一行：</li>
+<li>格式要求：jpg、png、gif</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ASSET_URL<span style="color:#f92672">=</span>https://你的域名
-</span></span></code></pre></div><ul>
-<li>但是接口域名还是 http 的，所以编辑<code>app/Providers/AppServiceProvider.php</code>文件</li>
-</ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">boot</span>() 
-</span></span><span style="display:flex;"><span> { 
-</span></span><span style="display:flex;"><span>     <span style="color:#75715e">// 是否需要生成 env 文件 
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>     <span style="color:#66d9ef">if</span> (<span style="color:#f92672">!</span> <span style="color:#a6e22e">file_exists</span>(<span style="color:#a6e22e">base_path</span>(<span style="color:#e6db74">&#39;.env&#39;</span>))) { 
-</span></span><span style="display:flex;"><span>         <span style="color:#a6e22e">file_put_contents</span>(<span style="color:#a6e22e">base_path</span>(<span style="color:#e6db74">&#39;.env&#39;</span>), <span style="color:#a6e22e">file_get_contents</span>(<span style="color:#a6e22e">base_path</span>(<span style="color:#e6db74">&#39;.env.example&#39;</span>))); 
-</span></span><span style="display:flex;"><span>         <span style="color:#75715e">// 生成 key 
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>         <span style="color:#a6e22e">Artisan</span><span style="color:#f92672">::</span><span style="color:#a6e22e">call</span>(<span style="color:#e6db74">&#39;key:generate&#39;</span>); 
-</span></span><span style="display:flex;"><span>     } 
-</span></span><span style="display:flex;"><span>  
-</span></span><span style="display:flex;"><span>     <span style="color:#75715e">// 如果已经安装程序，初始化一些配置 
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>     <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">file_exists</span>(<span style="color:#a6e22e">base_path</span>(<span style="color:#e6db74">&#39;installed.lock&#39;</span>))) { 
-</span></span><span style="display:flex;"><span>         <span style="color:#75715e">// 覆盖默认配置 
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>         <span style="color:#a6e22e">Config</span><span style="color:#f92672">::</span><span style="color:#a6e22e">set</span>(<span style="color:#e6db74">&#39;app.name&#39;</span>, <span style="color:#a6e22e">Utils</span><span style="color:#f92672">::</span><span style="color:#a6e22e">config</span>(<span style="color:#a6e22e">ConfigKey</span><span style="color:#f92672">::</span><span style="color:#a6e22e">AppName</span>)); 
-</span></span><span style="display:flex;"><span>         <span style="color:#a6e22e">Config</span><span style="color:#f92672">::</span><span style="color:#a6e22e">set</span>(<span style="color:#e6db74">&#39;mail&#39;</span>, <span style="color:#a6e22e">array_merge</span>(<span style="color:#a6e22e">\config</span>(<span style="color:#e6db74">&#39;mail&#39;</span>), <span style="color:#a6e22e">Utils</span><span style="color:#f92672">::</span><span style="color:#a6e22e">config</span>(<span style="color:#a6e22e">ConfigKey</span><span style="color:#f92672">::</span><span style="color:#a6e22e">Mail</span>)<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">toArray</span>())); 
-</span></span><span style="display:flex;"><span>  
-</span></span><span style="display:flex;"><span>         <span style="color:#a6e22e">View</span><span style="color:#f92672">::</span><span style="color:#a6e22e">composer</span>(<span style="color:#e6db74">&#39;*&#39;</span>, <span style="color:#66d9ef">function</span> (<span style="color:#a6e22e">\Illuminate\View\View</span> $view) { 
-</span></span><span style="display:flex;"><span>             <span style="color:#e6db74">/** @var Group $group */</span> 
-</span></span><span style="display:flex;"><span>             $group <span style="color:#f92672">=</span> <span style="color:#a6e22e">Auth</span><span style="color:#f92672">::</span><span style="color:#a6e22e">check</span>() <span style="color:#f92672">?</span> <span style="color:#a6e22e">Auth</span><span style="color:#f92672">::</span><span style="color:#a6e22e">user</span>()<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">group</span> <span style="color:#f92672">:</span> <span style="color:#a6e22e">Group</span><span style="color:#f92672">::</span><span style="color:#a6e22e">query</span>()<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">where</span>(<span style="color:#e6db74">&#39;is_guest&#39;</span>, <span style="color:#66d9ef">true</span>)<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">first</span>(); 
-</span></span><span style="display:flex;"><span>             $view<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">with</span>(<span style="color:#e6db74">&#39;_group&#39;</span>, $group); 
-</span></span><span style="display:flex;"><span>         }); 
-</span></span><span style="display:flex;"><span>     } 
-</span></span><span style="display:flex;"><span> } 
-</span></span></code></pre></div><ul>
-<li>在第三行追加一行</li>
-</ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#a6e22e">\Illuminate\Support\Facades\URL</span><span style="color:#f92672">::</span><span style="color:#a6e22e">forceScheme</span>(<span style="color:#e6db74">&#39;https&#39;</span>);
-</span></span></code></pre></div><h2 id="picgo插件配置">PicGo插件配置<a hidden class="anchor" aria-hidden="true" href="#picgo插件配置">#</a></h2>
+<p>2、提示词最低要求：两张图片，或者一张图片+提示词</p>
+<h2 id="参数">参数<a hidden class="anchor" aria-hidden="true" href="#参数">#</a></h2>
+<h3 id="image-weight-图像权重">Image Weight (图像权重)<a hidden class="anchor" aria-hidden="true" href="#image-weight-图像权重">#</a></h3>
 <blockquote>
-<p><a href="https://github.com/hellodk34/picgo-plugin-lankong">picgo-plugin-lankong插件项目地址</a></p>
+<p><code>--iw</code></p>
 </blockquote>
+<p>越高的图像权重意味着图像提示对生成图像的影响越大。</p>
+<p>不同的版本有不同的图像权重范围：</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Version 5</th>
+<th>Version 4</th>
+<th>Version 3</th>
+<th>Test / Testp</th>
+<th>niji</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Stylize default</td>
+<td>1</td>
+<td>NA</td>
+<td>.25</td>
+<td>NA</td>
+<td>NA</td>
+</tr>
+<tr>
+<td>Stylize Range</td>
+<td>.5–2</td>
+<td>NA</td>
+<td>-10000–10000</td>
+<td>NA</td>
+<td>NA</td>
+</tr>
+</tbody>
+</table>
+<p>提示例子：<code>/imagine https://s.mj.run/AtXbPf5hENw lamp --iw .5 --v 5 --q 2</code></p>
 <ul>
-<li>获取Token</li>
+<li>Image Prompt</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>curl -X POST -F <span style="color:#e6db74">&#34;email=your_email@address&#34;</span> -F <span style="color:#e6db74">&#34;password=your_passwd&#34;</span> https://your.domain/api/v1/tokens
-</span></span></code></pre></div>
+<img src="https://lsky.edinik.com/i/2023/04/23/644407341bfa0.webp" alt="_MG_3341.webp" title="_MG_3341.webp" width=600/>
+<ul>
+<li>&ndash;iw .5</li>
+</ul>
+<img src="https://lsky.edinik.com/i/2023/04/27/644a9aa245fae.webp" alt="1682610846923.webp" title="1682610846923.webp" width=600 />
+<ul>
+<li>&ndash;iw .75</li>
+</ul>
+<img src="https://lsky.edinik.com/i/2023/04/27/644a9b143e004.webp" alt="1682610957490.webp" title="1682610957490.webp" width=600 />
+<ul>
+<li>&ndash;iw 1</li>
+</ul>
+<img src="https://lsky.edinik.com/i/2023/04/27/644a9b753e5d1.webp" alt="1682611057678.webp" title="1682611057678.webp" width=600 />
+<ul>
+<li>&ndash;iw 1.25</li>
+</ul>
+<img src="https://lsky.edinik.com/i/2023/04/28/644a9c2aba99f.webp" alt="1682611239365.webp" title="1682611239365.webp" width=600 />
+<ul>
+<li>&ndash;iw 1.5</li>
+</ul>
+<img src="https://lsky.edinik.com/i/2023/04/28/644a9c8b76e94.webp" alt="1682611336102.webp" title="1682611336102.webp" width=600/>
+<ul>
+<li>&ndash;iw 1.75</li>
+</ul>
+<img src="https://lsky.edinik.com/i/2023/04/28/644a9d02296ac.webp" alt="1682611454716.webp" title="1682611454716.webp" width=600/>
+<ul>
+<li>&ndash;iw 2</li>
+</ul>
+<img src="https://lsky.edinik.com/i/2023/04/28/644a9e3e3fc63.webp" alt="1682611771113.webp" title="1682611771113.webp" width=600 />
 
         </div>
         <div class="post-reward">
@@ -554,15 +589,10 @@ if (!doNotTrack) {
         <footer class="post-footer">
             
 <nav class="paginav">
-  <a class="prev" href="https://edinik.com/posts/tech/midjourney_parameters_elucidation/">
-    <span class="title">« 上一页</span>
-    <br>
-    <span>midjourney | Image Weight</span>
-  </a>
-  <a class="next" href="https://edinik.com/posts/read/game-of-thrones-maps/">
+  <a class="next" href="https://edinik.com/posts/tech/build-lsky-image-hosting-platform/">
     <span class="title">下一页 »</span>
     <br>
-    <span>权力的游戏 | 地图</span>
+    <span>图床 | lsky图床平台搭建</span>
   </a>
 </nav>
 
