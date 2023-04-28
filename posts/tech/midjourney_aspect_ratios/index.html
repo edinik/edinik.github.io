@@ -5,11 +5,11 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
-<title>midjourney | Image Weight | Edison&#39;s Blog</title>
-<meta name="keywords" content="midjourney, parameters">
-<meta name="description" content="midjourney参数详解之Image Weight">
+<title>midjourney | aspect ratios | Edison&#39;s Blog</title>
+<meta name="keywords" content="midjourney, aspect ratios">
+<meta name="description" content="midjourney参数详解之横纵比">
 <meta name="author" content="Edison">
-<link rel="canonical" href="https://edinik.com/posts/tech/midjourney_image_weight/">
+<link rel="canonical" href="https://edinik.com/posts/tech/midjourney_aspect_ratios/">
 <meta name="google-site-verification" content="6A-1RsLBWSgG_uBmVVQzBmGE8k2mxcJwZErLRJMpk4I">
 <meta name="baidu-site-verification" content="codeva-I9cG7LIaz4">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.e273849ed7932f32c89b3da33afd02c39cb41bb8ef51182141fa585b591521fe.css" integrity="sha256-4nOEnteTLzLImz2jOv0Cw5y0G7jvURghQfpYW1kVIf4=" rel="preload stylesheet" as="style">
@@ -90,18 +90,18 @@ if (!doNotTrack) {
 	
 	ga('send', 'pageview');
 }
-</script><meta property="og:title" content="midjourney | Image Weight" />
-<meta property="og:description" content="midjourney参数详解之Image Weight" />
+</script><meta property="og:title" content="midjourney | aspect ratios" />
+<meta property="og:description" content="midjourney参数详解之横纵比" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://edinik.com/posts/tech/midjourney_image_weight/" /><meta property="og:image" content="https://edinik.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E"/><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2023-04-27T22:58:08+08:00" />
-<meta property="article:modified_time" content="2023-04-27T22:58:08+08:00" /><meta property="og:site_name" content="Edison" />
+<meta property="og:url" content="https://edinik.com/posts/tech/midjourney_aspect_ratios/" /><meta property="og:image" content="https://edinik.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-04-28T21:29:13+08:00" />
+<meta property="article:modified_time" content="2023-04-28T21:29:13+08:00" /><meta property="og:site_name" content="Edison" />
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://edinik.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E"/>
 
-<meta name="twitter:title" content="midjourney | Image Weight"/>
-<meta name="twitter:description" content="midjourney参数详解之Image Weight"/>
+<meta name="twitter:title" content="midjourney | aspect ratios"/>
+<meta name="twitter:description" content="midjourney参数详解之横纵比"/>
 
 
 <script type="application/ld+json">
@@ -126,8 +126,8 @@ if (!doNotTrack) {
     {
       "@type": "ListItem",
       "position":  4 ,
-      "name": "midjourney | Image Weight",
-      "item": "https://edinik.com/posts/tech/midjourney_image_weight/"
+      "name": "midjourney | aspect ratios",
+      "item": "https://edinik.com/posts/tech/midjourney_aspect_ratios/"
     }
   ]
 }
@@ -136,24 +136,24 @@ if (!doNotTrack) {
 {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  "headline": "midjourney | Image Weight",
-  "name": "midjourney | Image Weight",
-  "description": "midjourney参数详解之Image Weight",
+  "headline": "midjourney | aspect ratios",
+  "name": "midjourney | aspect ratios",
+  "description": "midjourney参数详解之横纵比",
   "keywords": [
-    "midjourney", "parameters"
+    "midjourney", "aspect ratios"
   ],
-  "articleBody": "Imagine命令 基本格式：/imagine + 文字提示 高级格式：/imagine + 图片提示 + 文字提示 + 参数 1、图片提示\n格式要求：jpg、png、gif 2、提示词最低要求：两张图片，或者一张图片+提示词\n参数 Image Weight (图像权重) --iw\n越高的图像权重意味着图像提示对生成图像的影响越大。\n不同的版本有不同的图像权重范围：\nVersion 5 Version 4 Version 3 Test / Testp niji Stylize default 1 NA .25 NA NA Stylize Range .5–2 NA -10000–10000 NA NA 提示例子：/imagine https://s.mj.run/AtXbPf5hENw lamp --iw .5 --v 5 --q 2\nImage Prompt –iw .5 –iw .75 –iw 1 –iw 1.25 –iw 1.5 –iw 1.75 –iw 2 ",
-  "wordCount" : "227",
+  "articleBody": "参数详解 --aspect --ar 参数示例 --ar 2:3 --ar 16:9 --ar 4:3 --ar 1:1 ",
+  "wordCount" : "18",
   "inLanguage": "zh",
-  "datePublished": "2023-04-27T22:58:08+08:00",
-  "dateModified": "2023-04-27T22:58:08+08:00",
+  "datePublished": "2023-04-28T21:29:13+08:00",
+  "dateModified": "2023-04-28T21:29:13+08:00",
   "author":[{
     "@type": "Person",
     "name": "Edison"
   }],
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://edinik.com/posts/tech/midjourney_image_weight/"
+    "@id": "https://edinik.com/posts/tech/midjourney_aspect_ratios/"
   },
   "publisher": {
     "@type": "Organization",
@@ -279,10 +279,10 @@ if (!doNotTrack) {
         <header class="post-header">
             <div class="breadcrumbs"><a href="https://edinik.com">🏠 主页</a>&nbsp;»&nbsp;<a href="https://edinik.com/posts/">📚 文章</a>&nbsp;»&nbsp;<a href="https://edinik.com/posts/tech/">👨🏻‍💻 技术</a></div>
             <h1 class="post-title">
-                midjourney | Image Weight
+                midjourney | aspect ratios
             </h1>
             <div class="post-description">
-                midjourney参数详解之Image Weight
+                midjourney参数详解之横纵比
             </div>
             <div class="post-meta"><style>
     i[id*="post_meta_style"] {
@@ -301,7 +301,7 @@ if (!doNotTrack) {
 <span class="parent-post-meta">
     <span id="post_meta_style_1">
         <span class="fa fa-calendar-check-o"></span>
-        <span>2023-04-27
+        <span>2023-04-28
             &nbsp;&nbsp;
         </span>
     </span>
@@ -314,7 +314,7 @@ if (!doNotTrack) {
     
     <span id="post_meta_style_3">
         <span class="fa fa-file-word-o"></span>
-        <span>227字
+        <span>18字
             &nbsp;&nbsp;
         </span>
     </span>
@@ -396,21 +396,10 @@ if (!doNotTrack) {
 
         <div class="inner"><ul>
                 <li>
-                    <a href="#imagine%e5%91%bd%e4%bb%a4" aria-label="Imagine命令">Imagine命令</a><ul>
-                        
+                    <a href="#%e5%8f%82%e6%95%b0%e8%af%a6%e8%a7%a3" aria-label="参数详解">参数详解</a></li>
                 <li>
-                    <a href="#%e5%9f%ba%e6%9c%ac%e6%a0%bc%e5%bc%8fimagine--%e6%96%87%e5%ad%97%e6%8f%90%e7%a4%ba" aria-label="基本格式：/imagine &#43; 文字提示">基本格式：<code>/imagine + 文字提示</code></a></li>
-                <li>
-                    <a href="#%e9%ab%98%e7%ba%a7%e6%a0%bc%e5%bc%8fimagine--%e5%9b%be%e7%89%87%e6%8f%90%e7%a4%ba--%e6%96%87%e5%ad%97%e6%8f%90%e7%a4%ba--%e5%8f%82%e6%95%b0" aria-label="高级格式：/imagine &#43; 图片提示 &#43; 文字提示 &#43; 参数">高级格式：<code>/imagine + 图片提示 + 文字提示 + 参数</code></a></li></ul>
+                    <a href="#%e5%8f%82%e6%95%b0%e7%a4%ba%e4%be%8b" aria-label="参数示例">参数示例</a>
                 </li>
-                <li>
-                    <a href="#%e5%8f%82%e6%95%b0" aria-label="参数">参数</a><ul>
-                        
-                <li>
-                    <a href="#image-weight-%e5%9b%be%e5%83%8f%e6%9d%83%e9%87%8d" aria-label="Image Weight (图像权重)">Image Weight (图像权重)</a>
-                </li>
-            </ul>
-            </li>
             </ul>
         </div>
         </details>
@@ -474,88 +463,28 @@ if (!doNotTrack) {
         return rect.top + win.pageYOffset;
     }
 </script>
-        <div class="post-content"><h2 id="imagine命令">Imagine命令<a hidden class="anchor" aria-hidden="true" href="#imagine命令">#</a></h2>
-<h3 id="基本格式imagine--文字提示">基本格式：<code>/imagine + 文字提示</code><a hidden class="anchor" aria-hidden="true" href="#基本格式imagine--文字提示">#</a></h3>
-<p><img loading="lazy" src="https://lsky.edinik.com/i/2023/04/27/644a8f6f5cb78.webp" alt="1682607982813.webp"  />
-</p>
-<h3 id="高级格式imagine--图片提示--文字提示--参数">高级格式：<code>/imagine + 图片提示 + 文字提示 + 参数</code><a hidden class="anchor" aria-hidden="true" href="#高级格式imagine--图片提示--文字提示--参数">#</a></h3>
-<p><img loading="lazy" src="https://lsky.edinik.com/i/2023/04/27/644a8fa98ef20.webp" alt="1682608041007.webp"  />
-</p>
-<p>1、图片提示</p>
+        <div class="post-content"><h2 id="参数详解">参数详解<a hidden class="anchor" aria-hidden="true" href="#参数详解">#</a></h2>
 <ul>
-<li>格式要求：jpg、png、gif</li>
+<li><code>--aspect</code></li>
+<li><code>--ar</code></li>
 </ul>
-<p>2、提示词最低要求：两张图片，或者一张图片+提示词</p>
-<h2 id="参数">参数<a hidden class="anchor" aria-hidden="true" href="#参数">#</a></h2>
-<h3 id="image-weight-图像权重">Image Weight (图像权重)<a hidden class="anchor" aria-hidden="true" href="#image-weight-图像权重">#</a></h3>
-<blockquote>
-<p><code>--iw</code></p>
-</blockquote>
-<p>越高的图像权重意味着图像提示对生成图像的影响越大。</p>
-<p>不同的版本有不同的图像权重范围：</p>
-<table>
-<thead>
-<tr>
-<th></th>
-<th>Version 5</th>
-<th>Version 4</th>
-<th>Version 3</th>
-<th>Test / Testp</th>
-<th>niji</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Stylize default</td>
-<td>1</td>
-<td>NA</td>
-<td>.25</td>
-<td>NA</td>
-<td>NA</td>
-</tr>
-<tr>
-<td>Stylize Range</td>
-<td>.5–2</td>
-<td>NA</td>
-<td>-10000–10000</td>
-<td>NA</td>
-<td>NA</td>
-</tr>
-</tbody>
-</table>
-<p>提示例子：<code>/imagine https://s.mj.run/AtXbPf5hENw lamp --iw .5 --v 5 --q 2</code></p>
+<h2 id="参数示例">参数示例<a hidden class="anchor" aria-hidden="true" href="#参数示例">#</a></h2>
 <ul>
-<li>Image Prompt</li>
+<li><code>--ar 2:3</code></li>
 </ul>
-<img src="https://lsky.edinik.com/i/2023/04/23/644407341bfa0.webp" alt="_MG_3341.webp" title="_MG_3341.webp" width=600/>
+<img src="https://lsky.edinik.com/i/2023/04/28/644bcddd94b15.webp" alt="1682689499849.webp" title="1682689499849.webp" width=300/>
 <ul>
-<li>&ndash;iw .5</li>
+<li><code>--ar 16:9</code></li>
 </ul>
-<img src="https://lsky.edinik.com/i/2023/04/27/644a9aa245fae.webp" alt="1682610846923.webp" title="1682610846923.webp" width=600 />
+<img src="https://lsky.edinik.com/i/2023/04/28/644bce98ae49f.webp" alt="1682689687040.webp" title="1682689687040.webp" width=600 />
 <ul>
-<li>&ndash;iw .75</li>
+<li><code>--ar 4:3</code></li>
 </ul>
-<img src="https://lsky.edinik.com/i/2023/04/27/644a9b143e004.webp" alt="1682610957490.webp" title="1682610957490.webp" width=600 />
+<img src="https://lsky.edinik.com/i/2023/04/28/644bceed22e1e.webp" alt="1682689769980.webp" title="1682689769980.webp" width=400/>
 <ul>
-<li>&ndash;iw 1</li>
+<li><code>--ar 1:1</code></li>
 </ul>
-<img src="https://lsky.edinik.com/i/2023/04/27/644a9b753e5d1.webp" alt="1682611057678.webp" title="1682611057678.webp" width=600 />
-<ul>
-<li>&ndash;iw 1.25</li>
-</ul>
-<img src="https://lsky.edinik.com/i/2023/04/28/644a9c2aba99f.webp" alt="1682611239365.webp" title="1682611239365.webp" width=600 />
-<ul>
-<li>&ndash;iw 1.5</li>
-</ul>
-<img src="https://lsky.edinik.com/i/2023/04/28/644a9c8b76e94.webp" alt="1682611336102.webp" title="1682611336102.webp" width=600/>
-<ul>
-<li>&ndash;iw 1.75</li>
-</ul>
-<img src="https://lsky.edinik.com/i/2023/04/28/644a9d02296ac.webp" alt="1682611454716.webp" title="1682611454716.webp" width=600/>
-<ul>
-<li>&ndash;iw 2</li>
-</ul>
-<img src="https://lsky.edinik.com/i/2023/04/28/644a9e3e3fc63.webp" alt="1682611771113.webp" title="1682611771113.webp" width=600 />
+<img src="https://lsky.edinik.com/i/2023/04/28/644bcf8be1879.webp" alt="1682689929739.webp" title="1682689929739.webp" width=400 />
 
         </div>
         <div class="post-reward">
@@ -589,15 +518,10 @@ if (!doNotTrack) {
         <footer class="post-footer">
             
 <nav class="paginav">
-  <a class="prev" href="https://edinik.com/posts/tech/midjourney_aspect_ratios/">
-    <span class="title">« 上一页</span>
-    <br>
-    <span>midjourney | aspect ratios</span>
-  </a>
-  <a class="next" href="https://edinik.com/posts/tech/build-lsky-image-hosting-platform/">
+  <a class="next" href="https://edinik.com/posts/tech/midjourney_image_weight/">
     <span class="title">下一页 »</span>
     <br>
-    <span>图床 | lsky图床平台搭建</span>
+    <span>midjourney | Image Weight</span>
   </a>
 </nav>
 
