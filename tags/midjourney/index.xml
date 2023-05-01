@@ -11,7 +11,16 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 28 Apr 2023 21:29:13 +0800</lastBuildDate><atom:link href="https://edinik.com/tags/midjourney/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 01 May 2023 08:43:40 +0800</lastBuildDate><atom:link href="https://edinik.com/tags/midjourney/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>midjourney | styles 01</title>
+      <link>https://edinik.com/posts/tech/midjourney-styles-01/</link>
+      <pubDate>Mon, 01 May 2023 08:43:40 +0800</pubDate>
+      
+      <guid>https://edinik.com/posts/tech/midjourney-styles-01/</guid>
+      <description>midjourney关键词之styles：isometric anime 等距动画、analytic drawing 分析性绘图、coloring book 着色书、infographic drawing 信息图画、double exposure 双重曝光、diagrammatic drawing 图示性绘图、diagrammatic portrait 图解式画像</description>
+    </item>
+    
     <item>
       <title>midjourney | aspect ratios</title>
       <link>https://edinik.com/posts/tech/midjourney_aspect_ratios/</link>
@@ -22,12 +31,12 @@
     </item>
     
     <item>
-      <title>midjourney | Image Weight</title>
+      <title>midjourney | image weight</title>
       <link>https://edinik.com/posts/tech/midjourney_image_weight/</link>
       <pubDate>Thu, 27 Apr 2023 22:58:08 +0800</pubDate>
       
       <guid>https://edinik.com/posts/tech/midjourney_image_weight/</guid>
-      <description>midjourney参数详解之Image Weight</description>
+      <description>midjourney参数详解之image weight</description>
     </item>
     
   </channel>
