@@ -5,11 +5,11 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
-<title>图床 | lsky图床平台搭建 | Edinik&#39;s Blog</title>
-<meta name="keywords" content="图床, 相册, lsky, 兰空">
-<meta name="description" content="图床 | lsky图床平台搭建">
+<title>midjourney | styles 08 | Edinik&#39;s Blog</title>
+<meta name="keywords" content="midjourney, styles">
+<meta name="description" content="midjourney关键词之styles：etching 蚀刻、extraterrestrial 地外世界、glitchart 缝隙艺术、gouache 水粉画、floral 花卉类的、fractal 分形、pre historic 前历史性的、prokaryotic 原核生物">
 <meta name="author" content="Edison">
-<link rel="canonical" href="https://edinik.com/posts/tech/build-lsky-image-hosting-platform/">
+<link rel="canonical" href="https://edinik.com/posts/tech/midjourney-styles-08/">
 <meta name="google-site-verification" content="6A-1RsLBWSgG_uBmVVQzBmGE8k2mxcJwZErLRJMpk4I">
 <meta name="baidu-site-verification" content="codeva-I9cG7LIaz4">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.e273849ed7932f32c89b3da33afd02c39cb41bb8ef51182141fa585b591521fe.css" integrity="sha256-4nOEnteTLzLImz2jOv0Cw5y0G7jvURghQfpYW1kVIf4=" rel="preload stylesheet" as="style">
@@ -90,18 +90,18 @@ if (!doNotTrack) {
 	
 	ga('send', 'pageview');
 }
-</script><meta property="og:title" content="图床 | lsky图床平台搭建" />
-<meta property="og:description" content="图床 | lsky图床平台搭建" />
+</script><meta property="og:title" content="midjourney | styles 08" />
+<meta property="og:description" content="midjourney关键词之styles：etching 蚀刻、extraterrestrial 地外世界、glitchart 缝隙艺术、gouache 水粉画、floral 花卉类的、fractal 分形、pre historic 前历史性的、prokaryotic 原核生物" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://edinik.com/posts/tech/build-lsky-image-hosting-platform/" /><meta property="og:image" content="https://edinik.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E"/><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2023-04-22T21:45:23+08:00" />
-<meta property="article:modified_time" content="2023-04-22T21:45:23+08:00" /><meta property="og:site_name" content="Edinik" />
+<meta property="og:url" content="https://edinik.com/posts/tech/midjourney-styles-08/" /><meta property="og:image" content="https://edinik.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-05-19T18:10:01+08:00" />
+<meta property="article:modified_time" content="2023-05-19T18:10:01+08:00" /><meta property="og:site_name" content="Edinik" />
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://edinik.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E"/>
 
-<meta name="twitter:title" content="图床 | lsky图床平台搭建"/>
-<meta name="twitter:description" content="图床 | lsky图床平台搭建"/>
+<meta name="twitter:title" content="midjourney | styles 08"/>
+<meta name="twitter:description" content="midjourney关键词之styles：etching 蚀刻、extraterrestrial 地外世界、glitchart 缝隙艺术、gouache 水粉画、floral 花卉类的、fractal 分形、pre historic 前历史性的、prokaryotic 原核生物"/>
 
 
 <script type="application/ld+json">
@@ -126,8 +126,8 @@ if (!doNotTrack) {
     {
       "@type": "ListItem",
       "position":  4 ,
-      "name": "图床 | lsky图床平台搭建",
-      "item": "https://edinik.com/posts/tech/build-lsky-image-hosting-platform/"
+      "name": "midjourney | styles 08",
+      "item": "https://edinik.com/posts/tech/midjourney-styles-08/"
     }
   ]
 }
@@ -136,24 +136,24 @@ if (!doNotTrack) {
 {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  "headline": "图床 | lsky图床平台搭建",
-  "name": "图床 | lsky图床平台搭建",
-  "description": "图床 | lsky图床平台搭建",
+  "headline": "midjourney | styles 08",
+  "name": "midjourney | styles 08",
+  "description": "midjourney关键词之styles：etching 蚀刻、extraterrestrial 地外世界、glitchart 缝隙艺术、gouache 水粉画、floral 花卉类的、fractal 分形、pre historic 前历史性的、prokaryotic 原核生物",
   "keywords": [
-    "图床", "相册", "lsky", "兰空"
+    "midjourney", "styles"
   ],
-  "articleBody": " 兰空图床(Lsky Pro)官方项目地址 兰空图床(Lsky Pro)第三方Docker项目地址 官方Wiki\nDocker容器构建命令 docker run -d \\ --name lsky-pro \\ --restart unless-stopped \\ -p 8089:8089 \\ -v $PWD/lsky/web:/var/www/html \\ -e WEB_PORT=8089 \\ halcyonazure/lsky-pro-docker:latest 反代/套CDN后无法加载静态文件(css, js)，安装时点击无反应 进入root/lsky/web目录，编辑 .env 文件，追加一行： ASSET_URL=https://你的域名 但是接口域名还是 http 的，所以编辑app/Providers/AppServiceProvider.php文件 public function boot() { // 是否需要生成 env 文件 if (! file_exists(base_path('.env'))) { file_put_contents(base_path('.env'), file_get_contents(base_path('.env.example'))); // 生成 key Artisan::call('key:generate'); } // 如果已经安装程序，初始化一些配置 if (file_exists(base_path('installed.lock'))) { // 覆盖默认配置 Config::set('app.name', Utils::config(ConfigKey::AppName)); Config::set('mail', array_merge(\\config('mail'), Utils::config(ConfigKey::Mail)-\u003etoArray())); View::composer('*', function (\\Illuminate\\View\\View $view) { /** @var Group $group */ $group = Auth::check() ? Auth::user()-\u003egroup : Group::query()-\u003ewhere('is_guest', true)-\u003efirst(); $view-\u003ewith('_group', $group); }); } } 在第三行追加一行 \\Illuminate\\Support\\Facades\\URL::forceScheme('https'); PicGo插件配置 picgo-plugin-lankong插件项目地址\n获取Token curl -X POST -F \"email=your_email@address\" -F \"password=your_passwd\" https://your.domain/api/v1/tokens ",
-  "wordCount" : "360",
+  "articleBody": "etching 蚀刻 Etching是一种版画形式的艺术风格，通过使用酸或腐蚀剂将图案蚀刻到金属板上。艺术家在防腐蚀剂上刻画图案，然后浸入腐蚀剂中形成凹槽。这种风格以其精细的线条和阴影效果而闻名，产生丰富的纹理和细节。\na castle,etching --q 2 --s 250 --v 5.1 --style raw extraterrestrial 地外世界 Extraterrestrial艺术风格是一种与外星生物、外太空和外星文化相关的艺术创作，它融合了奇幻、科幻和未来主义元素，通过独特的图像、形状和色彩创造出神秘、陌生和超现实的视觉效果。这种风格探索宇宙的想象力，描绘外星生物、外星世界和太空探险等主题，激发观众对未知事物的思考，并展示了艺术家们对宇宙奥秘的创造力和热情。\na castle,extraterrestrial --q 2 --s 250 --v 5.1 --style raw glitch art 缝隙艺术 Glitch art是一种利用数字和技术错误、故障、失真等意外干扰来创造独特视觉效果的艺术风格。它突出了数字媒体的漏洞和不完美之处，并将其视为创造性的表达方式。通过对数字图像、视频或音频进行有意或无意的破坏和篡改，创作者能够产生错位、颜色失真、重叠等视觉效果。\na castle,glitch art --q 2 --s 250 --v 5.1 --style raw gouache 水粉画 Gouache艺术风格是一种使用水溶性颜料和胶粘剂创作的绘画媒介，以其丰富、不透明的颜色效果而著名。这种风格与水彩有些相似，但更浓郁、易于控制。Gouache作品呈现饱满的色彩、清晰的线条和平面感。艺术家可以运用各种技巧和手法，如叠加、拓印、湿画法和干画法，创造出独特的视觉效果。\na castle,gouache --q 2 --s 250 --v 5.1 --style raw floral 花卉类的 Floral艺术风格是以花卉为主题的艺术创作风格，通过描绘花朵和植物的美丽和多样性展现其魅力。这种风格可以以写实或抽象的方式表达，通过细致的细节或大胆的色彩和线条来呈现花卉的形态和情感。艺术家们在选择花卉品种、运用不同绘画技巧和媒介的同时，也将其与其他元素结合，创造出层次丰富的作品。\na castle,floral --q 2 --s 250 --v 5.1 --style raw fractal 分形 Fractal艺术风格是基于分形几何学原理的一种艺术创作风格，利用复杂的重复模式和自相似性创造出视觉上令人惊叹和复杂的艺术作品。这种风格通过计算机生成算法或手工绘制来实现，呈现出迷离、神秘和华丽的视觉效果。\na castle,fractal --q 2 --s 250 --v 5.1 --style raw pre historic 前历史性的 Prehistoric艺术风格是人类历史上早期时期创作的艺术作品和风格，以洞穴壁画和岩石雕刻为主要形式。这些作品描绘了动物、狩猎场景、人物形象和抽象图案，通过简化的形状、粗糙的线条和基本的颜色传达古代人类与环境、自然和生活的关系。\na castle,pre historic --q 2 --s 250 --v 5.1 --style raw prokaryotic 原核生物 原核生物（Prokaryotes）是一类细胞结构相对简单的生物，包括细菌和古菌。它们的特征包括没有真正的细胞核，缺乏膜结构的细胞器，体积较小，DNA以环形分子存在，以及通过二分裂进行繁殖。尽管结构简单，原核生物在生态系统中却有着重要的作用，包括分解有机物、氮固定、光合作用等，并在人类生活中应用广泛，如食品和药物生产，但也有一些原核生物会导致疾病。\na castle,prokaryotic --q 2 --s 250 --v 5.1 --style raw ",
+  "wordCount" : "1176",
   "inLanguage": "zh",
-  "datePublished": "2023-04-22T21:45:23+08:00",
-  "dateModified": "2023-04-22T21:45:23+08:00",
+  "datePublished": "2023-05-19T18:10:01+08:00",
+  "dateModified": "2023-05-19T18:10:01+08:00",
   "author":[{
     "@type": "Person",
     "name": "Edison"
   }],
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://edinik.com/posts/tech/build-lsky-image-hosting-platform/"
+    "@id": "https://edinik.com/posts/tech/midjourney-styles-08/"
   },
   "publisher": {
     "@type": "Organization",
@@ -279,10 +279,10 @@ if (!doNotTrack) {
         <header class="post-header">
             <div class="breadcrumbs"><a href="https://edinik.com">🏠 主页</a>&nbsp;»&nbsp;<a href="https://edinik.com/posts/">📚 文章</a>&nbsp;»&nbsp;<a href="https://edinik.com/posts/tech/">👨🏻‍💻 技术</a></div>
             <h1 class="post-title">
-                图床 | lsky图床平台搭建
+                midjourney | styles 08
             </h1>
             <div class="post-description">
-                图床 | lsky图床平台搭建
+                midjourney关键词之styles：etching 蚀刻、extraterrestrial 地外世界、glitchart 缝隙艺术、gouache 水粉画、floral 花卉类的、fractal 分形、pre historic 前历史性的、prokaryotic 原核生物
             </div>
             <div class="post-meta"><style>
     i[id*="post_meta_style"] {
@@ -301,7 +301,7 @@ if (!doNotTrack) {
 <span class="parent-post-meta">
     <span id="post_meta_style_1">
         <span class="fa fa-calendar-check-o"></span>
-        <span>2023-04-22
+        <span>2023-05-19
             &nbsp;&nbsp;
         </span>
     </span>
@@ -314,13 +314,13 @@ if (!doNotTrack) {
     
     <span id="post_meta_style_3">
         <span class="fa fa-file-word-o"></span>
-        <span>360字
+        <span>1176字
             &nbsp;&nbsp;
         </span>
     </span>
     <span id="post_meta_style_4">
         <span class="fa fa-clock-o"></span>
-        <span>1分钟
+        <span>3分钟
             &nbsp;&nbsp;
         </span>
     </span>
@@ -334,7 +334,7 @@ if (!doNotTrack) {
         <span class="fa fa-tags" style="opacity: 0.8"></span>
         <span>
             <span class="post-tags-meta">
-                <a href="https://edinik.com/tags/image-hosting-platform/" style="color: var(--secondary)!important;">image-hosting-platform</a>
+                <a href="https://edinik.com/tags/midjourney/" style="color: var(--secondary)!important;">midjourney</a>
             </span>
         </span>
     </span>
@@ -396,11 +396,21 @@ if (!doNotTrack) {
 
         <div class="inner"><ul>
                 <li>
-                    <a href="#docker%e5%ae%b9%e5%99%a8%e6%9e%84%e5%bb%ba%e5%91%bd%e4%bb%a4" aria-label="Docker容器构建命令">Docker容器构建命令</a></li>
+                    <a href="#etching-%e8%9a%80%e5%88%bb" aria-label="etching 蚀刻">etching 蚀刻</a></li>
                 <li>
-                    <a href="#%e5%8f%8d%e4%bb%a3%e5%a5%97cdn%e5%90%8e%e6%97%a0%e6%b3%95%e5%8a%a0%e8%bd%bd%e9%9d%99%e6%80%81%e6%96%87%e4%bb%b6css-js%e5%ae%89%e8%a3%85%e6%97%b6%e7%82%b9%e5%87%bb%e6%97%a0%e5%8f%8d%e5%ba%94" aria-label="反代/套CDN后无法加载静态文件(css, js)，安装时点击无反应">反代/套CDN后无法加载静态文件(css, js)，安装时点击无反应</a></li>
+                    <a href="#extraterrestrial-%e5%9c%b0%e5%a4%96%e4%b8%96%e7%95%8c" aria-label="extraterrestrial 地外世界">extraterrestrial 地外世界</a></li>
                 <li>
-                    <a href="#picgo%e6%8f%92%e4%bb%b6%e9%85%8d%e7%bd%ae" aria-label="PicGo插件配置">PicGo插件配置</a>
+                    <a href="#glitch-art-%e7%bc%9d%e9%9a%99%e8%89%ba%e6%9c%af" aria-label="glitch art 缝隙艺术">glitch art 缝隙艺术</a></li>
+                <li>
+                    <a href="#gouache-%e6%b0%b4%e7%b2%89%e7%94%bb" aria-label="gouache 水粉画">gouache 水粉画</a></li>
+                <li>
+                    <a href="#floral-%e8%8a%b1%e5%8d%89%e7%b1%bb%e7%9a%84" aria-label="floral 花卉类的">floral 花卉类的</a></li>
+                <li>
+                    <a href="#fractal-%e5%88%86%e5%bd%a2" aria-label="fractal 分形">fractal 分形</a></li>
+                <li>
+                    <a href="#pre-historic-%e5%89%8d%e5%8e%86%e5%8f%b2%e6%80%a7%e7%9a%84" aria-label="pre historic 前历史性的">pre historic 前历史性的</a></li>
+                <li>
+                    <a href="#prokaryotic-%e5%8e%9f%e6%a0%b8%e7%94%9f%e7%89%a9" aria-label="prokaryotic 原核生物">prokaryotic 原核生物</a>
                 </li>
             </ul>
         </div>
@@ -465,62 +475,47 @@ if (!doNotTrack) {
         return rect.top + win.pageYOffset;
     }
 </script>
-        <div class="post-content"><blockquote>
-<p><a href="https://github.com/lsky-org/lsky-pro">兰空图床(Lsky Pro)官方项目地址</a>
-<a href="https://github.com/HalcyonAzure/lsky-pro-docker">兰空图床(Lsky Pro)第三方Docker项目地址</a>
-<a href="https://github.com/lsky-org/lsky-pro/discussions">官方Wiki</a></p>
-</blockquote>
-<h2 id="docker容器构建命令">Docker容器构建命令<a hidden class="anchor" aria-hidden="true" href="#docker容器构建命令">#</a></h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>docker run -d <span style="color:#ae81ff">\
-</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    --name lsky-pro <span style="color:#ae81ff">\
-</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    --restart unless-stopped <span style="color:#ae81ff">\
-</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    -p 8089:8089 <span style="color:#ae81ff">\
-</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    -v $PWD/lsky/web:/var/www/html <span style="color:#ae81ff">\
-</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    -e WEB_PORT<span style="color:#f92672">=</span><span style="color:#ae81ff">8089</span> <span style="color:#ae81ff">\
-</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    halcyonazure/lsky-pro-docker:latest
-</span></span></code></pre></div><h2 id="反代套cdn后无法加载静态文件css-js安装时点击无反应">反代/套CDN后无法加载静态文件(css, js)，安装时点击无反应<a hidden class="anchor" aria-hidden="true" href="#反代套cdn后无法加载静态文件css-js安装时点击无反应">#</a></h2>
-<ul>
-<li>进入<code>root/lsky/web</code>目录，编辑 .env 文件，追加一行：</li>
-</ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ASSET_URL<span style="color:#f92672">=</span>https://你的域名
-</span></span></code></pre></div><ul>
-<li>但是接口域名还是 http 的，所以编辑<code>app/Providers/AppServiceProvider.php</code>文件</li>
-</ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">boot</span>() 
-</span></span><span style="display:flex;"><span> { 
-</span></span><span style="display:flex;"><span>     <span style="color:#75715e">// 是否需要生成 env 文件 
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>     <span style="color:#66d9ef">if</span> (<span style="color:#f92672">!</span> <span style="color:#a6e22e">file_exists</span>(<span style="color:#a6e22e">base_path</span>(<span style="color:#e6db74">&#39;.env&#39;</span>))) { 
-</span></span><span style="display:flex;"><span>         <span style="color:#a6e22e">file_put_contents</span>(<span style="color:#a6e22e">base_path</span>(<span style="color:#e6db74">&#39;.env&#39;</span>), <span style="color:#a6e22e">file_get_contents</span>(<span style="color:#a6e22e">base_path</span>(<span style="color:#e6db74">&#39;.env.example&#39;</span>))); 
-</span></span><span style="display:flex;"><span>         <span style="color:#75715e">// 生成 key 
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>         <span style="color:#a6e22e">Artisan</span><span style="color:#f92672">::</span><span style="color:#a6e22e">call</span>(<span style="color:#e6db74">&#39;key:generate&#39;</span>); 
-</span></span><span style="display:flex;"><span>     } 
-</span></span><span style="display:flex;"><span>  
-</span></span><span style="display:flex;"><span>     <span style="color:#75715e">// 如果已经安装程序，初始化一些配置 
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>     <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">file_exists</span>(<span style="color:#a6e22e">base_path</span>(<span style="color:#e6db74">&#39;installed.lock&#39;</span>))) { 
-</span></span><span style="display:flex;"><span>         <span style="color:#75715e">// 覆盖默认配置 
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>         <span style="color:#a6e22e">Config</span><span style="color:#f92672">::</span><span style="color:#a6e22e">set</span>(<span style="color:#e6db74">&#39;app.name&#39;</span>, <span style="color:#a6e22e">Utils</span><span style="color:#f92672">::</span><span style="color:#a6e22e">config</span>(<span style="color:#a6e22e">ConfigKey</span><span style="color:#f92672">::</span><span style="color:#a6e22e">AppName</span>)); 
-</span></span><span style="display:flex;"><span>         <span style="color:#a6e22e">Config</span><span style="color:#f92672">::</span><span style="color:#a6e22e">set</span>(<span style="color:#e6db74">&#39;mail&#39;</span>, <span style="color:#a6e22e">array_merge</span>(<span style="color:#a6e22e">\config</span>(<span style="color:#e6db74">&#39;mail&#39;</span>), <span style="color:#a6e22e">Utils</span><span style="color:#f92672">::</span><span style="color:#a6e22e">config</span>(<span style="color:#a6e22e">ConfigKey</span><span style="color:#f92672">::</span><span style="color:#a6e22e">Mail</span>)<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">toArray</span>())); 
-</span></span><span style="display:flex;"><span>  
-</span></span><span style="display:flex;"><span>         <span style="color:#a6e22e">View</span><span style="color:#f92672">::</span><span style="color:#a6e22e">composer</span>(<span style="color:#e6db74">&#39;*&#39;</span>, <span style="color:#66d9ef">function</span> (<span style="color:#a6e22e">\Illuminate\View\View</span> $view) { 
-</span></span><span style="display:flex;"><span>             <span style="color:#e6db74">/** @var Group $group */</span> 
-</span></span><span style="display:flex;"><span>             $group <span style="color:#f92672">=</span> <span style="color:#a6e22e">Auth</span><span style="color:#f92672">::</span><span style="color:#a6e22e">check</span>() <span style="color:#f92672">?</span> <span style="color:#a6e22e">Auth</span><span style="color:#f92672">::</span><span style="color:#a6e22e">user</span>()<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">group</span> <span style="color:#f92672">:</span> <span style="color:#a6e22e">Group</span><span style="color:#f92672">::</span><span style="color:#a6e22e">query</span>()<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">where</span>(<span style="color:#e6db74">&#39;is_guest&#39;</span>, <span style="color:#66d9ef">true</span>)<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">first</span>(); 
-</span></span><span style="display:flex;"><span>             $view<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">with</span>(<span style="color:#e6db74">&#39;_group&#39;</span>, $group); 
-</span></span><span style="display:flex;"><span>         }); 
-</span></span><span style="display:flex;"><span>     } 
-</span></span><span style="display:flex;"><span> } 
-</span></span></code></pre></div><ul>
-<li>在第三行追加一行</li>
-</ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#a6e22e">\Illuminate\Support\Facades\URL</span><span style="color:#f92672">::</span><span style="color:#a6e22e">forceScheme</span>(<span style="color:#e6db74">&#39;https&#39;</span>);
-</span></span></code></pre></div><h2 id="picgo插件配置">PicGo插件配置<a hidden class="anchor" aria-hidden="true" href="#picgo插件配置">#</a></h2>
-<blockquote>
-<p><a href="https://github.com/hellodk34/picgo-plugin-lankong">picgo-plugin-lankong插件项目地址</a></p>
-</blockquote>
-<ul>
-<li>获取Token</li>
-</ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>curl -X POST -F <span style="color:#e6db74">&#34;email=your_email@address&#34;</span> -F <span style="color:#e6db74">&#34;password=your_passwd&#34;</span> https://your.domain/api/v1/tokens
-</span></span></code></pre></div>
+        <div class="post-content"><h3 id="etching-蚀刻">etching 蚀刻<a hidden class="anchor" aria-hidden="true" href="#etching-蚀刻">#</a></h3>
+<p>Etching是一种版画形式的艺术风格，通过使用酸或腐蚀剂将图案蚀刻到金属板上。艺术家在防腐蚀剂上刻画图案，然后浸入腐蚀剂中形成凹槽。这种风格以其精细的线条和阴影效果而闻名，产生丰富的纹理和细节。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span>a castle,etching --q 2 --s 250 --v 5.1 --style raw 
+</span></span></code></pre></div><p><a href="https://lk.edinik.com/i/2023/05/19/6467530859d6c.webp"><img loading="lazy" src="https://lk.edinik.com/i/2023/05/19/6467530859d6c.webp" alt="1684493057122.webp"  />
+</a></p>
+<h3 id="extraterrestrial-地外世界">extraterrestrial 地外世界<a hidden class="anchor" aria-hidden="true" href="#extraterrestrial-地外世界">#</a></h3>
+<p>Extraterrestrial艺术风格是一种与外星生物、外太空和外星文化相关的艺术创作，它融合了奇幻、科幻和未来主义元素，通过独特的图像、形状和色彩创造出神秘、陌生和超现实的视觉效果。这种风格探索宇宙的想象力，描绘外星生物、外星世界和太空探险等主题，激发观众对未知事物的思考，并展示了艺术家们对宇宙奥秘的创造力和热情。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span>a castle,extraterrestrial --q 2 --s 250 --v 5.1 --style raw
+</span></span></code></pre></div><p><a href="https://lk.edinik.com/i/2023/05/19/6467543543d67.webp"><img loading="lazy" src="https://lk.edinik.com/i/2023/05/19/6467543543d67.webp" alt="1684493354514.webp"  />
+</a></p>
+<h3 id="glitch-art-缝隙艺术">glitch art 缝隙艺术<a hidden class="anchor" aria-hidden="true" href="#glitch-art-缝隙艺术">#</a></h3>
+<p>Glitch art是一种利用数字和技术错误、故障、失真等意外干扰来创造独特视觉效果的艺术风格。它突出了数字媒体的漏洞和不完美之处，并将其视为创造性的表达方式。通过对数字图像、视频或音频进行有意或无意的破坏和篡改，创作者能够产生错位、颜色失真、重叠等视觉效果。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span>a castle,glitch art --q 2 --s 250 --v 5.1 --style raw
+</span></span></code></pre></div><p><a href="https://lk.edinik.com/i/2023/05/19/646753f6e428e.webp"><img loading="lazy" src="https://lk.edinik.com/i/2023/05/19/646753f6e428e.webp" alt="1684493287465.webp"  />
+</a></p>
+<h3 id="gouache-水粉画">gouache 水粉画<a hidden class="anchor" aria-hidden="true" href="#gouache-水粉画">#</a></h3>
+<p>Gouache艺术风格是一种使用水溶性颜料和胶粘剂创作的绘画媒介，以其丰富、不透明的颜色效果而著名。这种风格与水彩有些相似，但更浓郁、易于控制。Gouache作品呈现饱满的色彩、清晰的线条和平面感。艺术家可以运用各种技巧和手法，如叠加、拓印、湿画法和干画法，创造出独特的视觉效果。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span>a castle,gouache --q 2 --s 250 --v 5.1 --style raw
+</span></span></code></pre></div><p><a href="https://lk.edinik.com/i/2023/05/19/6467564d74193.webp"><img loading="lazy" src="https://lk.edinik.com/i/2023/05/19/6467564d74193.webp" alt="1684493886585.webp"  />
+</a></p>
+<h3 id="floral-花卉类的">floral 花卉类的<a hidden class="anchor" aria-hidden="true" href="#floral-花卉类的">#</a></h3>
+<p>Floral艺术风格是以花卉为主题的艺术创作风格，通过描绘花朵和植物的美丽和多样性展现其魅力。这种风格可以以写实或抽象的方式表达，通过细致的细节或大胆的色彩和线条来呈现花卉的形态和情感。艺术家们在选择花卉品种、运用不同绘画技巧和媒介的同时，也将其与其他元素结合，创造出层次丰富的作品。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span>a castle,floral --q 2 --s 250 --v 5.1 --style raw 
+</span></span></code></pre></div><p><a href="https://lk.edinik.com/i/2023/05/19/6467555dc389f.webp"><img loading="lazy" src="https://lk.edinik.com/i/2023/05/19/6467555dc389f.webp" alt="1684493653150.webp"  />
+</a></p>
+<h3 id="fractal-分形">fractal 分形<a hidden class="anchor" aria-hidden="true" href="#fractal-分形">#</a></h3>
+<p>Fractal艺术风格是基于分形几何学原理的一种艺术创作风格，利用复杂的重复模式和自相似性创造出视觉上令人惊叹和复杂的艺术作品。这种风格通过计算机生成算法或手工绘制来实现，呈现出迷离、神秘和华丽的视觉效果。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span>a castle,fractal --q 2 --s 250 --v 5.1 --style raw
+</span></span></code></pre></div><p><a href="https://lk.edinik.com/i/2023/05/19/646755b071b12.webp"><img loading="lazy" src="https://lk.edinik.com/i/2023/05/19/646755b071b12.webp" alt="1684493737293.webp"  />
+</a></p>
+<h3 id="pre-historic-前历史性的">pre historic 前历史性的<a hidden class="anchor" aria-hidden="true" href="#pre-historic-前历史性的">#</a></h3>
+<p>Prehistoric艺术风格是人类历史上早期时期创作的艺术作品和风格，以洞穴壁画和岩石雕刻为主要形式。这些作品描绘了动物、狩猎场景、人物形象和抽象图案，通过简化的形状、粗糙的线条和基本的颜色传达古代人类与环境、自然和生活的关系。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span>a castle,pre historic --q 2 --s 250 --v 5.1 --style raw 
+</span></span></code></pre></div><p><a href="https://lk.edinik.com/i/2023/05/19/64675787aea43.webp"><img loading="lazy" src="https://lk.edinik.com/i/2023/05/19/64675787aea43.webp" alt="1684494207128.webp"  />
+</a></p>
+<h3 id="prokaryotic-原核生物">prokaryotic 原核生物<a hidden class="anchor" aria-hidden="true" href="#prokaryotic-原核生物">#</a></h3>
+<p>原核生物（Prokaryotes）是一类细胞结构相对简单的生物，包括细菌和古菌。它们的特征包括没有真正的细胞核，缺乏膜结构的细胞器，体积较小，DNA以环形分子存在，以及通过二分裂进行繁殖。尽管结构简单，原核生物在生态系统中却有着重要的作用，包括分解有机物、氮固定、光合作用等，并在人类生活中应用广泛，如食品和药物生产，但也有一些原核生物会导致疾病。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span>a castle,prokaryotic --q 2 --s 250 --v 5.1 --style raw
+</span></span></code></pre></div><p><a href="https://lk.edinik.com/i/2023/05/19/646757e94127b.webp"><img loading="lazy" src="https://lk.edinik.com/i/2023/05/19/646757e94127b.webp" alt="1684494305332.webp"  />
+</a></p>
+
 
         </div>
         <div class="post-reward">
@@ -554,15 +549,10 @@ if (!doNotTrack) {
         <footer class="post-footer">
             
 <nav class="paginav">
-  <a class="prev" href="https://edinik.com/posts/tech/midjourney_image_weight/">
-    <span class="title">« 上一页</span>
-    <br>
-    <span>midjourney | image weight</span>
-  </a>
-  <a class="next" href="https://edinik.com/posts/read/game-of-thrones-maps/">
+  <a class="next" href="https://edinik.com/posts/tech/midjourney-styles-07/">
     <span class="title">下一页 »</span>
     <br>
-    <span>权力的游戏 | 地图</span>
+    <span>midjourney | styles 07</span>
   </a>
 </nav>
 
