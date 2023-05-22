@@ -11,7 +11,16 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 20 May 2023 21:09:01 +0800</lastBuildDate><atom:link href="https://edinik.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 22 May 2023 22:45:14 +0800</lastBuildDate><atom:link href="https://edinik.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>设计模式 | 单例模式</title>
+      <link>https://edinik.com/posts/tech/design-pattern-singleton/</link>
+      <pubDate>Mon, 22 May 2023 22:45:14 +0800</pubDate>
+      
+      <guid>https://edinik.com/posts/tech/design-pattern-singleton/</guid>
+      <description>设计模式之单例模式：能够保证一个类只有一个实例，并提供一个访问该实例的全局节点。</description>
+    </item>
+    
     <item>
       <title>midjourney | artists 01</title>
       <link>https://edinik.com/posts/tech/midjourney-artists-01/</link>
