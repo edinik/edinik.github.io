@@ -5,11 +5,11 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
-<title>设计模式 | 单例模式 | Edinik&#39;s Blog</title>
-<meta name="keywords" content="设计模式, 单例模式">
-<meta name="description" content="设计模式之单例模式：能够保证一个类只有一个实例，并提供一个访问该实例的全局节点。">
+<title>WPF | TextBox输入范围验证 | Edinik&#39;s Blog</title>
+<meta name="keywords" content="WPF, TextBox, 输入验证">
+<meta name="description" content="WPF中TextBox的输入范围验证">
 <meta name="author" content="Edison">
-<link rel="canonical" href="https://edinik.com/posts/tech/design-pattern-singleton/">
+<link rel="canonical" href="https://edinik.com/posts/tech/wpf-textbox-input-range-validation/">
 <meta name="google-site-verification" content="6A-1RsLBWSgG_uBmVVQzBmGE8k2mxcJwZErLRJMpk4I">
 <meta name="baidu-site-verification" content="codeva-I9cG7LIaz4">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.e273849ed7932f32c89b3da33afd02c39cb41bb8ef51182141fa585b591521fe.css" integrity="sha256-4nOEnteTLzLImz2jOv0Cw5y0G7jvURghQfpYW1kVIf4=" rel="preload stylesheet" as="style">
@@ -90,18 +90,18 @@ if (!doNotTrack) {
 	
 	ga('send', 'pageview');
 }
-</script><meta property="og:title" content="设计模式 | 单例模式" />
-<meta property="og:description" content="设计模式之单例模式：能够保证一个类只有一个实例，并提供一个访问该实例的全局节点。" />
+</script><meta property="og:title" content="WPF | TextBox输入范围验证" />
+<meta property="og:description" content="WPF中TextBox的输入范围验证" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://edinik.com/posts/tech/design-pattern-singleton/" /><meta property="og:image" content="https://edinik.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E"/><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2023-05-22T22:45:14+08:00" />
-<meta property="article:modified_time" content="2023-05-22T22:45:14+08:00" /><meta property="og:site_name" content="Edinik" />
+<meta property="og:url" content="https://edinik.com/posts/tech/wpf-textbox-input-range-validation/" /><meta property="og:image" content="https://edinik.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-05-25T15:00:40+08:00" />
+<meta property="article:modified_time" content="2023-05-25T15:00:40+08:00" /><meta property="og:site_name" content="Edinik" />
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://edinik.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E"/>
 
-<meta name="twitter:title" content="设计模式 | 单例模式"/>
-<meta name="twitter:description" content="设计模式之单例模式：能够保证一个类只有一个实例，并提供一个访问该实例的全局节点。"/>
+<meta name="twitter:title" content="WPF | TextBox输入范围验证"/>
+<meta name="twitter:description" content="WPF中TextBox的输入范围验证"/>
 
 
 <script type="application/ld+json">
@@ -126,8 +126,8 @@ if (!doNotTrack) {
     {
       "@type": "ListItem",
       "position":  4 ,
-      "name": "设计模式 | 单例模式",
-      "item": "https://edinik.com/posts/tech/design-pattern-singleton/"
+      "name": "WPF | TextBox输入范围验证",
+      "item": "https://edinik.com/posts/tech/wpf-textbox-input-range-validation/"
     }
   ]
 }
@@ -136,24 +136,24 @@ if (!doNotTrack) {
 {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  "headline": "设计模式 | 单例模式",
-  "name": "设计模式 | 单例模式",
-  "description": "设计模式之单例模式：能够保证一个类只有一个实例，并提供一个访问该实例的全局节点。",
+  "headline": "WPF | TextBox输入范围验证",
+  "name": "WPF | TextBox输入范围验证",
+  "description": "WPF中TextBox的输入范围验证",
   "keywords": [
-    "设计模式", "单例模式"
+    "WPF", "TextBox", "输入验证"
   ],
-  "articleBody": "定义 单例模式（Singleton Design Pattern）是一种创建型设计模式，它能够保证一个类只有一个实例，并提供一个访问该实例的全局节点。\n三个必要条件：\n构造函数必须是私有的，保证类的外部不能创建类的实例。 通过一个私有的静态变量来存储其唯一实例。 通过提供一个公开的静态方法，使得外部使用者可以访问类的唯一实例。 三个必要问题：\n是否线程安全 是否延时加载 是否需要加锁（锁会导致低性能） 实现 版本一：懒汉式（不推荐） 线程安全 延迟加载 加锁 否 是 创建对象时未加锁，获取对象时未加锁 public sealed class Singleton { private static Singleton _instance = null; private Singleton() { } public static Singleton Instance { get { if (_instance == null) { _instance = new Singleton(); } return _instance; } } } 版本二：懒汉式（一般推荐） 线程安全 延迟加载 加锁 是 是 创建对象时加锁，获取对象时加锁 public sealed class Singleton { private static Singleton _instance = null; private static readonly object InstanceLock = new(); private Singleton() { } public static Singleton Instance { get { lock (InstanceLock) { if (_instance == null) { _instance = new Singleton(); } return _instance; } } } } 版本三：双重检测（不推荐，不如版本五） 线程安全 延迟加载 加锁 是 是 创建对象时加锁，获取对象时未加锁 public sealed class Singleton { private static Singleton _instance = null; private static readonly object InstanceLock = new object(); private Singleton() { } public static Singleton Instance { get { if (_instance == null) { lock (InstanceLock) { if (_instance == null) { _instance = new Singleton(); } } } return _instance; } } } 版本四：饿汉式（推荐） 线程安全 延迟加载 加锁 是 否 创建对象时未加锁，获取对象时未加锁 public sealed class Singleton { private static Singleton instance = new Singleton(); static Singleton() { } private Singleton() { } public static Singleton Instance { get { return instance; } } } 版本五：躺平式-静态内部类（推荐） 线程安全 延迟加载 加锁 是 是 创建对象时未加锁，获取对象时未加锁 public sealed class Singleton { private Singleton() { } public static Singleton instance { get { return Nested.instance; } } private class Nested { static Nested() { } internal static readonly Singleton instance = new Singleton(); } } 版本六：.NET4 的 Lazy 类型（强烈推荐） 线程安全 延迟加载 加锁 是 是 创建对象时未加锁，获取对象时未加锁 public sealed class Singleton { private static readonly Lazy Lazy = new(() =\u003e new Singleton()); public static Singleton Instance =\u003e Lazy.Value; private Singleton() { } } 参考资料 单例模式 单例模式的五种实现方式及优缺点 深入理解 C#： 单例的实现 重温设计模式 — 单例模式 ",
-  "wordCount" : "732",
+  "articleBody": "此类为TextBox的一个扩展类，其中包含四个附加属性，分别是：\n属性 IntegerRange Minimum Maximum PreviousValue 类型 bool int int string 定义 是否启用范围判定 最小值 最大值 前一个有效值 默认值 false 0 int的最大值 空 实现了以下功能：\n若输入的值不满足最小值和最大值的范围或输入不合法时，则会自动恢复为前一个有效值 解决了粘贴时的输入验证问题 解决了用户选中文本后输入的问题 解决了当最小值大于9时，无法输入数字的问题 源代码：\npublic static class TextBoxExtensions { #region IntegerRange public static readonly DependencyProperty IntegerRangeProperty = DependencyProperty.RegisterAttached( \"IntegerRange\", typeof(bool), typeof(TextBoxExtensions), new PropertyMetadata(false, OnIntegerRangeChanged)); public static bool GetIntegerRange(DependencyObject target) { return (bool)target.GetValue(IntegerRangeProperty); } public static void SetIntegerRange(DependencyObject target, bool value) { target.SetValue(IntegerRangeProperty, value); } #endregion #region Minimum public static readonly DependencyProperty MinimumProperty = DependencyProperty.RegisterAttached( \"Minimum\", typeof(int), typeof(TextBoxExtensions), new PropertyMetadata(0)); public static int GetMinimum(DependencyObject target) { return (int)target.GetValue(MinimumProperty); } public static void SetMinimum(DependencyObject target, int value) { target.SetValue(MinimumProperty, value); } #endregion #region Maximum public static readonly DependencyProperty MaximumProperty = DependencyProperty.RegisterAttached( \"Maximum\", typeof(int), typeof(TextBoxExtensions), new PropertyMetadata(int.MaxValue)); public static int GetMaximum(DependencyObject target) { return (int)target.GetValue(MaximumProperty); } public static void SetMaximum(DependencyObject target, int value) { target.SetValue(MaximumProperty, value); } #endregion #region PreviousValue public static readonly DependencyProperty PreviousValueProperty = DependencyProperty.RegisterAttached(\"PreviousValue\", typeof(string), typeof(TextBoxExtensions)); public static string GetPreviousValue(DependencyObject obj) { return (string)obj.GetValue(PreviousValueProperty); } public static void SetPreviousValue(DependencyObject obj, string value) { obj.SetValue(PreviousValueProperty, value); } #endregion private static void OnIntegerRangeChanged(DependencyObject sender, DependencyPropertyChangedEventArgs e) { TextBox textBox = sender as TextBox; if (textBox != null) { if ((bool)e.NewValue) { textBox.PreviewTextInput += TextBox_PreviewTextInput; DataObject.AddPastingHandler(textBox, TextBox_Pasting); textBox.LostFocus += TextBox_LostFocus; } else { textBox.PreviewTextInput -= TextBox_PreviewTextInput; DataObject.RemovePastingHandler(textBox, TextBox_Pasting); textBox.LostFocus -= TextBox_LostFocus; } } } private static void TextBox_PreviewTextInput(object sender, TextCompositionEventArgs e) { TextBox textBox = (TextBox)sender; string fullText = textBox.SelectionLength \u003e 0 ? textBox.Text.Remove(textBox.SelectionStart, textBox.SelectionLength).Insert(textBox.SelectionStart, e.Text) : textBox.Text.Insert(textBox.SelectionStart, e.Text); int value; int maximum = GetMaximum(textBox); if (!int.TryParse(fullText, out value) || value \u003e maximum) { e.Handled = true; } else { // If the text is valid, update the PreviousValue property SetPreviousValue(textBox, textBox.Text); } } private static void TextBox_LostFocus(object sender, RoutedEventArgs e) { TextBox textBox = (TextBox)sender; int value; int minimum = GetMinimum(textBox); if (int.TryParse(textBox.Text, out value) \u0026\u0026 value \u003c minimum) { // If the value is less than the minimum, set the text to the previous value textBox.Text = GetPreviousValue(textBox); } } private static void TextBox_Pasting(object sender, DataObjectPastingEventArgs e) { TextBox textBox = (TextBox)sender; string pasteText = e.DataObject.GetData(typeof(string)) as string; string fullText = textBox.SelectionLength \u003e 0 ? textBox.Text.Remove(textBox.SelectionStart, textBox.SelectionLength).Insert(textBox.SelectionStart, pasteText) : textBox.Text.Insert(textBox.SelectionStart, pasteText); int value; int minimum = GetMinimum(textBox); int maximum = GetMaximum(textBox); if (!int.TryParse(fullText, out value) || value \u003c minimum || value \u003e maximum) { e.CancelCommand(); } } } ",
+  "wordCount" : "532",
   "inLanguage": "zh",
-  "datePublished": "2023-05-22T22:45:14+08:00",
-  "dateModified": "2023-05-22T22:45:14+08:00",
+  "datePublished": "2023-05-25T15:00:40+08:00",
+  "dateModified": "2023-05-25T15:00:40+08:00",
   "author":[{
     "@type": "Person",
     "name": "Edison"
   }],
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://edinik.com/posts/tech/design-pattern-singleton/"
+    "@id": "https://edinik.com/posts/tech/wpf-textbox-input-range-validation/"
   },
   "publisher": {
     "@type": "Organization",
@@ -279,10 +279,10 @@ if (!doNotTrack) {
         <header class="post-header">
             <div class="breadcrumbs"><a href="https://edinik.com">🏠 主页</a>&nbsp;»&nbsp;<a href="https://edinik.com/posts/">📚 文章</a>&nbsp;»&nbsp;<a href="https://edinik.com/posts/tech/">👨🏻‍💻 技术</a></div>
             <h1 class="post-title">
-                设计模式 | 单例模式
+                WPF | TextBox输入范围验证
             </h1>
             <div class="post-description">
-                设计模式之单例模式：能够保证一个类只有一个实例，并提供一个访问该实例的全局节点。
+                WPF中TextBox的输入范围验证
             </div>
             <div class="post-meta"><style>
     i[id*="post_meta_style"] {
@@ -301,7 +301,7 @@ if (!doNotTrack) {
 <span class="parent-post-meta">
     <span id="post_meta_style_1">
         <span class="fa fa-calendar-check-o"></span>
-        <span>2023-05-22
+        <span>2023-05-25
             &nbsp;&nbsp;
         </span>
     </span>
@@ -314,7 +314,7 @@ if (!doNotTrack) {
     
     <span id="post_meta_style_3">
         <span class="fa fa-file-word-o"></span>
-        <span>732字
+        <span>532字
             &nbsp;&nbsp;
         </span>
     </span>
@@ -334,7 +334,7 @@ if (!doNotTrack) {
         <span class="fa fa-tags" style="opacity: 0.8"></span>
         <span>
             <span class="post-tags-meta">
-                <a href="https://edinik.com/tags/design-pattern/" style="color: var(--secondary)!important;">design-pattern</a>
+                <a href="https://edinik.com/tags/wpf/" style="color: var(--secondary)!important;">WPF</a>
             </span>
         </span>
     </span>
@@ -387,353 +387,196 @@ if (!doNotTrack) {
                 </span>
 
 </div>
-        </header> <aside id="toc-container" class="toc-container wide">
-    <div class="toc">
-        <details  open>
-        <summary accesskey="c" title="(Alt + C)">
-            <span class="details">目录</span>
-        </summary>
-
-        <div class="inner"><ul>
-                <li>
-                    <a href="#%e5%ae%9a%e4%b9%89" aria-label="定义">定义</a></li>
-                <li>
-                    <a href="#%e5%ae%9e%e7%8e%b0" aria-label="实现">实现</a><ul>
-                        
-                <li>
-                    <a href="#%e7%89%88%e6%9c%ac%e4%b8%80%e6%87%92%e6%b1%89%e5%bc%8f%e4%b8%8d%e6%8e%a8%e8%8d%90" aria-label="版本一：懒汉式（不推荐）">版本一：懒汉式（不推荐）</a></li>
-                <li>
-                    <a href="#%e7%89%88%e6%9c%ac%e4%ba%8c%e6%87%92%e6%b1%89%e5%bc%8f%e4%b8%80%e8%88%ac%e6%8e%a8%e8%8d%90" aria-label="版本二：懒汉式（一般推荐）">版本二：懒汉式（一般推荐）</a></li>
-                <li>
-                    <a href="#%e7%89%88%e6%9c%ac%e4%b8%89%e5%8f%8c%e9%87%8d%e6%a3%80%e6%b5%8b%e4%b8%8d%e6%8e%a8%e8%8d%90%e4%b8%8d%e5%a6%82%e7%89%88%e6%9c%ac%e4%ba%94" aria-label="版本三：双重检测（不推荐，不如版本五）">版本三：双重检测（不推荐，不如版本五）</a></li>
-                <li>
-                    <a href="#%e7%89%88%e6%9c%ac%e5%9b%9b%e9%a5%bf%e6%b1%89%e5%bc%8f%e6%8e%a8%e8%8d%90" aria-label="版本四：饿汉式（推荐）">版本四：饿汉式（推荐）</a></li>
-                <li>
-                    <a href="#%e7%89%88%e6%9c%ac%e4%ba%94%e8%ba%ba%e5%b9%b3%e5%bc%8f-%e9%9d%99%e6%80%81%e5%86%85%e9%83%a8%e7%b1%bb%e6%8e%a8%e8%8d%90" aria-label="版本五：躺平式-静态内部类（推荐）">版本五：躺平式-静态内部类（推荐）</a></li>
-                <li>
-                    <a href="#%e7%89%88%e6%9c%ac%e5%85%adnet4-%e7%9a%84-lazyt-%e7%b1%bb%e5%9e%8b%e5%bc%ba%e7%83%88%e6%8e%a8%e8%8d%90" aria-label="版本六：.NET4 的 Lazy&amp;lt;T&amp;gt; 类型（强烈推荐）">版本六：.NET4 的 Lazy&lt;T&gt; 类型（强烈推荐）</a></li></ul>
-                </li>
-                <li>
-                    <a href="#%e5%8f%82%e8%80%83%e8%b5%84%e6%96%99" aria-label="参考资料">参考资料</a>
-                </li>
-            </ul>
-        </div>
-        </details>
-    </div>
-</aside>
-<script>
-    let activeElement;
-    let elements;
-    window.addEventListener('DOMContentLoaded', function (event) {
-        checkTocPosition();
-
-        elements = document.querySelectorAll('h1[id],h2[id],h3[id],h4[id],h5[id],h6[id]');
-        
-        activeElement = elements[0];
-        const id = encodeURI(activeElement.getAttribute('id')).toLowerCase();
-        document.querySelector(`.inner ul li a[href="#${id}"]`).classList.add('active');
-    }, false);
-
-    window.addEventListener('resize', function(event) {
-        checkTocPosition();
-    }, false);
-
-    window.addEventListener('scroll', () => {
-        
-        activeElement = Array.from(elements).find((element) => {
-            if ((getOffsetTop(element) - window.pageYOffset) > 0 &&
-                (getOffsetTop(element) - window.pageYOffset) < window.innerHeight/2) {
-                return element;
-            }
-        }) || activeElement
-
-        elements.forEach(element => {
-            const id = encodeURI(element.getAttribute('id')).toLowerCase();
-            if (element === activeElement){
-                document.querySelector(`.inner ul li a[href="#${id}"]`).classList.add('active');
-            } else {
-                document.querySelector(`.inner ul li a[href="#${id}"]`).classList.remove('active');
-            }
-        })
-    }, false);
-
-    const main = parseInt(getComputedStyle(document.body).getPropertyValue('--article-width'), 10);
-    const toc = parseInt(getComputedStyle(document.body).getPropertyValue('--toc-width'), 10);
-    const gap = parseInt(getComputedStyle(document.body).getPropertyValue('--gap'), 10);
-
-    function checkTocPosition() {
-        const width = document.body.scrollWidth;
-        if (width - main - (toc * 2) - (gap * 4) > 0) {
-            document.getElementById("toc-container").classList.add("wide");
-        } else {
-            document.getElementById("toc-container").classList.remove("wide");
-        }
-    }
-
-    function getOffsetTop(element) {
-        if (!element.getClientRects().length) {
-            return 0;
-        }
-        let rect = element.getBoundingClientRect();
-        let win = element.ownerDocument.defaultView;
-        return rect.top + win.pageYOffset;
-    }
-</script>
-        <div class="post-content"><h2 id="定义">定义<a hidden class="anchor" aria-hidden="true" href="#定义">#</a></h2>
-<p><strong>单例模式</strong>（Singleton Design Pattern）是一种创建型设计模式，它能够保证一个类只有一个实例，并提供一个访问该实例的全局节点。</p>
-<p><strong>三个必要条件：</strong></p>
-<ul>
-<li>构造函数必须是私有的，保证类的外部不能创建类的实例。</li>
-<li>通过一个私有的静态变量来存储其唯一实例。</li>
-<li>通过提供一个公开的静态方法，使得外部使用者可以访问类的唯一实例。</li>
-</ul>
-<p><strong>三个必要问题：</strong></p>
-<ul>
-<li>是否线程安全</li>
-<li>是否延时加载</li>
-<li>是否需要加锁（锁会导致低性能）</li>
-</ul>
-<h2 id="实现">实现<a hidden class="anchor" aria-hidden="true" href="#实现">#</a></h2>
-<h3 id="版本一懒汉式不推荐">版本一：懒汉式（不推荐）<a hidden class="anchor" aria-hidden="true" href="#版本一懒汉式不推荐">#</a></h3>
+        </header> 
+        <div class="post-content"><p><strong>此类为TextBox的一个扩展类，其中包含四个附加属性，分别是：</strong></p>
 <table>
 <thead>
 <tr>
-<th>线程安全</th>
-<th>延迟加载</th>
-<th>加锁</th>
+<th><strong>属性</strong></th>
+<th>IntegerRange</th>
+<th>Minimum</th>
+<th>Maximum</th>
+<th>PreviousValue</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>否</td>
-<td>是</td>
-<td>创建对象时未加锁，获取对象时未加锁</td>
+<td><strong>类型</strong></td>
+<td>bool</td>
+<td>int</td>
+<td>int</td>
+<td>string</td>
+</tr>
+<tr>
+<td><strong>定义</strong></td>
+<td>是否启用范围判定</td>
+<td>最小值</td>
+<td>最大值</td>
+<td>前一个有效值</td>
+</tr>
+<tr>
+<td><strong>默认值</strong></td>
+<td>false</td>
+<td>0</td>
+<td>int的最大值</td>
+<td>空</td>
 </tr>
 </tbody>
 </table>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">sealed</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Singleton</span>
+<p><strong>实现了以下功能：</strong></p>
+<ul>
+<li>若输入的值不满足最小值和最大值的范围或输入不合法时，则会自动恢复为前一个有效值</li>
+<li>解决了粘贴时的输入验证问题</li>
+<li>解决了用户选中文本后输入的问题</li>
+<li>解决了当最小值大于9时，无法输入数字的问题</li>
+</ul>
+<p><strong>源代码：</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Csharp" data-lang="Csharp"><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">TextBoxExtensions</span>
 </span></span><span style="display:flex;"><span>    {
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">static</span> Singleton _instance = <span style="color:#66d9ef">null</span>;
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">#region IntegerRange</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">private</span> Singleton()
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">readonly</span> DependencyProperty IntegerRangeProperty =
+</span></span><span style="display:flex;"><span>            DependencyProperty.RegisterAttached(
+</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#34;IntegerRange&#34;</span>,
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">typeof</span>(<span style="color:#66d9ef">bool</span>),
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">typeof</span>(TextBoxExtensions),
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">new</span> PropertyMetadata(<span style="color:#66d9ef">false</span>, OnIntegerRangeChanged));
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">bool</span> GetIntegerRange(DependencyObject target)
 </span></span><span style="display:flex;"><span>        {
-</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">return</span> (<span style="color:#66d9ef">bool</span>)target.GetValue(IntegerRangeProperty);
 </span></span><span style="display:flex;"><span>        }
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> Singleton Instance
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> SetIntegerRange(DependencyObject target, <span style="color:#66d9ef">bool</span> <span style="color:#66d9ef">value</span>)
 </span></span><span style="display:flex;"><span>        {
-</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">get</span>
+</span></span><span style="display:flex;"><span>            target.SetValue(IntegerRangeProperty, <span style="color:#66d9ef">value</span>);
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#960050;background-color:#1e0010">#</span>endregion
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">#region Minimum</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">readonly</span> DependencyProperty MinimumProperty =
+</span></span><span style="display:flex;"><span>            DependencyProperty.RegisterAttached(
+</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#34;Minimum&#34;</span>,
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">typeof</span>(<span style="color:#66d9ef">int</span>),
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">typeof</span>(TextBoxExtensions),
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">new</span> PropertyMetadata(<span style="color:#ae81ff">0</span>));
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">int</span> GetMinimum(DependencyObject target)
+</span></span><span style="display:flex;"><span>        {
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">return</span> (<span style="color:#66d9ef">int</span>)target.GetValue(MinimumProperty);
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> SetMinimum(DependencyObject target, <span style="color:#66d9ef">int</span> <span style="color:#66d9ef">value</span>)
+</span></span><span style="display:flex;"><span>        {
+</span></span><span style="display:flex;"><span>            target.SetValue(MinimumProperty, <span style="color:#66d9ef">value</span>);
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>        <span style="color:#960050;background-color:#1e0010">#</span>endregion
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">#region Maximum</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">readonly</span> DependencyProperty MaximumProperty =
+</span></span><span style="display:flex;"><span>            DependencyProperty.RegisterAttached(
+</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#34;Maximum&#34;</span>,
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">typeof</span>(<span style="color:#66d9ef">int</span>),
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">typeof</span>(TextBoxExtensions),
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">new</span> PropertyMetadata(<span style="color:#66d9ef">int</span>.MaxValue));
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">int</span> GetMaximum(DependencyObject target)
+</span></span><span style="display:flex;"><span>        {
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">return</span> (<span style="color:#66d9ef">int</span>)target.GetValue(MaximumProperty);
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> SetMaximum(DependencyObject target, <span style="color:#66d9ef">int</span> <span style="color:#66d9ef">value</span>)
+</span></span><span style="display:flex;"><span>        {
+</span></span><span style="display:flex;"><span>            target.SetValue(MaximumProperty, <span style="color:#66d9ef">value</span>);
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>        <span style="color:#960050;background-color:#1e0010">#</span>endregion
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">#region PreviousValue</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">readonly</span> DependencyProperty PreviousValueProperty =
+</span></span><span style="display:flex;"><span>            DependencyProperty.RegisterAttached(<span style="color:#e6db74">&#34;PreviousValue&#34;</span>, <span style="color:#66d9ef">typeof</span>(<span style="color:#66d9ef">string</span>), <span style="color:#66d9ef">typeof</span>(TextBoxExtensions));
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">string</span> GetPreviousValue(DependencyObject obj)
+</span></span><span style="display:flex;"><span>        {
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">return</span> (<span style="color:#66d9ef">string</span>)obj.GetValue(PreviousValueProperty);
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> SetPreviousValue(DependencyObject obj, <span style="color:#66d9ef">string</span> <span style="color:#66d9ef">value</span>)
+</span></span><span style="display:flex;"><span>        {
+</span></span><span style="display:flex;"><span>            obj.SetValue(PreviousValueProperty, <span style="color:#66d9ef">value</span>);
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#960050;background-color:#1e0010">#</span>endregion
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> OnIntegerRangeChanged(DependencyObject sender, DependencyPropertyChangedEventArgs e)
+</span></span><span style="display:flex;"><span>        {
+</span></span><span style="display:flex;"><span>            TextBox textBox = sender <span style="color:#66d9ef">as</span> TextBox;
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span> (textBox != <span style="color:#66d9ef">null</span>)
 </span></span><span style="display:flex;"><span>            {
-</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">if</span> (_instance == <span style="color:#66d9ef">null</span>)
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">if</span> ((<span style="color:#66d9ef">bool</span>)e.NewValue)
 </span></span><span style="display:flex;"><span>                {
-</span></span><span style="display:flex;"><span>                    _instance = <span style="color:#66d9ef">new</span> Singleton();
+</span></span><span style="display:flex;"><span>                    textBox.PreviewTextInput += TextBox_PreviewTextInput;
+</span></span><span style="display:flex;"><span>                    DataObject.AddPastingHandler(textBox, TextBox_Pasting);
+</span></span><span style="display:flex;"><span>                    textBox.LostFocus += TextBox_LostFocus;
 </span></span><span style="display:flex;"><span>                }
-</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">return</span> _instance;
-</span></span><span style="display:flex;"><span>            }
-</span></span><span style="display:flex;"><span>        }
-</span></span><span style="display:flex;"><span>    }
-</span></span></code></pre></div><h3 id="版本二懒汉式一般推荐">版本二：懒汉式（一般推荐）<a hidden class="anchor" aria-hidden="true" href="#版本二懒汉式一般推荐">#</a></h3>
-<table>
-<thead>
-<tr>
-<th>线程安全</th>
-<th>延迟加载</th>
-<th>加锁</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>是</td>
-<td>是</td>
-<td>创建对象时加锁，获取对象时加锁</td>
-</tr>
-</tbody>
-</table>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span> <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">sealed</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Singleton</span>
-</span></span><span style="display:flex;"><span>    {
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">static</span> Singleton _instance = <span style="color:#66d9ef">null</span>;
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">readonly</span> <span style="color:#66d9ef">object</span> InstanceLock = <span style="color:#66d9ef">new</span>();
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">private</span> Singleton()
-</span></span><span style="display:flex;"><span>        {
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>        }
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> Singleton Instance
-</span></span><span style="display:flex;"><span>        {
-</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">get</span>
-</span></span><span style="display:flex;"><span>            {
-</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">lock</span> (InstanceLock)
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">else</span>
 </span></span><span style="display:flex;"><span>                {
-</span></span><span style="display:flex;"><span>                    <span style="color:#66d9ef">if</span> (_instance == <span style="color:#66d9ef">null</span>)
-</span></span><span style="display:flex;"><span>                    {
-</span></span><span style="display:flex;"><span>                        _instance = <span style="color:#66d9ef">new</span> Singleton();
-</span></span><span style="display:flex;"><span>                    }
-</span></span><span style="display:flex;"><span>                    <span style="color:#66d9ef">return</span> _instance;
+</span></span><span style="display:flex;"><span>                    textBox.PreviewTextInput -= TextBox_PreviewTextInput;
+</span></span><span style="display:flex;"><span>                    DataObject.RemovePastingHandler(textBox, TextBox_Pasting);
+</span></span><span style="display:flex;"><span>                    textBox.LostFocus -= TextBox_LostFocus;
 </span></span><span style="display:flex;"><span>                }
 </span></span><span style="display:flex;"><span>            }
 </span></span><span style="display:flex;"><span>        }
-</span></span><span style="display:flex;"><span>    }
-</span></span></code></pre></div><h3 id="版本三双重检测不推荐不如版本五">版本三：双重检测（不推荐，不如版本五）<a hidden class="anchor" aria-hidden="true" href="#版本三双重检测不推荐不如版本五">#</a></h3>
-<table>
-<thead>
-<tr>
-<th>线程安全</th>
-<th>延迟加载</th>
-<th>加锁</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>是</td>
-<td>是</td>
-<td>创建对象时加锁，获取对象时未加锁</td>
-</tr>
-</tbody>
-</table>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">sealed</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Singleton</span>
-</span></span><span style="display:flex;"><span>    {
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">static</span> Singleton _instance = <span style="color:#66d9ef">null</span>;
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">readonly</span> <span style="color:#66d9ef">object</span> InstanceLock = <span style="color:#66d9ef">new</span> <span style="color:#66d9ef">object</span>();
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">private</span> Singleton()
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> TextBox_PreviewTextInput(<span style="color:#66d9ef">object</span> sender, TextCompositionEventArgs e)
 </span></span><span style="display:flex;"><span>        {
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>        }
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> Singleton Instance
-</span></span><span style="display:flex;"><span>        {
-</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">get</span>
+</span></span><span style="display:flex;"><span>            TextBox textBox = (TextBox)sender;
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">string</span> fullText = textBox.SelectionLength &gt; <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>                ? textBox.Text.Remove(textBox.SelectionStart, textBox.SelectionLength).Insert(textBox.SelectionStart, e.Text)
+</span></span><span style="display:flex;"><span>                : textBox.Text.Insert(textBox.SelectionStart, e.Text);
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">int</span> <span style="color:#66d9ef">value</span>;
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">int</span> maximum = GetMaximum(textBox);
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span> (!<span style="color:#66d9ef">int</span>.TryParse(fullText, <span style="color:#66d9ef">out</span> <span style="color:#66d9ef">value</span>) || <span style="color:#66d9ef">value</span> &gt; maximum)
 </span></span><span style="display:flex;"><span>            {
-</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">if</span> (_instance == <span style="color:#66d9ef">null</span>)
-</span></span><span style="display:flex;"><span>                {
-</span></span><span style="display:flex;"><span>                    <span style="color:#66d9ef">lock</span> (InstanceLock)
-</span></span><span style="display:flex;"><span>                    {
-</span></span><span style="display:flex;"><span>                        <span style="color:#66d9ef">if</span> (_instance == <span style="color:#66d9ef">null</span>)
-</span></span><span style="display:flex;"><span>                        {
-</span></span><span style="display:flex;"><span>                            _instance = <span style="color:#66d9ef">new</span> Singleton();
-</span></span><span style="display:flex;"><span>                        }
-</span></span><span style="display:flex;"><span>                    }
-</span></span><span style="display:flex;"><span>                }
-</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">return</span> _instance;
+</span></span><span style="display:flex;"><span>                e.Handled = <span style="color:#66d9ef">true</span>;
 </span></span><span style="display:flex;"><span>            }
-</span></span><span style="display:flex;"><span>        }
-</span></span><span style="display:flex;"><span>    }
-</span></span></code></pre></div><h3 id="版本四饿汉式推荐">版本四：饿汉式（推荐）<a hidden class="anchor" aria-hidden="true" href="#版本四饿汉式推荐">#</a></h3>
-<table>
-<thead>
-<tr>
-<th>线程安全</th>
-<th>延迟加载</th>
-<th>加锁</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>是</td>
-<td>否</td>
-<td>创建对象时未加锁，获取对象时未加锁</td>
-</tr>
-</tbody>
-</table>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">sealed</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Singleton</span>
-</span></span><span style="display:flex;"><span>    {
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">static</span> Singleton instance = <span style="color:#66d9ef">new</span> Singleton();
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">static</span> Singleton()
-</span></span><span style="display:flex;"><span>        {
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>        }
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">private</span> Singleton()
-</span></span><span style="display:flex;"><span>        {
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>        }
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> Singleton Instance
-</span></span><span style="display:flex;"><span>        {
-</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">get</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">else</span>
 </span></span><span style="display:flex;"><span>            {
-</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">return</span> instance;
-</span></span><span style="display:flex;"><span>            }
-</span></span><span style="display:flex;"><span>        }
-</span></span><span style="display:flex;"><span>    }
-</span></span></code></pre></div><h3 id="版本五躺平式-静态内部类推荐">版本五：躺平式-静态内部类（推荐）<a hidden class="anchor" aria-hidden="true" href="#版本五躺平式-静态内部类推荐">#</a></h3>
-<table>
-<thead>
-<tr>
-<th>线程安全</th>
-<th>延迟加载</th>
-<th>加锁</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>是</td>
-<td>是</td>
-<td>创建对象时未加锁，获取对象时未加锁</td>
-</tr>
-</tbody>
-</table>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">sealed</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Singleton</span>
-</span></span><span style="display:flex;"><span>    {
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">private</span> Singleton()
-</span></span><span style="display:flex;"><span>        {
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>        }
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> Singleton instance
-</span></span><span style="display:flex;"><span>        {
-</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">get</span>
-</span></span><span style="display:flex;"><span>            {
-</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">return</span> Nested.instance;
+</span></span><span style="display:flex;"><span>                <span style="color:#75715e">// If the text is valid, update the PreviousValue property</span>
+</span></span><span style="display:flex;"><span>                SetPreviousValue(textBox, textBox.Text);
 </span></span><span style="display:flex;"><span>            }
 </span></span><span style="display:flex;"><span>        }
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Nested</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> TextBox_LostFocus(<span style="color:#66d9ef">object</span> sender, RoutedEventArgs e)
 </span></span><span style="display:flex;"><span>        {
-</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">static</span> Nested()
+</span></span><span style="display:flex;"><span>            TextBox textBox = (TextBox)sender;
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">int</span> <span style="color:#66d9ef">value</span>;
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">int</span> minimum = GetMinimum(textBox);
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span> (<span style="color:#66d9ef">int</span>.TryParse(textBox.Text, <span style="color:#66d9ef">out</span> <span style="color:#66d9ef">value</span>) &amp;&amp; <span style="color:#66d9ef">value</span> &lt; minimum)
 </span></span><span style="display:flex;"><span>            {
-</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                <span style="color:#75715e">// If the value is less than the minimum, set the text to the previous value</span>
+</span></span><span style="display:flex;"><span>                textBox.Text = GetPreviousValue(textBox);
 </span></span><span style="display:flex;"><span>            }
-</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">internal</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">readonly</span>  Singleton instance = <span style="color:#66d9ef">new</span> Singleton();
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> TextBox_Pasting(<span style="color:#66d9ef">object</span> sender, DataObjectPastingEventArgs e)
+</span></span><span style="display:flex;"><span>        {
+</span></span><span style="display:flex;"><span>            TextBox textBox = (TextBox)sender;
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">string</span> pasteText = e.DataObject.GetData(<span style="color:#66d9ef">typeof</span>(<span style="color:#66d9ef">string</span>)) <span style="color:#66d9ef">as</span> <span style="color:#66d9ef">string</span>;
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">string</span> fullText = textBox.SelectionLength &gt; <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>                ? textBox.Text.Remove(textBox.SelectionStart, textBox.SelectionLength).Insert(textBox.SelectionStart, pasteText)
+</span></span><span style="display:flex;"><span>                : textBox.Text.Insert(textBox.SelectionStart, pasteText);
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">int</span> <span style="color:#66d9ef">value</span>;
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">int</span> minimum = GetMinimum(textBox);
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">int</span> maximum = GetMaximum(textBox);
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span> (!<span style="color:#66d9ef">int</span>.TryParse(fullText, <span style="color:#66d9ef">out</span> <span style="color:#66d9ef">value</span>) || <span style="color:#66d9ef">value</span> &lt; minimum || <span style="color:#66d9ef">value</span> &gt; maximum)
+</span></span><span style="display:flex;"><span>            {
+</span></span><span style="display:flex;"><span>                e.CancelCommand();
+</span></span><span style="display:flex;"><span>            }
 </span></span><span style="display:flex;"><span>        }
 </span></span><span style="display:flex;"><span>    }
-</span></span></code></pre></div><h3 id="版本六net4-的-lazyt-类型强烈推荐">版本六：.NET4 的 Lazy&lt;T&gt; 类型（强烈推荐）<a hidden class="anchor" aria-hidden="true" href="#版本六net4-的-lazyt-类型强烈推荐">#</a></h3>
-<table>
-<thead>
-<tr>
-<th>线程安全</th>
-<th>延迟加载</th>
-<th>加锁</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>是</td>
-<td>是</td>
-<td>创建对象时未加锁，获取对象时未加锁</td>
-</tr>
-</tbody>
-</table>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">sealed</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Singleton</span>
-</span></span><span style="display:flex;"><span>    {
-</span></span><span style="display:flex;"><span>       <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">readonly</span> Lazy&lt;Singleton&gt; Lazy = <span style="color:#66d9ef">new</span>(() =&gt; <span style="color:#66d9ef">new</span> Singleton());
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>       <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> Singleton Instance =&gt; Lazy.Value;
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>       <span style="color:#66d9ef">private</span> Singleton()
-</span></span><span style="display:flex;"><span>       {
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>       }
-</span></span><span style="display:flex;"><span>    }
-</span></span></code></pre></div><h2 id="参考资料">参考资料<a hidden class="anchor" aria-hidden="true" href="#参考资料">#</a></h2>
-<ul>
-<li><a href="https://refactoringguru.cn/design-patterns/singleton">单例模式</a></li>
-<li><a href="https://www.cnblogs.com/codeshell/p/14177102.html">单例模式的五种实现方式及优缺点</a></li>
-<li><a href="https://csharpindepth.com/Articles/Singleton">深入理解 C#： 单例的实现</a></li>
-<li><a href="https://niuery.com/post/11">重温设计模式 &mdash; 单例模式</a></li>
-</ul>
-
+</span></span></code></pre></div>
 
         </div>
         <div class="post-reward">
@@ -767,15 +610,10 @@ if (!doNotTrack) {
         <footer class="post-footer">
             
 <nav class="paginav">
-  <a class="prev" href="https://edinik.com/posts/tech/wpf-textbox-input-range-validation/">
-    <span class="title">« 上一页</span>
-    <br>
-    <span>WPF | TextBox输入范围验证</span>
-  </a>
-  <a class="next" href="https://edinik.com/posts/tech/midjourney-artists-01/">
+  <a class="next" href="https://edinik.com/posts/tech/design-pattern-singleton/">
     <span class="title">下一页 »</span>
     <br>
-    <span>midjourney | artists 01</span>
+    <span>设计模式 | 单例模式</span>
   </a>
 </nav>
 
