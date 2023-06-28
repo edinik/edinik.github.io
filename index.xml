@@ -338,15 +338,6 @@
     
     
     <item>
-      <title>✨ 灵感</title>
-      <link>https://edinik.com/bbs/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://edinik.com/bbs/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>🎵 音乐</title>
       <link>https://edinik.com/music/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -371,6 +362,15 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://edinik.com/movies/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>🧿 动态</title>
+      <link>https://edinik.com/bbs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://edinik.com/bbs/</guid>
       <description></description>
     </item>
     

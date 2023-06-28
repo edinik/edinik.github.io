@@ -175,8 +175,6 @@
   </url><url>
     <loc>https://edinik.com/archives/</loc>
   </url><url>
-    <loc>https://edinik.com/bbs/</loc>
-  </url><url>
     <loc>https://edinik.com/music/</loc>
   </url><url>
     <loc>https://edinik.com/books/</loc>
@@ -188,6 +186,8 @@
     <loc>https://edinik.com/series/</loc>
   </url><url>
     <loc>https://edinik.com/movies/</loc>
+  </url><url>
+    <loc>https://edinik.com/bbs/</loc>
   </url><url>
     <loc>https://edinik.com/goods/</loc>
   </url>
