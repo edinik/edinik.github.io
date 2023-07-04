@@ -11,7 +11,16 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 12 Jun 2023 21:53:37 +0800</lastBuildDate><atom:link href="https://edinik.com/posts/tech/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 03 Jul 2023 20:33:30 +0800</lastBuildDate><atom:link href="https://edinik.com/posts/tech/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>计算机专业学习路线</title>
+      <link>https://edinik.com/posts/tech/computer_science_learning_path/</link>
+      <pubDate>Mon, 03 Jul 2023 20:33:30 +0800</pubDate>
+      
+      <guid>https://edinik.com/posts/tech/computer_science_learning_path/</guid>
+      <description>计算机专业学习路线</description>
+    </item>
+    
     <item>
       <title>设计模式 | 工厂模式</title>
       <link>https://edinik.com/posts/tech/design-pattern-factory-method/</link>
