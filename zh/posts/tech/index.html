@@ -1,0 +1,1903 @@
+<!DOCTYPE html>
+<html lang="zh" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>技术 | Edinik&#39;s Blog</title>
+<meta name="keywords" content="">
+<meta name="description" content="技术 - Edinik&#39;s Blog">
+<meta name="author" content="Edinik">
+<link rel="canonical" href="https://edinik.com/zh/posts/tech/">
+<meta name="google-site-verification" content="6A-1RsLBWSgG_uBmVVQzBmGE8k2mxcJwZErLRJMpk4I">
+<meta name="baidu-site-verification" content="codeva-I9cG7LIaz4">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.06aaca8ff369b4028843890290d1c9d3f78da61b0031ace51878af4deaadd89d.css" integrity="sha256-BqrKj/NptAKIQ4kCkNHJ0/eNphsAMazlGHivTeqt2J0=" rel="preload stylesheet" as="style">
+
+<link rel="stylesheet" href="https://cdn.staticfile.org/lxgw-wenkai-screen-webfont/1.6.0/lxgwwenkaiscreen.css" media="print" onload="this.media='all'">
+<link rel="icon" href="https://edinik.com/img/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://edinik.com/img/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://edinik.com/img/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://edinik.com/img/apple-touch-icon.png">
+<link rel="mask-icon" href="https://edinik.com/img/android-chrome-512x512.png">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="https://edinik.com/zh/posts/tech/index.xml">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+</noscript>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
+<script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.min.js"></script>
+
+
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = ""; 
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-123-45', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script><meta property="og:title" content="技术" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://edinik.com/zh/posts/tech/" /><meta property="og:image" content="https://edinik.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E"/><meta property="og:site_name" content="Edinik" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://edinik.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E"/>
+
+<meta name="twitter:title" content="技术"/>
+<meta name="twitter:description" content=""/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [ 
+    {
+      "@type": "ListItem",
+      "position":  4 ,
+      "name": "技术",
+      "item": "https://edinik.com/zh/posts/tech/"
+    }
+  ]
+}
+</script>
+</head>
+
+<body class="list dark" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://edinik.com/zh/" accesskey="h" title="Edinik&#39;s Blog (Alt + H)">
+            <img src="https://edinik.com/img/apple-touch-icon.png" alt="logo" aria-label="logo"
+                 height="40">Edinik&#39;s Blog</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                         stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                         stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://edinik.com/zh/search" title="搜索 (Alt &#43; /)" accesskey=/>
+                <span>搜索</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://edinik.com/zh/bbs" title="动态">
+                <span>动态</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://edinik.com/zh/posts" title="文章">
+                <span>文章</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://edinik.com/zh/tags" title="标签">
+                <span>标签</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://edinik.com/zh/archives/" title="归档">
+                <span>归档</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://edinik.com/zh/goods" title="好物">
+                <span>好物</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://edinik.com/zh/friends/" title="友圈">
+                <span>友圈</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://edinik.com/zh/about" title="关于">
+                <span>关于</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+
+
+<script async src="https://umami.edinik.com/random-string.js" data-website-id="849d077c-441f-4de6-a1dd-ee5f696843fc"></script>
+<main class="main"> 
+<header class="page-header"><div class="breadcrumbs"><a href="https://edinik.com/zh/">主页</a></div>
+  <h1>技术</h1>
+</header>
+
+<article class="post-entry">
+  <div class="post-info">
+    <header class="entry-header">
+      <h2>计算机专业学习路线
+      </h2>
+    </header>
+    <section class="entry-content">
+      <p>
+        计算机专业学习路线
+        
+        ...
+      </p>
+    </section>
+    <footer class="entry-footer"><style>
+  i[id*="post_meta_style"] {
+    display: flex;
+    align-items: center;
+    margin: 0 0 10px 0;
+  }
+
+  .parent-post-meta {
+    display: flex;
+    flex-wrap: wrap;
+    opacity: 0.8;
+  }
+</style>
+
+<span class="parent-post-meta">
+  <span id="post_meta_style_1" class="post_meta_style">
+    <div class="post-meta-icons">
+      <svg
+        t="1686154436360"
+        class="icon"
+        viewBox="0 0 1024 1024"
+        version="1.1"
+        xmlns="http://www.w3.org/2000/svg"
+        p-id="2555"
+        width="14"
+        height="14"
+      >
+        <path
+          d="M146.285714 0h731.428572a146.285714 146.285714 0 0 1 146.285714 146.285714v731.428572a146.285714 146.285714 0 0 1-146.285714 146.285714H146.285714a146.285714 146.285714 0 0 1-146.285714-146.285714V146.285714a146.285714 146.285714 0 0 1 146.285714-146.285714z m0 73.142857a73.142857 73.142857 0 0 0-73.142857 73.142857v731.428572a73.142857 73.142857 0 0 0 73.142857 73.142857h731.428572a73.142857 73.142857 0 0 0 73.142857-73.142857V146.285714a73.142857 73.142857 0 0 0-73.142857-73.142857H146.285714z"
+          fill="#8a8a8a"
+          p-id="2556"
+        ></path>
+        <path
+          d="M0 219.428571h1024v73.142858H0V219.428571z m987.428571 36.571429L950.857143 292.571429V219.428571l36.571428 36.571429z"
+          fill="#8a8a8a"
+          p-id="2557"
+        ></path>
+        <path
+          d="M475.428571 438.857143h73.142858a36.571429 36.571429 0 0 1 0 73.142857h-73.142858a36.571429 36.571429 0 0 1 0-73.142857z m219.428572 0h73.142857a36.571429 36.571429 0 1 1 0 73.142857h-73.142857a36.571429 36.571429 0 0 1 0-73.142857z m-438.857143 146.285714h73.142857a36.571429 36.571429 0 0 1 0 73.142857h-73.142857a36.571429 36.571429 0 0 1 0-73.142857z m438.857143 0h73.142857a36.571429 36.571429 0 1 1 0 73.142857h-73.142857a36.571429 36.571429 0 0 1 0-73.142857z m-438.857143 146.285714h73.142857a36.571429 36.571429 0 1 1 0 73.142858h-73.142857a36.571429 36.571429 0 1 1 0-73.142858z m438.857143 0h73.142857a36.571429 36.571429 0 1 1 0 73.142858h-73.142857a36.571429 36.571429 0 1 1 0-73.142858z m-219.428572 0h73.142858a36.571429 36.571429 0 1 1 0 73.142858h-73.142858a36.571429 36.571429 0 1 1 0-73.142858z m0-146.285714h73.142858a36.571429 36.571429 0 0 1 0 73.142857h-73.142858a36.571429 36.571429 0 0 1 0-73.142857z"
+          fill="#8a8a8a"
+          p-id="2558"
+        ></path>
+      </svg>
+    </div>
+    <span>2023-07-03&nbsp;&nbsp;
+    </span>
+  </span>
+  
+  
+  <span id="post_meta_style_6" class="post_meta_style">
+    <span
+      ><div class="post-meta-icons">
+        <svg
+          t="1686157100398"
+          class="icon"
+          viewBox="0 0 1238 1024"
+          version="1.1"
+          xmlns="http://www.w3.org/2000/svg"
+          p-id="23788"
+          width="14"
+          height="14"
+        >
+          <path
+            d="M94.131677 411.508075v-318.012423h310.380124l523.448447 528.536646L719.344099 826.832298l-54.062111 54.062112-47.065839 46.429814z m902.519255 276.034782a90.951553 90.951553 0 0 0 0-127.204969L537.440994 94.131677h82.68323L1144.84472 622.668323l-311.652173 306.563975-40.70559-38.797515z m215.612422-127.204969L677.36646 19.080745a63.602484 63.602484 0 0 0-45.157764-19.080745H92.223602A92.223602 92.223602 0 0 0 0 91.587578v333.277018a63.602484 63.602484 0 0 0 18.44472 44.521739l534.26087 527.900622a93.495652 93.495652 0 0 0 130.385093 0l41.97764-41.97764 41.97764 41.97764a93.495652 93.495652 0 0 0 130.385093 0l313.560248-309.7441a90.951553 90.951553 0 0 0 1.908075-128.477018zM274.126708 318.012422a29.893168 29.893168 0 1 1 29.893168-29.893167 29.893168 29.893168 0 0 1-29.893168 29.893167z m0-153.918012a127.204969 127.204969 0 1 0 124.024845 123.38882 127.204969 127.204969 0 0 0-124.024845-124.024845z"
+            fill="#8a8a8a"
+            p-id="23789"
+          ></path>
+        </svg>
+      </div>
+    </span>
+    <span>
+      <span class="post-tags-meta">
+        <a href="https://edinik.com/zh/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%B8%93%E4%B8%9A%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/" style="color: var(--secondary) !important"
+          >计算机专业学习路线</a
+        >
+      </span>
+    </span>
+  </span>
+  &nbsp;&nbsp;
+</span>
+</footer>
+  </div> 
+  <a class="entry-link" aria-label="post link to 计算机专业学习路线" href="https://edinik.com/zh/posts/tech/computer_science_learning_path/"></a>
+</article>
+
+<article class="post-entry">
+  <div class="post-info">
+    <header class="entry-header">
+      <h2>设计模式 | 工厂模式
+      </h2>
+    </header>
+    <section class="entry-content">
+      <p>
+        设计模式之工厂模式：
+        
+        
+      </p>
+    </section>
+    <footer class="entry-footer"><style>
+  i[id*="post_meta_style"] {
+    display: flex;
+    align-items: center;
+    margin: 0 0 10px 0;
+  }
+
+  .parent-post-meta {
+    display: flex;
+    flex-wrap: wrap;
+    opacity: 0.8;
+  }
+</style>
+
+<span class="parent-post-meta">
+  <span id="post_meta_style_1" class="post_meta_style">
+    <div class="post-meta-icons">
+      <svg
+        t="1686154436360"
+        class="icon"
+        viewBox="0 0 1024 1024"
+        version="1.1"
+        xmlns="http://www.w3.org/2000/svg"
+        p-id="2555"
+        width="14"
+        height="14"
+      >
+        <path
+          d="M146.285714 0h731.428572a146.285714 146.285714 0 0 1 146.285714 146.285714v731.428572a146.285714 146.285714 0 0 1-146.285714 146.285714H146.285714a146.285714 146.285714 0 0 1-146.285714-146.285714V146.285714a146.285714 146.285714 0 0 1 146.285714-146.285714z m0 73.142857a73.142857 73.142857 0 0 0-73.142857 73.142857v731.428572a73.142857 73.142857 0 0 0 73.142857 73.142857h731.428572a73.142857 73.142857 0 0 0 73.142857-73.142857V146.285714a73.142857 73.142857 0 0 0-73.142857-73.142857H146.285714z"
+          fill="#8a8a8a"
+          p-id="2556"
+        ></path>
+        <path
+          d="M0 219.428571h1024v73.142858H0V219.428571z m987.428571 36.571429L950.857143 292.571429V219.428571l36.571428 36.571429z"
+          fill="#8a8a8a"
+          p-id="2557"
+        ></path>
+        <path
+          d="M475.428571 438.857143h73.142858a36.571429 36.571429 0 0 1 0 73.142857h-73.142858a36.571429 36.571429 0 0 1 0-73.142857z m219.428572 0h73.142857a36.571429 36.571429 0 1 1 0 73.142857h-73.142857a36.571429 36.571429 0 0 1 0-73.142857z m-438.857143 146.285714h73.142857a36.571429 36.571429 0 0 1 0 73.142857h-73.142857a36.571429 36.571429 0 0 1 0-73.142857z m438.857143 0h73.142857a36.571429 36.571429 0 1 1 0 73.142857h-73.142857a36.571429 36.571429 0 0 1 0-73.142857z m-438.857143 146.285714h73.142857a36.571429 36.571429 0 1 1 0 73.142858h-73.142857a36.571429 36.571429 0 1 1 0-73.142858z m438.857143 0h73.142857a36.571429 36.571429 0 1 1 0 73.142858h-73.142857a36.571429 36.571429 0 1 1 0-73.142858z m-219.428572 0h73.142858a36.571429 36.571429 0 1 1 0 73.142858h-73.142858a36.571429 36.571429 0 1 1 0-73.142858z m0-146.285714h73.142858a36.571429 36.571429 0 0 1 0 73.142857h-73.142858a36.571429 36.571429 0 0 1 0-73.142857z"
+          fill="#8a8a8a"
+          p-id="2558"
+        ></path>
+      </svg>
+    </div>
+    <span>2023-06-12&nbsp;&nbsp;
+    </span>
+  </span>
+  
+  
+  <span id="post_meta_style_6" class="post_meta_style">
+    <span
+      ><div class="post-meta-icons">
+        <svg
+          t="1686157100398"
+          class="icon"
+          viewBox="0 0 1238 1024"
+          version="1.1"
+          xmlns="http://www.w3.org/2000/svg"
+          p-id="23788"
+          width="14"
+          height="14"
+        >
+          <path
+            d="M94.131677 411.508075v-318.012423h310.380124l523.448447 528.536646L719.344099 826.832298l-54.062111 54.062112-47.065839 46.429814z m902.519255 276.034782a90.951553 90.951553 0 0 0 0-127.204969L537.440994 94.131677h82.68323L1144.84472 622.668323l-311.652173 306.563975-40.70559-38.797515z m215.612422-127.204969L677.36646 19.080745a63.602484 63.602484 0 0 0-45.157764-19.080745H92.223602A92.223602 92.223602 0 0 0 0 91.587578v333.277018a63.602484 63.602484 0 0 0 18.44472 44.521739l534.26087 527.900622a93.495652 93.495652 0 0 0 130.385093 0l41.97764-41.97764 41.97764 41.97764a93.495652 93.495652 0 0 0 130.385093 0l313.560248-309.7441a90.951553 90.951553 0 0 0 1.908075-128.477018zM274.126708 318.012422a29.893168 29.893168 0 1 1 29.893168-29.893167 29.893168 29.893168 0 0 1-29.893168 29.893167z m0-153.918012a127.204969 127.204969 0 1 0 124.024845 123.38882 127.204969 127.204969 0 0 0-124.024845-124.024845z"
+            fill="#8a8a8a"
+            p-id="23789"
+          ></path>
+        </svg>
+      </div>
+    </span>
+    <span>
+      <span class="post-tags-meta">
+        <a href="https://edinik.com/zh/tags/design-pattern/" style="color: var(--secondary) !important"
+          >design-pattern</a
+        >
+      </span>
+    </span>
+  </span>
+  &nbsp;&nbsp;
+</span>
+</footer>
+  </div> 
+  <a class="entry-link" aria-label="post link to 设计模式 | 工厂模式" href="https://edinik.com/zh/posts/tech/design-pattern-factory-method/"></a>
+</article>
+
+<article class="post-entry">
+  <div class="post-info">
+    <header class="entry-header">
+      <h2>WPF | TextBox输入范围验证
+      </h2>
+    </header>
+    <section class="entry-content">
+      <p>
+        WPF中TextBox的输入范围验证
+        
+        ...
+      </p>
+    </section>
+    <footer class="entry-footer"><style>
+  i[id*="post_meta_style"] {
+    display: flex;
+    align-items: center;
+    margin: 0 0 10px 0;
+  }
+
+  .parent-post-meta {
+    display: flex;
+    flex-wrap: wrap;
+    opacity: 0.8;
+  }
+</style>
+
+<span class="parent-post-meta">
+  <span id="post_meta_style_1" class="post_meta_style">
+    <div class="post-meta-icons">
+      <svg
+        t="1686154436360"
+        class="icon"
+        viewBox="0 0 1024 1024"
+        version="1.1"
+        xmlns="http://www.w3.org/2000/svg"
+        p-id="2555"
+        width="14"
+        height="14"
+      >
+        <path
+          d="M146.285714 0h731.428572a146.285714 146.285714 0 0 1 146.285714 146.285714v731.428572a146.285714 146.285714 0 0 1-146.285714 146.285714H146.285714a146.285714 146.285714 0 0 1-146.285714-146.285714V146.285714a146.285714 146.285714 0 0 1 146.285714-146.285714z m0 73.142857a73.142857 73.142857 0 0 0-73.142857 73.142857v731.428572a73.142857 73.142857 0 0 0 73.142857 73.142857h731.428572a73.142857 73.142857 0 0 0 73.142857-73.142857V146.285714a73.142857 73.142857 0 0 0-73.142857-73.142857H146.285714z"
+          fill="#8a8a8a"
+          p-id="2556"
+        ></path>
+        <path
+          d="M0 219.428571h1024v73.142858H0V219.428571z m987.428571 36.571429L950.857143 292.571429V219.428571l36.571428 36.571429z"
+          fill="#8a8a8a"
+          p-id="2557"
+        ></path>
+        <path
+          d="M475.428571 438.857143h73.142858a36.571429 36.571429 0 0 1 0 73.142857h-73.142858a36.571429 36.571429 0 0 1 0-73.142857z m219.428572 0h73.142857a36.571429 36.571429 0 1 1 0 73.142857h-73.142857a36.571429 36.571429 0 0 1 0-73.142857z m-438.857143 146.285714h73.142857a36.571429 36.571429 0 0 1 0 73.142857h-73.142857a36.571429 36.571429 0 0 1 0-73.142857z m438.857143 0h73.142857a36.571429 36.571429 0 1 1 0 73.142857h-73.142857a36.571429 36.571429 0 0 1 0-73.142857z m-438.857143 146.285714h73.142857a36.571429 36.571429 0 1 1 0 73.142858h-73.142857a36.571429 36.571429 0 1 1 0-73.142858z m438.857143 0h73.142857a36.571429 36.571429 0 1 1 0 73.142858h-73.142857a36.571429 36.571429 0 1 1 0-73.142858z m-219.428572 0h73.142858a36.571429 36.571429 0 1 1 0 73.142858h-73.142858a36.571429 36.571429 0 1 1 0-73.142858z m0-146.285714h73.142858a36.571429 36.571429 0 0 1 0 73.142857h-73.142858a36.571429 36.571429 0 0 1 0-73.142857z"
+          fill="#8a8a8a"
+          p-id="2558"
+        ></path>
+      </svg>
+    </div>
+    <span>2023-05-25&nbsp;&nbsp;
+    </span>
+  </span>
+  
+  
+  <span id="post_meta_style_6" class="post_meta_style">
+    <span
+      ><div class="post-meta-icons">
+        <svg
+          t="1686157100398"
+          class="icon"
+          viewBox="0 0 1238 1024"
+          version="1.1"
+          xmlns="http://www.w3.org/2000/svg"
+          p-id="23788"
+          width="14"
+          height="14"
+        >
+          <path
+            d="M94.131677 411.508075v-318.012423h310.380124l523.448447 528.536646L719.344099 826.832298l-54.062111 54.062112-47.065839 46.429814z m902.519255 276.034782a90.951553 90.951553 0 0 0 0-127.204969L537.440994 94.131677h82.68323L1144.84472 622.668323l-311.652173 306.563975-40.70559-38.797515z m215.612422-127.204969L677.36646 19.080745a63.602484 63.602484 0 0 0-45.157764-19.080745H92.223602A92.223602 92.223602 0 0 0 0 91.587578v333.277018a63.602484 63.602484 0 0 0 18.44472 44.521739l534.26087 527.900622a93.495652 93.495652 0 0 0 130.385093 0l41.97764-41.97764 41.97764 41.97764a93.495652 93.495652 0 0 0 130.385093 0l313.560248-309.7441a90.951553 90.951553 0 0 0 1.908075-128.477018zM274.126708 318.012422a29.893168 29.893168 0 1 1 29.893168-29.893167 29.893168 29.893168 0 0 1-29.893168 29.893167z m0-153.918012a127.204969 127.204969 0 1 0 124.024845 123.38882 127.204969 127.204969 0 0 0-124.024845-124.024845z"
+            fill="#8a8a8a"
+            p-id="23789"
+          ></path>
+        </svg>
+      </div>
+    </span>
+    <span>
+      <span class="post-tags-meta">
+        <a href="https://edinik.com/zh/tags/wpf/" style="color: var(--secondary) !important"
+          >WPF</a
+        >
+      </span>
+    </span>
+  </span>
+  &nbsp;&nbsp;
+</span>
+</footer>
+  </div> 
+  <a class="entry-link" aria-label="post link to WPF | TextBox输入范围验证" href="https://edinik.com/zh/posts/tech/wpf-textbox-input-range-validation/"></a>
+</article>
+
+<article class="post-entry">
+  <div class="post-info">
+    <header class="entry-header">
+      <h2>设计模式 | 单例模式
+      </h2>
+    </header>
+    <section class="entry-content">
+      <p>
+        设计模式之单例模式：能够保证一个类只有一个实例，并提供一个访问该实例的全局节点。
+        
+        ...
+      </p>
+    </section>
+    <footer class="entry-footer"><style>
+  i[id*="post_meta_style"] {
+    display: flex;
+    align-items: center;
+    margin: 0 0 10px 0;
+  }
+
+  .parent-post-meta {
+    display: flex;
+    flex-wrap: wrap;
+    opacity: 0.8;
+  }
+</style>
+
+<span class="parent-post-meta">
+  <span id="post_meta_style_1" class="post_meta_style">
+    <div class="post-meta-icons">
+      <svg
+        t="1686154436360"
+        class="icon"
+        viewBox="0 0 1024 1024"
+        version="1.1"
+        xmlns="http://www.w3.org/2000/svg"
+        p-id="2555"
+        width="14"
+        height="14"
+      >
+        <path
+          d="M146.285714 0h731.428572a146.285714 146.285714 0 0 1 146.285714 146.285714v731.428572a146.285714 146.285714 0 0 1-146.285714 146.285714H146.285714a146.285714 146.285714 0 0 1-146.285714-146.285714V146.285714a146.285714 146.285714 0 0 1 146.285714-146.285714z m0 73.142857a73.142857 73.142857 0 0 0-73.142857 73.142857v731.428572a73.142857 73.142857 0 0 0 73.142857 73.142857h731.428572a73.142857 73.142857 0 0 0 73.142857-73.142857V146.285714a73.142857 73.142857 0 0 0-73.142857-73.142857H146.285714z"
+          fill="#8a8a8a"
+          p-id="2556"
+        ></path>
+        <path
+          d="M0 219.428571h1024v73.142858H0V219.428571z m987.428571 36.571429L950.857143 292.571429V219.428571l36.571428 36.571429z"
+          fill="#8a8a8a"
+          p-id="2557"
+        ></path>
+        <path
+          d="M475.428571 438.857143h73.142858a36.571429 36.571429 0 0 1 0 73.142857h-73.142858a36.571429 36.571429 0 0 1 0-73.142857z m219.428572 0h73.142857a36.571429 36.571429 0 1 1 0 73.142857h-73.142857a36.571429 36.571429 0 0 1 0-73.142857z m-438.857143 146.285714h73.142857a36.571429 36.571429 0 0 1 0 73.142857h-73.142857a36.571429 36.571429 0 0 1 0-73.142857z m438.857143 0h73.142857a36.571429 36.571429 0 1 1 0 73.142857h-73.142857a36.571429 36.571429 0 0 1 0-73.142857z m-438.857143 146.285714h73.142857a36.571429 36.571429 0 1 1 0 73.142858h-73.142857a36.571429 36.571429 0 1 1 0-73.142858z m438.857143 0h73.142857a36.571429 36.571429 0 1 1 0 73.142858h-73.142857a36.571429 36.571429 0 1 1 0-73.142858z m-219.428572 0h73.142858a36.571429 36.571429 0 1 1 0 73.142858h-73.142858a36.571429 36.571429 0 1 1 0-73.142858z m0-146.285714h73.142858a36.571429 36.571429 0 0 1 0 73.142857h-73.142858a36.571429 36.571429 0 0 1 0-73.142857z"
+          fill="#8a8a8a"
+          p-id="2558"
+        ></path>
+      </svg>
+    </div>
+    <span>2023-05-22&nbsp;&nbsp;
+    </span>
+  </span>
+  
+  
+  <span id="post_meta_style_6" class="post_meta_style">
+    <span
+      ><div class="post-meta-icons">
+        <svg
+          t="1686157100398"
+          class="icon"
+          viewBox="0 0 1238 1024"
+          version="1.1"
+          xmlns="http://www.w3.org/2000/svg"
+          p-id="23788"
+          width="14"
+          height="14"
+        >
+          <path
+            d="M94.131677 411.508075v-318.012423h310.380124l523.448447 528.536646L719.344099 826.832298l-54.062111 54.062112-47.065839 46.429814z m902.519255 276.034782a90.951553 90.951553 0 0 0 0-127.204969L537.440994 94.131677h82.68323L1144.84472 622.668323l-311.652173 306.563975-40.70559-38.797515z m215.612422-127.204969L677.36646 19.080745a63.602484 63.602484 0 0 0-45.157764-19.080745H92.223602A92.223602 92.223602 0 0 0 0 91.587578v333.277018a63.602484 63.602484 0 0 0 18.44472 44.521739l534.26087 527.900622a93.495652 93.495652 0 0 0 130.385093 0l41.97764-41.97764 41.97764 41.97764a93.495652 93.495652 0 0 0 130.385093 0l313.560248-309.7441a90.951553 90.951553 0 0 0 1.908075-128.477018zM274.126708 318.012422a29.893168 29.893168 0 1 1 29.893168-29.893167 29.893168 29.893168 0 0 1-29.893168 29.893167z m0-153.918012a127.204969 127.204969 0 1 0 124.024845 123.38882 127.204969 127.204969 0 0 0-124.024845-124.024845z"
+            fill="#8a8a8a"
+            p-id="23789"
+          ></path>
+        </svg>
+      </div>
+    </span>
+    <span>
+      <span class="post-tags-meta">
+        <a href="https://edinik.com/zh/tags/design-pattern/" style="color: var(--secondary) !important"
+          >design-pattern</a
+        >
+      </span>
+    </span>
+  </span>
+  &nbsp;&nbsp;
+</span>
+</footer>
+  </div> 
+  <a class="entry-link" aria-label="post link to 设计模式 | 单例模式" href="https://edinik.com/zh/posts/tech/design-pattern-singleton/"></a>
+</article>
+
+<article class="post-entry">
+  <div class="post-info">
+    <header class="entry-header">
+      <h2>midjourney | artists 01
+      </h2>
+    </header>
+    <section class="entry-content">
+      <p>
+        midjourney关键词之artists：Michelangelo 米开朗基罗、Monet 莫奈、Paul Cezanne 保罗-塞尚、Mark Rothko 马克-罗斯科、Paul Klee 保罗-克利、Picasso 毕加索、Piet Mondrian 皮特-蒙德里安、Pierre Auguste Renoir 皮埃尔-奥古斯特-雷诺阿
+        
+        ...
+      </p>
+    </section>
+    <footer class="entry-footer"><style>
+  i[id*="post_meta_style"] {
+    display: flex;
+    align-items: center;
+    margin: 0 0 10px 0;
+  }
+
+  .parent-post-meta {
+    display: flex;
+    flex-wrap: wrap;
+    opacity: 0.8;
+  }
+</style>
+
+<span class="parent-post-meta">
+  <span id="post_meta_style_1" class="post_meta_style">
+    <div class="post-meta-icons">
+      <svg
+        t="1686154436360"
+        class="icon"
+        viewBox="0 0 1024 1024"
+        version="1.1"
+        xmlns="http://www.w3.org/2000/svg"
+        p-id="2555"
+        width="14"
+        height="14"
+      >
+        <path
+          d="M146.285714 0h731.428572a146.285714 146.285714 0 0 1 146.285714 146.285714v731.428572a146.285714 146.285714 0 0 1-146.285714 146.285714H146.285714a146.285714 146.285714 0 0 1-146.285714-146.285714V146.285714a146.285714 146.285714 0 0 1 146.285714-146.285714z m0 73.142857a73.142857 73.142857 0 0 0-73.142857 73.142857v731.428572a73.142857 73.142857 0 0 0 73.142857 73.142857h731.428572a73.142857 73.142857 0 0 0 73.142857-73.142857V146.285714a73.142857 73.142857 0 0 0-73.142857-73.142857H146.285714z"
+          fill="#8a8a8a"
+          p-id="2556"
+        ></path>
+        <path
+          d="M0 219.428571h1024v73.142858H0V219.428571z m987.428571 36.571429L950.857143 292.571429V219.428571l36.571428 36.571429z"
+          fill="#8a8a8a"
+          p-id="2557"
+        ></path>
+        <path
+          d="M475.428571 438.857143h73.142858a36.571429 36.571429 0 0 1 0 73.142857h-73.142858a36.571429 36.571429 0 0 1 0-73.142857z m219.428572 0h73.142857a36.571429 36.571429 0 1 1 0 73.142857h-73.142857a36.571429 36.571429 0 0 1 0-73.142857z m-438.857143 146.285714h73.142857a36.571429 36.571429 0 0 1 0 73.142857h-73.142857a36.571429 36.571429 0 0 1 0-73.142857z m438.857143 0h73.142857a36.571429 36.571429 0 1 1 0 73.142857h-73.142857a36.571429 36.571429 0 0 1 0-73.142857z m-438.857143 146.285714h73.142857a36.571429 36.571429 0 1 1 0 73.142858h-73.142857a36.571429 36.571429 0 1 1 0-73.142858z m438.857143 0h73.142857a36.571429 36.571429 0 1 1 0 73.142858h-73.142857a36.571429 36.571429 0 1 1 0-73.142858z m-219.428572 0h73.142858a36.571429 36.571429 0 1 1 0 73.142858h-73.142858a36.571429 36.571429 0 1 1 0-73.142858z m0-146.285714h73.142858a36.571429 36.571429 0 0 1 0 73.142857h-73.142858a36.571429 36.571429 0 0 1 0-73.142857z"
+          fill="#8a8a8a"
+          p-id="2558"
+        ></path>
+      </svg>
+    </div>
+    <span>2023-05-20&nbsp;&nbsp;
+    </span>
+  </span>
+  
+  
+  <span id="post_meta_style_6" class="post_meta_style">
+    <span
+      ><div class="post-meta-icons">
+        <svg
+          t="1686157100398"
+          class="icon"
+          viewBox="0 0 1238 1024"
+          version="1.1"
+          xmlns="http://www.w3.org/2000/svg"
+          p-id="23788"
+          width="14"
+          height="14"
+        >
+          <path
+            d="M94.131677 411.508075v-318.012423h310.380124l523.448447 528.536646L719.344099 826.832298l-54.062111 54.062112-47.065839 46.429814z m902.519255 276.034782a90.951553 90.951553 0 0 0 0-127.204969L537.440994 94.131677h82.68323L1144.84472 622.668323l-311.652173 306.563975-40.70559-38.797515z m215.612422-127.204969L677.36646 19.080745a63.602484 63.602484 0 0 0-45.157764-19.080745H92.223602A92.223602 92.223602 0 0 0 0 91.587578v333.277018a63.602484 63.602484 0 0 0 18.44472 44.521739l534.26087 527.900622a93.495652 93.495652 0 0 0 130.385093 0l41.97764-41.97764 41.97764 41.97764a93.495652 93.495652 0 0 0 130.385093 0l313.560248-309.7441a90.951553 90.951553 0 0 0 1.908075-128.477018zM274.126708 318.012422a29.893168 29.893168 0 1 1 29.893168-29.893167 29.893168 29.893168 0 0 1-29.893168 29.893167z m0-153.918012a127.204969 127.204969 0 1 0 124.024845 123.38882 127.204969 127.204969 0 0 0-124.024845-124.024845z"
+            fill="#8a8a8a"
+            p-id="23789"
+          ></path>
+        </svg>
+      </div>
+    </span>
+    <span>
+      <span class="post-tags-meta">
+        <a href="https://edinik.com/zh/tags/midjourney/" style="color: var(--secondary) !important"
+          >midjourney</a
+        >
+      </span>
+    </span>
+  </span>
+  &nbsp;&nbsp;
+</span>
+</footer>
+  </div> 
+  <a class="entry-link" aria-label="post link to midjourney | artists 01" href="https://edinik.com/zh/posts/tech/midjourney-artists-01/"></a>
+</article>
+
+<article class="post-entry">
+  <div class="post-info">
+    <header class="entry-header">
+      <h2>midjourney | styles 08
+      </h2>
+    </header>
+    <section class="entry-content">
+      <p>
+        midjourney关键词之styles：etching 蚀刻、extraterrestrial 地外世界、glitchart 缝隙艺术、gouache 水粉画、floral 花卉类的、fractal 分形、pre historic 前历史性的、prokaryotic 原核生物
+        
+        ...
+      </p>
+    </section>
+    <footer class="entry-footer"><style>
+  i[id*="post_meta_style"] {
+    display: flex;
+    align-items: center;
+    margin: 0 0 10px 0;
+  }
+
+  .parent-post-meta {
+    display: flex;
+    flex-wrap: wrap;
+    opacity: 0.8;
+  }
+</style>
+
+<span class="parent-post-meta">
+  <span id="post_meta_style_1" class="post_meta_style">
+    <div class="post-meta-icons">
+      <svg
+        t="1686154436360"
+        class="icon"
+        viewBox="0 0 1024 1024"
+        version="1.1"
+        xmlns="http://www.w3.org/2000/svg"
+        p-id="2555"
+        width="14"
+        height="14"
+      >
+        <path
+          d="M146.285714 0h731.428572a146.285714 146.285714 0 0 1 146.285714 146.285714v731.428572a146.285714 146.285714 0 0 1-146.285714 146.285714H146.285714a146.285714 146.285714 0 0 1-146.285714-146.285714V146.285714a146.285714 146.285714 0 0 1 146.285714-146.285714z m0 73.142857a73.142857 73.142857 0 0 0-73.142857 73.142857v731.428572a73.142857 73.142857 0 0 0 73.142857 73.142857h731.428572a73.142857 73.142857 0 0 0 73.142857-73.142857V146.285714a73.142857 73.142857 0 0 0-73.142857-73.142857H146.285714z"
+          fill="#8a8a8a"
+          p-id="2556"
+        ></path>
+        <path
+          d="M0 219.428571h1024v73.142858H0V219.428571z m987.428571 36.571429L950.857143 292.571429V219.428571l36.571428 36.571429z"
+          fill="#8a8a8a"
+          p-id="2557"
+        ></path>
+        <path
+          d="M475.428571 438.857143h73.142858a36.571429 36.571429 0 0 1 0 73.142857h-73.142858a36.571429 36.571429 0 0 1 0-73.142857z m219.428572 0h73.142857a36.571429 36.571429 0 1 1 0 73.142857h-73.142857a36.571429 36.571429 0 0 1 0-73.142857z m-438.857143 146.285714h73.142857a36.571429 36.571429 0 0 1 0 73.142857h-73.142857a36.571429 36.571429 0 0 1 0-73.142857z m438.857143 0h73.142857a36.571429 36.571429 0 1 1 0 73.142857h-73.142857a36.571429 36.571429 0 0 1 0-73.142857z m-438.857143 146.285714h73.142857a36.571429 36.571429 0 1 1 0 73.142858h-73.142857a36.571429 36.571429 0 1 1 0-73.142858z m438.857143 0h73.142857a36.571429 36.571429 0 1 1 0 73.142858h-73.142857a36.571429 36.571429 0 1 1 0-73.142858z m-219.428572 0h73.142858a36.571429 36.571429 0 1 1 0 73.142858h-73.142858a36.571429 36.571429 0 1 1 0-73.142858z m0-146.285714h73.142858a36.571429 36.571429 0 0 1 0 73.142857h-73.142858a36.571429 36.571429 0 0 1 0-73.142857z"
+          fill="#8a8a8a"
+          p-id="2558"
+        ></path>
+      </svg>
+    </div>
+    <span>2023-05-19&nbsp;&nbsp;
+    </span>
+  </span>
+  
+  
+  <span id="post_meta_style_6" class="post_meta_style">
+    <span
+      ><div class="post-meta-icons">
+        <svg
+          t="1686157100398"
+          class="icon"
+          viewBox="0 0 1238 1024"
+          version="1.1"
+          xmlns="http://www.w3.org/2000/svg"
+          p-id="23788"
+          width="14"
+          height="14"
+        >
+          <path
+            d="M94.131677 411.508075v-318.012423h310.380124l523.448447 528.536646L719.344099 826.832298l-54.062111 54.062112-47.065839 46.429814z m902.519255 276.034782a90.951553 90.951553 0 0 0 0-127.204969L537.440994 94.131677h82.68323L1144.84472 622.668323l-311.652173 306.563975-40.70559-38.797515z m215.612422-127.204969L677.36646 19.080745a63.602484 63.602484 0 0 0-45.157764-19.080745H92.223602A92.223602 92.223602 0 0 0 0 91.587578v333.277018a63.602484 63.602484 0 0 0 18.44472 44.521739l534.26087 527.900622a93.495652 93.495652 0 0 0 130.385093 0l41.97764-41.97764 41.97764 41.97764a93.495652 93.495652 0 0 0 130.385093 0l313.560248-309.7441a90.951553 90.951553 0 0 0 1.908075-128.477018zM274.126708 318.012422a29.893168 29.893168 0 1 1 29.893168-29.893167 29.893168 29.893168 0 0 1-29.893168 29.893167z m0-153.918012a127.204969 127.204969 0 1 0 124.024845 123.38882 127.204969 127.204969 0 0 0-124.024845-124.024845z"
+            fill="#8a8a8a"
+            p-id="23789"
+          ></path>
+        </svg>
+      </div>
+    </span>
+    <span>
+      <span class="post-tags-meta">
+        <a href="https://edinik.com/zh/tags/midjourney/" style="color: var(--secondary) !important"
+          >midjourney</a
+        >
+      </span>
+    </span>
+  </span>
+  &nbsp;&nbsp;
+</span>
+</footer>
+  </div> 
+  <a class="entry-link" aria-label="post link to midjourney | styles 08" href="https://edinik.com/zh/posts/tech/midjourney-styles-08/"></a>
+</article>
+
+<article class="post-entry">
+  <div class="post-info">
+    <header class="entry-header">
+      <h2>midjourney | styles 07
+      </h2>
+    </header>
+    <section class="entry-content">
+      <p>
+        midjourney关键词之styles：lightspeed 光速、liquid 液体、dots 点状、dune 沙丘、dripping paint 滴落的油漆、electronic circuitry 电子电路、electrical 电气的、futuristic 未来的 
+        
+        ...
+      </p>
+    </section>
+    <footer class="entry-footer"><style>
+  i[id*="post_meta_style"] {
+    display: flex;
+    align-items: center;
+    margin: 0 0 10px 0;
+  }
+
+  .parent-post-meta {
+    display: flex;
+    flex-wrap: wrap;
+    opacity: 0.8;
+  }
+</style>
+
+<span class="parent-post-meta">
+  <span id="post_meta_style_1" class="post_meta_style">
+    <div class="post-meta-icons">
+      <svg
+        t="1686154436360"
+        class="icon"
+        viewBox="0 0 1024 1024"
+        version="1.1"
+        xmlns="http://www.w3.org/2000/svg"
+        p-id="2555"
+        width="14"
+        height="14"
+      >
+        <path
+          d="M146.285714 0h731.428572a146.285714 146.285714 0 0 1 146.285714 146.285714v731.428572a146.285714 146.285714 0 0 1-146.285714 146.285714H146.285714a146.285714 146.285714 0 0 1-146.285714-146.285714V146.285714a146.285714 146.285714 0 0 1 146.285714-146.285714z m0 73.142857a73.142857 73.142857 0 0 0-73.142857 73.142857v731.428572a73.142857 73.142857 0 0 0 73.142857 73.142857h731.428572a73.142857 73.142857 0 0 0 73.142857-73.142857V146.285714a73.142857 73.142857 0 0 0-73.142857-73.142857H146.285714z"
+          fill="#8a8a8a"
+          p-id="2556"
+        ></path>
+        <path
+          d="M0 219.428571h1024v73.142858H0V219.428571z m987.428571 36.571429L950.857143 292.571429V219.428571l36.571428 36.571429z"
+          fill="#8a8a8a"
+          p-id="2557"
+        ></path>
+        <path
+          d="M475.428571 438.857143h73.142858a36.571429 36.571429 0 0 1 0 73.142857h-73.142858a36.571429 36.571429 0 0 1 0-73.142857z m219.428572 0h73.142857a36.571429 36.571429 0 1 1 0 73.142857h-73.142857a36.571429 36.571429 0 0 1 0-73.142857z m-438.857143 146.285714h73.142857a36.571429 36.571429 0 0 1 0 73.142857h-73.142857a36.571429 36.571429 0 0 1 0-73.142857z m438.857143 0h73.142857a36.571429 36.571429 0 1 1 0 73.142857h-73.142857a36.571429 36.571429 0 0 1 0-73.142857z m-438.857143 146.285714h73.142857a36.571429 36.571429 0 1 1 0 73.142858h-73.142857a36.571429 36.571429 0 1 1 0-73.142858z m438.857143 0h73.142857a36.571429 36.571429 0 1 1 0 73.142858h-73.142857a36.571429 36.571429 0 1 1 0-73.142858z m-219.428572 0h73.142858a36.571429 36.571429 0 1 1 0 73.142858h-73.142858a36.571429 36.571429 0 1 1 0-73.142858z m0-146.285714h73.142858a36.571429 36.571429 0 0 1 0 73.142857h-73.142858a36.571429 36.571429 0 0 1 0-73.142857z"
+          fill="#8a8a8a"
+          p-id="2558"
+        ></path>
+      </svg>
+    </div>
+    <span>2023-05-17&nbsp;&nbsp;
+    </span>
+  </span>
+  
+  
+  <span id="post_meta_style_6" class="post_meta_style">
+    <span
+      ><div class="post-meta-icons">
+        <svg
+          t="1686157100398"
+          class="icon"
+          viewBox="0 0 1238 1024"
+          version="1.1"
+          xmlns="http://www.w3.org/2000/svg"
+          p-id="23788"
+          width="14"
+          height="14"
+        >
+          <path
+            d="M94.131677 411.508075v-318.012423h310.380124l523.448447 528.536646L719.344099 826.832298l-54.062111 54.062112-47.065839 46.429814z m902.519255 276.034782a90.951553 90.951553 0 0 0 0-127.204969L537.440994 94.131677h82.68323L1144.84472 622.668323l-311.652173 306.563975-40.70559-38.797515z m215.612422-127.204969L677.36646 19.080745a63.602484 63.602484 0 0 0-45.157764-19.080745H92.223602A92.223602 92.223602 0 0 0 0 91.587578v333.277018a63.602484 63.602484 0 0 0 18.44472 44.521739l534.26087 527.900622a93.495652 93.495652 0 0 0 130.385093 0l41.97764-41.97764 41.97764 41.97764a93.495652 93.495652 0 0 0 130.385093 0l313.560248-309.7441a90.951553 90.951553 0 0 0 1.908075-128.477018zM274.126708 318.012422a29.893168 29.893168 0 1 1 29.893168-29.893167 29.893168 29.893168 0 0 1-29.893168 29.893167z m0-153.918012a127.204969 127.204969 0 1 0 124.024845 123.38882 127.204969 127.204969 0 0 0-124.024845-124.024845z"
+            fill="#8a8a8a"
+            p-id="23789"
+          ></path>
+        </svg>
+      </div>
+    </span>
+    <span>
+      <span class="post-tags-meta">
+        <a href="https://edinik.com/zh/tags/midjourney/" style="color: var(--secondary) !important"
+          >midjourney</a
+        >
+      </span>
+    </span>
+  </span>
+  &nbsp;&nbsp;
+</span>
+</footer>
+  </div> 
+  <a class="entry-link" aria-label="post link to midjourney | styles 07" href="https://edinik.com/zh/posts/tech/midjourney-styles-07/"></a>
+</article>
+
+<article class="post-entry">
+  <div class="post-info">
+    <header class="entry-header">
+      <h2>midjourney | styles 06
+      </h2>
+    </header>
+    <section class="entry-content">
+      <p>
+        midjourney关键词之styles：charcoal style 炭色风格、chromatic 色度、coral 珊瑚、concept art 概念艺术、fibonacci 斐波那契数列、cyberpunk 赛博朋克、diabolic 堕落的、diffraction grading 衍射光栅
+        
+        ...
+      </p>
+    </section>
+    <footer class="entry-footer"><style>
+  i[id*="post_meta_style"] {
+    display: flex;
+    align-items: center;
+    margin: 0 0 10px 0;
+  }
+
+  .parent-post-meta {
+    display: flex;
+    flex-wrap: wrap;
+    opacity: 0.8;
+  }
+</style>
+
+<span class="parent-post-meta">
+  <span id="post_meta_style_1" class="post_meta_style">
+    <div class="post-meta-icons">
+      <svg
+        t="1686154436360"
+        class="icon"
+        viewBox="0 0 1024 1024"
+        version="1.1"
+        xmlns="http://www.w3.org/2000/svg"
+        p-id="2555"
+        width="14"
+        height="14"
+      >
+        <path
+          d="M146.285714 0h731.428572a146.285714 146.285714 0 0 1 146.285714 146.285714v731.428572a146.285714 146.285714 0 0 1-146.285714 146.285714H146.285714a146.285714 146.285714 0 0 1-146.285714-146.285714V146.285714a146.285714 146.285714 0 0 1 146.285714-146.285714z m0 73.142857a73.142857 73.142857 0 0 0-73.142857 73.142857v731.428572a73.142857 73.142857 0 0 0 73.142857 73.142857h731.428572a73.142857 73.142857 0 0 0 73.142857-73.142857V146.285714a73.142857 73.142857 0 0 0-73.142857-73.142857H146.285714z"
+          fill="#8a8a8a"
+          p-id="2556"
+        ></path>
+        <path
+          d="M0 219.428571h1024v73.142858H0V219.428571z m987.428571 36.571429L950.857143 292.571429V219.428571l36.571428 36.571429z"
+          fill="#8a8a8a"
+          p-id="2557"
+        ></path>
+        <path
+          d="M475.428571 438.857143h73.142858a36.571429 36.571429 0 0 1 0 73.142857h-73.142858a36.571429 36.571429 0 0 1 0-73.142857z m219.428572 0h73.142857a36.571429 36.571429 0 1 1 0 73.142857h-73.142857a36.571429 36.571429 0 0 1 0-73.142857z m-438.857143 146.285714h73.142857a36.571429 36.571429 0 0 1 0 73.142857h-73.142857a36.571429 36.571429 0 0 1 0-73.142857z m438.857143 0h73.142857a36.571429 36.571429 0 1 1 0 73.142857h-73.142857a36.571429 36.571429 0 0 1 0-73.142857z m-438.857143 146.285714h73.142857a36.571429 36.571429 0 1 1 0 73.142858h-73.142857a36.571429 36.571429 0 1 1 0-73.142858z m438.857143 0h73.142857a36.571429 36.571429 0 1 1 0 73.142858h-73.142857a36.571429 36.571429 0 1 1 0-73.142858z m-219.428572 0h73.142858a36.571429 36.571429 0 1 1 0 73.142858h-73.142858a36.571429 36.571429 0 1 1 0-73.142858z m0-146.285714h73.142858a36.571429 36.571429 0 0 1 0 73.142857h-73.142858a36.571429 36.571429 0 0 1 0-73.142857z"
+          fill="#8a8a8a"
+          p-id="2558"
+        ></path>
+      </svg>
+    </div>
+    <span>2023-05-16&nbsp;&nbsp;
+    </span>
+  </span>
+  
+  
+  <span id="post_meta_style_6" class="post_meta_style">
+    <span
+      ><div class="post-meta-icons">
+        <svg
+          t="1686157100398"
+          class="icon"
+          viewBox="0 0 1238 1024"
+          version="1.1"
+          xmlns="http://www.w3.org/2000/svg"
+          p-id="23788"
+          width="14"
+          height="14"
+        >
+          <path
+            d="M94.131677 411.508075v-318.012423h310.380124l523.448447 528.536646L719.344099 826.832298l-54.062111 54.062112-47.065839 46.429814z m902.519255 276.034782a90.951553 90.951553 0 0 0 0-127.204969L537.440994 94.131677h82.68323L1144.84472 622.668323l-311.652173 306.563975-40.70559-38.797515z m215.612422-127.204969L677.36646 19.080745a63.602484 63.602484 0 0 0-45.157764-19.080745H92.223602A92.223602 92.223602 0 0 0 0 91.587578v333.277018a63.602484 63.602484 0 0 0 18.44472 44.521739l534.26087 527.900622a93.495652 93.495652 0 0 0 130.385093 0l41.97764-41.97764 41.97764 41.97764a93.495652 93.495652 0 0 0 130.385093 0l313.560248-309.7441a90.951553 90.951553 0 0 0 1.908075-128.477018zM274.126708 318.012422a29.893168 29.893168 0 1 1 29.893168-29.893167 29.893168 29.893168 0 0 1-29.893168 29.893167z m0-153.918012a127.204969 127.204969 0 1 0 124.024845 123.38882 127.204969 127.204969 0 0 0-124.024845-124.024845z"
+            fill="#8a8a8a"
+            p-id="23789"
+          ></path>
+        </svg>
+      </div>
+    </span>
+    <span>
+      <span class="post-tags-meta">
+        <a href="https://edinik.com/zh/tags/midjourney/" style="color: var(--secondary) !important"
+          >midjourney</a
+        >
+      </span>
+    </span>
+  </span>
+  &nbsp;&nbsp;
+</span>
+</footer>
+  </div> 
+  <a class="entry-link" aria-label="post link to midjourney | styles 06" href="https://edinik.com/zh/posts/tech/midjourney-styles-06/"></a>
+</article>
+
+<article class="post-entry">
+  <div class="post-info">
+    <header class="entry-header">
+      <h2>midjourney | styles 05
+      </h2>
+    </header>
+    <section class="entry-content">
+      <p>
+        midjourney关键词之styles：arabic 阿拉伯、blocky 块状的、blueprint 蓝图、comicbook 漫画书、cartoon 卡通、caribbeen 加勒比、celestial 天人般、cellulose 纤维素
+        
+        ...
+      </p>
+    </section>
+    <footer class="entry-footer"><style>
+  i[id*="post_meta_style"] {
+    display: flex;
+    align-items: center;
+    margin: 0 0 10px 0;
+  }
+
+  .parent-post-meta {
+    display: flex;
+    flex-wrap: wrap;
+    opacity: 0.8;
+  }
+</style>
+
+<span class="parent-post-meta">
+  <span id="post_meta_style_1" class="post_meta_style">
+    <div class="post-meta-icons">
+      <svg
+        t="1686154436360"
+        class="icon"
+        viewBox="0 0 1024 1024"
+        version="1.1"
+        xmlns="http://www.w3.org/2000/svg"
+        p-id="2555"
+        width="14"
+        height="14"
+      >
+        <path
+          d="M146.285714 0h731.428572a146.285714 146.285714 0 0 1 146.285714 146.285714v731.428572a146.285714 146.285714 0 0 1-146.285714 146.285714H146.285714a146.285714 146.285714 0 0 1-146.285714-146.285714V146.285714a146.285714 146.285714 0 0 1 146.285714-146.285714z m0 73.142857a73.142857 73.142857 0 0 0-73.142857 73.142857v731.428572a73.142857 73.142857 0 0 0 73.142857 73.142857h731.428572a73.142857 73.142857 0 0 0 73.142857-73.142857V146.285714a73.142857 73.142857 0 0 0-73.142857-73.142857H146.285714z"
+          fill="#8a8a8a"
+          p-id="2556"
+        ></path>
+        <path
+          d="M0 219.428571h1024v73.142858H0V219.428571z m987.428571 36.571429L950.857143 292.571429V219.428571l36.571428 36.571429z"
+          fill="#8a8a8a"
+          p-id="2557"
+        ></path>
+        <path
+          d="M475.428571 438.857143h73.142858a36.571429 36.571429 0 0 1 0 73.142857h-73.142858a36.571429 36.571429 0 0 1 0-73.142857z m219.428572 0h73.142857a36.571429 36.571429 0 1 1 0 73.142857h-73.142857a36.571429 36.571429 0 0 1 0-73.142857z m-438.857143 146.285714h73.142857a36.571429 36.571429 0 0 1 0 73.142857h-73.142857a36.571429 36.571429 0 0 1 0-73.142857z m438.857143 0h73.142857a36.571429 36.571429 0 1 1 0 73.142857h-73.142857a36.571429 36.571429 0 0 1 0-73.142857z m-438.857143 146.285714h73.142857a36.571429 36.571429 0 1 1 0 73.142858h-73.142857a36.571429 36.571429 0 1 1 0-73.142858z m438.857143 0h73.142857a36.571429 36.571429 0 1 1 0 73.142858h-73.142857a36.571429 36.571429 0 1 1 0-73.142858z m-219.428572 0h73.142858a36.571429 36.571429 0 1 1 0 73.142858h-73.142858a36.571429 36.571429 0 1 1 0-73.142858z m0-146.285714h73.142858a36.571429 36.571429 0 0 1 0 73.142857h-73.142858a36.571429 36.571429 0 0 1 0-73.142857z"
+          fill="#8a8a8a"
+          p-id="2558"
+        ></path>
+      </svg>
+    </div>
+    <span>2023-05-15&nbsp;&nbsp;
+    </span>
+  </span>
+  
+  
+  <span id="post_meta_style_6" class="post_meta_style">
+    <span
+      ><div class="post-meta-icons">
+        <svg
+          t="1686157100398"
+          class="icon"
+          viewBox="0 0 1238 1024"
+          version="1.1"
+          xmlns="http://www.w3.org/2000/svg"
+          p-id="23788"
+          width="14"
+          height="14"
+        >
+          <path
+            d="M94.131677 411.508075v-318.012423h310.380124l523.448447 528.536646L719.344099 826.832298l-54.062111 54.062112-47.065839 46.429814z m902.519255 276.034782a90.951553 90.951553 0 0 0 0-127.204969L537.440994 94.131677h82.68323L1144.84472 622.668323l-311.652173 306.563975-40.70559-38.797515z m215.612422-127.204969L677.36646 19.080745a63.602484 63.602484 0 0 0-45.157764-19.080745H92.223602A92.223602 92.223602 0 0 0 0 91.587578v333.277018a63.602484 63.602484 0 0 0 18.44472 44.521739l534.26087 527.900622a93.495652 93.495652 0 0 0 130.385093 0l41.97764-41.97764 41.97764 41.97764a93.495652 93.495652 0 0 0 130.385093 0l313.560248-309.7441a90.951553 90.951553 0 0 0 1.908075-128.477018zM274.126708 318.012422a29.893168 29.893168 0 1 1 29.893168-29.893167 29.893168 29.893168 0 0 1-29.893168 29.893167z m0-153.918012a127.204969 127.204969 0 1 0 124.024845 123.38882 127.204969 127.204969 0 0 0-124.024845-124.024845z"
+            fill="#8a8a8a"
+            p-id="23789"
+          ></path>
+        </svg>
+      </div>
+    </span>
+    <span>
+      <span class="post-tags-meta">
+        <a href="https://edinik.com/zh/tags/midjourney/" style="color: var(--secondary) !important"
+          >midjourney</a
+        >
+      </span>
+    </span>
+  </span>
+  &nbsp;&nbsp;
+</span>
+</footer>
+  </div> 
+  <a class="entry-link" aria-label="post link to midjourney | styles 05" href="https://edinik.com/zh/posts/tech/midjourney-styles-05/"></a>
+</article>
+
+<article class="post-entry">
+  <div class="post-info">
+    <header class="entry-header">
+      <h2>midjourney | styles 04
+      </h2>
+    </header>
+    <section class="entry-content">
+      <p>
+        midjourney关键词之styles：16-Bit、8-Bit、1800s、1980s、Amber 琥珀色调、Ancient 古代、Anime 日式动画
+        
+        ...
+      </p>
+    </section>
+    <footer class="entry-footer"><style>
+  i[id*="post_meta_style"] {
+    display: flex;
+    align-items: center;
+    margin: 0 0 10px 0;
+  }
+
+  .parent-post-meta {
+    display: flex;
+    flex-wrap: wrap;
+    opacity: 0.8;
+  }
+</style>
+
+<span class="parent-post-meta">
+  <span id="post_meta_style_1" class="post_meta_style">
+    <div class="post-meta-icons">
+      <svg
+        t="1686154436360"
+        class="icon"
+        viewBox="0 0 1024 1024"
+        version="1.1"
+        xmlns="http://www.w3.org/2000/svg"
+        p-id="2555"
+        width="14"
+        height="14"
+      >
+        <path
+          d="M146.285714 0h731.428572a146.285714 146.285714 0 0 1 146.285714 146.285714v731.428572a146.285714 146.285714 0 0 1-146.285714 146.285714H146.285714a146.285714 146.285714 0 0 1-146.285714-146.285714V146.285714a146.285714 146.285714 0 0 1 146.285714-146.285714z m0 73.142857a73.142857 73.142857 0 0 0-73.142857 73.142857v731.428572a73.142857 73.142857 0 0 0 73.142857 73.142857h731.428572a73.142857 73.142857 0 0 0 73.142857-73.142857V146.285714a73.142857 73.142857 0 0 0-73.142857-73.142857H146.285714z"
+          fill="#8a8a8a"
+          p-id="2556"
+        ></path>
+        <path
+          d="M0 219.428571h1024v73.142858H0V219.428571z m987.428571 36.571429L950.857143 292.571429V219.428571l36.571428 36.571429z"
+          fill="#8a8a8a"
+          p-id="2557"
+        ></path>
+        <path
+          d="M475.428571 438.857143h73.142858a36.571429 36.571429 0 0 1 0 73.142857h-73.142858a36.571429 36.571429 0 0 1 0-73.142857z m219.428572 0h73.142857a36.571429 36.571429 0 1 1 0 73.142857h-73.142857a36.571429 36.571429 0 0 1 0-73.142857z m-438.857143 146.285714h73.142857a36.571429 36.571429 0 0 1 0 73.142857h-73.142857a36.571429 36.571429 0 0 1 0-73.142857z m438.857143 0h73.142857a36.571429 36.571429 0 1 1 0 73.142857h-73.142857a36.571429 36.571429 0 0 1 0-73.142857z m-438.857143 146.285714h73.142857a36.571429 36.571429 0 1 1 0 73.142858h-73.142857a36.571429 36.571429 0 1 1 0-73.142858z m438.857143 0h73.142857a36.571429 36.571429 0 1 1 0 73.142858h-73.142857a36.571429 36.571429 0 1 1 0-73.142858z m-219.428572 0h73.142858a36.571429 36.571429 0 1 1 0 73.142858h-73.142858a36.571429 36.571429 0 1 1 0-73.142858z m0-146.285714h73.142858a36.571429 36.571429 0 0 1 0 73.142857h-73.142858a36.571429 36.571429 0 0 1 0-73.142857z"
+          fill="#8a8a8a"
+          p-id="2558"
+        ></path>
+      </svg>
+    </div>
+    <span>2023-05-12&nbsp;&nbsp;
+    </span>
+  </span>
+  
+  
+  <span id="post_meta_style_6" class="post_meta_style">
+    <span
+      ><div class="post-meta-icons">
+        <svg
+          t="1686157100398"
+          class="icon"
+          viewBox="0 0 1238 1024"
+          version="1.1"
+          xmlns="http://www.w3.org/2000/svg"
+          p-id="23788"
+          width="14"
+          height="14"
+        >
+          <path
+            d="M94.131677 411.508075v-318.012423h310.380124l523.448447 528.536646L719.344099 826.832298l-54.062111 54.062112-47.065839 46.429814z m902.519255 276.034782a90.951553 90.951553 0 0 0 0-127.204969L537.440994 94.131677h82.68323L1144.84472 622.668323l-311.652173 306.563975-40.70559-38.797515z m215.612422-127.204969L677.36646 19.080745a63.602484 63.602484 0 0 0-45.157764-19.080745H92.223602A92.223602 92.223602 0 0 0 0 91.587578v333.277018a63.602484 63.602484 0 0 0 18.44472 44.521739l534.26087 527.900622a93.495652 93.495652 0 0 0 130.385093 0l41.97764-41.97764 41.97764 41.97764a93.495652 93.495652 0 0 0 130.385093 0l313.560248-309.7441a90.951553 90.951553 0 0 0 1.908075-128.477018zM274.126708 318.012422a29.893168 29.893168 0 1 1 29.893168-29.893167 29.893168 29.893168 0 0 1-29.893168 29.893167z m0-153.918012a127.204969 127.204969 0 1 0 124.024845 123.38882 127.204969 127.204969 0 0 0-124.024845-124.024845z"
+            fill="#8a8a8a"
+            p-id="23789"
+          ></path>
+        </svg>
+      </div>
+    </span>
+    <span>
+      <span class="post-tags-meta">
+        <a href="https://edinik.com/zh/tags/midjourney/" style="color: var(--secondary) !important"
+          >midjourney</a
+        >
+      </span>
+    </span>
+  </span>
+  &nbsp;&nbsp;
+</span>
+</footer>
+  </div> 
+  <a class="entry-link" aria-label="post link to midjourney | styles 04" href="https://edinik.com/zh/posts/tech/midjourney-styles-04/"></a>
+</article>
+
+<article class="post-entry">
+  <div class="post-info">
+    <header class="entry-header">
+      <h2>midjourney | styles 03
+      </h2>
+    </header>
+    <section class="entry-content">
+      <p>
+        midjourney关键词之styles：op art 欧普艺术、Japanese ink 日本墨水、pastel drawing 粉笔画、dripping art 滴漆艺术、tattoo art 纹身艺术、one-line drawing 单线图、oil painting 油画、film style 电影风格
+        
+        ...
+      </p>
+    </section>
+    <footer class="entry-footer"><style>
+  i[id*="post_meta_style"] {
+    display: flex;
+    align-items: center;
+    margin: 0 0 10px 0;
+  }
+
+  .parent-post-meta {
+    display: flex;
+    flex-wrap: wrap;
+    opacity: 0.8;
+  }
+</style>
+
+<span class="parent-post-meta">
+  <span id="post_meta_style_1" class="post_meta_style">
+    <div class="post-meta-icons">
+      <svg
+        t="1686154436360"
+        class="icon"
+        viewBox="0 0 1024 1024"
+        version="1.1"
+        xmlns="http://www.w3.org/2000/svg"
+        p-id="2555"
+        width="14"
+        height="14"
+      >
+        <path
+          d="M146.285714 0h731.428572a146.285714 146.285714 0 0 1 146.285714 146.285714v731.428572a146.285714 146.285714 0 0 1-146.285714 146.285714H146.285714a146.285714 146.285714 0 0 1-146.285714-146.285714V146.285714a146.285714 146.285714 0 0 1 146.285714-146.285714z m0 73.142857a73.142857 73.142857 0 0 0-73.142857 73.142857v731.428572a73.142857 73.142857 0 0 0 73.142857 73.142857h731.428572a73.142857 73.142857 0 0 0 73.142857-73.142857V146.285714a73.142857 73.142857 0 0 0-73.142857-73.142857H146.285714z"
+          fill="#8a8a8a"
+          p-id="2556"
+        ></path>
+        <path
+          d="M0 219.428571h1024v73.142858H0V219.428571z m987.428571 36.571429L950.857143 292.571429V219.428571l36.571428 36.571429z"
+          fill="#8a8a8a"
+          p-id="2557"
+        ></path>
+        <path
+          d="M475.428571 438.857143h73.142858a36.571429 36.571429 0 0 1 0 73.142857h-73.142858a36.571429 36.571429 0 0 1 0-73.142857z m219.428572 0h73.142857a36.571429 36.571429 0 1 1 0 73.142857h-73.142857a36.571429 36.571429 0 0 1 0-73.142857z m-438.857143 146.285714h73.142857a36.571429 36.571429 0 0 1 0 73.142857h-73.142857a36.571429 36.571429 0 0 1 0-73.142857z m438.857143 0h73.142857a36.571429 36.571429 0 1 1 0 73.142857h-73.142857a36.571429 36.571429 0 0 1 0-73.142857z m-438.857143 146.285714h73.142857a36.571429 36.571429 0 1 1 0 73.142858h-73.142857a36.571429 36.571429 0 1 1 0-73.142858z m438.857143 0h73.142857a36.571429 36.571429 0 1 1 0 73.142858h-73.142857a36.571429 36.571429 0 1 1 0-73.142858z m-219.428572 0h73.142858a36.571429 36.571429 0 1 1 0 73.142858h-73.142858a36.571429 36.571429 0 1 1 0-73.142858z m0-146.285714h73.142858a36.571429 36.571429 0 0 1 0 73.142857h-73.142858a36.571429 36.571429 0 0 1 0-73.142857z"
+          fill="#8a8a8a"
+          p-id="2558"
+        ></path>
+      </svg>
+    </div>
+    <span>2023-05-09&nbsp;&nbsp;
+    </span>
+  </span>
+  
+  
+  <span id="post_meta_style_6" class="post_meta_style">
+    <span
+      ><div class="post-meta-icons">
+        <svg
+          t="1686157100398"
+          class="icon"
+          viewBox="0 0 1238 1024"
+          version="1.1"
+          xmlns="http://www.w3.org/2000/svg"
+          p-id="23788"
+          width="14"
+          height="14"
+        >
+          <path
+            d="M94.131677 411.508075v-318.012423h310.380124l523.448447 528.536646L719.344099 826.832298l-54.062111 54.062112-47.065839 46.429814z m902.519255 276.034782a90.951553 90.951553 0 0 0 0-127.204969L537.440994 94.131677h82.68323L1144.84472 622.668323l-311.652173 306.563975-40.70559-38.797515z m215.612422-127.204969L677.36646 19.080745a63.602484 63.602484 0 0 0-45.157764-19.080745H92.223602A92.223602 92.223602 0 0 0 0 91.587578v333.277018a63.602484 63.602484 0 0 0 18.44472 44.521739l534.26087 527.900622a93.495652 93.495652 0 0 0 130.385093 0l41.97764-41.97764 41.97764 41.97764a93.495652 93.495652 0 0 0 130.385093 0l313.560248-309.7441a90.951553 90.951553 0 0 0 1.908075-128.477018zM274.126708 318.012422a29.893168 29.893168 0 1 1 29.893168-29.893167 29.893168 29.893168 0 0 1-29.893168 29.893167z m0-153.918012a127.204969 127.204969 0 1 0 124.024845 123.38882 127.204969 127.204969 0 0 0-124.024845-124.024845z"
+            fill="#8a8a8a"
+            p-id="23789"
+          ></path>
+        </svg>
+      </div>
+    </span>
+    <span>
+      <span class="post-tags-meta">
+        <a href="https://edinik.com/zh/tags/midjourney/" style="color: var(--secondary) !important"
+          >midjourney</a
+        >
+      </span>
+    </span>
+  </span>
+  &nbsp;&nbsp;
+</span>
+</footer>
+  </div> 
+  <a class="entry-link" aria-label="post link to midjourney | styles 03" href="https://edinik.com/zh/posts/tech/midjourney-styles-03/"></a>
+</article>
+
+<article class="post-entry">
+  <div class="post-info">
+    <header class="entry-header">
+      <h2>midjourney | styles 02
+      </h2>
+    </header>
+    <section class="entry-content">
+      <p>
+        midjourney关键词之styles：pixel art 像素艺术、watercolour 水彩、dark fantasy 黑暗幻想、ukiyo-e art 浮世绘艺术、paper quilling 绗缝纸、paper cut craft 剪纸工艺、iridescent 虹彩、patchwork collage 拼布拼贴画
+        
+        ...
+      </p>
+    </section>
+    <footer class="entry-footer"><style>
+  i[id*="post_meta_style"] {
+    display: flex;
+    align-items: center;
+    margin: 0 0 10px 0;
+  }
+
+  .parent-post-meta {
+    display: flex;
+    flex-wrap: wrap;
+    opacity: 0.8;
+  }
+</style>
+
+<span class="parent-post-meta">
+  <span id="post_meta_style_1" class="post_meta_style">
+    <div class="post-meta-icons">
+      <svg
+        t="1686154436360"
+        class="icon"
+        viewBox="0 0 1024 1024"
+        version="1.1"
+        xmlns="http://www.w3.org/2000/svg"
+        p-id="2555"
+        width="14"
+        height="14"
+      >
+        <path
+          d="M146.285714 0h731.428572a146.285714 146.285714 0 0 1 146.285714 146.285714v731.428572a146.285714 146.285714 0 0 1-146.285714 146.285714H146.285714a146.285714 146.285714 0 0 1-146.285714-146.285714V146.285714a146.285714 146.285714 0 0 1 146.285714-146.285714z m0 73.142857a73.142857 73.142857 0 0 0-73.142857 73.142857v731.428572a73.142857 73.142857 0 0 0 73.142857 73.142857h731.428572a73.142857 73.142857 0 0 0 73.142857-73.142857V146.285714a73.142857 73.142857 0 0 0-73.142857-73.142857H146.285714z"
+          fill="#8a8a8a"
+          p-id="2556"
+        ></path>
+        <path
+          d="M0 219.428571h1024v73.142858H0V219.428571z m987.428571 36.571429L950.857143 292.571429V219.428571l36.571428 36.571429z"
+          fill="#8a8a8a"
+          p-id="2557"
+        ></path>
+        <path
+          d="M475.428571 438.857143h73.142858a36.571429 36.571429 0 0 1 0 73.142857h-73.142858a36.571429 36.571429 0 0 1 0-73.142857z m219.428572 0h73.142857a36.571429 36.571429 0 1 1 0 73.142857h-73.142857a36.571429 36.571429 0 0 1 0-73.142857z m-438.857143 146.285714h73.142857a36.571429 36.571429 0 0 1 0 73.142857h-73.142857a36.571429 36.571429 0 0 1 0-73.142857z m438.857143 0h73.142857a36.571429 36.571429 0 1 1 0 73.142857h-73.142857a36.571429 36.571429 0 0 1 0-73.142857z m-438.857143 146.285714h73.142857a36.571429 36.571429 0 1 1 0 73.142858h-73.142857a36.571429 36.571429 0 1 1 0-73.142858z m438.857143 0h73.142857a36.571429 36.571429 0 1 1 0 73.142858h-73.142857a36.571429 36.571429 0 1 1 0-73.142858z m-219.428572 0h73.142858a36.571429 36.571429 0 1 1 0 73.142858h-73.142858a36.571429 36.571429 0 1 1 0-73.142858z m0-146.285714h73.142858a36.571429 36.571429 0 0 1 0 73.142857h-73.142858a36.571429 36.571429 0 0 1 0-73.142857z"
+          fill="#8a8a8a"
+          p-id="2558"
+        ></path>
+      </svg>
+    </div>
+    <span>2023-05-05&nbsp;&nbsp;
+    </span>
+  </span>
+  
+  
+  <span id="post_meta_style_6" class="post_meta_style">
+    <span
+      ><div class="post-meta-icons">
+        <svg
+          t="1686157100398"
+          class="icon"
+          viewBox="0 0 1238 1024"
+          version="1.1"
+          xmlns="http://www.w3.org/2000/svg"
+          p-id="23788"
+          width="14"
+          height="14"
+        >
+          <path
+            d="M94.131677 411.508075v-318.012423h310.380124l523.448447 528.536646L719.344099 826.832298l-54.062111 54.062112-47.065839 46.429814z m902.519255 276.034782a90.951553 90.951553 0 0 0 0-127.204969L537.440994 94.131677h82.68323L1144.84472 622.668323l-311.652173 306.563975-40.70559-38.797515z m215.612422-127.204969L677.36646 19.080745a63.602484 63.602484 0 0 0-45.157764-19.080745H92.223602A92.223602 92.223602 0 0 0 0 91.587578v333.277018a63.602484 63.602484 0 0 0 18.44472 44.521739l534.26087 527.900622a93.495652 93.495652 0 0 0 130.385093 0l41.97764-41.97764 41.97764 41.97764a93.495652 93.495652 0 0 0 130.385093 0l313.560248-309.7441a90.951553 90.951553 0 0 0 1.908075-128.477018zM274.126708 318.012422a29.893168 29.893168 0 1 1 29.893168-29.893167 29.893168 29.893168 0 0 1-29.893168 29.893167z m0-153.918012a127.204969 127.204969 0 1 0 124.024845 123.38882 127.204969 127.204969 0 0 0-124.024845-124.024845z"
+            fill="#8a8a8a"
+            p-id="23789"
+          ></path>
+        </svg>
+      </div>
+    </span>
+    <span>
+      <span class="post-tags-meta">
+        <a href="https://edinik.com/zh/tags/midjourney/" style="color: var(--secondary) !important"
+          >midjourney</a
+        >
+      </span>
+    </span>
+  </span>
+  &nbsp;&nbsp;
+</span>
+</footer>
+  </div> 
+  <a class="entry-link" aria-label="post link to midjourney | styles 02" href="https://edinik.com/zh/posts/tech/midjourney-styles-02/"></a>
+</article>
+
+<article class="post-entry">
+  <div class="post-info">
+    <header class="entry-header">
+      <h2>midjourney | styles 01
+      </h2>
+    </header>
+    <section class="entry-content">
+      <p>
+        midjourney关键词之styles：isometric anime 等距动画、analytic drawing 分析性绘图、coloring book 着色书、infographic drawing 信息图画、double exposure 双重曝光、diagrammatic drawing 图示性绘图、diagrammatic portrait 图解式画像
+        
+        ...
+      </p>
+    </section>
+    <footer class="entry-footer"><style>
+  i[id*="post_meta_style"] {
+    display: flex;
+    align-items: center;
+    margin: 0 0 10px 0;
+  }
+
+  .parent-post-meta {
+    display: flex;
+    flex-wrap: wrap;
+    opacity: 0.8;
+  }
+</style>
+
+<span class="parent-post-meta">
+  <span id="post_meta_style_1" class="post_meta_style">
+    <div class="post-meta-icons">
+      <svg
+        t="1686154436360"
+        class="icon"
+        viewBox="0 0 1024 1024"
+        version="1.1"
+        xmlns="http://www.w3.org/2000/svg"
+        p-id="2555"
+        width="14"
+        height="14"
+      >
+        <path
+          d="M146.285714 0h731.428572a146.285714 146.285714 0 0 1 146.285714 146.285714v731.428572a146.285714 146.285714 0 0 1-146.285714 146.285714H146.285714a146.285714 146.285714 0 0 1-146.285714-146.285714V146.285714a146.285714 146.285714 0 0 1 146.285714-146.285714z m0 73.142857a73.142857 73.142857 0 0 0-73.142857 73.142857v731.428572a73.142857 73.142857 0 0 0 73.142857 73.142857h731.428572a73.142857 73.142857 0 0 0 73.142857-73.142857V146.285714a73.142857 73.142857 0 0 0-73.142857-73.142857H146.285714z"
+          fill="#8a8a8a"
+          p-id="2556"
+        ></path>
+        <path
+          d="M0 219.428571h1024v73.142858H0V219.428571z m987.428571 36.571429L950.857143 292.571429V219.428571l36.571428 36.571429z"
+          fill="#8a8a8a"
+          p-id="2557"
+        ></path>
+        <path
+          d="M475.428571 438.857143h73.142858a36.571429 36.571429 0 0 1 0 73.142857h-73.142858a36.571429 36.571429 0 0 1 0-73.142857z m219.428572 0h73.142857a36.571429 36.571429 0 1 1 0 73.142857h-73.142857a36.571429 36.571429 0 0 1 0-73.142857z m-438.857143 146.285714h73.142857a36.571429 36.571429 0 0 1 0 73.142857h-73.142857a36.571429 36.571429 0 0 1 0-73.142857z m438.857143 0h73.142857a36.571429 36.571429 0 1 1 0 73.142857h-73.142857a36.571429 36.571429 0 0 1 0-73.142857z m-438.857143 146.285714h73.142857a36.571429 36.571429 0 1 1 0 73.142858h-73.142857a36.571429 36.571429 0 1 1 0-73.142858z m438.857143 0h73.142857a36.571429 36.571429 0 1 1 0 73.142858h-73.142857a36.571429 36.571429 0 1 1 0-73.142858z m-219.428572 0h73.142858a36.571429 36.571429 0 1 1 0 73.142858h-73.142858a36.571429 36.571429 0 1 1 0-73.142858z m0-146.285714h73.142858a36.571429 36.571429 0 0 1 0 73.142857h-73.142858a36.571429 36.571429 0 0 1 0-73.142857z"
+          fill="#8a8a8a"
+          p-id="2558"
+        ></path>
+      </svg>
+    </div>
+    <span>2023-05-01&nbsp;&nbsp;
+    </span>
+  </span>
+  
+  
+  <span id="post_meta_style_6" class="post_meta_style">
+    <span
+      ><div class="post-meta-icons">
+        <svg
+          t="1686157100398"
+          class="icon"
+          viewBox="0 0 1238 1024"
+          version="1.1"
+          xmlns="http://www.w3.org/2000/svg"
+          p-id="23788"
+          width="14"
+          height="14"
+        >
+          <path
+            d="M94.131677 411.508075v-318.012423h310.380124l523.448447 528.536646L719.344099 826.832298l-54.062111 54.062112-47.065839 46.429814z m902.519255 276.034782a90.951553 90.951553 0 0 0 0-127.204969L537.440994 94.131677h82.68323L1144.84472 622.668323l-311.652173 306.563975-40.70559-38.797515z m215.612422-127.204969L677.36646 19.080745a63.602484 63.602484 0 0 0-45.157764-19.080745H92.223602A92.223602 92.223602 0 0 0 0 91.587578v333.277018a63.602484 63.602484 0 0 0 18.44472 44.521739l534.26087 527.900622a93.495652 93.495652 0 0 0 130.385093 0l41.97764-41.97764 41.97764 41.97764a93.495652 93.495652 0 0 0 130.385093 0l313.560248-309.7441a90.951553 90.951553 0 0 0 1.908075-128.477018zM274.126708 318.012422a29.893168 29.893168 0 1 1 29.893168-29.893167 29.893168 29.893168 0 0 1-29.893168 29.893167z m0-153.918012a127.204969 127.204969 0 1 0 124.024845 123.38882 127.204969 127.204969 0 0 0-124.024845-124.024845z"
+            fill="#8a8a8a"
+            p-id="23789"
+          ></path>
+        </svg>
+      </div>
+    </span>
+    <span>
+      <span class="post-tags-meta">
+        <a href="https://edinik.com/zh/tags/midjourney/" style="color: var(--secondary) !important"
+          >midjourney</a
+        >
+      </span>
+    </span>
+  </span>
+  &nbsp;&nbsp;
+</span>
+</footer>
+  </div> 
+  <a class="entry-link" aria-label="post link to midjourney | styles 01" href="https://edinik.com/zh/posts/tech/midjourney-styles-01/"></a>
+</article>
+
+<article class="post-entry">
+  <div class="post-info">
+    <header class="entry-header">
+      <h2>midjourney | aspect ratios
+      </h2>
+    </header>
+    <section class="entry-content">
+      <p>
+        midjourney参数详解之横纵比
+        
+        ...
+      </p>
+    </section>
+    <footer class="entry-footer"><style>
+  i[id*="post_meta_style"] {
+    display: flex;
+    align-items: center;
+    margin: 0 0 10px 0;
+  }
+
+  .parent-post-meta {
+    display: flex;
+    flex-wrap: wrap;
+    opacity: 0.8;
+  }
+</style>
+
+<span class="parent-post-meta">
+  <span id="post_meta_style_1" class="post_meta_style">
+    <div class="post-meta-icons">
+      <svg
+        t="1686154436360"
+        class="icon"
+        viewBox="0 0 1024 1024"
+        version="1.1"
+        xmlns="http://www.w3.org/2000/svg"
+        p-id="2555"
+        width="14"
+        height="14"
+      >
+        <path
+          d="M146.285714 0h731.428572a146.285714 146.285714 0 0 1 146.285714 146.285714v731.428572a146.285714 146.285714 0 0 1-146.285714 146.285714H146.285714a146.285714 146.285714 0 0 1-146.285714-146.285714V146.285714a146.285714 146.285714 0 0 1 146.285714-146.285714z m0 73.142857a73.142857 73.142857 0 0 0-73.142857 73.142857v731.428572a73.142857 73.142857 0 0 0 73.142857 73.142857h731.428572a73.142857 73.142857 0 0 0 73.142857-73.142857V146.285714a73.142857 73.142857 0 0 0-73.142857-73.142857H146.285714z"
+          fill="#8a8a8a"
+          p-id="2556"
+        ></path>
+        <path
+          d="M0 219.428571h1024v73.142858H0V219.428571z m987.428571 36.571429L950.857143 292.571429V219.428571l36.571428 36.571429z"
+          fill="#8a8a8a"
+          p-id="2557"
+        ></path>
+        <path
+          d="M475.428571 438.857143h73.142858a36.571429 36.571429 0 0 1 0 73.142857h-73.142858a36.571429 36.571429 0 0 1 0-73.142857z m219.428572 0h73.142857a36.571429 36.571429 0 1 1 0 73.142857h-73.142857a36.571429 36.571429 0 0 1 0-73.142857z m-438.857143 146.285714h73.142857a36.571429 36.571429 0 0 1 0 73.142857h-73.142857a36.571429 36.571429 0 0 1 0-73.142857z m438.857143 0h73.142857a36.571429 36.571429 0 1 1 0 73.142857h-73.142857a36.571429 36.571429 0 0 1 0-73.142857z m-438.857143 146.285714h73.142857a36.571429 36.571429 0 1 1 0 73.142858h-73.142857a36.571429 36.571429 0 1 1 0-73.142858z m438.857143 0h73.142857a36.571429 36.571429 0 1 1 0 73.142858h-73.142857a36.571429 36.571429 0 1 1 0-73.142858z m-219.428572 0h73.142858a36.571429 36.571429 0 1 1 0 73.142858h-73.142858a36.571429 36.571429 0 1 1 0-73.142858z m0-146.285714h73.142858a36.571429 36.571429 0 0 1 0 73.142857h-73.142858a36.571429 36.571429 0 0 1 0-73.142857z"
+          fill="#8a8a8a"
+          p-id="2558"
+        ></path>
+      </svg>
+    </div>
+    <span>2023-04-28&nbsp;&nbsp;
+    </span>
+  </span>
+  
+  
+  <span id="post_meta_style_6" class="post_meta_style">
+    <span
+      ><div class="post-meta-icons">
+        <svg
+          t="1686157100398"
+          class="icon"
+          viewBox="0 0 1238 1024"
+          version="1.1"
+          xmlns="http://www.w3.org/2000/svg"
+          p-id="23788"
+          width="14"
+          height="14"
+        >
+          <path
+            d="M94.131677 411.508075v-318.012423h310.380124l523.448447 528.536646L719.344099 826.832298l-54.062111 54.062112-47.065839 46.429814z m902.519255 276.034782a90.951553 90.951553 0 0 0 0-127.204969L537.440994 94.131677h82.68323L1144.84472 622.668323l-311.652173 306.563975-40.70559-38.797515z m215.612422-127.204969L677.36646 19.080745a63.602484 63.602484 0 0 0-45.157764-19.080745H92.223602A92.223602 92.223602 0 0 0 0 91.587578v333.277018a63.602484 63.602484 0 0 0 18.44472 44.521739l534.26087 527.900622a93.495652 93.495652 0 0 0 130.385093 0l41.97764-41.97764 41.97764 41.97764a93.495652 93.495652 0 0 0 130.385093 0l313.560248-309.7441a90.951553 90.951553 0 0 0 1.908075-128.477018zM274.126708 318.012422a29.893168 29.893168 0 1 1 29.893168-29.893167 29.893168 29.893168 0 0 1-29.893168 29.893167z m0-153.918012a127.204969 127.204969 0 1 0 124.024845 123.38882 127.204969 127.204969 0 0 0-124.024845-124.024845z"
+            fill="#8a8a8a"
+            p-id="23789"
+          ></path>
+        </svg>
+      </div>
+    </span>
+    <span>
+      <span class="post-tags-meta">
+        <a href="https://edinik.com/zh/tags/midjourney/" style="color: var(--secondary) !important"
+          >midjourney</a
+        >
+      </span>
+    </span>
+  </span>
+  &nbsp;&nbsp;
+</span>
+</footer>
+  </div> 
+  <a class="entry-link" aria-label="post link to midjourney | aspect ratios" href="https://edinik.com/zh/posts/tech/midjourney_aspect_ratios/"></a>
+</article>
+
+<article class="post-entry">
+  <div class="post-info">
+    <header class="entry-header">
+      <h2>midjourney | image weight
+      </h2>
+    </header>
+    <section class="entry-content">
+      <p>
+        midjourney参数详解之image weight
+        
+        ...
+      </p>
+    </section>
+    <footer class="entry-footer"><style>
+  i[id*="post_meta_style"] {
+    display: flex;
+    align-items: center;
+    margin: 0 0 10px 0;
+  }
+
+  .parent-post-meta {
+    display: flex;
+    flex-wrap: wrap;
+    opacity: 0.8;
+  }
+</style>
+
+<span class="parent-post-meta">
+  <span id="post_meta_style_1" class="post_meta_style">
+    <div class="post-meta-icons">
+      <svg
+        t="1686154436360"
+        class="icon"
+        viewBox="0 0 1024 1024"
+        version="1.1"
+        xmlns="http://www.w3.org/2000/svg"
+        p-id="2555"
+        width="14"
+        height="14"
+      >
+        <path
+          d="M146.285714 0h731.428572a146.285714 146.285714 0 0 1 146.285714 146.285714v731.428572a146.285714 146.285714 0 0 1-146.285714 146.285714H146.285714a146.285714 146.285714 0 0 1-146.285714-146.285714V146.285714a146.285714 146.285714 0 0 1 146.285714-146.285714z m0 73.142857a73.142857 73.142857 0 0 0-73.142857 73.142857v731.428572a73.142857 73.142857 0 0 0 73.142857 73.142857h731.428572a73.142857 73.142857 0 0 0 73.142857-73.142857V146.285714a73.142857 73.142857 0 0 0-73.142857-73.142857H146.285714z"
+          fill="#8a8a8a"
+          p-id="2556"
+        ></path>
+        <path
+          d="M0 219.428571h1024v73.142858H0V219.428571z m987.428571 36.571429L950.857143 292.571429V219.428571l36.571428 36.571429z"
+          fill="#8a8a8a"
+          p-id="2557"
+        ></path>
+        <path
+          d="M475.428571 438.857143h73.142858a36.571429 36.571429 0 0 1 0 73.142857h-73.142858a36.571429 36.571429 0 0 1 0-73.142857z m219.428572 0h73.142857a36.571429 36.571429 0 1 1 0 73.142857h-73.142857a36.571429 36.571429 0 0 1 0-73.142857z m-438.857143 146.285714h73.142857a36.571429 36.571429 0 0 1 0 73.142857h-73.142857a36.571429 36.571429 0 0 1 0-73.142857z m438.857143 0h73.142857a36.571429 36.571429 0 1 1 0 73.142857h-73.142857a36.571429 36.571429 0 0 1 0-73.142857z m-438.857143 146.285714h73.142857a36.571429 36.571429 0 1 1 0 73.142858h-73.142857a36.571429 36.571429 0 1 1 0-73.142858z m438.857143 0h73.142857a36.571429 36.571429 0 1 1 0 73.142858h-73.142857a36.571429 36.571429 0 1 1 0-73.142858z m-219.428572 0h73.142858a36.571429 36.571429 0 1 1 0 73.142858h-73.142858a36.571429 36.571429 0 1 1 0-73.142858z m0-146.285714h73.142858a36.571429 36.571429 0 0 1 0 73.142857h-73.142858a36.571429 36.571429 0 0 1 0-73.142857z"
+          fill="#8a8a8a"
+          p-id="2558"
+        ></path>
+      </svg>
+    </div>
+    <span>2023-04-27&nbsp;&nbsp;
+    </span>
+  </span>
+  
+  
+  <span id="post_meta_style_6" class="post_meta_style">
+    <span
+      ><div class="post-meta-icons">
+        <svg
+          t="1686157100398"
+          class="icon"
+          viewBox="0 0 1238 1024"
+          version="1.1"
+          xmlns="http://www.w3.org/2000/svg"
+          p-id="23788"
+          width="14"
+          height="14"
+        >
+          <path
+            d="M94.131677 411.508075v-318.012423h310.380124l523.448447 528.536646L719.344099 826.832298l-54.062111 54.062112-47.065839 46.429814z m902.519255 276.034782a90.951553 90.951553 0 0 0 0-127.204969L537.440994 94.131677h82.68323L1144.84472 622.668323l-311.652173 306.563975-40.70559-38.797515z m215.612422-127.204969L677.36646 19.080745a63.602484 63.602484 0 0 0-45.157764-19.080745H92.223602A92.223602 92.223602 0 0 0 0 91.587578v333.277018a63.602484 63.602484 0 0 0 18.44472 44.521739l534.26087 527.900622a93.495652 93.495652 0 0 0 130.385093 0l41.97764-41.97764 41.97764 41.97764a93.495652 93.495652 0 0 0 130.385093 0l313.560248-309.7441a90.951553 90.951553 0 0 0 1.908075-128.477018zM274.126708 318.012422a29.893168 29.893168 0 1 1 29.893168-29.893167 29.893168 29.893168 0 0 1-29.893168 29.893167z m0-153.918012a127.204969 127.204969 0 1 0 124.024845 123.38882 127.204969 127.204969 0 0 0-124.024845-124.024845z"
+            fill="#8a8a8a"
+            p-id="23789"
+          ></path>
+        </svg>
+      </div>
+    </span>
+    <span>
+      <span class="post-tags-meta">
+        <a href="https://edinik.com/zh/tags/midjourney/" style="color: var(--secondary) !important"
+          >midjourney</a
+        >
+      </span>
+    </span>
+  </span>
+  &nbsp;&nbsp;
+</span>
+</footer>
+  </div> 
+  <a class="entry-link" aria-label="post link to midjourney | image weight" href="https://edinik.com/zh/posts/tech/midjourney_image_weight/"></a>
+</article>
+
+<br />
+<br />
+<footer class="page-footer">
+  <nav class="pagination">
+    
+
+    <span class="pageNum">
+      <a class="pageNow" href="https://edinik.com/zh/posts/tech/">1</a>
+    </span>
+    <span class="numLast">
+        <a class="pageLast" href="https://edinik.com/zh/posts/tech/page/2/">2</a>
+      </span>
+
+    
+    
+    
+  </nav>
+</footer>
+
+<br />
+</main>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+
+
+
+
+
+
+<style>
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 5vh;
+    }
+</style>
+<footer class="footer">
+    <span>共 59767 字 <br/> 写完一本 埃克苏佩里 的</br>《小王子》了！ <br/> <br/></span>
+    <div class="container">
+        <span>
+            <a class="dark-wormhole" href="https://www.foreverblog.cn/go.html" target="_blank">
+                <img src="https://img.foreverblog.cn/wormhole_1_tp.gif" alt="" style="width:auto;height:32px;" title="穿梭虫洞-随机访问十年之约友链博客">
+            </a>
+            <a class="light-wormhole" href="https://www.foreverblog.cn/go.html" target="_blank">
+                <img src="https://img.foreverblog.cn/wormhole_3_tp.gif" alt="" style="width:auto;height:32px;" title="穿梭虫洞-随机访问十年之约友链博客">
+            </a>
+        </span>
+    </div>
+    <a href="https://gohugo.io/" target="_blank">
+        
+        <img style="display: unset;" src="https://image.lvbibir.cn/blog/frame-hugo-blue.svg">
+    </a>
+    <a href="https://github.com/adityatelange/hugo-PaperMod" target="_blank">    
+        
+        <img style="display: unset;" src="https://image.lvbibir.cn/blog/theme-papermod-lightgrey.svg">
+    </a>
+    <br>
+    <span id="runtime_span"></span> 
+    <script type="text/javascript">function show_runtime(){window.setTimeout("show_runtime()",1000);X=new Date("3/10/2023 1:00:00");Y=new Date();T=(Y.getTime()-X.getTime());M=24*60*60*1000;a=T/M;A=Math.floor(a);b=(a-A)*24;B=Math.floor(b);c=(b-B)*60;C=Math.floor((b-B)*60);D=Math.floor((c-C)*60);runtime_span.innerHTML="网站已运行"+A+"天"+B+"小时"+C+"分"+D+"秒"}show_runtime();</script>
+    <span id="busuanzi_container">
+        <span class="fa fa-user"></span> <span id="busuanzi_value_site_uv"></span>
+        <span class="fa fa-eye"></span> <span id="busuanzi_value_site_pv"></span>
+    </span>
+    <br>
+    <span>
+        Copyright
+        &copy;
+        2023-2023
+        <a href="https://edinik.com/zh/" style="color:#939393;">Edinik&#39;s Blog</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <span class="topInner">
+        <svg class="topSvg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+            <path d="M12 6H0l6-6z"/>
+        </svg>
+        <span id="read_progress"></span>
+    </span>
+</a>
+
+<script>
+    document.addEventListener('scroll', function (e) {
+        const readProgress = document.getElementById("read_progress");
+        const scrollHeight = document.documentElement.scrollHeight;
+        const clientHeight = document.documentElement.clientHeight;
+        const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+        readProgress.innerText = ((scrollTop / (scrollHeight - clientHeight)).toFixed(2) * 100).toFixed(0);
+    })
+</script>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+</script>
+<script>
+    let mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        (function() {
+            document.cookie = "change-themes" + "="+ escape ("false");
+        })()
+
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    });
+</script>
+
+
+
+<script>
+    $("code[class^=language] ").on("mouseover", function () {
+        if (this.clientWidth < this.scrollWidth) {
+            $(this).css("width", "135%")
+            $(this).css("border-top-right-radius", "var(--radius)")
+        }
+    }).on("mouseout", function () {
+        $(this).css("width", "100%")
+        $(this).css("border-top-right-radius", "unset")
+    })
+</script>
+</body>
+
+</html>
