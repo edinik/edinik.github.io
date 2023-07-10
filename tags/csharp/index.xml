@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>csharp on Edinik&#39;s Blog</title>
+    <link>https://edinik.com/tags/csharp/</link>
+    <description>Recent content in csharp on Edinik&#39;s Blog</description>
+    <image>
+      <title>Edinik&#39;s Blog</title>
+      <url>https://edinik.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://edinik.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 20 Mar 2023 09:12:41 +0800</lastBuildDate><atom:link href="https://edinik.com/tags/csharp/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>csharp | ziparchive的用法</title>
+      <link>https://edinik.com/posts/tech/usage-of-ziparchive-in-csharp/</link>
+      <pubDate>Mon, 20 Mar 2023 09:12:41 +0800</pubDate>
+      
+      <guid>https://edinik.com/posts/tech/usage-of-ziparchive-in-csharp/</guid>
+      <description>ZipArchive的基础用法：创建、读取和修改文件</description>
+    </item>
+    
+    <item>
+      <title>csharp | string vs stringbuilder</title>
+      <link>https://edinik.com/posts/tech/difference-between-string-and-stringbuilder-in-csharp/</link>
+      <pubDate>Fri, 17 Mar 2023 12:41:22 +0800</pubDate>
+      
+      <guid>https://edinik.com/posts/tech/difference-between-string-and-stringbuilder-in-csharp/</guid>
+      <description>csharp中string和stringbuilder的区别、各自的应用场景和性能比较</description>
+    </item>
+    
+  </channel>
+</rss>

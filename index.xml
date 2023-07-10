@@ -1,23 +1,404 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>ExampleSite</title>
+    <title>Edinik&#39;s Blog</title>
     <link>https://edinik.com/</link>
-    <description>Recent content on ExampleSite</description>
+    <description>Recent content on Edinik&#39;s Blog</description>
     <image>
-      <title>ExampleSite</title>
+      <title>Edinik&#39;s Blog</title>
       <url>https://edinik.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
       <link>https://edinik.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 15 Sep 2020 11:30:03 +0000</lastBuildDate><atom:link href="https://edinik.com/index.xml" rel="self" type="application/rss+xml" />
+    <language>zh-cn</language>
+    <lastBuildDate>Tue, 04 Jul 2023 18:34:44 +0800</lastBuildDate><atom:link href="https://edinik.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>My 1st post</title>
-      <link>https://edinik.com/myfirstpost/</link>
-      <pubDate>Tue, 15 Sep 2020 11:30:03 +0000</pubDate>
+      <title>中国国家博物馆</title>
+      <link>https://edinik.com/posts/read/national-museum-of-china/</link>
+      <pubDate>Tue, 04 Jul 2023 18:34:44 +0800</pubDate>
       
-      <guid>https://edinik.com/myfirstpost/</guid>
-      <description>Desc Text.</description>
+      <guid>https://edinik.com/posts/read/national-museum-of-china/</guid>
+      <description>中国国家博物馆</description>
+    </item>
+    
+    <item>
+      <title>计算机专业学习路线</title>
+      <link>https://edinik.com/posts/tech/computer_science_learning_path/</link>
+      <pubDate>Mon, 03 Jul 2023 20:33:30 +0800</pubDate>
+      
+      <guid>https://edinik.com/posts/tech/computer_science_learning_path/</guid>
+      <description>计算机专业学习路线</description>
+    </item>
+    
+    <item>
+      <title>设计模式 | 工厂模式</title>
+      <link>https://edinik.com/posts/tech/design-pattern-factory-method/</link>
+      <pubDate>Mon, 12 Jun 2023 21:53:37 +0800</pubDate>
+      
+      <guid>https://edinik.com/posts/tech/design-pattern-factory-method/</guid>
+      <description>设计模式之工厂模式：</description>
+    </item>
+    
+    <item>
+      <title>五月天 | 为爱而生（2006）</title>
+      <link>https://edinik.com/posts/life/mayday-album-born-to-love/</link>
+      <pubDate>Sun, 11 Jun 2023 21:46:56 +0800</pubDate>
+      
+      <guid>https://edinik.com/posts/life/mayday-album-born-to-love/</guid>
+      <description>《为爱而生》（英语：Born to Love）是五月天2006年12月29日发行的第六张录音室专辑。</description>
+    </item>
+    
+    <item>
+      <title>五月天 | 后青春期的诗（2008）</title>
+      <link>https://edinik.com/posts/life/mayday-album-poetry-of-the-day-after/</link>
+      <pubDate>Sun, 11 Jun 2023 20:55:19 +0800</pubDate>
+      
+      <guid>https://edinik.com/posts/life/mayday-album-poetry-of-the-day-after/</guid>
+      <description>《后青春期的诗》（英语：Poetry of the Day After）是五月天2008年10月23日发行的第七张录音室专辑。</description>
+    </item>
+    
+    <item>
+      <title>五月天 | 第二人生（2011）</title>
+      <link>https://edinik.com/posts/life/mayday-album-second-round/</link>
+      <pubDate>Sun, 11 Jun 2023 14:12:56 +0800</pubDate>
+      
+      <guid>https://edinik.com/posts/life/mayday-album-second-round/</guid>
+      <description>《第二人生》（英语：Second Round）是五月天2011年12月16日发行的第八张录音室专辑。</description>
+    </item>
+    
+    <item>
+      <title>五月天 | 自传（2016）</title>
+      <link>https://edinik.com/posts/life/mayday-album-history-of-tomorrow/</link>
+      <pubDate>Sun, 11 Jun 2023 10:01:13 +0800</pubDate>
+      
+      <guid>https://edinik.com/posts/life/mayday-album-history-of-tomorrow/</guid>
+      <description>《自传》（英语：History of Tomorrow）是五月天2016年7月21日发行的第九张录音室专辑。</description>
+    </item>
+    
+    <item>
+      <title>WPF | TextBox输入范围验证</title>
+      <link>https://edinik.com/posts/tech/wpf-textbox-input-range-validation/</link>
+      <pubDate>Thu, 25 May 2023 15:00:40 +0800</pubDate>
+      
+      <guid>https://edinik.com/posts/tech/wpf-textbox-input-range-validation/</guid>
+      <description>WPF中TextBox的输入范围验证</description>
+    </item>
+    
+    <item>
+      <title>设计模式 | 单例模式</title>
+      <link>https://edinik.com/posts/tech/design-pattern-singleton/</link>
+      <pubDate>Mon, 22 May 2023 22:45:14 +0800</pubDate>
+      
+      <guid>https://edinik.com/posts/tech/design-pattern-singleton/</guid>
+      <description>设计模式之单例模式：能够保证一个类只有一个实例，并提供一个访问该实例的全局节点。</description>
+    </item>
+    
+    <item>
+      <title>midjourney | artists 01</title>
+      <link>https://edinik.com/posts/tech/midjourney-artists-01/</link>
+      <pubDate>Sat, 20 May 2023 21:09:01 +0800</pubDate>
+      
+      <guid>https://edinik.com/posts/tech/midjourney-artists-01/</guid>
+      <description>midjourney关键词之artists：Michelangelo 米开朗基罗、Monet 莫奈、Paul Cezanne 保罗-塞尚、Mark Rothko 马克-罗斯科、Paul Klee 保罗-克利、Picasso 毕加索、Piet Mondrian 皮特-蒙德里安、Pierre Auguste Renoir 皮埃尔-奥古斯特-雷诺阿</description>
+    </item>
+    
+    <item>
+      <title>midjourney | styles 08</title>
+      <link>https://edinik.com/posts/tech/midjourney-styles-08/</link>
+      <pubDate>Fri, 19 May 2023 18:10:01 +0800</pubDate>
+      
+      <guid>https://edinik.com/posts/tech/midjourney-styles-08/</guid>
+      <description>midjourney关键词之styles：etching 蚀刻、extraterrestrial 地外世界、glitchart 缝隙艺术、gouache 水粉画、floral 花卉类的、fractal 分形、pre historic 前历史性的、prokaryotic 原核生物</description>
+    </item>
+    
+    <item>
+      <title>midjourney | styles 07</title>
+      <link>https://edinik.com/posts/tech/midjourney-styles-07/</link>
+      <pubDate>Wed, 17 May 2023 19:59:46 +0800</pubDate>
+      
+      <guid>https://edinik.com/posts/tech/midjourney-styles-07/</guid>
+      <description>midjourney关键词之styles：lightspeed 光速、liquid 液体、dots 点状、dune 沙丘、dripping paint 滴落的油漆、electronic circuitry 电子电路、electrical 电气的、futuristic 未来的 </description>
+    </item>
+    
+    <item>
+      <title>midjourney | styles 06</title>
+      <link>https://edinik.com/posts/tech/midjourney-styles-06/</link>
+      <pubDate>Tue, 16 May 2023 21:06:09 +0800</pubDate>
+      
+      <guid>https://edinik.com/posts/tech/midjourney-styles-06/</guid>
+      <description>midjourney关键词之styles：charcoal style 炭色风格、chromatic 色度、coral 珊瑚、concept art 概念艺术、fibonacci 斐波那契数列、cyberpunk 赛博朋克、diabolic 堕落的、diffraction grading 衍射光栅</description>
+    </item>
+    
+    <item>
+      <title>midjourney | styles 05</title>
+      <link>https://edinik.com/posts/tech/midjourney-styles-05/</link>
+      <pubDate>Mon, 15 May 2023 18:02:04 +0800</pubDate>
+      
+      <guid>https://edinik.com/posts/tech/midjourney-styles-05/</guid>
+      <description>midjourney关键词之styles：arabic 阿拉伯、blocky 块状的、blueprint 蓝图、comicbook 漫画书、cartoon 卡通、caribbeen 加勒比、celestial 天人般、cellulose 纤维素</description>
+    </item>
+    
+    <item>
+      <title>midjourney | styles 04</title>
+      <link>https://edinik.com/posts/tech/midjourney-styles-04/</link>
+      <pubDate>Fri, 12 May 2023 21:19:47 +0800</pubDate>
+      
+      <guid>https://edinik.com/posts/tech/midjourney-styles-04/</guid>
+      <description>midjourney关键词之styles：16-Bit、8-Bit、1800s、1980s、Amber 琥珀色调、Ancient 古代、Anime 日式动画</description>
+    </item>
+    
+    <item>
+      <title>midjourney | styles 03</title>
+      <link>https://edinik.com/posts/tech/midjourney-styles-03/</link>
+      <pubDate>Tue, 09 May 2023 21:45:34 +0800</pubDate>
+      
+      <guid>https://edinik.com/posts/tech/midjourney-styles-03/</guid>
+      <description>midjourney关键词之styles：op art 欧普艺术、Japanese ink 日本墨水、pastel drawing 粉笔画、dripping art 滴漆艺术、tattoo art 纹身艺术、one-line drawing 单线图、oil painting 油画、film style 电影风格</description>
+    </item>
+    
+    <item>
+      <title>midjourney | styles 02</title>
+      <link>https://edinik.com/posts/tech/midjourney-styles-02/</link>
+      <pubDate>Fri, 05 May 2023 21:56:24 +0800</pubDate>
+      
+      <guid>https://edinik.com/posts/tech/midjourney-styles-02/</guid>
+      <description>midjourney关键词之styles：pixel art 像素艺术、watercolour 水彩、dark fantasy 黑暗幻想、ukiyo-e art 浮世绘艺术、paper quilling 绗缝纸、paper cut craft 剪纸工艺、iridescent 虹彩、patchwork collage 拼布拼贴画</description>
+    </item>
+    
+    <item>
+      <title>midjourney | styles 01</title>
+      <link>https://edinik.com/posts/tech/midjourney-styles-01/</link>
+      <pubDate>Mon, 01 May 2023 08:43:40 +0800</pubDate>
+      
+      <guid>https://edinik.com/posts/tech/midjourney-styles-01/</guid>
+      <description>midjourney关键词之styles：isometric anime 等距动画、analytic drawing 分析性绘图、coloring book 着色书、infographic drawing 信息图画、double exposure 双重曝光、diagrammatic drawing 图示性绘图、diagrammatic portrait 图解式画像</description>
+    </item>
+    
+    <item>
+      <title>摄影集 | 奥森公园 流苏 绣球</title>
+      <link>https://edinik.com/posts/life/beijing-aosen-2023-chionanthus-hydrangea/</link>
+      <pubDate>Sun, 30 Apr 2023 19:37:23 +0800</pubDate>
+      
+      <guid>https://edinik.com/posts/life/beijing-aosen-2023-chionanthus-hydrangea/</guid>
+      <description>摄影集 | 奥森公园 流苏 绣球</description>
+    </item>
+    
+    <item>
+      <title>midjourney | aspect ratios</title>
+      <link>https://edinik.com/posts/tech/midjourney_aspect_ratios/</link>
+      <pubDate>Fri, 28 Apr 2023 21:29:13 +0800</pubDate>
+      
+      <guid>https://edinik.com/posts/tech/midjourney_aspect_ratios/</guid>
+      <description>midjourney参数详解之横纵比</description>
+    </item>
+    
+    <item>
+      <title>midjourney | image weight</title>
+      <link>https://edinik.com/posts/tech/midjourney_image_weight/</link>
+      <pubDate>Thu, 27 Apr 2023 22:58:08 +0800</pubDate>
+      
+      <guid>https://edinik.com/posts/tech/midjourney_image_weight/</guid>
+      <description>midjourney参数详解之image weight</description>
+    </item>
+    
+    <item>
+      <title>图床 | lsky图床平台搭建</title>
+      <link>https://edinik.com/posts/tech/build-lsky-image-hosting-platform/</link>
+      <pubDate>Sat, 22 Apr 2023 21:45:23 +0800</pubDate>
+      
+      <guid>https://edinik.com/posts/tech/build-lsky-image-hosting-platform/</guid>
+      <description>图床 | lsky图床平台搭建</description>
+    </item>
+    
+    <item>
+      <title>权力的游戏 | 地图</title>
+      <link>https://edinik.com/posts/read/game-of-thrones-maps/</link>
+      <pubDate>Sun, 16 Apr 2023 21:18:17 +0800</pubDate>
+      
+      <guid>https://edinik.com/posts/read/game-of-thrones-maps/</guid>
+      <description>权力的游戏 | 地图</description>
+    </item>
+    
+    <item>
+      <title>权力的游戏 | 人物关系图</title>
+      <link>https://edinik.com/posts/read/game-of-thrones-character-relationship/</link>
+      <pubDate>Sun, 16 Apr 2023 20:42:54 +0800</pubDate>
+      
+      <guid>https://edinik.com/posts/read/game-of-thrones-character-relationship/</guid>
+      <description>权力的游戏 | 人物关系图</description>
+    </item>
+    
+    <item>
+      <title>摄影集 | 陶然亭 棣棠花</title>
+      <link>https://edinik.com/posts/life/taoranting-kerria-japonica/</link>
+      <pubDate>Sun, 16 Apr 2023 18:28:59 +0800</pubDate>
+      
+      <guid>https://edinik.com/posts/life/taoranting-kerria-japonica/</guid>
+      <description>摄影集 | 陶然亭 棣棠花</description>
+    </item>
+    
+    <item>
+      <title>摄影集 | 中山公园 郁金香 牡丹</title>
+      <link>https://edinik.com/posts/life/beijing-zhongshan-park-2023-tulips-peonies/</link>
+      <pubDate>Sun, 16 Apr 2023 11:09:43 +0800</pubDate>
+      
+      <guid>https://edinik.com/posts/life/beijing-zhongshan-park-2023-tulips-peonies/</guid>
+      <description>摄影集 | 中山公园 郁金香 牡丹</description>
+    </item>
+    
+    <item>
+      <title>鲜花百科 | 郁金香</title>
+      <link>https://edinik.com/posts/life/introduction-to-tulips/</link>
+      <pubDate>Wed, 12 Apr 2023 20:31:53 +0800</pubDate>
+      
+      <guid>https://edinik.com/posts/life/introduction-to-tulips/</guid>
+      <description>鲜花百科之郁金香</description>
+    </item>
+    
+    <item>
+      <title>人间词话 | 蝶恋花-庭院深深深几许</title>
+      <link>https://edinik.com/posts/read/butterflies-in-love-with-flowers-ouyangxiu/</link>
+      <pubDate>Tue, 11 Apr 2023 21:56:25 +0800</pubDate>
+      
+      <guid>https://edinik.com/posts/read/butterflies-in-love-with-flowers-ouyangxiu/</guid>
+      <description>人间词话 | 蝶恋花-庭院深深深几许 欧阳修</description>
+    </item>
+    
+    <item>
+      <title>设计模式 | 简介</title>
+      <link>https://edinik.com/posts/tech/design-pattern-introduction/</link>
+      <pubDate>Mon, 10 Apr 2023 22:16:13 +0800</pubDate>
+      
+      <guid>https://edinik.com/posts/tech/design-pattern-introduction/</guid>
+      <description>设计模式简介</description>
+    </item>
+    
+    <item>
+      <title>哪吒监控 | 服务端搭建</title>
+      <link>https://edinik.com/posts/tech/nezha-monitoring-server-build/</link>
+      <pubDate>Sat, 08 Apr 2023 23:39:46 +0800</pubDate>
+      
+      <guid>https://edinik.com/posts/tech/nezha-monitoring-server-build/</guid>
+      <description>哪吒监控服务端搭建</description>
+    </item>
+    
+    <item>
+      <title>乒乓球 | 接发球</title>
+      <link>https://edinik.com/posts/life/table-tennis-serve-receive/</link>
+      <pubDate>Fri, 07 Apr 2023 22:32:27 +0800</pubDate>
+      
+      <guid>https://edinik.com/posts/life/table-tennis-serve-receive/</guid>
+      <description>乒乓球如何更好地接发球</description>
+    </item>
+    
+    <item>
+      <title>Alist | 在线播放服务搭建</title>
+      <link>https://edinik.com/posts/tech/build-online-player-alist/</link>
+      <pubDate>Wed, 05 Apr 2023 20:33:30 +0800</pubDate>
+      
+      <guid>https://edinik.com/posts/tech/build-online-player-alist/</guid>
+      <description>如何利用小雅docker搭建在线播放服务</description>
+    </item>
+    
+    <item>
+      <title>vaultwarden  | 个人密码管理器搭建</title>
+      <link>https://edinik.com/posts/tech/establishing-bitwarden-server/</link>
+      <pubDate>Wed, 05 Apr 2023 06:51:31 +0800</pubDate>
+      
+      <guid>https://edinik.com/posts/tech/establishing-bitwarden-server/</guid>
+      <description>如何通过vaultwarden搭建个人密码管理器</description>
+    </item>
+    
+    <item>
+      <title>mermaid | 流程图</title>
+      <link>https://edinik.com/posts/tech/guide-to-using-mermaid-flowcharts/</link>
+      <pubDate>Thu, 23 Mar 2023 10:07:13 +0800</pubDate>
+      
+      <guid>https://edinik.com/posts/tech/guide-to-using-mermaid-flowcharts/</guid>
+      <description>使用Mermaid创建流程图的基本语法、样式和配置选项。</description>
+    </item>
+    
+    <item>
+      <title>关于</title>
+      <link>https://edinik.com/about/</link>
+      <pubDate>Tue, 21 Mar 2023 23:18:23 +0800</pubDate>
+      
+      <guid>https://edinik.com/about/</guid>
+      <description>近期观影 🔗 7.1 国脉 8.6 我们仍未知道那天所看见的花的名字 剧场版 9.5 权力的游戏 第二季 9.5 权力的游戏 第一季 近期阅读 🔗 9.2 白夜行 8.7 我的天才女友 7.6 亲密关系：通往</description>
+    </item>
+    
+    <item>
+      <title>csharp | ziparchive的用法</title>
+      <link>https://edinik.com/posts/tech/usage-of-ziparchive-in-csharp/</link>
+      <pubDate>Mon, 20 Mar 2023 09:12:41 +0800</pubDate>
+      
+      <guid>https://edinik.com/posts/tech/usage-of-ziparchive-in-csharp/</guid>
+      <description>ZipArchive的基础用法：创建、读取和修改文件</description>
+    </item>
+    
+    <item>
+      <title>csharp | string vs stringbuilder</title>
+      <link>https://edinik.com/posts/tech/difference-between-string-and-stringbuilder-in-csharp/</link>
+      <pubDate>Fri, 17 Mar 2023 12:41:22 +0800</pubDate>
+      
+      <guid>https://edinik.com/posts/tech/difference-between-string-and-stringbuilder-in-csharp/</guid>
+      <description>csharp中string和stringbuilder的区别、各自的应用场景和性能比较</description>
+    </item>
+    
+    <item>
+      <title>动态</title>
+      <link>https://edinik.com/bbs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://edinik.com/bbs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>观影</title>
+      <link>https://edinik.com/movies/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://edinik.com/movies/</guid>
+      <description></description>
+    </item>
+    
+    
+    
+    <item>
+      <title>我的好物</title>
+      <link>https://edinik.com/goods/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://edinik.com/goods/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>音乐</title>
+      <link>https://edinik.com/music/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://edinik.com/music/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>友链朋友圈</title>
+      <link>https://edinik.com/friends/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://edinik.com/friends/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>阅读</title>
+      <link>https://edinik.com/books/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://edinik.com/books/</guid>
+      <description></description>
     </item>
     
   </channel>

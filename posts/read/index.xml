@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>阅读 on Edinik&#39;s Blog</title>
+    <link>https://edinik.com/posts/read/</link>
+    <description>Recent content in 阅读 on Edinik&#39;s Blog</description>
+    <image>
+      <title>Edinik&#39;s Blog</title>
+      <url>https://edinik.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://edinik.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language><atom:link href="https://edinik.com/posts/read/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>中国国家博物馆</title>
+      <link>https://edinik.com/posts/read/national-museum-of-china/</link>
+      <pubDate>Tue, 04 Jul 2023 18:34:44 +0800</pubDate>
+      
+      <guid>https://edinik.com/posts/read/national-museum-of-china/</guid>
+      <description>中国国家博物馆</description>
+    </item>
+    
+    <item>
+      <title>权力的游戏 | 地图</title>
+      <link>https://edinik.com/posts/read/game-of-thrones-maps/</link>
+      <pubDate>Sun, 16 Apr 2023 21:18:17 +0800</pubDate>
+      
+      <guid>https://edinik.com/posts/read/game-of-thrones-maps/</guid>
+      <description>权力的游戏 | 地图</description>
+    </item>
+    
+    <item>
+      <title>权力的游戏 | 人物关系图</title>
+      <link>https://edinik.com/posts/read/game-of-thrones-character-relationship/</link>
+      <pubDate>Sun, 16 Apr 2023 20:42:54 +0800</pubDate>
+      
+      <guid>https://edinik.com/posts/read/game-of-thrones-character-relationship/</guid>
+      <description>权力的游戏 | 人物关系图</description>
+    </item>
+    
+    <item>
+      <title>人间词话 | 蝶恋花-庭院深深深几许</title>
+      <link>https://edinik.com/posts/read/butterflies-in-love-with-flowers-ouyangxiu/</link>
+      <pubDate>Tue, 11 Apr 2023 21:56:25 +0800</pubDate>
+      
+      <guid>https://edinik.com/posts/read/butterflies-in-love-with-flowers-ouyangxiu/</guid>
+      <description>人间词话 | 蝶恋花-庭院深深深几许 欧阳修</description>
+    </item>
+    
+  </channel>
+</rss>

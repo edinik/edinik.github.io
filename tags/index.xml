@@ -1,22 +1,166 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Tags on ExampleSite</title>
+    <title>标签 on Edinik&#39;s Blog</title>
     <link>https://edinik.com/tags/</link>
-    <description>Recent content in Tags on ExampleSite</description>
+    <description>Recent content in 标签 on Edinik&#39;s Blog</description>
     <image>
-      <title>ExampleSite</title>
+      <title>Edinik&#39;s Blog</title>
       <url>https://edinik.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
       <link>https://edinik.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 15 Sep 2020 11:30:03 +0000</lastBuildDate><atom:link href="https://edinik.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <language>zh-cn</language><atom:link href="https://edinik.com/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>first</title>
-      <link>https://edinik.com/tags/first/</link>
-      <pubDate>Tue, 15 Sep 2020 11:30:03 +0000</pubDate>
+      <title>国家博物馆</title>
+      <link>https://edinik.com/tags/%E5%9B%BD%E5%AE%B6%E5%8D%9A%E7%89%A9%E9%A6%86/</link>
+      <pubDate>Tue, 04 Jul 2023 18:34:44 +0800</pubDate>
       
-      <guid>https://edinik.com/tags/first/</guid>
+      <guid>https://edinik.com/tags/%E5%9B%BD%E5%AE%B6%E5%8D%9A%E7%89%A9%E9%A6%86/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>计算机专业学习路线</title>
+      <link>https://edinik.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%B8%93%E4%B8%9A%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/</link>
+      <pubDate>Mon, 03 Jul 2023 20:33:30 +0800</pubDate>
+      
+      <guid>https://edinik.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%B8%93%E4%B8%9A%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>design-pattern</title>
+      <link>https://edinik.com/tags/design-pattern/</link>
+      <pubDate>Mon, 12 Jun 2023 21:53:37 +0800</pubDate>
+      
+      <guid>https://edinik.com/tags/design-pattern/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>mayday</title>
+      <link>https://edinik.com/tags/mayday/</link>
+      <pubDate>Sun, 11 Jun 2023 21:46:56 +0800</pubDate>
+      
+      <guid>https://edinik.com/tags/mayday/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>WPF</title>
+      <link>https://edinik.com/tags/wpf/</link>
+      <pubDate>Thu, 25 May 2023 15:00:40 +0800</pubDate>
+      
+      <guid>https://edinik.com/tags/wpf/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>midjourney</title>
+      <link>https://edinik.com/tags/midjourney/</link>
+      <pubDate>Sat, 20 May 2023 21:09:01 +0800</pubDate>
+      
+      <guid>https://edinik.com/tags/midjourney/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>photography</title>
+      <link>https://edinik.com/tags/photography/</link>
+      <pubDate>Sun, 30 Apr 2023 19:37:23 +0800</pubDate>
+      
+      <guid>https://edinik.com/tags/photography/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>image-hosting-platform</title>
+      <link>https://edinik.com/tags/image-hosting-platform/</link>
+      <pubDate>Sat, 22 Apr 2023 21:45:23 +0800</pubDate>
+      
+      <guid>https://edinik.com/tags/image-hosting-platform/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>game-of-thrones</title>
+      <link>https://edinik.com/tags/game-of-thrones/</link>
+      <pubDate>Sun, 16 Apr 2023 21:18:17 +0800</pubDate>
+      
+      <guid>https://edinik.com/tags/game-of-thrones/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>flowerspedia</title>
+      <link>https://edinik.com/tags/flowerspedia/</link>
+      <pubDate>Wed, 12 Apr 2023 20:31:53 +0800</pubDate>
+      
+      <guid>https://edinik.com/tags/flowerspedia/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ancient-chinese-verse</title>
+      <link>https://edinik.com/tags/ancient-chinese-verse/</link>
+      <pubDate>Tue, 11 Apr 2023 21:56:25 +0800</pubDate>
+      
+      <guid>https://edinik.com/tags/ancient-chinese-verse/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>nezha-monitoring</title>
+      <link>https://edinik.com/tags/nezha-monitoring/</link>
+      <pubDate>Sat, 08 Apr 2023 23:39:46 +0800</pubDate>
+      
+      <guid>https://edinik.com/tags/nezha-monitoring/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>table-tennis</title>
+      <link>https://edinik.com/tags/table-tennis/</link>
+      <pubDate>Fri, 07 Apr 2023 22:32:27 +0800</pubDate>
+      
+      <guid>https://edinik.com/tags/table-tennis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>alist</title>
+      <link>https://edinik.com/tags/alist/</link>
+      <pubDate>Wed, 05 Apr 2023 20:33:30 +0800</pubDate>
+      
+      <guid>https://edinik.com/tags/alist/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>bitwarden</title>
+      <link>https://edinik.com/tags/bitwarden/</link>
+      <pubDate>Wed, 05 Apr 2023 06:51:31 +0800</pubDate>
+      
+      <guid>https://edinik.com/tags/bitwarden/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>mermaid</title>
+      <link>https://edinik.com/tags/mermaid/</link>
+      <pubDate>Thu, 23 Mar 2023 10:07:13 +0800</pubDate>
+      
+      <guid>https://edinik.com/tags/mermaid/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>csharp</title>
+      <link>https://edinik.com/tags/csharp/</link>
+      <pubDate>Mon, 20 Mar 2023 09:12:41 +0800</pubDate>
+      
+      <guid>https://edinik.com/tags/csharp/</guid>
       <description></description>
     </item>
     
