@@ -1,1224 +1,650 @@
 <!DOCTYPE html>
-<html lang="zh" dir="auto">
+<html lang="en">
+  <head>
+    
+      <title>折腾 :: Edinik&#39;s Blog</title>
+    
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta charset="UTF-8"/>
+<meta name="renderer" content="webkit"/>
+<meta name="force-rendering" content="webkit"/>
+<meta name="referrer" content="no-referrer">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<script>if ( false || (!!window.MSInputMethodContext && !!document.documentMode)) document.write('\x3Cscript id="_iealwn_js" data-outver="11" src="https://support.dmeng.net/ie-alert-warning/latest.js">\x3C/script>'); </script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta name="description" content=""/>
+<meta name="keywords" content=""/>
+<link href="/atom.xml" title="Edinik&#39;s Blog" type="application/rss+xml">
+<link rel="canonical" href="https://edinik.com/posts/tech/" />
+<link rel="stylesheet" href="//cdn.staticfile.org/lxgw-wenkai-screen-webfont/1.6.0/lxgwwenkaiscreen.css" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="/theme-20230711.css">
+<link rel="shortcut icon" href="https://edinik.com/favicon.ico">
 
-<head><meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="index, follow">
-<title>技术 | Edinik&#39;s Blog</title>
-<meta name="keywords" content="">
-<meta name="description" content="技术 - Edinik&#39;s Blog">
-<meta name="author" content="Edinik">
-<link rel="canonical" href="https://edinik.com/posts/tech/">
-<meta name="google-site-verification" content="6A-1RsLBWSgG_uBmVVQzBmGE8k2mxcJwZErLRJMpk4I">
-<meta name="baidu-site-verification" content="codeva-I9cG7LIaz4">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.06aaca8ff369b4028843890290d1c9d3f78da61b0031ace51878af4deaadd89d.css" integrity="sha256-BqrKj/NptAKIQ4kCkNHJ0/eNphsAMazlGHivTeqt2J0=" rel="preload stylesheet" as="style">
-
-<link rel="stylesheet" href="https://cdn.staticfile.org/lxgw-wenkai-screen-webfont/1.6.0/lxgwwenkaiscreen.css" media="print" onload="this.media='all'">
-<link rel="icon" href="https://edinik.com/img/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="https://edinik.com/img/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://edinik.com/img/favicon-32x32.png">
-<link rel="apple-touch-icon" href="https://edinik.com/img/apple-touch-icon.png">
-<link rel="mask-icon" href="https://edinik.com/img/android-chrome-512x512.png">
-<meta name="theme-color" content="#2e2e33">
-<meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="https://edinik.com/posts/tech/index.xml">
-<noscript>
-    <style>
-        #theme-toggle,
-        .top-link {
-            display: none;
-        }
-
-    </style>
-</noscript>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
-<script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.min.js"></script>
+<link rel="apple-touch-icon" href="https://edinik.com/favicon.ico">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="apple-mobile-web-app-title" content="Edinik&#39;s Blog">
+<link rel="bookmark" href="https://edinik.com/favicon.ico">
+<link rel="apple-touch-icon-precomposed" sizes="180x180" href="https://edinik.com/favicon.ico" >
 
 
-
-<script>
-var _hmt = _hmt || [];
-(function() {
-  var hm = document.createElement("script");
-  hm.src = ""; 
-  var s = document.getElementsByTagName("script")[0]; 
-  s.parentNode.insertBefore(hm, s);
-})();
-</script>
-
-<script type="application/javascript">
-var doNotTrack = false;
-if (!doNotTrack) {
-	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-	ga('create', 'UA-123-45', 'auto');
-	
-	ga('send', 'pageview');
-}
-</script><meta property="og:title" content="技术" />
+<meta property="og:title" content="折腾" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://edinik.com/posts/tech/" /><meta property="og:image" content="https://edinik.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E"/><meta property="og:site_name" content="Edinik" />
-
-<meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://edinik.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E"/>
-
-<meta name="twitter:title" content="技术"/>
-<meta name="twitter:description" content=""/>
+<meta property="og:url" content="https://edinik.com/posts/tech/" />
 
 
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
+<link rel="alternate" type="application/rss+xml" href="/posts/tech/index.xml" title="Edinik's Blog" />
 
-        {
-          "@type": "ListItem",
-          "position":  2 ,
-          "name": "文章",
-          "item": "https://edinik.com/posts/"
-        }, 
-    {
-      "@type": "ListItem",
-      "position":  3 ,
-      "name": "技术",
-      "item": "https://edinik.com/posts/tech/"
+<script async defer data-website-id="849d077c-441f-4de6-a1dd-ee5f696843fc" src="https://umami.edinik.com/random-string.js"></script>
+
+    
+  <link rel="prefetch" href="/posts/tech/">
+  <link rel="prefetch" href="/posts/tech/page/3/">
+
+  </head>
+  <body class="">
+    <script>
+checkNightMode()
+function checkNightMode() {
+  var Mode = localStorage.getItem("theme") || ''
+  if (Mode == "dark") {
+    document.body.classList.add("dark")
+  }else if (Mode == null || Mode == "undefined" || Mode == "") {
+    if (matchMedia('(prefers-color-scheme: dark)').matches) {
+      document.body.classList.add("dark")
+    }else if (matchMedia('(prefers-color-scheme: light)').matches) {
+      document.body.classList.remove("dark")
     }
-  ]
+  }
 }
-</script>
-</head>
-
-<body class="list dark" id="top">
-<script>
-    if (localStorage.getItem("pref-theme") === "light") {
-        document.body.classList.remove('dark')
-    }
-
-</script>
-
-<header class="header">
-    <nav class="nav">
-        <div class="logo">
-            <a href="https://edinik.com" accesskey="h" title="Edinik&#39;s Blog (Alt + H)">
-            <img src="https://edinik.com/img/apple-touch-icon.png" alt="logo" aria-label="logo"
-                 height="40">Edinik&#39;s Blog</a>
-            <div class="logo-switches">
-                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
-                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                         stroke-linejoin="round">
-                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-                    </svg>
-                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                         stroke-linejoin="round">
-                        <circle cx="12" cy="12" r="5"></circle>
-                        <line x1="12" y1="1" x2="12" y2="3"></line>
-                        <line x1="12" y1="21" x2="12" y2="23"></line>
-                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-                        <line x1="1" y1="12" x2="3" y2="12"></line>
-                        <line x1="21" y1="12" x2="23" y2="12"></line>
-                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-                    </svg>
-                </button>
-            </div>
-        </div>
-        <ul id="menu">
-            <li>
-                <a href="https://edinik.com/search" title="搜索 (Alt &#43; /)" accesskey=/>
-                <span>搜索</span>
-                </a>
-            </li>
-            <li>
-                <a href="https://edinik.com/bbs" title="动态">
-                <span>动态</span>
-                </a>
-            </li>
-            <li>
-                <a href="https://edinik.com/posts" title="文章">
-                <span>文章</span>
-                </a>
-            </li>
-            <li>
-                <a href="https://edinik.com/tags" title="标签">
-                <span>标签</span>
-                </a>
-            </li>
-            <li>
-                <a href="https://edinik.com/archives/" title="归档">
-                <span>归档</span>
-                </a>
-            </li>
-            <li>
-                <a href="https://edinik.com/goods" title="好物">
-                <span>好物</span>
-                </a>
-            </li>
-            <li>
-                <a href="https://edinik.com/friends/" title="友圈">
-                <span>友圈</span>
-                </a>
-            </li>
-            <li>
-                <a href="https://edinik.com/about" title="关于">
-                <span>关于</span>
-                </a>
-            </li>
-        </ul>
-    </nav>
-</header>
-
-
-
-<script async src="https://umami.edinik.com/random-string.js" data-website-id="849d077c-441f-4de6-a1dd-ee5f696843fc"></script>
-<main class="main"> 
-<header class="page-header"><div class="breadcrumbs"><a href="https://edinik.com">主页</a>&nbsp;»&nbsp;<a href="https://edinik.com/posts/">文章</a></div>
-  <h1>技术</h1>
-</header>
-
-<article class="post-entry">
-  <div class="post-info">
-    <header class="entry-header">
-      <h2>图床 | lsky图床平台搭建
-      </h2>
-    </header>
-    <section class="entry-content">
-      <p>
-        图床 | lsky图床平台搭建
-        
-        ...
-      </p>
-    </section>
-    <footer class="entry-footer"><style>
-  i[id*="post_meta_style"] {
-    display: flex;
-    align-items: center;
-    margin: 0 0 10px 0;
-  }
-
-  .parent-post-meta {
-    display: flex;
-    flex-wrap: wrap;
-    opacity: 0.8;
-  }
-</style>
-
-<span class="parent-post-meta">
-  <span id="post_meta_style_1" class="post_meta_style">
-    <div class="post-meta-icons">
-      <svg
-        t="1686154436360"
-        class="icon"
-        viewBox="0 0 1024 1024"
-        version="1.1"
-        xmlns="http://www.w3.org/2000/svg"
-        p-id="2555"
-        width="14"
-        height="14"
-      >
-        <path
-          d="M146.285714 0h731.428572a146.285714 146.285714 0 0 1 146.285714 146.285714v731.428572a146.285714 146.285714 0 0 1-146.285714 146.285714H146.285714a146.285714 146.285714 0 0 1-146.285714-146.285714V146.285714a146.285714 146.285714 0 0 1 146.285714-146.285714z m0 73.142857a73.142857 73.142857 0 0 0-73.142857 73.142857v731.428572a73.142857 73.142857 0 0 0 73.142857 73.142857h731.428572a73.142857 73.142857 0 0 0 73.142857-73.142857V146.285714a73.142857 73.142857 0 0 0-73.142857-73.142857H146.285714z"
-          fill="#8a8a8a"
-          p-id="2556"
-        ></path>
-        <path
-          d="M0 219.428571h1024v73.142858H0V219.428571z m987.428571 36.571429L950.857143 292.571429V219.428571l36.571428 36.571429z"
-          fill="#8a8a8a"
-          p-id="2557"
-        ></path>
-        <path
-          d="M475.428571 438.857143h73.142858a36.571429 36.571429 0 0 1 0 73.142857h-73.142858a36.571429 36.571429 0 0 1 0-73.142857z m219.428572 0h73.142857a36.571429 36.571429 0 1 1 0 73.142857h-73.142857a36.571429 36.571429 0 0 1 0-73.142857z m-438.857143 146.285714h73.142857a36.571429 36.571429 0 0 1 0 73.142857h-73.142857a36.571429 36.571429 0 0 1 0-73.142857z m438.857143 0h73.142857a36.571429 36.571429 0 1 1 0 73.142857h-73.142857a36.571429 36.571429 0 0 1 0-73.142857z m-438.857143 146.285714h73.142857a36.571429 36.571429 0 1 1 0 73.142858h-73.142857a36.571429 36.571429 0 1 1 0-73.142858z m438.857143 0h73.142857a36.571429 36.571429 0 1 1 0 73.142858h-73.142857a36.571429 36.571429 0 1 1 0-73.142858z m-219.428572 0h73.142858a36.571429 36.571429 0 1 1 0 73.142858h-73.142858a36.571429 36.571429 0 1 1 0-73.142858z m0-146.285714h73.142858a36.571429 36.571429 0 0 1 0 73.142857h-73.142858a36.571429 36.571429 0 0 1 0-73.142857z"
-          fill="#8a8a8a"
-          p-id="2558"
-        ></path>
-      </svg>
-    </div>
-    <span>2023-04-22&nbsp;&nbsp;
-    </span>
-  </span>
-  
-  
-  <span id="post_meta_style_6" class="post_meta_style">
-    <span
-      ><div class="post-meta-icons">
-        <svg
-          t="1686157100398"
-          class="icon"
-          viewBox="0 0 1238 1024"
-          version="1.1"
-          xmlns="http://www.w3.org/2000/svg"
-          p-id="23788"
-          width="14"
-          height="14"
-        >
-          <path
-            d="M94.131677 411.508075v-318.012423h310.380124l523.448447 528.536646L719.344099 826.832298l-54.062111 54.062112-47.065839 46.429814z m902.519255 276.034782a90.951553 90.951553 0 0 0 0-127.204969L537.440994 94.131677h82.68323L1144.84472 622.668323l-311.652173 306.563975-40.70559-38.797515z m215.612422-127.204969L677.36646 19.080745a63.602484 63.602484 0 0 0-45.157764-19.080745H92.223602A92.223602 92.223602 0 0 0 0 91.587578v333.277018a63.602484 63.602484 0 0 0 18.44472 44.521739l534.26087 527.900622a93.495652 93.495652 0 0 0 130.385093 0l41.97764-41.97764 41.97764 41.97764a93.495652 93.495652 0 0 0 130.385093 0l313.560248-309.7441a90.951553 90.951553 0 0 0 1.908075-128.477018zM274.126708 318.012422a29.893168 29.893168 0 1 1 29.893168-29.893167 29.893168 29.893168 0 0 1-29.893168 29.893167z m0-153.918012a127.204969 127.204969 0 1 0 124.024845 123.38882 127.204969 127.204969 0 0 0-124.024845-124.024845z"
-            fill="#8a8a8a"
-            p-id="23789"
-          ></path>
-        </svg>
-      </div>
-    </span>
-    <span>
-      <span class="post-tags-meta">
-        <a href="https://edinik.com/tags/image-hosting-platform/" style="color: var(--secondary) !important"
-          >image-hosting-platform</a
-        >
-      </span>
-    </span>
-  </span>
-  &nbsp;&nbsp;
-</span>
-</footer>
-  </div> 
-  <a class="entry-link" aria-label="post link to 图床 | lsky图床平台搭建" href="https://edinik.com/posts/tech/build-lsky-image-hosting-platform/"></a>
-</article>
-
-<article class="post-entry">
-  <div class="post-info">
-    <header class="entry-header">
-      <h2>设计模式 | 简介
-      </h2>
-    </header>
-    <section class="entry-content">
-      <p>
-        设计模式简介
-        
-        ...
-      </p>
-    </section>
-    <footer class="entry-footer"><style>
-  i[id*="post_meta_style"] {
-    display: flex;
-    align-items: center;
-    margin: 0 0 10px 0;
-  }
-
-  .parent-post-meta {
-    display: flex;
-    flex-wrap: wrap;
-    opacity: 0.8;
-  }
-</style>
-
-<span class="parent-post-meta">
-  <span id="post_meta_style_1" class="post_meta_style">
-    <div class="post-meta-icons">
-      <svg
-        t="1686154436360"
-        class="icon"
-        viewBox="0 0 1024 1024"
-        version="1.1"
-        xmlns="http://www.w3.org/2000/svg"
-        p-id="2555"
-        width="14"
-        height="14"
-      >
-        <path
-          d="M146.285714 0h731.428572a146.285714 146.285714 0 0 1 146.285714 146.285714v731.428572a146.285714 146.285714 0 0 1-146.285714 146.285714H146.285714a146.285714 146.285714 0 0 1-146.285714-146.285714V146.285714a146.285714 146.285714 0 0 1 146.285714-146.285714z m0 73.142857a73.142857 73.142857 0 0 0-73.142857 73.142857v731.428572a73.142857 73.142857 0 0 0 73.142857 73.142857h731.428572a73.142857 73.142857 0 0 0 73.142857-73.142857V146.285714a73.142857 73.142857 0 0 0-73.142857-73.142857H146.285714z"
-          fill="#8a8a8a"
-          p-id="2556"
-        ></path>
-        <path
-          d="M0 219.428571h1024v73.142858H0V219.428571z m987.428571 36.571429L950.857143 292.571429V219.428571l36.571428 36.571429z"
-          fill="#8a8a8a"
-          p-id="2557"
-        ></path>
-        <path
-          d="M475.428571 438.857143h73.142858a36.571429 36.571429 0 0 1 0 73.142857h-73.142858a36.571429 36.571429 0 0 1 0-73.142857z m219.428572 0h73.142857a36.571429 36.571429 0 1 1 0 73.142857h-73.142857a36.571429 36.571429 0 0 1 0-73.142857z m-438.857143 146.285714h73.142857a36.571429 36.571429 0 0 1 0 73.142857h-73.142857a36.571429 36.571429 0 0 1 0-73.142857z m438.857143 0h73.142857a36.571429 36.571429 0 1 1 0 73.142857h-73.142857a36.571429 36.571429 0 0 1 0-73.142857z m-438.857143 146.285714h73.142857a36.571429 36.571429 0 1 1 0 73.142858h-73.142857a36.571429 36.571429 0 1 1 0-73.142858z m438.857143 0h73.142857a36.571429 36.571429 0 1 1 0 73.142858h-73.142857a36.571429 36.571429 0 1 1 0-73.142858z m-219.428572 0h73.142858a36.571429 36.571429 0 1 1 0 73.142858h-73.142858a36.571429 36.571429 0 1 1 0-73.142858z m0-146.285714h73.142858a36.571429 36.571429 0 0 1 0 73.142857h-73.142858a36.571429 36.571429 0 0 1 0-73.142857z"
-          fill="#8a8a8a"
-          p-id="2558"
-        ></path>
-      </svg>
-    </div>
-    <span>2023-04-10&nbsp;&nbsp;
-    </span>
-  </span>
-  
-  
-  <span id="post_meta_style_6" class="post_meta_style">
-    <span
-      ><div class="post-meta-icons">
-        <svg
-          t="1686157100398"
-          class="icon"
-          viewBox="0 0 1238 1024"
-          version="1.1"
-          xmlns="http://www.w3.org/2000/svg"
-          p-id="23788"
-          width="14"
-          height="14"
-        >
-          <path
-            d="M94.131677 411.508075v-318.012423h310.380124l523.448447 528.536646L719.344099 826.832298l-54.062111 54.062112-47.065839 46.429814z m902.519255 276.034782a90.951553 90.951553 0 0 0 0-127.204969L537.440994 94.131677h82.68323L1144.84472 622.668323l-311.652173 306.563975-40.70559-38.797515z m215.612422-127.204969L677.36646 19.080745a63.602484 63.602484 0 0 0-45.157764-19.080745H92.223602A92.223602 92.223602 0 0 0 0 91.587578v333.277018a63.602484 63.602484 0 0 0 18.44472 44.521739l534.26087 527.900622a93.495652 93.495652 0 0 0 130.385093 0l41.97764-41.97764 41.97764 41.97764a93.495652 93.495652 0 0 0 130.385093 0l313.560248-309.7441a90.951553 90.951553 0 0 0 1.908075-128.477018zM274.126708 318.012422a29.893168 29.893168 0 1 1 29.893168-29.893167 29.893168 29.893168 0 0 1-29.893168 29.893167z m0-153.918012a127.204969 127.204969 0 1 0 124.024845 123.38882 127.204969 127.204969 0 0 0-124.024845-124.024845z"
-            fill="#8a8a8a"
-            p-id="23789"
-          ></path>
-        </svg>
-      </div>
-    </span>
-    <span>
-      <span class="post-tags-meta">
-        <a href="https://edinik.com/tags/design-pattern/" style="color: var(--secondary) !important"
-          >design-pattern</a
-        >
-      </span>
-    </span>
-  </span>
-  &nbsp;&nbsp;
-</span>
-</footer>
-  </div> 
-  <a class="entry-link" aria-label="post link to 设计模式 | 简介" href="https://edinik.com/posts/tech/design-pattern-introduction/"></a>
-</article>
-
-<article class="post-entry">
-  <div class="post-info">
-    <header class="entry-header">
-      <h2>哪吒监控 | 服务端搭建
-      </h2>
-    </header>
-    <section class="entry-content">
-      <p>
-        哪吒监控服务端搭建
-        
-        ...
-      </p>
-    </section>
-    <footer class="entry-footer"><style>
-  i[id*="post_meta_style"] {
-    display: flex;
-    align-items: center;
-    margin: 0 0 10px 0;
-  }
-
-  .parent-post-meta {
-    display: flex;
-    flex-wrap: wrap;
-    opacity: 0.8;
-  }
-</style>
-
-<span class="parent-post-meta">
-  <span id="post_meta_style_1" class="post_meta_style">
-    <div class="post-meta-icons">
-      <svg
-        t="1686154436360"
-        class="icon"
-        viewBox="0 0 1024 1024"
-        version="1.1"
-        xmlns="http://www.w3.org/2000/svg"
-        p-id="2555"
-        width="14"
-        height="14"
-      >
-        <path
-          d="M146.285714 0h731.428572a146.285714 146.285714 0 0 1 146.285714 146.285714v731.428572a146.285714 146.285714 0 0 1-146.285714 146.285714H146.285714a146.285714 146.285714 0 0 1-146.285714-146.285714V146.285714a146.285714 146.285714 0 0 1 146.285714-146.285714z m0 73.142857a73.142857 73.142857 0 0 0-73.142857 73.142857v731.428572a73.142857 73.142857 0 0 0 73.142857 73.142857h731.428572a73.142857 73.142857 0 0 0 73.142857-73.142857V146.285714a73.142857 73.142857 0 0 0-73.142857-73.142857H146.285714z"
-          fill="#8a8a8a"
-          p-id="2556"
-        ></path>
-        <path
-          d="M0 219.428571h1024v73.142858H0V219.428571z m987.428571 36.571429L950.857143 292.571429V219.428571l36.571428 36.571429z"
-          fill="#8a8a8a"
-          p-id="2557"
-        ></path>
-        <path
-          d="M475.428571 438.857143h73.142858a36.571429 36.571429 0 0 1 0 73.142857h-73.142858a36.571429 36.571429 0 0 1 0-73.142857z m219.428572 0h73.142857a36.571429 36.571429 0 1 1 0 73.142857h-73.142857a36.571429 36.571429 0 0 1 0-73.142857z m-438.857143 146.285714h73.142857a36.571429 36.571429 0 0 1 0 73.142857h-73.142857a36.571429 36.571429 0 0 1 0-73.142857z m438.857143 0h73.142857a36.571429 36.571429 0 1 1 0 73.142857h-73.142857a36.571429 36.571429 0 0 1 0-73.142857z m-438.857143 146.285714h73.142857a36.571429 36.571429 0 1 1 0 73.142858h-73.142857a36.571429 36.571429 0 1 1 0-73.142858z m438.857143 0h73.142857a36.571429 36.571429 0 1 1 0 73.142858h-73.142857a36.571429 36.571429 0 1 1 0-73.142858z m-219.428572 0h73.142858a36.571429 36.571429 0 1 1 0 73.142858h-73.142858a36.571429 36.571429 0 1 1 0-73.142858z m0-146.285714h73.142858a36.571429 36.571429 0 0 1 0 73.142857h-73.142858a36.571429 36.571429 0 0 1 0-73.142857z"
-          fill="#8a8a8a"
-          p-id="2558"
-        ></path>
-      </svg>
-    </div>
-    <span>2023-04-08&nbsp;&nbsp;
-    </span>
-  </span>
-  
-  
-  <span id="post_meta_style_6" class="post_meta_style">
-    <span
-      ><div class="post-meta-icons">
-        <svg
-          t="1686157100398"
-          class="icon"
-          viewBox="0 0 1238 1024"
-          version="1.1"
-          xmlns="http://www.w3.org/2000/svg"
-          p-id="23788"
-          width="14"
-          height="14"
-        >
-          <path
-            d="M94.131677 411.508075v-318.012423h310.380124l523.448447 528.536646L719.344099 826.832298l-54.062111 54.062112-47.065839 46.429814z m902.519255 276.034782a90.951553 90.951553 0 0 0 0-127.204969L537.440994 94.131677h82.68323L1144.84472 622.668323l-311.652173 306.563975-40.70559-38.797515z m215.612422-127.204969L677.36646 19.080745a63.602484 63.602484 0 0 0-45.157764-19.080745H92.223602A92.223602 92.223602 0 0 0 0 91.587578v333.277018a63.602484 63.602484 0 0 0 18.44472 44.521739l534.26087 527.900622a93.495652 93.495652 0 0 0 130.385093 0l41.97764-41.97764 41.97764 41.97764a93.495652 93.495652 0 0 0 130.385093 0l313.560248-309.7441a90.951553 90.951553 0 0 0 1.908075-128.477018zM274.126708 318.012422a29.893168 29.893168 0 1 1 29.893168-29.893167 29.893168 29.893168 0 0 1-29.893168 29.893167z m0-153.918012a127.204969 127.204969 0 1 0 124.024845 123.38882 127.204969 127.204969 0 0 0-124.024845-124.024845z"
-            fill="#8a8a8a"
-            p-id="23789"
-          ></path>
-        </svg>
-      </div>
-    </span>
-    <span>
-      <span class="post-tags-meta">
-        <a href="https://edinik.com/tags/nezha-monitoring/" style="color: var(--secondary) !important"
-          >nezha-monitoring</a
-        >
-      </span>
-    </span>
-  </span>
-  &nbsp;&nbsp;
-</span>
-</footer>
-  </div> 
-  <a class="entry-link" aria-label="post link to 哪吒监控 | 服务端搭建" href="https://edinik.com/posts/tech/nezha-monitoring-server-build/"></a>
-</article>
-
-<article class="post-entry">
-  <div class="post-info">
-    <header class="entry-header">
-      <h2>Alist | 在线播放服务搭建
-      </h2>
-    </header>
-    <section class="entry-content">
-      <p>
-        如何利用小雅docker搭建在线播放服务
-        
-        ...
-      </p>
-    </section>
-    <footer class="entry-footer"><style>
-  i[id*="post_meta_style"] {
-    display: flex;
-    align-items: center;
-    margin: 0 0 10px 0;
-  }
-
-  .parent-post-meta {
-    display: flex;
-    flex-wrap: wrap;
-    opacity: 0.8;
-  }
-</style>
-
-<span class="parent-post-meta">
-  <span id="post_meta_style_1" class="post_meta_style">
-    <div class="post-meta-icons">
-      <svg
-        t="1686154436360"
-        class="icon"
-        viewBox="0 0 1024 1024"
-        version="1.1"
-        xmlns="http://www.w3.org/2000/svg"
-        p-id="2555"
-        width="14"
-        height="14"
-      >
-        <path
-          d="M146.285714 0h731.428572a146.285714 146.285714 0 0 1 146.285714 146.285714v731.428572a146.285714 146.285714 0 0 1-146.285714 146.285714H146.285714a146.285714 146.285714 0 0 1-146.285714-146.285714V146.285714a146.285714 146.285714 0 0 1 146.285714-146.285714z m0 73.142857a73.142857 73.142857 0 0 0-73.142857 73.142857v731.428572a73.142857 73.142857 0 0 0 73.142857 73.142857h731.428572a73.142857 73.142857 0 0 0 73.142857-73.142857V146.285714a73.142857 73.142857 0 0 0-73.142857-73.142857H146.285714z"
-          fill="#8a8a8a"
-          p-id="2556"
-        ></path>
-        <path
-          d="M0 219.428571h1024v73.142858H0V219.428571z m987.428571 36.571429L950.857143 292.571429V219.428571l36.571428 36.571429z"
-          fill="#8a8a8a"
-          p-id="2557"
-        ></path>
-        <path
-          d="M475.428571 438.857143h73.142858a36.571429 36.571429 0 0 1 0 73.142857h-73.142858a36.571429 36.571429 0 0 1 0-73.142857z m219.428572 0h73.142857a36.571429 36.571429 0 1 1 0 73.142857h-73.142857a36.571429 36.571429 0 0 1 0-73.142857z m-438.857143 146.285714h73.142857a36.571429 36.571429 0 0 1 0 73.142857h-73.142857a36.571429 36.571429 0 0 1 0-73.142857z m438.857143 0h73.142857a36.571429 36.571429 0 1 1 0 73.142857h-73.142857a36.571429 36.571429 0 0 1 0-73.142857z m-438.857143 146.285714h73.142857a36.571429 36.571429 0 1 1 0 73.142858h-73.142857a36.571429 36.571429 0 1 1 0-73.142858z m438.857143 0h73.142857a36.571429 36.571429 0 1 1 0 73.142858h-73.142857a36.571429 36.571429 0 1 1 0-73.142858z m-219.428572 0h73.142858a36.571429 36.571429 0 1 1 0 73.142858h-73.142858a36.571429 36.571429 0 1 1 0-73.142858z m0-146.285714h73.142858a36.571429 36.571429 0 0 1 0 73.142857h-73.142858a36.571429 36.571429 0 0 1 0-73.142857z"
-          fill="#8a8a8a"
-          p-id="2558"
-        ></path>
-      </svg>
-    </div>
-    <span>2023-04-05&nbsp;&nbsp;
-    </span>
-  </span>
-  
-  
-  <span id="post_meta_style_6" class="post_meta_style">
-    <span
-      ><div class="post-meta-icons">
-        <svg
-          t="1686157100398"
-          class="icon"
-          viewBox="0 0 1238 1024"
-          version="1.1"
-          xmlns="http://www.w3.org/2000/svg"
-          p-id="23788"
-          width="14"
-          height="14"
-        >
-          <path
-            d="M94.131677 411.508075v-318.012423h310.380124l523.448447 528.536646L719.344099 826.832298l-54.062111 54.062112-47.065839 46.429814z m902.519255 276.034782a90.951553 90.951553 0 0 0 0-127.204969L537.440994 94.131677h82.68323L1144.84472 622.668323l-311.652173 306.563975-40.70559-38.797515z m215.612422-127.204969L677.36646 19.080745a63.602484 63.602484 0 0 0-45.157764-19.080745H92.223602A92.223602 92.223602 0 0 0 0 91.587578v333.277018a63.602484 63.602484 0 0 0 18.44472 44.521739l534.26087 527.900622a93.495652 93.495652 0 0 0 130.385093 0l41.97764-41.97764 41.97764 41.97764a93.495652 93.495652 0 0 0 130.385093 0l313.560248-309.7441a90.951553 90.951553 0 0 0 1.908075-128.477018zM274.126708 318.012422a29.893168 29.893168 0 1 1 29.893168-29.893167 29.893168 29.893168 0 0 1-29.893168 29.893167z m0-153.918012a127.204969 127.204969 0 1 0 124.024845 123.38882 127.204969 127.204969 0 0 0-124.024845-124.024845z"
-            fill="#8a8a8a"
-            p-id="23789"
-          ></path>
-        </svg>
-      </div>
-    </span>
-    <span>
-      <span class="post-tags-meta">
-        <a href="https://edinik.com/tags/alist/" style="color: var(--secondary) !important"
-          >alist</a
-        >
-      </span>
-    </span>
-  </span>
-  &nbsp;&nbsp;
-</span>
-</footer>
-  </div> 
-  <a class="entry-link" aria-label="post link to Alist | 在线播放服务搭建" href="https://edinik.com/posts/tech/build-online-player-alist/"></a>
-</article>
-
-<article class="post-entry">
-  <div class="post-info">
-    <header class="entry-header">
-      <h2>vaultwarden  | 个人密码管理器搭建
-      </h2>
-    </header>
-    <section class="entry-content">
-      <p>
-        如何通过vaultwarden搭建个人密码管理器
-        
-        ...
-      </p>
-    </section>
-    <footer class="entry-footer"><style>
-  i[id*="post_meta_style"] {
-    display: flex;
-    align-items: center;
-    margin: 0 0 10px 0;
-  }
-
-  .parent-post-meta {
-    display: flex;
-    flex-wrap: wrap;
-    opacity: 0.8;
-  }
-</style>
-
-<span class="parent-post-meta">
-  <span id="post_meta_style_1" class="post_meta_style">
-    <div class="post-meta-icons">
-      <svg
-        t="1686154436360"
-        class="icon"
-        viewBox="0 0 1024 1024"
-        version="1.1"
-        xmlns="http://www.w3.org/2000/svg"
-        p-id="2555"
-        width="14"
-        height="14"
-      >
-        <path
-          d="M146.285714 0h731.428572a146.285714 146.285714 0 0 1 146.285714 146.285714v731.428572a146.285714 146.285714 0 0 1-146.285714 146.285714H146.285714a146.285714 146.285714 0 0 1-146.285714-146.285714V146.285714a146.285714 146.285714 0 0 1 146.285714-146.285714z m0 73.142857a73.142857 73.142857 0 0 0-73.142857 73.142857v731.428572a73.142857 73.142857 0 0 0 73.142857 73.142857h731.428572a73.142857 73.142857 0 0 0 73.142857-73.142857V146.285714a73.142857 73.142857 0 0 0-73.142857-73.142857H146.285714z"
-          fill="#8a8a8a"
-          p-id="2556"
-        ></path>
-        <path
-          d="M0 219.428571h1024v73.142858H0V219.428571z m987.428571 36.571429L950.857143 292.571429V219.428571l36.571428 36.571429z"
-          fill="#8a8a8a"
-          p-id="2557"
-        ></path>
-        <path
-          d="M475.428571 438.857143h73.142858a36.571429 36.571429 0 0 1 0 73.142857h-73.142858a36.571429 36.571429 0 0 1 0-73.142857z m219.428572 0h73.142857a36.571429 36.571429 0 1 1 0 73.142857h-73.142857a36.571429 36.571429 0 0 1 0-73.142857z m-438.857143 146.285714h73.142857a36.571429 36.571429 0 0 1 0 73.142857h-73.142857a36.571429 36.571429 0 0 1 0-73.142857z m438.857143 0h73.142857a36.571429 36.571429 0 1 1 0 73.142857h-73.142857a36.571429 36.571429 0 0 1 0-73.142857z m-438.857143 146.285714h73.142857a36.571429 36.571429 0 1 1 0 73.142858h-73.142857a36.571429 36.571429 0 1 1 0-73.142858z m438.857143 0h73.142857a36.571429 36.571429 0 1 1 0 73.142858h-73.142857a36.571429 36.571429 0 1 1 0-73.142858z m-219.428572 0h73.142858a36.571429 36.571429 0 1 1 0 73.142858h-73.142858a36.571429 36.571429 0 1 1 0-73.142858z m0-146.285714h73.142858a36.571429 36.571429 0 0 1 0 73.142857h-73.142858a36.571429 36.571429 0 0 1 0-73.142857z"
-          fill="#8a8a8a"
-          p-id="2558"
-        ></path>
-      </svg>
-    </div>
-    <span>2023-04-05&nbsp;&nbsp;
-    </span>
-  </span>
-  
-  
-  <span id="post_meta_style_6" class="post_meta_style">
-    <span
-      ><div class="post-meta-icons">
-        <svg
-          t="1686157100398"
-          class="icon"
-          viewBox="0 0 1238 1024"
-          version="1.1"
-          xmlns="http://www.w3.org/2000/svg"
-          p-id="23788"
-          width="14"
-          height="14"
-        >
-          <path
-            d="M94.131677 411.508075v-318.012423h310.380124l523.448447 528.536646L719.344099 826.832298l-54.062111 54.062112-47.065839 46.429814z m902.519255 276.034782a90.951553 90.951553 0 0 0 0-127.204969L537.440994 94.131677h82.68323L1144.84472 622.668323l-311.652173 306.563975-40.70559-38.797515z m215.612422-127.204969L677.36646 19.080745a63.602484 63.602484 0 0 0-45.157764-19.080745H92.223602A92.223602 92.223602 0 0 0 0 91.587578v333.277018a63.602484 63.602484 0 0 0 18.44472 44.521739l534.26087 527.900622a93.495652 93.495652 0 0 0 130.385093 0l41.97764-41.97764 41.97764 41.97764a93.495652 93.495652 0 0 0 130.385093 0l313.560248-309.7441a90.951553 90.951553 0 0 0 1.908075-128.477018zM274.126708 318.012422a29.893168 29.893168 0 1 1 29.893168-29.893167 29.893168 29.893168 0 0 1-29.893168 29.893167z m0-153.918012a127.204969 127.204969 0 1 0 124.024845 123.38882 127.204969 127.204969 0 0 0-124.024845-124.024845z"
-            fill="#8a8a8a"
-            p-id="23789"
-          ></path>
-        </svg>
-      </div>
-    </span>
-    <span>
-      <span class="post-tags-meta">
-        <a href="https://edinik.com/tags/bitwarden/" style="color: var(--secondary) !important"
-          >bitwarden</a
-        >
-      </span>
-    </span>
-  </span>
-  &nbsp;&nbsp;
-</span>
-</footer>
-  </div> 
-  <a class="entry-link" aria-label="post link to vaultwarden  | 个人密码管理器搭建" href="https://edinik.com/posts/tech/establishing-bitwarden-server/"></a>
-</article>
-
-<article class="post-entry">
-  <div class="post-info">
-    <header class="entry-header">
-      <h2>mermaid | 流程图
-      </h2>
-    </header>
-    <section class="entry-content">
-      <p>
-        使用Mermaid创建流程图的基本语法、样式和配置选项。
-        
-        ...
-      </p>
-    </section>
-    <footer class="entry-footer"><style>
-  i[id*="post_meta_style"] {
-    display: flex;
-    align-items: center;
-    margin: 0 0 10px 0;
-  }
-
-  .parent-post-meta {
-    display: flex;
-    flex-wrap: wrap;
-    opacity: 0.8;
-  }
-</style>
-
-<span class="parent-post-meta">
-  <span id="post_meta_style_1" class="post_meta_style">
-    <div class="post-meta-icons">
-      <svg
-        t="1686154436360"
-        class="icon"
-        viewBox="0 0 1024 1024"
-        version="1.1"
-        xmlns="http://www.w3.org/2000/svg"
-        p-id="2555"
-        width="14"
-        height="14"
-      >
-        <path
-          d="M146.285714 0h731.428572a146.285714 146.285714 0 0 1 146.285714 146.285714v731.428572a146.285714 146.285714 0 0 1-146.285714 146.285714H146.285714a146.285714 146.285714 0 0 1-146.285714-146.285714V146.285714a146.285714 146.285714 0 0 1 146.285714-146.285714z m0 73.142857a73.142857 73.142857 0 0 0-73.142857 73.142857v731.428572a73.142857 73.142857 0 0 0 73.142857 73.142857h731.428572a73.142857 73.142857 0 0 0 73.142857-73.142857V146.285714a73.142857 73.142857 0 0 0-73.142857-73.142857H146.285714z"
-          fill="#8a8a8a"
-          p-id="2556"
-        ></path>
-        <path
-          d="M0 219.428571h1024v73.142858H0V219.428571z m987.428571 36.571429L950.857143 292.571429V219.428571l36.571428 36.571429z"
-          fill="#8a8a8a"
-          p-id="2557"
-        ></path>
-        <path
-          d="M475.428571 438.857143h73.142858a36.571429 36.571429 0 0 1 0 73.142857h-73.142858a36.571429 36.571429 0 0 1 0-73.142857z m219.428572 0h73.142857a36.571429 36.571429 0 1 1 0 73.142857h-73.142857a36.571429 36.571429 0 0 1 0-73.142857z m-438.857143 146.285714h73.142857a36.571429 36.571429 0 0 1 0 73.142857h-73.142857a36.571429 36.571429 0 0 1 0-73.142857z m438.857143 0h73.142857a36.571429 36.571429 0 1 1 0 73.142857h-73.142857a36.571429 36.571429 0 0 1 0-73.142857z m-438.857143 146.285714h73.142857a36.571429 36.571429 0 1 1 0 73.142858h-73.142857a36.571429 36.571429 0 1 1 0-73.142858z m438.857143 0h73.142857a36.571429 36.571429 0 1 1 0 73.142858h-73.142857a36.571429 36.571429 0 1 1 0-73.142858z m-219.428572 0h73.142858a36.571429 36.571429 0 1 1 0 73.142858h-73.142858a36.571429 36.571429 0 1 1 0-73.142858z m0-146.285714h73.142858a36.571429 36.571429 0 0 1 0 73.142857h-73.142858a36.571429 36.571429 0 0 1 0-73.142857z"
-          fill="#8a8a8a"
-          p-id="2558"
-        ></path>
-      </svg>
-    </div>
-    <span>2023-03-23&nbsp;&nbsp;
-    </span>
-  </span>
-  
-  
-  <span id="post_meta_style_6" class="post_meta_style">
-    <span
-      ><div class="post-meta-icons">
-        <svg
-          t="1686157100398"
-          class="icon"
-          viewBox="0 0 1238 1024"
-          version="1.1"
-          xmlns="http://www.w3.org/2000/svg"
-          p-id="23788"
-          width="14"
-          height="14"
-        >
-          <path
-            d="M94.131677 411.508075v-318.012423h310.380124l523.448447 528.536646L719.344099 826.832298l-54.062111 54.062112-47.065839 46.429814z m902.519255 276.034782a90.951553 90.951553 0 0 0 0-127.204969L537.440994 94.131677h82.68323L1144.84472 622.668323l-311.652173 306.563975-40.70559-38.797515z m215.612422-127.204969L677.36646 19.080745a63.602484 63.602484 0 0 0-45.157764-19.080745H92.223602A92.223602 92.223602 0 0 0 0 91.587578v333.277018a63.602484 63.602484 0 0 0 18.44472 44.521739l534.26087 527.900622a93.495652 93.495652 0 0 0 130.385093 0l41.97764-41.97764 41.97764 41.97764a93.495652 93.495652 0 0 0 130.385093 0l313.560248-309.7441a90.951553 90.951553 0 0 0 1.908075-128.477018zM274.126708 318.012422a29.893168 29.893168 0 1 1 29.893168-29.893167 29.893168 29.893168 0 0 1-29.893168 29.893167z m0-153.918012a127.204969 127.204969 0 1 0 124.024845 123.38882 127.204969 127.204969 0 0 0-124.024845-124.024845z"
-            fill="#8a8a8a"
-            p-id="23789"
-          ></path>
-        </svg>
-      </div>
-    </span>
-    <span>
-      <span class="post-tags-meta">
-        <a href="https://edinik.com/tags/mermaid/" style="color: var(--secondary) !important"
-          >mermaid</a
-        >
-      </span>
-    </span>
-  </span>
-  &nbsp;&nbsp;
-</span>
-</footer>
-  </div> 
-  <a class="entry-link" aria-label="post link to mermaid | 流程图" href="https://edinik.com/posts/tech/guide-to-using-mermaid-flowcharts/"></a>
-</article>
-
-<article class="post-entry">
-  <div class="post-info">
-    <header class="entry-header">
-      <h2>csharp | ziparchive的用法
-      </h2>
-    </header>
-    <section class="entry-content">
-      <p>
-        ZipArchive的基础用法：创建、读取和修改文件
-        
-        ...
-      </p>
-    </section>
-    <footer class="entry-footer"><style>
-  i[id*="post_meta_style"] {
-    display: flex;
-    align-items: center;
-    margin: 0 0 10px 0;
-  }
-
-  .parent-post-meta {
-    display: flex;
-    flex-wrap: wrap;
-    opacity: 0.8;
-  }
-</style>
-
-<span class="parent-post-meta">
-  <span id="post_meta_style_1" class="post_meta_style">
-    <div class="post-meta-icons">
-      <svg
-        t="1686154436360"
-        class="icon"
-        viewBox="0 0 1024 1024"
-        version="1.1"
-        xmlns="http://www.w3.org/2000/svg"
-        p-id="2555"
-        width="14"
-        height="14"
-      >
-        <path
-          d="M146.285714 0h731.428572a146.285714 146.285714 0 0 1 146.285714 146.285714v731.428572a146.285714 146.285714 0 0 1-146.285714 146.285714H146.285714a146.285714 146.285714 0 0 1-146.285714-146.285714V146.285714a146.285714 146.285714 0 0 1 146.285714-146.285714z m0 73.142857a73.142857 73.142857 0 0 0-73.142857 73.142857v731.428572a73.142857 73.142857 0 0 0 73.142857 73.142857h731.428572a73.142857 73.142857 0 0 0 73.142857-73.142857V146.285714a73.142857 73.142857 0 0 0-73.142857-73.142857H146.285714z"
-          fill="#8a8a8a"
-          p-id="2556"
-        ></path>
-        <path
-          d="M0 219.428571h1024v73.142858H0V219.428571z m987.428571 36.571429L950.857143 292.571429V219.428571l36.571428 36.571429z"
-          fill="#8a8a8a"
-          p-id="2557"
-        ></path>
-        <path
-          d="M475.428571 438.857143h73.142858a36.571429 36.571429 0 0 1 0 73.142857h-73.142858a36.571429 36.571429 0 0 1 0-73.142857z m219.428572 0h73.142857a36.571429 36.571429 0 1 1 0 73.142857h-73.142857a36.571429 36.571429 0 0 1 0-73.142857z m-438.857143 146.285714h73.142857a36.571429 36.571429 0 0 1 0 73.142857h-73.142857a36.571429 36.571429 0 0 1 0-73.142857z m438.857143 0h73.142857a36.571429 36.571429 0 1 1 0 73.142857h-73.142857a36.571429 36.571429 0 0 1 0-73.142857z m-438.857143 146.285714h73.142857a36.571429 36.571429 0 1 1 0 73.142858h-73.142857a36.571429 36.571429 0 1 1 0-73.142858z m438.857143 0h73.142857a36.571429 36.571429 0 1 1 0 73.142858h-73.142857a36.571429 36.571429 0 1 1 0-73.142858z m-219.428572 0h73.142858a36.571429 36.571429 0 1 1 0 73.142858h-73.142858a36.571429 36.571429 0 1 1 0-73.142858z m0-146.285714h73.142858a36.571429 36.571429 0 0 1 0 73.142857h-73.142858a36.571429 36.571429 0 0 1 0-73.142857z"
-          fill="#8a8a8a"
-          p-id="2558"
-        ></path>
-      </svg>
-    </div>
-    <span>2023-03-20&nbsp;&nbsp;
-    </span>
-  </span>
-  
-  
-  <span id="post_meta_style_6" class="post_meta_style">
-    <span
-      ><div class="post-meta-icons">
-        <svg
-          t="1686157100398"
-          class="icon"
-          viewBox="0 0 1238 1024"
-          version="1.1"
-          xmlns="http://www.w3.org/2000/svg"
-          p-id="23788"
-          width="14"
-          height="14"
-        >
-          <path
-            d="M94.131677 411.508075v-318.012423h310.380124l523.448447 528.536646L719.344099 826.832298l-54.062111 54.062112-47.065839 46.429814z m902.519255 276.034782a90.951553 90.951553 0 0 0 0-127.204969L537.440994 94.131677h82.68323L1144.84472 622.668323l-311.652173 306.563975-40.70559-38.797515z m215.612422-127.204969L677.36646 19.080745a63.602484 63.602484 0 0 0-45.157764-19.080745H92.223602A92.223602 92.223602 0 0 0 0 91.587578v333.277018a63.602484 63.602484 0 0 0 18.44472 44.521739l534.26087 527.900622a93.495652 93.495652 0 0 0 130.385093 0l41.97764-41.97764 41.97764 41.97764a93.495652 93.495652 0 0 0 130.385093 0l313.560248-309.7441a90.951553 90.951553 0 0 0 1.908075-128.477018zM274.126708 318.012422a29.893168 29.893168 0 1 1 29.893168-29.893167 29.893168 29.893168 0 0 1-29.893168 29.893167z m0-153.918012a127.204969 127.204969 0 1 0 124.024845 123.38882 127.204969 127.204969 0 0 0-124.024845-124.024845z"
-            fill="#8a8a8a"
-            p-id="23789"
-          ></path>
-        </svg>
-      </div>
-    </span>
-    <span>
-      <span class="post-tags-meta">
-        <a href="https://edinik.com/tags/csharp/" style="color: var(--secondary) !important"
-          >csharp</a
-        >
-      </span>
-    </span>
-  </span>
-  &nbsp;&nbsp;
-</span>
-</footer>
-  </div> 
-  <a class="entry-link" aria-label="post link to csharp | ziparchive的用法" href="https://edinik.com/posts/tech/usage-of-ziparchive-in-csharp/"></a>
-</article>
-
-<article class="post-entry">
-  <div class="post-info">
-    <header class="entry-header">
-      <h2>csharp | string vs stringbuilder
-      </h2>
-    </header>
-    <section class="entry-content">
-      <p>
-        csharp中string和stringbuilder的区别、各自的应用场景和性能比较
-        
-        ...
-      </p>
-    </section>
-    <footer class="entry-footer"><style>
-  i[id*="post_meta_style"] {
-    display: flex;
-    align-items: center;
-    margin: 0 0 10px 0;
-  }
-
-  .parent-post-meta {
-    display: flex;
-    flex-wrap: wrap;
-    opacity: 0.8;
-  }
-</style>
-
-<span class="parent-post-meta">
-  <span id="post_meta_style_1" class="post_meta_style">
-    <div class="post-meta-icons">
-      <svg
-        t="1686154436360"
-        class="icon"
-        viewBox="0 0 1024 1024"
-        version="1.1"
-        xmlns="http://www.w3.org/2000/svg"
-        p-id="2555"
-        width="14"
-        height="14"
-      >
-        <path
-          d="M146.285714 0h731.428572a146.285714 146.285714 0 0 1 146.285714 146.285714v731.428572a146.285714 146.285714 0 0 1-146.285714 146.285714H146.285714a146.285714 146.285714 0 0 1-146.285714-146.285714V146.285714a146.285714 146.285714 0 0 1 146.285714-146.285714z m0 73.142857a73.142857 73.142857 0 0 0-73.142857 73.142857v731.428572a73.142857 73.142857 0 0 0 73.142857 73.142857h731.428572a73.142857 73.142857 0 0 0 73.142857-73.142857V146.285714a73.142857 73.142857 0 0 0-73.142857-73.142857H146.285714z"
-          fill="#8a8a8a"
-          p-id="2556"
-        ></path>
-        <path
-          d="M0 219.428571h1024v73.142858H0V219.428571z m987.428571 36.571429L950.857143 292.571429V219.428571l36.571428 36.571429z"
-          fill="#8a8a8a"
-          p-id="2557"
-        ></path>
-        <path
-          d="M475.428571 438.857143h73.142858a36.571429 36.571429 0 0 1 0 73.142857h-73.142858a36.571429 36.571429 0 0 1 0-73.142857z m219.428572 0h73.142857a36.571429 36.571429 0 1 1 0 73.142857h-73.142857a36.571429 36.571429 0 0 1 0-73.142857z m-438.857143 146.285714h73.142857a36.571429 36.571429 0 0 1 0 73.142857h-73.142857a36.571429 36.571429 0 0 1 0-73.142857z m438.857143 0h73.142857a36.571429 36.571429 0 1 1 0 73.142857h-73.142857a36.571429 36.571429 0 0 1 0-73.142857z m-438.857143 146.285714h73.142857a36.571429 36.571429 0 1 1 0 73.142858h-73.142857a36.571429 36.571429 0 1 1 0-73.142858z m438.857143 0h73.142857a36.571429 36.571429 0 1 1 0 73.142858h-73.142857a36.571429 36.571429 0 1 1 0-73.142858z m-219.428572 0h73.142858a36.571429 36.571429 0 1 1 0 73.142858h-73.142858a36.571429 36.571429 0 1 1 0-73.142858z m0-146.285714h73.142858a36.571429 36.571429 0 0 1 0 73.142857h-73.142858a36.571429 36.571429 0 0 1 0-73.142857z"
-          fill="#8a8a8a"
-          p-id="2558"
-        ></path>
-      </svg>
-    </div>
-    <span>2023-03-17&nbsp;&nbsp;
-    </span>
-  </span>
-  
-  
-  <span id="post_meta_style_6" class="post_meta_style">
-    <span
-      ><div class="post-meta-icons">
-        <svg
-          t="1686157100398"
-          class="icon"
-          viewBox="0 0 1238 1024"
-          version="1.1"
-          xmlns="http://www.w3.org/2000/svg"
-          p-id="23788"
-          width="14"
-          height="14"
-        >
-          <path
-            d="M94.131677 411.508075v-318.012423h310.380124l523.448447 528.536646L719.344099 826.832298l-54.062111 54.062112-47.065839 46.429814z m902.519255 276.034782a90.951553 90.951553 0 0 0 0-127.204969L537.440994 94.131677h82.68323L1144.84472 622.668323l-311.652173 306.563975-40.70559-38.797515z m215.612422-127.204969L677.36646 19.080745a63.602484 63.602484 0 0 0-45.157764-19.080745H92.223602A92.223602 92.223602 0 0 0 0 91.587578v333.277018a63.602484 63.602484 0 0 0 18.44472 44.521739l534.26087 527.900622a93.495652 93.495652 0 0 0 130.385093 0l41.97764-41.97764 41.97764 41.97764a93.495652 93.495652 0 0 0 130.385093 0l313.560248-309.7441a90.951553 90.951553 0 0 0 1.908075-128.477018zM274.126708 318.012422a29.893168 29.893168 0 1 1 29.893168-29.893167 29.893168 29.893168 0 0 1-29.893168 29.893167z m0-153.918012a127.204969 127.204969 0 1 0 124.024845 123.38882 127.204969 127.204969 0 0 0-124.024845-124.024845z"
-            fill="#8a8a8a"
-            p-id="23789"
-          ></path>
-        </svg>
-      </div>
-    </span>
-    <span>
-      <span class="post-tags-meta">
-        <a href="https://edinik.com/tags/csharp/" style="color: var(--secondary) !important"
-          >csharp</a
-        >
-      </span>
-    </span>
-  </span>
-  &nbsp;&nbsp;
-</span>
-</footer>
-  </div> 
-  <a class="entry-link" aria-label="post link to csharp | string vs stringbuilder" href="https://edinik.com/posts/tech/difference-between-string-and-stringbuilder-in-csharp/"></a>
-</article>
-
-<br />
-<br />
-<footer class="page-footer">
-  <nav class="pagination">
-    
-    
-    
-    <span class="numFirst">
-        <a class="pageFirst" href="https://edinik.com/posts/tech/">1</a>
-      </span>
-
-    <span class="pageNum">
-      <a class="pageNow" href="https://edinik.com/posts/tech/page/2/">2</a>
-    </span>
-
-    
-  </nav>
-</footer>
-
-<br />
-</main>
-
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-
-
-
-
-
-
-
-<style>
-    .container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 5vh;
-    }
-</style>
-<footer class="footer">
-    <span>共 59767 字 <br/> 写完一本 埃克苏佩里 的</br>《小王子》了！ <br/> <br/></span>
+    </script>
     <div class="container">
-        <span>
-            <a class="dark-wormhole" href="https://www.foreverblog.cn/go.html" target="_blank">
-                <img src="https://img.foreverblog.cn/wormhole_1_tp.gif" alt="" style="width:auto;height:32px;" title="穿梭虫洞-随机访问十年之约友链博客">
-            </a>
-            <a class="light-wormhole" href="https://www.foreverblog.cn/go.html" target="_blank">
-                <img src="https://img.foreverblog.cn/wormhole_3_tp.gif" alt="" style="width:auto;height:32px;" title="穿梭虫洞-随机访问十年之约友链博客">
-            </a>
-        </span>
-    </div>
-    <a href="https://gohugo.io/" target="_blank">
-        
-        <img style="display: unset;" src="https://image.lvbibir.cn/blog/frame-hugo-blue.svg">
-    </a>
-    <a href="https://github.com/adityatelange/hugo-PaperMod" target="_blank">    
-        
-        <img style="display: unset;" src="https://image.lvbibir.cn/blog/theme-papermod-lightgrey.svg">
-    </a>
-    <br>
-    <span id="runtime_span"></span> 
-    <script type="text/javascript">function show_runtime(){window.setTimeout("show_runtime()",1000);X=new Date("3/10/2023 1:00:00");Y=new Date();T=(Y.getTime()-X.getTime());M=24*60*60*1000;a=T/M;A=Math.floor(a);b=(a-A)*24;B=Math.floor(b);c=(b-B)*60;C=Math.floor((b-B)*60);D=Math.floor((c-C)*60);runtime_span.innerHTML="网站已运行"+A+"天"+B+"小时"+C+"分"+D+"秒"}show_runtime();</script>
-    <span id="busuanzi_container">
-        <span class="fa fa-user"></span> <span id="busuanzi_value_site_uv"></span>
-        <span class="fa fa-eye"></span> <span id="busuanzi_value_site_pv"></span>
-    </span>
-    <br>
-    <span>
-        Copyright
-        &copy;
-        2023-2023
-        <a href="https://edinik.com" style="color:#939393;">Edinik&#39;s Blog</a>
-    </span>
-</footer>
-<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
-    <span class="topInner">
-        <svg class="topSvg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
-            <path d="M12 6H0l6-6z"/>
-        </svg>
-        <span id="read_progress"></span>
-    </span>
+      <header class="header">
+  <span class="header__inner">
+    <a href="https://edinik.com" class="logo" style="text-decoration: none;">
+  
+    <span class="logo__text">Edinik&#39;s Blog</span>
+    <span class="logo__cursor"></span>
+  
 </a>
 
+    <span class="header__right">
+      
+        <nav class="menu hidden">
+  <ul class="menu__inner menu__inner--desktop">
+    
+      
+        
+          <li><a href="/bbs/">哔哔</a></li>
+        
+      
+        
+          <li><a href="/friends/">友圈</a></li>
+        
+      
+        
+          <li><a href="/goods/">好物</a></li>
+        
+      
+        
+          <li><a href="/archives/">归档</a></li>
+        
+      
+        
+          <li><a href="https://edui123.com/">导航</a></li>
+        
+      
+        
+          <li><a href="/about/">关于</a></li>
+        
+      
+      
+    
+    <li><a href="javascript:;" onclick="randomPost()" title="随机访问一篇文章"><svg t="1660103436159" class="icon search-box-icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1184" width="32" height="32"><path d="M421.376 481.28s117.248 24.576 175.104-8.704c0 0-89.6 70.144-89.6 166.4 0.512-0.512-8.192-121.344-85.504-157.696zM438.784 969.216s68.608 6.656 68.608-80.896c0 0 3.072 88.576 65.024 78.336 0 0.512-50.688 22.016-133.632 2.56zM161.28 238.08s-30.208 65.536 11.264 91.648c0 0-67.072-17.408-81.408 37.376 0 0 8.704-82.944 70.144-129.024zM857.6 227.328s49.152 50.176 1.024 81.408c0 0 58.88-18.432 66.56 36.352 0 0 5.12-69.632-67.584-117.76z" p-id="1185"></path><path d="M443.392 970.752c-5.632 0-10.752-1.024-15.36-3.072l-270.848-157.184-1.536-1.024s-1.024-1.024-4.608-2.56c-51.2-29.184-62.976-94.208-65.536-120.832V386.56c0-3.072 0.512-7.168 1.024-11.264l0.512-3.584 1.024-2.56c19.456-50.688 76.8-51.2 103.936-44.032l-1.536 5.632 4.096-6.144L476.16 486.4l18.944 37.888c20.992 36.864 29.184 77.824 32.768 99.84v258.048c-4.608 56.32-36.864 76.288-55.808 82.944-1.024 0.512-15.36 5.632-28.672 5.632z m-262.144-196.096l263.168 152.576c12.288-0.512 36.864-6.656 40.448-48.128v-250.368c-4.608-31.744-20.992-103.936-72.192-128L322.56 445.44l1.536 3.072-142.336-82.432c-2.048-0.512-40.448-9.216-52.736 15.872-0.512 2.56-0.512 4.608-0.512 6.144v294.4c1.536 16.896 9.728 67.072 43.52 86.528 3.584 2.048 6.656 4.096 9.216 5.632z" p-id="1186"></path><path d="M837.632 212.992c6.656 4.096 12.8 7.168 18.432 10.752l1.536 1.024 1.536 1.536c5.12 4.096 10.752 9.216 16.384 15.36 6.144 11.776 5.632 33.28 4.608 49.152-1.024 12.288-6.656 30.208-26.624 44.544l-1.024 0.512-247.808 156.672c-26.624 14.336-62.976 18.432-96.256 18.432-40.96 0-77.824-6.656-89.088-8.704l-3.072-0.512-245.248-142.336c-39.424-29.696-28.16-85.504-15.36-113.664l2.56-6.144 263.68-166.912c29.184-14.336 104.448-43.008 173.056-1.024 3.584 2.56 58.368 34.304 119.296 69.632M431.616 460.8c40.448 7.168 114.176 13.824 152.576-6.144l244.736-155.136c7.168-5.632 8.192-10.24 8.704-12.8 1.024-11.264-9.728-26.624-15.36-32.768-55.808-32.256-243.712-141.312-250.368-145.408-49.664-30.72-107.008-9.216-130.048 2.56L192.512 268.8c-4.096 12.288-12.288 42.496 3.584 55.808l235.52 136.192z" p-id="1187"></path><path d="M831.488 299.008c4.096-1.024 38.4-11.264 66.048 6.144 7.168 4.608 17.92 11.776 24.064 24.576 1.024 5.632 4.096 10.752 4.608 16.896v2.048l-1.024 323.072c-5.12 35.328-22.528 91.648-77.312 125.44l-5.12 3.584h-1.024l-262.144 165.888-4.608 0.512c-4.096 0.512-8.704 1.024-12.8 1.024-15.872 0-30.208-5.12-41.984-14.848-24.576-20.48-32.768-55.808-35.328-73.728l-1.024-252.928h1.536c6.144-96.768 88.576-164.864 96.768-171.008l-0.512-0.512L829.44 299.52m-301.056 567.808c0.512 10.24 5.12 41.472 19.968 53.76 3.072 2.56 7.68 5.632 16.384 5.12l264.704-167.936c56.32-38.4 53.76-115.712 53.76-116.224l-0.512-32.256 1.024-250.368h-0.512c-1.536-12.8-7.168-16.384-8.704-17.408-8.704-5.632-23.552-3.072-28.672-2.048l-235.52 148.992c-1.024 0.512-80.896 65.024-80.896 149.504h-1.536l0.512 228.864zM435.2 264.192c0 27.648 31.744 50.176 71.168 50.176s71.168-22.528 71.168-50.176-31.744-50.176-71.168-50.176S435.2 236.544 435.2 264.192z" p-id="1188"></path><path d="M663.552 782.848c0 30.72-22.528 67.072-49.664 80.384-27.648 13.824-50.176-0.512-50.176-31.232s22.528-67.072 50.176-80.384c27.136-13.824 49.664 0 49.664 31.232zM760.32 602.624c0 30.72-22.528 67.072-49.664 80.384-27.648 13.824-49.664-0.512-49.664-31.232s22.528-67.072 49.664-80.384c27.136-13.824 49.664 0.512 49.664 31.232zM867.84 428.032c0 30.72-22.528 67.072-49.664 80.384-27.648 13.824-50.176-0.512-50.176-31.232s22.528-67.072 50.176-80.384c27.136-13.824 49.664 0 49.664 31.232zM270.848 538.112c0 30.72-22.016 41.984-48.64 24.576-27.136-16.896-48.64-55.808-48.64-86.528 0-30.72 22.016-41.984 48.64-24.576 26.624 16.896 48.64 55.808 48.64 86.528zM432.128 823.296c0 30.72-22.016 41.984-48.64 24.576-26.624-17.408-48.64-55.808-48.64-86.528 0-30.72 22.016-41.984 48.64-24.576 26.624 16.896 48.64 55.808 48.64 86.528z" p-id="1189"></path></svg></a></li>
+  </ul>
+
+  <ul class="menu__inner menu__inner--mobile">
+    
+      
+        <li><a href="/bbs/">哔哔</a></li>
+      
+    
+      
+        <li><a href="/friends/">友圈</a></li>
+      
+    
+      
+        <li><a href="/goods/">好物</a></li>
+      
+    
+      
+        <li><a href="/archives/">归档</a></li>
+      
+    
+      
+        <li><a href="https://edui123.com/">导航</a></li>
+      
+    
+      
+        <li><a href="/about/">关于</a></li>
+      
+    
+  </ul>
+</nav>
+
+        <span class="menu-trigger hidden">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M0 0h24v24H0z" fill="none"/>
+            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+          </svg>
+        </span>
+      
+      <span class="theme-toggle">
+        <svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+
+      </span>
+    </span>
+  </span>
+</header>
+
+
+
+      <div class="content">
+        
+  
+  
+
+  
+  
+  
+
+  <div id="bber-talk"></div>
+  
+  <div class="posts">
+    
+    
+    <div class="post on-list tech">
+    
+      <h1 class="post-title"><a href="https://edinik.com/midjourney-styles-03/">midjourney | styles 03</a></h1>
+      <div class="post-meta">
+        
+          <span class="post-date">
+            2023-05-09 21:45:34
+          </span>
+        
+
+        
+        <span class="">
+          
+            #<a href="https://edinik.com/tags/midjourney/">midjourney</a>&nbsp;
+          
+        </span>
+        
+      </div>
+
+      
+
+      <div class="post-content $PostCate">
+      
+        op art 欧普艺术 欧普艺术是一种充满视觉效果的艺术形式，它在20世纪60年代达到巅峰。这种艺术形式强调视觉效应和幻觉，并将对比、色彩和几何图案运用于作品中。欧普艺术作品常常给人眼花缭乱、扭曲变形、错觉迷离的感觉，因此在欣赏这类作品时需要较强的视觉感知能力和集中注意力的能力。Berkel
+        <div><a class="read-more button" href="/midjourney-styles-03/">阅读全文 →</a></div>
+      
+      </div>
+    
+    </div>
+    
+    
+    <div class="post on-list tech">
+    
+      <h1 class="post-title"><a href="https://edinik.com/midjourney-styles-02/">midjourney | styles 02</a></h1>
+      <div class="post-meta">
+        
+          <span class="post-date">
+            2023-05-05 21:56:24
+          </span>
+        
+
+        
+        <span class="">
+          
+            #<a href="https://edinik.com/tags/midjourney/">midjourney</a>&nbsp;
+          
+        </span>
+        
+      </div>
+
+      
+
+      <div class="post-content $PostCate">
+      
+        pixel art 像素艺术 像素艺术是一种数字艺术形式，使用小块的色彩单元（像素）来创建图像，需要在非常小的空间内创造出足够的细节和深度。它通过色彩、对比度、纹理和形状等元素来创造出丰富的视觉效果。 an enchanted village in an autumn setting, in the style of pixel perfect, poolcore, traditional craftsmanship, softly organic, hazy, dreamlike quality, stage-like environments, hikecore, pixel art --ar 19:16 --q 2 --s 250 --v 5.1 watercolour 水彩 水彩画是一种使用水溶性颜
+        <div><a class="read-more button" href="/midjourney-styles-02/">阅读全文 →</a></div>
+      
+      </div>
+    
+    </div>
+    
+    
+    <div class="post on-list tech">
+    
+      <h1 class="post-title"><a href="https://edinik.com/midjourney-styles-01/">midjourney | styles 01</a></h1>
+      <div class="post-meta">
+        
+          <span class="post-date">
+            2023-05-01 08:43:40
+          </span>
+        
+
+        
+        <span class="">
+          
+            #<a href="https://edinik.com/tags/midjourney/">midjourney</a>&nbsp;
+          
+        </span>
+        
+      </div>
+
+      
+
+      <div class="post-content $PostCate">
+      
+        整体风格是画面表现的主要特征。可以在prompt的主体描述之后，加入相关关键词来指定。同时，整体风格也可以和后续的艺术家交叉使用，来达到混合效果。 isometric anime 等距动画 等距动画使用等距投影技术，使得动画场景中的物体保持真实比例和尺寸关系。这种技术适用于建筑、城市规划、商品设计等领域的可视化
+        <div><a class="read-more button" href="/midjourney-styles-01/">阅读全文 →</a></div>
+      
+      </div>
+    
+    </div>
+    
+    
+    <div class="post on-list tech">
+    
+      <h1 class="post-title"><a href="https://edinik.com/midjourney_aspect_ratios/">midjourney | aspect ratios</a></h1>
+      <div class="post-meta">
+        
+          <span class="post-date">
+            2023-04-28 21:29:13
+          </span>
+        
+
+        
+        <span class="">
+          
+            #<a href="https://edinik.com/tags/midjourney/">midjourney</a>&nbsp;
+          
+        </span>
+        
+      </div>
+
+      
+
+      <div class="post-content $PostCate">
+      
+        参数详解 1、指令 --aspect --ar 2、默认值 宽:高 = 1:1 3、输入验证 只能输入正整数 4、不同的模型对应不同的横纵比 Version 5 Version 4c (default) Version 4a or 4b Version 3 Test / Testp niji Ratios any* 1:2 to 2:1 Only: 1:1, 2:3 or 3:2 5:2 to2:5 3:2 to 2:3 1:2 to 2:1 5、注意 横纵比超过2:1为实验性功能，可能会出现不可预测的结果 6、常见的横纵比 --aspect 1:1 默认横纵比。 --aspect 5:4 常见的画框和印刷比例
+        <div><a class="read-more button" href="/midjourney_aspect_ratios/">阅读全文 →</a></div>
+      
+      </div>
+    
+    </div>
+    
+    
+    <div class="post on-list tech">
+    
+      <h1 class="post-title"><a href="https://edinik.com/midjourney_image_weight/">midjourney | image weight</a></h1>
+      <div class="post-meta">
+        
+          <span class="post-date">
+            2023-04-27 22:58:08
+          </span>
+        
+
+        
+        <span class="">
+          
+            #<a href="https://edinik.com/tags/midjourney/">midjourney</a>&nbsp;
+          
+        </span>
+        
+      </div>
+
+      
+
+      <div class="post-content $PostCate">
+      
+        Imagine命令 基本格式：/imagine + 文字提示 高级格式：/imagine + 图片提示 + 文字提示 + 参数 1、图片提示 格式要求：jpg、png、gif 2、提示词最低要求：两张图片，或者一张图片+提示词 参数 Image Weight (图像权重) --iw 越高的图像权重意味着图像提示对生成图像的影响越大。 不同的版
+        <div><a class="read-more button" href="/midjourney_image_weight/">阅读全文 →</a></div>
+      
+      </div>
+    
+    </div>
+    
+    
+    <div class="post on-list tech">
+    
+      <h1 class="post-title"><a href="https://edinik.com/build-lsky-image-hosting-platform/">图床 | lsky图床平台搭建</a></h1>
+      <div class="post-meta">
+        
+          <span class="post-date">
+            2023-04-22 21:45:23
+          </span>
+        
+
+        
+        <span class="">
+          
+            #<a href="https://edinik.com/tags/image-hosting-platform/">image-hosting-platform</a>&nbsp;
+          
+        </span>
+        
+      </div>
+
+      
+
+      <div class="post-content $PostCate">
+      
+        兰空图床(Lsky Pro)官方项目地址 兰空图床(Lsky Pro)第三方Docker项目地址 官方Wiki Docker容器构建命令 docker run -d \ --name lsky-pro \ --restart unless-stopped \ -p 8089:8089 \ -v $PWD/lsky/web:/var/www/html \ -e WEB_PORT=8089 \ halcyonazure/lsky-pro-docker:latest 反代/套CDN后无法加载静态文件(css, js)，安装时点击无反应 进入root/lsky/web目录，编辑 .env 文件，
+        <div><a class="read-more button" href="/build-lsky-image-hosting-platform/">阅读全文 →</a></div>
+      
+      </div>
+    
+    </div>
+    
+    
+    <div class="post on-list tech">
+    
+      <h1 class="post-title"><a href="https://edinik.com/design-pattern-introduction/">设计模式 | 简介</a></h1>
+      <div class="post-meta">
+        
+          <span class="post-date">
+            2023-04-10 22:16:13
+          </span>
+        
+
+        
+        <span class="">
+          
+            #<a href="https://edinik.com/tags/design-pattern/">design-pattern</a>&nbsp;
+          
+        </span>
+        
+      </div>
+
+      
+
+      <div class="post-content $PostCate">
+      
+        引言 Christopher Alexander说过：“每一个模式描述了一个在我们周围不断重复发生的问题，以及该问题的解决方案的核心。这样你就能一次又一次地使用该方案而不必做重复劳动。” 创建型 结构型 行为型 类 Factory Method Adapter Interpreter Template Method 对象 Abstract Factory Builder Prototype Singleton Adapter Bridge Composite Decorator Facade Flyweight Proxy Chain of Responsibility Command Iterator Mediator Memento Observer State Strategy Visitor Creational 创建型 与对象的创建有关。创建型类模
+        <div><a class="read-more button" href="/design-pattern-introduction/">阅读全文 →</a></div>
+      
+      </div>
+    
+    </div>
+    
+    
+    <div class="post on-list tech">
+    
+      <h1 class="post-title"><a href="https://edinik.com/nezha-monitoring-server-build/">哪吒监控 | 服务端搭建</a></h1>
+      <div class="post-meta">
+        
+          <span class="post-date">
+            2023-04-08 23:39:46
+          </span>
+        
+
+        
+        <span class="">
+          
+            #<a href="https://edinik.com/tags/nezha-monitoring/">nezha-monitoring</a>&nbsp;
+          
+        </span>
+        
+      </div>
+
+      
+
+      <div class="post-content $PostCate">
+      
+        解析域名 准备两个域名并在Cloudflare解析域名到服务器IP： 域名1：开启CDN，用于访问前端页面，如：&ldquo;https://cdn.example.com&rdquo; 域名2：不开启CDN，用于Agent访问后端API，如：&ldquo;https://api.ex
+        <div><a class="read-more button" href="/nezha-monitoring-server-build/">阅读全文 →</a></div>
+      
+      </div>
+    
+    </div>
+    
+    
+    <div class="post on-list tech">
+    
+      <h1 class="post-title"><a href="https://edinik.com/build-online-player-alist/">Alist | 在线播放服务搭建</a></h1>
+      <div class="post-meta">
+        
+          <span class="post-date">
+            2023-04-05 20:33:30
+          </span>
+        
+
+        
+        <span class="">
+          
+            #<a href="https://edinik.com/tags/alist/">alist</a>&nbsp;
+          
+        </span>
+        
+      </div>
+
+      
+
+      <div class="post-content $PostCate">
+      
+        云服务器/VPS 的配置 1、方式一：使用一键脚本安装 缺点：无法自定义配置，只能使用脚本默认设置 1、推荐非host模式下执行以下脚本（可以共享主机端口） host模式无法映射docker端口到主机 非host模式下会将docker的80端口映射到主机的8443端口 # 非host模式安装 bash -c
+        <div><a class="read-more button" href="/build-online-player-alist/">阅读全文 →</a></div>
+      
+      </div>
+    
+    </div>
+    
+    
+    <div class="post on-list tech">
+    
+      <h1 class="post-title"><a href="https://edinik.com/establishing-bitwarden-server/">vaultwarden  | 个人密码管理器搭建</a></h1>
+      <div class="post-meta">
+        
+          <span class="post-date">
+            2023-04-05 06:51:31
+          </span>
+        
+
+        
+        <span class="">
+          
+            #<a href="https://edinik.com/tags/bitwarden/">bitwarden</a>&nbsp;
+          
+        </span>
+        
+      </div>
+
+      
+
+      <div class="post-content $PostCate">
+      
+        宝塔面板的安装 安装宝塔界面最好全新系统安装 Debian wget -O install.sh https://download.bt.cn/install/install-ubuntu_6.0.sh &amp;&amp; bash install.sh ed8484bec Ubuntu/Deepin wget -O install.sh https://download.bt.cn/install/install-ubuntu_6.0.sh &amp;&amp; sudo bash install.sh ed8484bec CentOS yum install -y wget &amp;&amp; wget -O install.sh https://download.bt.cn/install/install_6.0.sh &amp;&amp; sh install.sh ed8484bec nginx的安装 软件商店 -&gt; Nginx -&gt; 安装 docker的安装 软件商店 -&gt; Docker -&gt; 安装 域名解析 通过Cloudfare或其他DNS服务商解析域名到服务器IP vaultwarden的安装 不要使
+        <div><a class="read-more button" href="/establishing-bitwarden-server/">阅读全文 →</a></div>
+      
+      </div>
+    
+    </div>
+    
+    <div class="pagination">
+  <div class="pagination__buttons">
+    
+      <span class="button previous">
+        <a href="/posts/tech/">
+          <span class="button__icon">←</span>
+          <span class="button__text">上 一 页</span>
+        </a>
+      </span>
+    
+    
+      <span class="button next">
+        <a href="/posts/tech/page/3/">
+          <span class="button__text">下 一 页</span>
+          <span class="button__icon">→</span>
+        </a>
+      </span>
+    
+  </div>
+</div>
+
+  </div>
+
+      </div>
+
+      
+        
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+
+
+
+
+
+
+
+<footer class="footer ">
+  <div class="footer__inner">
+    <div class="copyright copyright-font">
+      <span>共 75334 字 <br/> 写完一本 鲁迅 的</br>《呐喊》了！</span>
+    </div>
+    <a class="dark-wormhole" href="https://www.foreverblog.cn/go.html" target="_blank"> <img src="/wormhole_1.gif" alt="" style="width:auto;height:32px;" title="穿梭虫洞-随机访问十年之约友链博客"> </a>
+    <a class="light-wormhole" href="https://www.foreverblog.cn/go.html" target="_blank" > <img src="/wormhole_3.gif" alt="" style="width:auto;height:32px;" title="穿梭虫洞-随机访问十年之约友链博客"> </a>
+    <div class="tongji">总访问量 <span id="pvStatic">0</span> 次 | 总访客数 <span id="uvStatic">0</span> 人</div>
+    
+      <div class="copyright">
+        <span>© 2023 Powered by <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a> Theme by <a href="https://github.com/lmm214/immmmm" target="_blank" rel="noopener">immmmm</a></span>
+      </div>
+    
+  </div>
+</footer>
+
+<script type="text/javascript" src="/theme-main-1.js"></script>
+<script type="text/javascript" src="/lately.min.js"></script>
+<script type="text/javascript" src="/waterfall.min.js"></script>
+<script type="text/javascript" src="/imgStatus.min.js"></script>
+<script type="text/javascript" src="/view-image.js"></script>
+<script type="text/javascript" src="/theme-lmm-20230611.js"></script>
+<script type="text/javascript" src="/pangu.min.js"></script>
 <script>
-    document.addEventListener('scroll', function (e) {
-        const readProgress = document.getElementById("read_progress");
-        const scrollHeight = document.documentElement.scrollHeight;
-        const clientHeight = document.documentElement.clientHeight;
-        const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-        readProgress.innerText = ((scrollTop / (scrollHeight - clientHeight)).toFixed(2) * 100).toFixed(0);
-    })
+  document.addEventListener('DOMContentLoaded', () => {
+    pangu.autoSpacingPage();
+    umiTongji();
+  });
 </script>
 
-<script>
-    let menu = document.getElementById('menu')
-    if (menu) {
-        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
-        menu.onscroll = function () {
-            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
-        }
-    }
 
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener("click", function (e) {
-            e.preventDefault();
-            var id = this.getAttribute("href").substr(1);
-            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
-                    behavior: "smooth"
-                });
-            } else {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
-            }
-            if (id === "top") {
-                history.replaceState(null, null, " ");
-            } else {
-                history.pushState(null, null, `#${id}`);
-            }
-        });
-    });
-</script>
-<script>
-    let mybutton = document.getElementById("top-link");
-    window.onscroll = function () {
-        if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-            mybutton.style.visibility = "visible";
-            mybutton.style.opacity = "1";
-        } else {
-            mybutton.style.visibility = "hidden";
-            mybutton.style.opacity = "0";
-        }
-    };
-</script>
-<script>
-    document.getElementById("theme-toggle").addEventListener("click", () => {
-        (function() {
-            document.cookie = "change-themes" + "="+ escape ("false");
-        })()
-
-        if (document.body.className.includes("dark")) {
-            document.body.classList.remove('dark');
-            localStorage.setItem("pref-theme", 'light');
-        } else {
-            document.body.classList.add('dark');
-            localStorage.setItem("pref-theme", 'dark');
-        }
-    });
-</script>
-
-
-
-<script>
-    $("code[class^=language] ").on("mouseover", function () {
-        if (this.clientWidth < this.scrollWidth) {
-            $(this).css("width", "135%")
-            $(this).css("border-top-right-radius", "var(--radius)")
-        }
-    }).on("mouseout", function () {
-        $(this).css("width", "100%")
-        $(this).css("border-top-right-radius", "unset")
-    })
-</script>
-</body>
-
+      
+    </div>
+  </body>
 </html>

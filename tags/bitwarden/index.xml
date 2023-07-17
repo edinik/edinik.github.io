@@ -1,24 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>bitwarden on Edinik&#39;s Blog</title>
     <link>https://edinik.com/tags/bitwarden/</link>
     <description>Recent content in bitwarden on Edinik&#39;s Blog</description>
-    <image>
-      <title>Edinik&#39;s Blog</title>
-      <url>https://edinik.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://edinik.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
-    </image>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language>
+    <language>zh-CN</language>
     <lastBuildDate>Wed, 05 Apr 2023 06:51:31 +0800</lastBuildDate><atom:link href="https://edinik.com/tags/bitwarden/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>vaultwarden  | 个人密码管理器搭建</title>
-      <link>https://edinik.com/posts/tech/establishing-bitwarden-server/</link>
+      <link>https://edinik.com/establishing-bitwarden-server/</link>
       <pubDate>Wed, 05 Apr 2023 06:51:31 +0800</pubDate>
       
-      <guid>https://edinik.com/posts/tech/establishing-bitwarden-server/</guid>
-      <description>如何通过vaultwarden搭建个人密码管理器</description>
+      <guid>https://edinik.com/establishing-bitwarden-server/</guid>
+      <description>宝塔面板的安装 安装宝塔界面最好全新系统安装 Debian wget -O install.sh https://download.bt.cn/install/install-ubuntu_6.0.sh &amp;amp;&amp;amp; bash install.sh ed8484bec Ubuntu/Deepin wget -O install.sh https://download.bt.cn/install/install-ubuntu_6.0.sh &amp;amp;&amp;amp; sudo bash install.sh ed8484bec CentOS yum install -y wget &amp;amp;&amp;amp; wget -O install.sh https://download.bt.cn/install/install_6.0.sh &amp;amp;&amp;amp; sh install.sh ed8484bec nginx的安装 软件商店 -&amp;gt; Nginx -&amp;gt; 安装 docker的安装 软件商店 -&amp;gt; Docker -&amp;gt; 安装 域名解析 通过Cloudfare或其他DNS服务商解析域名到服务器IP vaultwarden的安装 不要使</description>
     </item>
     
   </channel>

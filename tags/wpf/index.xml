@@ -1,24 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>WPF on Edinik&#39;s Blog</title>
     <link>https://edinik.com/tags/wpf/</link>
     <description>Recent content in WPF on Edinik&#39;s Blog</description>
-    <image>
-      <title>Edinik&#39;s Blog</title>
-      <url>https://edinik.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://edinik.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
-    </image>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language>
+    <language>zh-CN</language>
     <lastBuildDate>Thu, 25 May 2023 15:00:40 +0800</lastBuildDate><atom:link href="https://edinik.com/tags/wpf/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>WPF | TextBox输入范围验证</title>
-      <link>https://edinik.com/posts/tech/wpf-textbox-input-range-validation/</link>
+      <link>https://edinik.com/wpf-textbox-input-range-validation/</link>
       <pubDate>Thu, 25 May 2023 15:00:40 +0800</pubDate>
       
-      <guid>https://edinik.com/posts/tech/wpf-textbox-input-range-validation/</guid>
-      <description>WPF中TextBox的输入范围验证</description>
+      <guid>https://edinik.com/wpf-textbox-input-range-validation/</guid>
+      <description>此类为TextBox的一个扩展类，其中包含四个附加属性，分别是： 属性 IntegerRange Minimum Maximum PreviousValue 类型 bool int int string 定义 是否启用范围判定 最小值 最大值 前一个有效值 默认值 false 0 int的最大值 空 实现了以下功能： 若输入的值不满足最小值和最大值的范围或输入不合法时，则会自动恢复为前一个有效值 解决了粘贴时的输入验证问题 解</description>
     </item>
     
   </channel>

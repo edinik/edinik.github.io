@@ -1,24 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>table-tennis on Edinik&#39;s Blog</title>
     <link>https://edinik.com/tags/table-tennis/</link>
     <description>Recent content in table-tennis on Edinik&#39;s Blog</description>
-    <image>
-      <title>Edinik&#39;s Blog</title>
-      <url>https://edinik.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://edinik.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
-    </image>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language>
+    <language>zh-CN</language>
     <lastBuildDate>Fri, 07 Apr 2023 22:32:27 +0800</lastBuildDate><atom:link href="https://edinik.com/tags/table-tennis/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>乒乓球 | 接发球</title>
-      <link>https://edinik.com/posts/life/table-tennis-serve-receive/</link>
+      <link>https://edinik.com/table-tennis-serve-receive/</link>
       <pubDate>Fri, 07 Apr 2023 22:32:27 +0800</pubDate>
       
-      <guid>https://edinik.com/posts/life/table-tennis-serve-receive/</guid>
-      <description>乒乓球如何更好地接发球</description>
+      <guid>https://edinik.com/table-tennis-serve-receive/</guid>
+      <description>&lt;!DOCTYPE HTML&gt; EP 34 长球和短球 观察对方发球的第一个落点，如果比较靠近台内的话，就是短球，如果比较靠近台外的话，就是长球。 旋转的判断 旋转球 在对方球拍接触球时的一刹那，观察发力方向。 如果接触球时，没有发力摩擦，只是碰过来的，那么就是没有加转的球。 如果接触球时，有发力摩擦，那么就是有加转的球。 侧旋</description>
     </item>
     
   </channel>

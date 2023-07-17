@@ -1,24 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>flowerspedia on Edinik&#39;s Blog</title>
     <link>https://edinik.com/tags/flowerspedia/</link>
     <description>Recent content in flowerspedia on Edinik&#39;s Blog</description>
-    <image>
-      <title>Edinik&#39;s Blog</title>
-      <url>https://edinik.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://edinik.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
-    </image>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language>
+    <language>zh-CN</language>
     <lastBuildDate>Wed, 12 Apr 2023 20:31:53 +0800</lastBuildDate><atom:link href="https://edinik.com/tags/flowerspedia/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>鲜花百科 | 郁金香</title>
-      <link>https://edinik.com/posts/life/introduction-to-tulips/</link>
+      <link>https://edinik.com/introduction-to-tulips/</link>
       <pubDate>Wed, 12 Apr 2023 20:31:53 +0800</pubDate>
       
-      <guid>https://edinik.com/posts/life/introduction-to-tulips/</guid>
-      <description>鲜花百科之郁金香</description>
+      <guid>https://edinik.com/introduction-to-tulips/</guid>
+      <description>英文名：Tulipa gesneriana /tuːlɪpə ɡɛsˈnɛriənə/ 目 科 属 种 百合目 百合科 郁金香属 郁金香 Single Tulips 单瓣郁金香 1、Christmas Marvel 圣诞奇迹 2、Prince of Austria 奥地利王子 3、Diana 戴安娜 4、Ruby Red 红宝石 5、General De Wet 德韦特将军 6、Dreamland 梦幻之地 7、P</description>
     </item>
     
   </channel>

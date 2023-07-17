@@ -2,212 +2,218 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://edinik.com/</loc>
-    <lastmod>2023-07-08T08:09:32+08:00</lastmod>
+    <loc>https://edinik.com/national-museum-of-china/</loc>
+    <lastmod>2023-07-04T18:34:44+08:00</lastmod>
   </url><url>
     <loc>https://edinik.com/tags/%E5%9B%BD%E5%AE%B6%E5%8D%9A%E7%89%A9%E9%A6%86/</loc>
-    <lastmod>2023-07-04T21:49:21+08:00</lastmod>
+    <lastmod>2023-07-04T18:34:44+08:00</lastmod>
   </url><url>
-    <loc>https://edinik.com/posts/read/national-museum-of-china/</loc>
-    <lastmod>2023-07-04T21:49:21+08:00</lastmod>
+    <loc>https://edinik.com/posts/</loc>
+    <lastmod>2023-07-04T18:34:44+08:00</lastmod>
+  </url><url>
+    <loc>https://edinik.com/tags/</loc>
+    <lastmod>2023-07-04T18:34:44+08:00</lastmod>
+  </url><url>
+    <loc>https://edinik.com/posts/read/</loc>
+    <lastmod>2023-07-04T18:34:44+08:00</lastmod>
+  </url><url>
+    <loc>https://edinik.com/</loc>
+    <lastmod>2023-07-04T18:34:44+08:00</lastmod>
+  </url><url>
+    <loc>https://edinik.com/posts/tech/</loc>
+    <lastmod>2023-07-03T20:33:30+08:00</lastmod>
   </url><url>
     <loc>https://edinik.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%B8%93%E4%B8%9A%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/</loc>
-    <lastmod>2023-07-04T09:41:39+08:00</lastmod>
+    <lastmod>2023-07-03T20:33:30+08:00</lastmod>
   </url><url>
-    <loc>https://edinik.com/posts/tech/computer_science_learning_path/</loc>
-    <lastmod>2023-07-04T09:41:39+08:00</lastmod>
+    <loc>https://edinik.com/computer_science_learning_path/</loc>
+    <lastmod>2023-07-03T20:33:30+08:00</lastmod>
   </url><url>
     <loc>https://edinik.com/tags/design-pattern/</loc>
-    <lastmod>2023-06-20T13:02:47+08:00</lastmod>
+    <lastmod>2023-06-12T21:53:37+08:00</lastmod>
   </url><url>
-    <loc>https://edinik.com/posts/tech/design-pattern-factory-method/</loc>
-    <lastmod>2023-06-20T13:02:47+08:00</lastmod>
+    <loc>https://edinik.com/design-pattern-factory-method/</loc>
+    <lastmod>2023-06-12T21:53:37+08:00</lastmod>
   </url><url>
     <loc>https://edinik.com/tags/mayday/</loc>
-    <lastmod>2023-07-08T08:09:32+08:00</lastmod>
+    <lastmod>2023-06-11T21:46:56+08:00</lastmod>
   </url><url>
-    <loc>https://edinik.com/posts/life/mayday-album-born-to-love/</loc>
-    <lastmod>2023-07-08T08:09:32+08:00</lastmod>
+    <loc>https://edinik.com/mayday-album-born-to-love/</loc>
+    <lastmod>2023-06-11T21:46:56+08:00</lastmod>
   </url><url>
-    <loc>https://edinik.com/posts/life/mayday-album-poetry-of-the-day-after/</loc>
-    <lastmod>2023-07-08T08:09:32+08:00</lastmod>
+    <loc>https://edinik.com/posts/life/</loc>
+    <lastmod>2023-06-11T21:46:56+08:00</lastmod>
   </url><url>
-    <loc>https://edinik.com/posts/life/mayday-album-second-round/</loc>
-    <lastmod>2023-07-08T08:09:32+08:00</lastmod>
+    <loc>https://edinik.com/mayday-album-poetry-of-the-day-after/</loc>
+    <lastmod>2023-06-11T20:55:19+08:00</lastmod>
   </url><url>
-    <loc>https://edinik.com/posts/life/mayday-album-history-of-tomorrow/</loc>
-    <lastmod>2023-07-08T08:09:32+08:00</lastmod>
+    <loc>https://edinik.com/mayday-album-second-round/</loc>
+    <lastmod>2023-06-11T14:12:56+08:00</lastmod>
+  </url><url>
+    <loc>https://edinik.com/mayday-album-history-of-tomorrow/</loc>
+    <lastmod>2023-06-11T10:01:13+08:00</lastmod>
   </url><url>
     <loc>https://edinik.com/tags/wpf/</loc>
-    <lastmod>2023-05-25T15:20:23+08:00</lastmod>
+    <lastmod>2023-05-25T15:00:40+08:00</lastmod>
   </url><url>
-    <loc>https://edinik.com/posts/tech/wpf-textbox-input-range-validation/</loc>
-    <lastmod>2023-05-25T15:20:23+08:00</lastmod>
+    <loc>https://edinik.com/wpf-textbox-input-range-validation/</loc>
+    <lastmod>2023-05-25T15:00:40+08:00</lastmod>
   </url><url>
-    <loc>https://edinik.com/posts/tech/design-pattern-singleton/</loc>
-    <lastmod>2023-05-22T23:06:23+08:00</lastmod>
+    <loc>https://edinik.com/design-pattern-singleton/</loc>
+    <lastmod>2023-05-22T22:45:14+08:00</lastmod>
   </url><url>
     <loc>https://edinik.com/tags/midjourney/</loc>
-    <lastmod>2023-06-18T09:01:22+08:00</lastmod>
+    <lastmod>2023-05-20T21:09:01+08:00</lastmod>
   </url><url>
-    <loc>https://edinik.com/posts/tech/midjourney-artists-01/</loc>
-    <lastmod>2023-06-18T09:01:22+08:00</lastmod>
+    <loc>https://edinik.com/midjourney-artists-01/</loc>
+    <lastmod>2023-05-20T21:09:01+08:00</lastmod>
   </url><url>
-    <loc>https://edinik.com/posts/tech/midjourney-styles-08/</loc>
-    <lastmod>2023-06-18T09:01:22+08:00</lastmod>
+    <loc>https://edinik.com/midjourney-styles-08/</loc>
+    <lastmod>2023-05-19T18:10:01+08:00</lastmod>
   </url><url>
-    <loc>https://edinik.com/posts/tech/midjourney-styles-07/</loc>
-    <lastmod>2023-06-18T09:01:22+08:00</lastmod>
+    <loc>https://edinik.com/midjourney-styles-07/</loc>
+    <lastmod>2023-05-17T19:59:46+08:00</lastmod>
   </url><url>
-    <loc>https://edinik.com/posts/tech/midjourney-styles-06/</loc>
-    <lastmod>2023-06-18T09:01:22+08:00</lastmod>
+    <loc>https://edinik.com/midjourney-styles-06/</loc>
+    <lastmod>2023-05-16T21:06:09+08:00</lastmod>
   </url><url>
-    <loc>https://edinik.com/posts/tech/midjourney-styles-05/</loc>
-    <lastmod>2023-06-18T09:01:22+08:00</lastmod>
+    <loc>https://edinik.com/midjourney-styles-05/</loc>
+    <lastmod>2023-05-15T18:02:04+08:00</lastmod>
   </url><url>
-    <loc>https://edinik.com/posts/tech/midjourney-styles-04/</loc>
-    <lastmod>2023-05-12T23:27:56+08:00</lastmod>
+    <loc>https://edinik.com/midjourney-styles-04/</loc>
+    <lastmod>2023-05-12T21:19:47+08:00</lastmod>
   </url><url>
-    <loc>https://edinik.com/posts/tech/midjourney-styles-03/</loc>
-    <lastmod>2023-05-09T22:54:52+08:00</lastmod>
+    <loc>https://edinik.com/midjourney-styles-03/</loc>
+    <lastmod>2023-05-09T21:45:34+08:00</lastmod>
   </url><url>
-    <loc>https://edinik.com/posts/tech/midjourney-styles-02/</loc>
-    <lastmod>2023-05-05T22:46:44+08:00</lastmod>
+    <loc>https://edinik.com/midjourney-styles-02/</loc>
+    <lastmod>2023-05-05T21:56:24+08:00</lastmod>
   </url><url>
-    <loc>https://edinik.com/posts/tech/midjourney-styles-01/</loc>
-    <lastmod>2023-05-01T13:22:31+08:00</lastmod>
+    <loc>https://edinik.com/midjourney-styles-01/</loc>
+    <lastmod>2023-05-01T08:43:40+08:00</lastmod>
   </url><url>
     <loc>https://edinik.com/tags/photography/</loc>
-    <lastmod>2023-04-30T20:35:39+08:00</lastmod>
+    <lastmod>2023-04-30T19:37:23+08:00</lastmod>
   </url><url>
-    <loc>https://edinik.com/posts/life/beijing-aosen-2023-chionanthus-hydrangea/</loc>
-    <lastmod>2023-04-30T20:35:39+08:00</lastmod>
+    <loc>https://edinik.com/beijing-aosen-2023-chionanthus-hydrangea/</loc>
+    <lastmod>2023-04-30T19:37:23+08:00</lastmod>
   </url><url>
-    <loc>https://edinik.com/posts/tech/midjourney_aspect_ratios/</loc>
-    <lastmod>2023-04-28T22:15:04+08:00</lastmod>
+    <loc>https://edinik.com/midjourney_aspect_ratios/</loc>
+    <lastmod>2023-04-28T21:29:13+08:00</lastmod>
   </url><url>
-    <loc>https://edinik.com/posts/tech/midjourney_image_weight/</loc>
-    <lastmod>2023-05-01T13:22:31+08:00</lastmod>
+    <loc>https://edinik.com/midjourney_image_weight/</loc>
+    <lastmod>2023-04-27T22:58:08+08:00</lastmod>
   </url><url>
     <loc>https://edinik.com/tags/image-hosting-platform/</loc>
-    <lastmod>2023-04-22T23:29:21+08:00</lastmod>
+    <lastmod>2023-04-22T21:45:23+08:00</lastmod>
   </url><url>
-    <loc>https://edinik.com/posts/tech/build-lsky-image-hosting-platform/</loc>
-    <lastmod>2023-04-22T23:29:21+08:00</lastmod>
+    <loc>https://edinik.com/build-lsky-image-hosting-platform/</loc>
+    <lastmod>2023-04-22T21:45:23+08:00</lastmod>
   </url><url>
     <loc>https://edinik.com/tags/game-of-thrones/</loc>
-    <lastmod>2023-04-23T01:44:01+08:00</lastmod>
+    <lastmod>2023-04-16T21:18:17+08:00</lastmod>
   </url><url>
-    <loc>https://edinik.com/posts/read/game-of-thrones-maps/</loc>
-    <lastmod>2023-04-23T01:44:01+08:00</lastmod>
+    <loc>https://edinik.com/game-of-thrones-maps/</loc>
+    <lastmod>2023-04-16T21:18:17+08:00</lastmod>
   </url><url>
-    <loc>https://edinik.com/posts/read/game-of-thrones-character-relationship/</loc>
-    <lastmod>2023-04-20T22:35:35+08:00</lastmod>
+    <loc>https://edinik.com/game-of-thrones-character-relationship/</loc>
+    <lastmod>2023-04-16T20:42:54+08:00</lastmod>
   </url><url>
-    <loc>https://edinik.com/posts/life/taoranting-kerria-japonica/</loc>
-    <lastmod>2023-04-23T01:44:01+08:00</lastmod>
+    <loc>https://edinik.com/taoranting-kerria-japonica/</loc>
+    <lastmod>2023-04-16T18:28:59+08:00</lastmod>
   </url><url>
-    <loc>https://edinik.com/posts/life/beijing-zhongshan-park-2023-tulips-peonies/</loc>
-    <lastmod>2023-04-23T00:30:18+08:00</lastmod>
+    <loc>https://edinik.com/beijing-zhongshan-park-2023-tulips-peonies/</loc>
+    <lastmod>2023-04-16T11:09:43+08:00</lastmod>
   </url><url>
     <loc>https://edinik.com/tags/flowerspedia/</loc>
-    <lastmod>2023-04-17T21:31:20+08:00</lastmod>
+    <lastmod>2023-04-12T20:31:53+08:00</lastmod>
   </url><url>
-    <loc>https://edinik.com/posts/life/introduction-to-tulips/</loc>
-    <lastmod>2023-04-17T21:31:20+08:00</lastmod>
+    <loc>https://edinik.com/introduction-to-tulips/</loc>
+    <lastmod>2023-04-12T20:31:53+08:00</lastmod>
   </url><url>
     <loc>https://edinik.com/tags/ancient-chinese-verse/</loc>
-    <lastmod>2023-06-11T14:04:59+08:00</lastmod>
+    <lastmod>2023-04-11T21:56:25+08:00</lastmod>
   </url><url>
-    <loc>https://edinik.com/posts/read/butterflies-in-love-with-flowers-ouyangxiu/</loc>
-    <lastmod>2023-06-11T14:04:59+08:00</lastmod>
+    <loc>https://edinik.com/butterflies-in-love-with-flowers-ouyangxiu/</loc>
+    <lastmod>2023-04-11T21:56:25+08:00</lastmod>
   </url><url>
-    <loc>https://edinik.com/posts/tech/design-pattern-introduction/</loc>
-    <lastmod>2023-06-20T13:02:47+08:00</lastmod>
+    <loc>https://edinik.com/design-pattern-introduction/</loc>
+    <lastmod>2023-04-10T22:16:13+08:00</lastmod>
   </url><url>
     <loc>https://edinik.com/tags/nezha-monitoring/</loc>
-    <lastmod>2023-04-09T00:48:51+08:00</lastmod>
+    <lastmod>2023-04-08T23:39:46+08:00</lastmod>
   </url><url>
-    <loc>https://edinik.com/posts/tech/nezha-monitoring-server-build/</loc>
-    <lastmod>2023-04-09T00:48:51+08:00</lastmod>
+    <loc>https://edinik.com/nezha-monitoring-server-build/</loc>
+    <lastmod>2023-04-08T23:39:46+08:00</lastmod>
   </url><url>
     <loc>https://edinik.com/tags/table-tennis/</loc>
-    <lastmod>2023-04-12T18:57:36+08:00</lastmod>
+    <lastmod>2023-04-07T22:32:27+08:00</lastmod>
   </url><url>
-    <loc>https://edinik.com/posts/life/table-tennis-serve-receive/</loc>
-    <lastmod>2023-04-12T18:57:36+08:00</lastmod>
+    <loc>https://edinik.com/table-tennis-serve-receive/</loc>
+    <lastmod>2023-04-07T22:32:27+08:00</lastmod>
   </url><url>
     <loc>https://edinik.com/tags/alist/</loc>
-    <lastmod>2023-05-24T21:24:52+08:00</lastmod>
+    <lastmod>2023-04-05T20:33:30+08:00</lastmod>
   </url><url>
-    <loc>https://edinik.com/posts/tech/build-online-player-alist/</loc>
-    <lastmod>2023-05-24T21:24:52+08:00</lastmod>
+    <loc>https://edinik.com/build-online-player-alist/</loc>
+    <lastmod>2023-04-05T20:33:30+08:00</lastmod>
   </url><url>
     <loc>https://edinik.com/tags/bitwarden/</loc>
-    <lastmod>2023-04-05T11:54:18+08:00</lastmod>
+    <lastmod>2023-04-05T06:51:31+08:00</lastmod>
   </url><url>
-    <loc>https://edinik.com/posts/tech/establishing-bitwarden-server/</loc>
-    <lastmod>2023-04-05T11:54:18+08:00</lastmod>
+    <loc>https://edinik.com/establishing-bitwarden-server/</loc>
+    <lastmod>2023-04-05T06:51:31+08:00</lastmod>
   </url><url>
     <loc>https://edinik.com/tags/mermaid/</loc>
-    <lastmod>2023-04-21T23:24:01+08:00</lastmod>
+    <lastmod>2023-03-23T10:07:13+08:00</lastmod>
   </url><url>
-    <loc>https://edinik.com/posts/tech/guide-to-using-mermaid-flowcharts/</loc>
-    <lastmod>2023-04-21T23:24:01+08:00</lastmod>
-  </url><url>
-    <loc>https://edinik.com/about/</loc>
-    <lastmod>2023-07-08T00:22:35+08:00</lastmod>
+    <loc>https://edinik.com/guide-to-using-mermaid-flowcharts/</loc>
+    <lastmod>2023-03-23T10:07:13+08:00</lastmod>
   </url><url>
     <loc>https://edinik.com/tags/csharp/</loc>
-    <lastmod>2023-03-24T19:38:38+08:00</lastmod>
+    <lastmod>2023-03-20T09:12:41+08:00</lastmod>
   </url><url>
-    <loc>https://edinik.com/posts/tech/usage-of-ziparchive-in-csharp/</loc>
-    <lastmod>2023-03-24T19:38:38+08:00</lastmod>
+    <loc>https://edinik.com/usage-of-ziparchive-in-csharp/</loc>
+    <lastmod>2023-03-20T09:12:41+08:00</lastmod>
   </url><url>
-    <loc>https://edinik.com/posts/tech/difference-between-string-and-stringbuilder-in-csharp/</loc>
-    <lastmod>2023-03-24T19:33:24+08:00</lastmod>
+    <loc>https://edinik.com/difference-between-string-and-stringbuilder-in-csharp/</loc>
+    <lastmod>2023-03-17T12:41:22+08:00</lastmod>
+  </url><url>
+    <loc>https://edinik.com/twikoo/</loc>
+    <lastmod>2020-03-14T12:41:27+00:00</lastmod>
+  </url><url>
+    <loc>https://edinik.com/about/</loc>
+    <lastmod>2020-03-14T12:41:27+00:00</lastmod>
   </url><url>
     <loc>https://edinik.com/categories/</loc>
   </url><url>
-    <loc>https://edinik.com/series/</loc>
-  </url><url>
-    <loc>https://edinik.com/tags/</loc>
-    <lastmod>2023-07-08T00:22:35+08:00</lastmod>
-  </url><url>
-    <loc>https://edinik.com/bbs/</loc>
-    <lastmod>2023-07-08T00:22:35+08:00</lastmod>
-  </url><url>
-    <loc>https://edinik.com/movies/</loc>
-    <lastmod>2023-07-08T00:22:35+08:00</lastmod>
-  </url><url>
-    <loc>https://edinik.com/archives/</loc>
-    <lastmod>2023-07-08T00:27:14+08:00</lastmod>
-  </url><url>
-    <loc>https://edinik.com/posts/tech/</loc>
-    <lastmod>2023-07-08T00:22:35+08:00</lastmod>
-  </url><url>
-    <loc>https://edinik.com/posts/life/</loc>
-    <lastmod>2023-07-08T00:22:35+08:00</lastmod>
-  </url><url>
     <loc>https://edinik.com/search/</loc>
-    <lastmod>2023-07-08T00:22:35+08:00</lastmod>
+    <priority>0.1</priority>
   </url><url>
-    <loc>https://edinik.com/posts/</loc>
-    <lastmod>2023-07-08T00:22:35+08:00</lastmod>
-  </url><url>
-    <loc>https://edinik.com/goods/</loc>
-    <lastmod>2023-06-01T08:44:03+08:00</lastmod>
-  </url><url>
-    <loc>https://edinik.com/music/</loc>
-    <lastmod>2023-07-08T00:22:35+08:00</lastmod>
+    <loc>https://edinik.com/talk/</loc>
   </url><url>
     <loc>https://edinik.com/friends/</loc>
-    <lastmod>2023-07-07T19:06:57+08:00</lastmod>
+  </url><url>
+    <loc>https://edinik.com/bbs/</loc>
+  </url><url>
+    <loc>https://edinik.com/bb/</loc>
+  </url><url>
+    <loc>https://edinik.com/archives/</loc>
+  </url><url>
+    <loc>https://edinik.com/goods/</loc>
+  </url><url>
+    <loc>https://edinik.com/me-goods/</loc>
+  </url><url>
+    <loc>https://edinik.com/album/</loc>
+  </url><url>
+    <loc>https://edinik.com/gallery/</loc>
+  </url><url>
+    <loc>https://edinik.com/movies/</loc>
   </url><url>
     <loc>https://edinik.com/books/</loc>
-    <lastmod>2023-07-08T00:22:35+08:00</lastmod>
   </url><url>
-    <loc>https://edinik.com/posts/read/</loc>
-    <lastmod>2023-07-08T00:22:35+08:00</lastmod>
+    <loc>https://edinik.com/caipu/</loc>
+  </url><url>
+    <loc>https://edinik.com/posts/chat/</loc>
   </url>
 </urlset>

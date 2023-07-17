@@ -1,24 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>image-hosting-platform on Edinik&#39;s Blog</title>
     <link>https://edinik.com/tags/image-hosting-platform/</link>
     <description>Recent content in image-hosting-platform on Edinik&#39;s Blog</description>
-    <image>
-      <title>Edinik&#39;s Blog</title>
-      <url>https://edinik.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://edinik.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
-    </image>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language>
+    <language>zh-CN</language>
     <lastBuildDate>Sat, 22 Apr 2023 21:45:23 +0800</lastBuildDate><atom:link href="https://edinik.com/tags/image-hosting-platform/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>图床 | lsky图床平台搭建</title>
-      <link>https://edinik.com/posts/tech/build-lsky-image-hosting-platform/</link>
+      <link>https://edinik.com/build-lsky-image-hosting-platform/</link>
       <pubDate>Sat, 22 Apr 2023 21:45:23 +0800</pubDate>
       
-      <guid>https://edinik.com/posts/tech/build-lsky-image-hosting-platform/</guid>
-      <description>图床 | lsky图床平台搭建</description>
+      <guid>https://edinik.com/build-lsky-image-hosting-platform/</guid>
+      <description>兰空图床(Lsky Pro)官方项目地址 兰空图床(Lsky Pro)第三方Docker项目地址 官方Wiki Docker容器构建命令 docker run -d \ --name lsky-pro \ --restart unless-stopped \ -p 8089:8089 \ -v $PWD/lsky/web:/var/www/html \ -e WEB_PORT=8089 \ halcyonazure/lsky-pro-docker:latest 反代/套CDN后无法加载静态文件(css, js)，安装时点击无反应 进入root/lsky/web目录，编辑 .env 文件，</description>
     </item>
     
   </channel>

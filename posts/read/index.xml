@@ -1,50 +1,46 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>阅读 on Edinik&#39;s Blog</title>
+    <title>育人 on Edinik&#39;s Blog</title>
     <link>https://edinik.com/posts/read/</link>
-    <description>Recent content in 阅读 on Edinik&#39;s Blog</description>
-    <image>
-      <title>Edinik&#39;s Blog</title>
-      <url>https://edinik.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://edinik.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
-    </image>
+    <description>Recent content in 育人 on Edinik&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language><atom:link href="https://edinik.com/posts/read/index.xml" rel="self" type="application/rss+xml" />
+    <language>zh-CN</language>
+    <lastBuildDate>Tue, 04 Jul 2023 18:34:44 +0800</lastBuildDate><atom:link href="https://edinik.com/posts/read/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>中国国家博物馆</title>
-      <link>https://edinik.com/posts/read/national-museum-of-china/</link>
+      <link>https://edinik.com/national-museum-of-china/</link>
       <pubDate>Tue, 04 Jul 2023 18:34:44 +0800</pubDate>
       
-      <guid>https://edinik.com/posts/read/national-museum-of-china/</guid>
-      <description>中国国家博物馆</description>
+      <guid>https://edinik.com/national-museum-of-china/</guid>
+      <description>古代中国 远古遗响 贾湖骨笛 在19世纪留声机发明之前，人类无法存留声音。所幸的是，保留下来的古代乐器可以让音乐穿越古今，奏出历史的遗响。说起中国古代的乐器，可能大多数人最先想到的是青铜编钟或编磬。其实，在更遥远的石器时代，已有乐器存在…… 时代 文化 新石器时代 裴李岗文化 稻花香里说丰年 炭化</description>
     </item>
     
     <item>
       <title>权力的游戏 | 地图</title>
-      <link>https://edinik.com/posts/read/game-of-thrones-maps/</link>
+      <link>https://edinik.com/game-of-thrones-maps/</link>
       <pubDate>Sun, 16 Apr 2023 21:18:17 +0800</pubDate>
       
-      <guid>https://edinik.com/posts/read/game-of-thrones-maps/</guid>
-      <description>权力的游戏 | 地图</description>
+      <guid>https://edinik.com/game-of-thrones-maps/</guid>
+      <description>维斯特洛（Westeros） 也被称为日落国度（the Sunset Kingdoms），坐落於已知世界的最西端，狭长的维斯特洛大陆由北部的极地冰盖起向南延绵约3,000英里。绝境长城是一座巍峨挺立的不可逾越之物，横跨300英里，将最北的塞外地区与七大王国相互分离。一个统一的政治实体领导着南方的</description>
     </item>
     
     <item>
       <title>权力的游戏 | 人物关系图</title>
-      <link>https://edinik.com/posts/read/game-of-thrones-character-relationship/</link>
+      <link>https://edinik.com/game-of-thrones-character-relationship/</link>
       <pubDate>Sun, 16 Apr 2023 20:42:54 +0800</pubDate>
       
-      <guid>https://edinik.com/posts/read/game-of-thrones-character-relationship/</guid>
-      <description>权力的游戏 | 人物关系图</description>
+      <guid>https://edinik.com/game-of-thrones-character-relationship/</guid>
+      <description>史塔克家族 英文 House Stark of Winterfell 头衔 北境之王、北境守护 封地 临冬城、卡林湾 家徽 白色雪原上银灰色的一只冰原奔狼 箴言 凛冬将至 mindmap root((艾德·史塔克)) 妻子：凯特琳·徒利 弟弟：班扬 妹妹：莱安娜 哥哥：布兰登 长子：罗柏 妻子：简妮·维斯特林 长女：珊莎 冰原狼：淑女 未婚夫：乔佛里 丈夫：提利昂·兰尼斯特 次</description>
     </item>
     
     <item>
       <title>人间词话 | 蝶恋花-庭院深深深几许</title>
-      <link>https://edinik.com/posts/read/butterflies-in-love-with-flowers-ouyangxiu/</link>
+      <link>https://edinik.com/butterflies-in-love-with-flowers-ouyangxiu/</link>
       <pubDate>Tue, 11 Apr 2023 21:56:25 +0800</pubDate>
       
-      <guid>https://edinik.com/posts/read/butterflies-in-love-with-flowers-ouyangxiu/</guid>
-      <description>人间词话 | 蝶恋花-庭院深深深几许 欧阳修</description>
+      <guid>https://edinik.com/butterflies-in-love-with-flowers-ouyangxiu/</guid>
+      <description>庭院深深深几许，杨柳堆烟，帘幕无重数。 玉勒雕鞍游冶处，楼高不见章台路。 雨横风狂三月暮，门掩黄昏，无计留春住。 泪眼问花花不语，乱红飞过秋千去。 赏析： 首先对女主人公的居处作了精心的安排。读着“杨柳堆烟，帘幕无重数”，仿佛先是看到一丛丛杨柳从眼前移过，随着这一丛丛杨柳过去，镜头摇向庭院</description>
     </item>
     
   </channel>
