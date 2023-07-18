@@ -35,7 +35,14 @@ function memoAlbum(numb){
     let limit = numb || 8;
     var memoUrl = "https://memos.edinik.com/"
     var galleryUrl = memoUrl+"api/v1/memo/all?rowStatus=NORMAL&limit="+limit+"&tag=相册"
-    var localalbumUpdated = JSON.parse(localStorage.getItem("albumUpdated")) || '';
+    try {
+      var localalbumUpdated = JSON.parse(localStorage.getItem("albumUpdated")) || '';
+    } catch (error) {
+      // 处理异常，例如使用默认值或显示错误信息
+      console.error("Error parsing JSON data from localStorage:", error);
+      localalbumUpdated = ''; // 使用默认值
+    }
+    
     var localalbumData = JSON.parse(localStorage.getItem("albumData")) || '';
     if(localalbumData){
       loadAlbum(localalbumData,limit)
@@ -58,6 +65,7 @@ function memoAlbum(numb){
     });
 }
 function loadAlbum(albumData,limit){
+  var memoUrl = "https://memos.edinik.com/"
   var result = '',resultAll="",nowNum = 1;
         for(var i=0;i < albumData.length;i++){
             var galleryTitle = albumData[i].content.replace("#相册 ",'')
@@ -91,8 +99,13 @@ function loadAlbum(albumData,limit){
                 if(resexlink){
                   resLink = resexlink
                 }else{
-                  fileId = resourceList[j].publicId || resourceList[j].filename
-                  resLink = memoUrl+'o/r/'+resourceList[j].id+'/'+fileId
+                  try {
+                    fileId = resourceList[j].publicId || resourceList[j].filename
+                    resLink = memoUrl+'o/r/'+resourceList[j].id+'/'+fileId
+                  } catch (error) {
+                    // 处理异常，例如使用默认值或显示错误信息
+                    console.error("Error when get resLink", error);
+                  }
                 }
                 if(restype == 'image' && nowNum <= limit ){
                     nowNum ++
