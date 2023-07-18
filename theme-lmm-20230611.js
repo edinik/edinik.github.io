@@ -110,21 +110,26 @@ function bookShow(fetch_href, fetch_item) {
   db_div.innerHTML = db_html
 }
 function umiTongji(){
-  var umiId = "849d077c-441f-4de6-a1dd-ee5f696843fc"
-  var umiToken = "Cm1wM0X12sLTJurkseBc6x56shHchnwlzmRijNf+eXx2awIB+bbHPMuFz5AYEqQv6YMd+7e2GoGskbZ9Gm0Zhyx0Nnwjk7t6PP0nX5jzPBKbLq760WI45wiFXWv54pZneZ8jP9QI/K1bzcQVor3bLoN3QaHJTLTLTbj/k1Ir+0gpBtKf2J8MWfOJlEf4wBfd4AQeDIGuX4YSqY8e3DHnYLYEspafQ3ZvfgcJG/dHtq8cvijNaWqnGhF3EAFyEpPXttxp1j3Io61lY7VMFoHHXHlLbDVIfKTvNzhnPfsoqzaNDbhU+zZgbrOCpkBN85GDXD/UU+coU1jqYBz0WMXu7OfyH1YUc1NOwA=="
+  var umiId = "2123542e-85de-4550-9275-dca71142cde8"
+  var umiToken = "bkVGm3acIqDqyZfkmT5w8/53Msr++rSaRGjNfcHvrFPFQQo42d9M/RZ6ERGvWMw1bpU01CAb8pNXAdO4pOcgCUZkQw/jVEz8fsWYjhMkbeNXw5oE6+5aQlJMyIJ7BPbQDTP3ZilIQaXhbQQk56dnnoELyHvE1JCZK8Qaa0N9zYqW7OjhuRD8PQiYoCzLQ779izE71GfDPEa5Y+nF9Wp2ahSP93cvRuf4o8QXAWB5sF79UTmJACoFBBL7sQ7rGIgmAGOtbUR0OOUoclPF5FQLazDj4kNa+OB1II0c4DgmaQU+xyqrmlYM7n3nfpJza+MozZX0hB9Kz3Kvs5fBFRlcbCS0WhizExBM/Q=="
   var umiTime = Date.parse(new Date()); //获取当前时间戳
-  var umiUrl = "https://umami.edinik.com/api/websites/"+umiId+"/stats?start_at=0000000000&end_at="+umiTime;
-  fetch(umiUrl,{
-    method: 'GET',
-    mode: 'cors',
-    cache: 'default',
-    headers: {
-      'Authorization': 'Bearer ' + umiToken,
-      'Content-Type': 'application/json'
-    }
-  })
-  .then(res => res.json()).then(resdata => {
-    document.querySelector('#pvStatic').innerHTML = resdata.pageviews.value
-    document.querySelector('#uvStatic').innerHTML = resdata.uniques.value
-  });
+  var umiUrl = "https://umami.edinik.com/api/websites/"+umiId+"/stats?startat=0000000000&endat="+umiTime;
+  try {
+    fetch(umiUrl,{
+      method: 'GET',
+      mode: 'cors',
+      cache: 'default',
+      headers: {
+        'Authorization': 'Bearer ' + umiToken,
+        'Content-Type': 'application/json'
+      }
+    })
+    .then(res => res.json()).then(resdata => {
+      document.querySelector('#pvStatic').innerHTML = resdata.pageviews.value
+      document.querySelector('#uvStatic').innerHTML = resdata.uniques.value
+    });
+  } catch (error) {
+    console.log(error);
+  }
+  
 }
