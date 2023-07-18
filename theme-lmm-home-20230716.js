@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
 var bbDom = document.querySelector('#bber-talk') || '';
 if(bbDom){memoTalks();}
 function memoTalks(){
-var bbUrl = "https://memos.edinik.com/api/memo?openId=6fe69b8b-0184-4db8-a689-241a43a2c26a&rowStatus=NORMAL&limit=10"
+var bbUrl = "https://memos.edinik.com/api/v1/memo?creatorId=1&rowStatus=NORMAL&limit=10"
 fetch(bbUrl).then(res => res.json()).then( resdata =>{
     var result = '',resultAll="",data = resdata
     for(var i=0;i < data.length;i++){
@@ -34,7 +34,7 @@ if(albumDom){memoAlbum(6);}
 function memoAlbum(numb){
     let limit = numb || 8;
     var memoUrl = "https://memos.edinik.com/"
-    var galleryUrl = memoUrl+"api/memo?openId=6fe69b8b-0184-4db8-a689-241a43a2c26a&rowStatus=NORMAL&limit="+limit+"&tag=相册"
+    var galleryUrl = memoUrl+"api/v1/memo/all?rowStatus=NORMAL&limit="+limit+"&tag=相册"
     var localalbumUpdated = JSON.parse(localStorage.getItem("albumUpdated")) || '';
     var localalbumData = JSON.parse(localStorage.getItem("albumData")) || '';
     if(localalbumData){

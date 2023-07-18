@@ -165,7 +165,7 @@ function checkNightMode() {
     var memoUrl = "https://memos.edinik.com/"
     
     
-    var goodsUrl = memoUrl+"api/memo/all?rowStatus=NORMAL&tag=好物"
+    var goodsUrl = memoUrl+"api/v1/memo/all?rowStatus=NORMAL&tag=好物"
     const regex = /\n/;
     fetch(goodsUrl).then(res => res.json()).then( resdata =>{
         var result = '',resultAll="",data = resdata.data
