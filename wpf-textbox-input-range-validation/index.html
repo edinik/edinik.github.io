@@ -354,11 +354,10 @@ function checkNightMode() {
 </span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> TextBox_LostFocus(<span style="color:#66d9ef">object</span> sender, RoutedEventArgs e)
 </span></span><span style="display:flex;"><span>        {
 </span></span><span style="display:flex;"><span>            TextBox textBox = (TextBox)sender;
-</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">int</span> <span style="color:#66d9ef">value</span>;
-</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">int</span> minimum = GetMinimum(textBox);
-</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span> (<span style="color:#66d9ef">int</span>.TryParse(textBox.Text, <span style="color:#66d9ef">out</span> <span style="color:#66d9ef">value</span>) &amp;&amp; <span style="color:#66d9ef">value</span> &lt; minimum)
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">double</span> minimum = GetMinimum(textBox);
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">double</span> maximum = GetMaximum(textBox);
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span> (<span style="color:#66d9ef">double</span>.TryParse(textBox.Text, <span style="color:#66d9ef">out</span> <span style="color:#66d9ef">var</span> <span style="color:#66d9ef">value</span>) &amp;&amp; (<span style="color:#66d9ef">value</span> &lt; minimum || <span style="color:#66d9ef">value</span> &gt; maximum ))
 </span></span><span style="display:flex;"><span>            {
-</span></span><span style="display:flex;"><span>                <span style="color:#75715e">// If the value is less than the minimum, set the text to the previous value</span>
 </span></span><span style="display:flex;"><span>                textBox.Text = GetPreviousValue(textBox);
 </span></span><span style="display:flex;"><span>            }
 </span></span><span style="display:flex;"><span>        }
@@ -552,7 +551,7 @@ function checkNightMode() {
 <footer class="footer ">
   <div class="footer__inner">
     <div class="copyright copyright-font">
-      <span>共 74499 字 <br/> 写完一本 鲁迅 的</br>《呐喊》了！</span>
+      <span>共 74491 字 <br/> 写完一本 鲁迅 的</br>《呐喊》了！</span>
     </div>
     <a class="dark-wormhole" href="https://www.foreverblog.cn/go.html" target="_blank"> <img src="/wormhole_1.gif" alt="" style="width:auto;height:32px;" title="穿梭虫洞-随机访问十年之约友链博客"> </a>
     <a class="light-wormhole" href="https://www.foreverblog.cn/go.html" target="_blank" > <img src="/wormhole_3.gif" alt="" style="width:auto;height:32px;" title="穿梭虫洞-随机访问十年之约友链博客"> </a>
