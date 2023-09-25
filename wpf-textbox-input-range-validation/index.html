@@ -240,7 +240,7 @@ function checkNightMode() {
 <p><strong>源代码：</strong></p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Csharp" data-lang="Csharp"><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">TextBoxExtensions</span>
 </span></span><span style="display:flex;"><span>    {
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e">#region IntegerRange</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">#region</span> IntegerRange
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">readonly</span> DependencyProperty IntegerRangeProperty =
 </span></span><span style="display:flex;"><span>            DependencyProperty.RegisterAttached(
@@ -259,9 +259,9 @@ function checkNightMode() {
 </span></span><span style="display:flex;"><span>            target.SetValue(IntegerRangeProperty, <span style="color:#66d9ef">value</span>);
 </span></span><span style="display:flex;"><span>        }
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>        <span style="color:#960050;background-color:#1e0010">#</span>endregion
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">#endregion</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e">#region Minimum</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">#region</span> Minimum
 </span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">readonly</span> DependencyProperty MinimumProperty =
 </span></span><span style="display:flex;"><span>            DependencyProperty.RegisterAttached(
 </span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#34;Minimum&#34;</span>,
@@ -278,9 +278,9 @@ function checkNightMode() {
 </span></span><span style="display:flex;"><span>        {
 </span></span><span style="display:flex;"><span>            target.SetValue(MinimumProperty, <span style="color:#66d9ef">value</span>);
 </span></span><span style="display:flex;"><span>        }
-</span></span><span style="display:flex;"><span>        <span style="color:#960050;background-color:#1e0010">#</span>endregion
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">#endregion</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e">#region Maximum</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">#region</span> Maximum
 </span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">readonly</span> DependencyProperty MaximumProperty =
 </span></span><span style="display:flex;"><span>            DependencyProperty.RegisterAttached(
 </span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#34;Maximum&#34;</span>,
@@ -297,9 +297,9 @@ function checkNightMode() {
 </span></span><span style="display:flex;"><span>        {
 </span></span><span style="display:flex;"><span>            target.SetValue(MaximumProperty, <span style="color:#66d9ef">value</span>);
 </span></span><span style="display:flex;"><span>        }
-</span></span><span style="display:flex;"><span>        <span style="color:#960050;background-color:#1e0010">#</span>endregion
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">#endregion</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e">#region PreviousValue</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">#region</span> PreviousValue
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">readonly</span> DependencyProperty PreviousValueProperty =
 </span></span><span style="display:flex;"><span>            DependencyProperty.RegisterAttached(<span style="color:#e6db74">&#34;PreviousValue&#34;</span>, <span style="color:#66d9ef">typeof</span>(<span style="color:#66d9ef">string</span>), <span style="color:#66d9ef">typeof</span>(TextBoxExtensions));
@@ -315,7 +315,7 @@ function checkNightMode() {
 </span></span><span style="display:flex;"><span>        }
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>        <span style="color:#960050;background-color:#1e0010">#</span>endregion
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">#endregion</span>
 </span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> OnIntegerRangeChanged(DependencyObject sender, DependencyPropertyChangedEventArgs e)
 </span></span><span style="display:flex;"><span>        {
 </span></span><span style="display:flex;"><span>            TextBox textBox = sender <span style="color:#66d9ef">as</span> TextBox;
