@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>计算机科学速成课 on Edinik&#39;s Blog</title>
+    <link>https://edinik.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E9%80%9F%E6%88%90%E8%AF%BE/</link>
+    <description>Recent content in 计算机科学速成课 on Edinik&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Wed, 18 Oct 2023 19:33:30 +0800</lastBuildDate><atom:link href="https://edinik.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E9%80%9F%E6%88%90%E8%AF%BE/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>计算机科学速成课 | 计算机早期历史</title>
+      <link>https://edinik.com/crash-course-computer-science-early-computing/</link>
+      <pubDate>Wed, 18 Oct 2023 19:33:30 +0800</pubDate>
+      
+      <guid>https://edinik.com/crash-course-computer-science-early-computing/</guid>
+      <description>课程链接 随着知识的增长和新工具的诞生，人工劳动会越来越少。 &amp;ndash; Charles Babbage 1. 最早的计算设备：算盘 公元前2500年，美索不达米亚出现了最早的计算设备：算盘。这是一个手动计算器，用于帮助加减数字，并能够存储当前的计算状态。类似于今天的硬盘。它由4排算珠组成，每排有10个算珠，分别代表1、10、</description>
+    </item>
+    
+  </channel>
+</rss>

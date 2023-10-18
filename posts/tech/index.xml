@@ -6,7 +6,16 @@
     <description>Recent content in 技术 on Edinik&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Mon, 03 Jul 2023 20:33:30 +0800</lastBuildDate><atom:link href="https://edinik.com/posts/tech/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 18 Oct 2023 19:33:30 +0800</lastBuildDate><atom:link href="https://edinik.com/posts/tech/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>计算机科学速成课 | 计算机早期历史</title>
+      <link>https://edinik.com/crash-course-computer-science-early-computing/</link>
+      <pubDate>Wed, 18 Oct 2023 19:33:30 +0800</pubDate>
+      
+      <guid>https://edinik.com/crash-course-computer-science-early-computing/</guid>
+      <description>课程链接 随着知识的增长和新工具的诞生，人工劳动会越来越少。 &amp;ndash; Charles Babbage 1. 最早的计算设备：算盘 公元前2500年，美索不达米亚出现了最早的计算设备：算盘。这是一个手动计算器，用于帮助加减数字，并能够存储当前的计算状态。类似于今天的硬盘。它由4排算珠组成，每排有10个算珠，分别代表1、10、</description>
+    </item>
+    
     <item>
       <title>计算机专业学习路线</title>
       <link>https://edinik.com/computer_science_learning_path/</link>
@@ -41,15 +50,6 @@
       
       <guid>https://edinik.com/design-pattern-singleton/</guid>
       <description>定义 单例模式（Singleton Design Pattern）是一种创建型设计模式，它能够保证一个类只有一个实例，并提供一个访问该实例的全局节点。 三个必要条件： 构造函数必须是私有的，保证类的外部不能创建类的实例。 通过一个私有的静态变量来存储其唯一实例。 通过提供一个公开的静态方法，使得外部使用</description>
-    </item>
-    
-    <item>
-      <title>midjourney | artists 01</title>
-      <link>https://edinik.com/midjourney-artists-01/</link>
-      <pubDate>Sat, 20 May 2023 21:09:01 +0800</pubDate>
-      
-      <guid>https://edinik.com/midjourney-artists-01/</guid>
-      <description>Michelangelo 米开朗基罗 米开朗基罗·布奥纳罗蒂（Michelangelo di Lodovico Buonarroti Simoni，1475年3月6日—1564年2月18日），通常被简称为米开朗基罗，是意大利文艺复兴时期的一位多才多艺的艺术家。他的作品在雕塑、绘画和建筑上都达到了非常高的成就。 米开朗基罗在他的生涯中创造了一些最有影</description>
     </item>
     
   </channel>
