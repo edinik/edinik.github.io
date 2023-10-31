@@ -5,6 +5,7 @@
     <link>https://edinik.com/archives/</link>
     <description>Recent content in 归档 on Edinik&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-CN</language><atom:link href="https://edinik.com/archives/index.xml" rel="self" type="application/rss+xml" />
+    <language>zh-CN</language>
+    <atom:link href="https://edinik.com/archives/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

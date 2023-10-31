@@ -6,15 +6,14 @@
     <description>Recent content in WPF on Edinik&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 25 May 2023 15:00:40 +0800</lastBuildDate><atom:link href="https://edinik.com/tags/wpf/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 25 May 2023 15:00:40 +0800</lastBuildDate>
+    <atom:link href="https://edinik.com/tags/wpf/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>WPF | TextBox输入范围验证</title>
       <link>https://edinik.com/wpf-textbox-input-range-validation/</link>
       <pubDate>Thu, 25 May 2023 15:00:40 +0800</pubDate>
-      
       <guid>https://edinik.com/wpf-textbox-input-range-validation/</guid>
       <description>此类为TextBox的一个扩展类，其中包含四个附加属性，分别是： 属性 IntegerRange Minimum Maximum PreviousValue 类型 bool int int string 定义 是否启用范围判定 最小值 最大值 前一个有效值 默认值 false 0 int的最大值 空 实现了以下功能： 若输入的值不满足最小值和最大值的范围或输入不合法时，则会自动恢复为前一个有效值 解决了粘贴时的输入验证问题 解</description>
     </item>
-    
   </channel>
 </rss>
