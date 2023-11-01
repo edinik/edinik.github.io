@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN">
-    <generator uri="https://gohugo.io/" version="0.120.1">Hugo</generator><title type="html"><![CDATA[Edinik's Blog]]></title>
+    <generator uri="https://gohugo.io/" version="0.120.2">Hugo</generator><title type="html"><![CDATA[Edinik's Blog]]></title>
     
     
     
             <link href="https://edinik.com/atom.xml" rel="self" type="application/rss+xml" title="atom" />
             <link href="https://edinik.com/" rel="alternate" type="text/html" title="html" />
             <link href="https://edinik.com/index.json" rel="alternate" type="application/json" title="json" />
-    <updated>2023-10-31T01:02:01+00:00</updated>
+    <updated>2023-11-01T01:05:27+00:00</updated>
     
     
     
