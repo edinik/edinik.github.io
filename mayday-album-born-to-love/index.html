@@ -36,8 +36,8 @@
 
 
     
-  <link rel="prefetch" href="https://edinik.com/design-pattern-factory-method/">
-  <link rel="prefetch" href="https://edinik.com/mayday-album-poetry-of-the-day-after/">
+<link rel="prefetch" href="https://edinik.com/design-pattern-factory-method/">
+<link rel="prefetch" href="https://edinik.com/mayday-album-poetry-of-the-day-after/">
 
   </head>
   <body class="">
@@ -145,12 +145,12 @@ function checkNightMode() {
 
       <div class="content">
         
-  
-  
-  
-  
-  <div class="post life">
-    <div  class="breadcrumb">
+
+
+
+
+<div class="post life">
+  <div  class="breadcrumb">
   
 
   
@@ -182,20 +182,43 @@ function checkNightMode() {
 
 
   
-    <h2 class="post-title"><a href="https://edinik.com/mayday-album-born-to-love/">五月天 | 为爱而生（2006）</a></h2>
-    <div class="post-meta">
+  <h2 class="post-title"><a href="https://edinik.com/mayday-album-born-to-love/">五月天 | 为爱而生（2006）</a></h2>
+  <div class="post-meta">
+    
+    <span class="post-date">2023-06-11 21:46:56</span><span> / <span id="twikoo_visitors">0</span> 阅读</span>
+    
+    
+    
+    
+  </div>
+  
+
+  
+  
+
+  
+  
+  
+
+  <div class="post-ai">
+    <div class="ai-title">
+      <i class="fas fa-robot ai-title-icon"></i>
+      <div class="ai-title-text">AI 摘要</div>
+    </div>
+
+    
+    <div id="ai-explanation" class="ai-explanation"></div> 
+
+    <div class="ai-explanation ai-explanation-content" style="display: none;">
       
-        <span class="post-date">2023-06-11 21:46:56</span><span> / <span id="twikoo_visitors">0</span> 阅读</span>
-        
-          
-        
+      AI 摘要接口暂时失联……
       
     </div>
+  </div>
+
+  <div class="post-content">
     
-  
-    <div class="post-content">
-      
-      <h2 id="1前传">1、前传</h2>
+    <h2 id="1前传">1、前传</h2>
 <p>前奏</p>
 <h2 id="2为爱而生">2、为爱而生</h2>
 <h3 id="歌词">歌词</h3>
@@ -480,56 +503,55 @@ function checkNightMode() {
 <h2 id="13胎音">13、胎音</h2>
 <p>节奏</p>
 
+    
+  </div>
+
+  
+  <span class="post-tags">
+    
+    #<a href="https://edinik.com/tags/%E4%BA%94%E6%9C%88%E5%A4%A9/">五月天</a>&nbsp;
+    
+  </span>
+  
+  
+
+  <emoji-reaction theme="system" class="reaction" endpoint="https://api-emaction.immmmm.com"
+    reacttargetid="immmmm-mayday-album-born-to-love"></emoji-reaction>
+
+  <div class="clear"></div>
+
+  
+  
+  <div class="pagination">
+    <div class="pagination__title">
+      <span class="pagination__title-h">阅读更多</span>
+      <hr />
+    </div>
+    <div class="pagination__buttons">
+      
+      <span class="button previous">
+        <a href="https://edinik.com/design-pattern-factory-method/">
+          <span class="button__icon">←</span>
+          <span class="button__text">设计模式 | 工厂模式</span>
+        </a>
+      </span>
+      
+      
+      <span class="button next">
+        <a href="https://edinik.com/mayday-album-poetry-of-the-day-after/">
+          <span class="button__text">五月天 | 后青春期的诗（2008）</span>
+          <span class="button__icon">→</span>
+        </a>
+      </span>
       
     </div>
-
-    
-      <span class="post-tags">
-        
-          #<a href="https://edinik.com/tags/%E4%BA%94%E6%9C%88%E5%A4%A9/">五月天</a>&nbsp;
-        
-      </span>
-    
+  </div>
   
   
-    <emoji-reaction theme="system" class="reaction" endpoint="https://api-emaction.immmmm.com" reacttargetid="immmmm-mayday-album-born-to-love"></emoji-reaction>
-
-    <div class="clear"></div>
-    
-    
-      
-        <div class="pagination">
-          <div class="pagination__title">
-            
-              <span class="pagination__title-h">阅读更多</span>
-            
-            <hr />
-          </div>
-          <div class="pagination__buttons">
-            
-              <span class="button previous">
-                <a href="https://edinik.com/design-pattern-factory-method/">
-                  <span class="button__icon">←</span>
-                  <span class="button__text">设计模式 | 工厂模式</span>
-                </a>
-              </span>
-            
-            
-              <span class="button next">
-                <a href="https://edinik.com/mayday-album-poetry-of-the-day-after/">
-                  <span class="button__text">五月天 | 后青春期的诗（2008）</span>
-                  <span class="button__icon">→</span>
-                </a>
-              </span>
-            
-          </div>
-        </div>
-      
-    
 
 
-    
-        
+  
+  
 <div class="pagination__title">
   <span class="pagination__title-h">欢迎评论</span>
   <hr />
@@ -537,9 +559,24 @@ function checkNightMode() {
   <div id="tcomment"></div>
   <script src="/twikoo1616.js"></script>
   <script>twikoo.init({ envId: 'https://tk.edinik.com/', el: '#tcomment' })</script>
-    
+  
 
-    </div>
+</div>
+<script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    
+    const matchingSummary = document.querySelector(".ai-explanation-content").textContent;
+
+    new TypeIt("#ai-explanation", {
+        strings: matchingSummary,
+        speed: 50,
+        lifeLike: true,
+        waitUntilVisible: true,
+    }).go();
+});
+</script>
 
       </div>
 
