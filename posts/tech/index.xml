@@ -2,45 +2,45 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>技术 on Edinik&#39;s Blog</title>
-    <link>https://edinik.com/posts/tech/</link>
+    <link>https://edinik.github.io/posts/tech/</link>
     <description>Recent content in 技术 on Edinik&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
     <lastBuildDate>Wed, 18 Oct 2023 19:33:30 +0800</lastBuildDate>
-    <atom:link href="https://edinik.com/posts/tech/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://edinik.github.io/posts/tech/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>计算机科学速成课 | 计算机早期历史</title>
-      <link>https://edinik.com/crash-course-computer-science-early-computing/</link>
+      <link>https://edinik.github.io/crash-course-computer-science-early-computing/</link>
       <pubDate>Wed, 18 Oct 2023 19:33:30 +0800</pubDate>
-      <guid>https://edinik.com/crash-course-computer-science-early-computing/</guid>
+      <guid>https://edinik.github.io/crash-course-computer-science-early-computing/</guid>
       <description>课程链接 随着知识的增长和新工具的诞生，人工劳动会越来越少。 &amp;ndash; Charles Babbage 1. 最早的计算设备：算盘 公元前2500年，美索不达米亚出现了最早的计算设备：算盘。这是一个手动计算器，用于帮助加减数字，并能够存储当前的计算状态。类似于今天的硬盘。它由4排算珠组成，每排有10个算珠，分别代表1、10、</description>
     </item>
     <item>
       <title>计算机专业学习路线</title>
-      <link>https://edinik.com/computer_science_learning_path/</link>
+      <link>https://edinik.github.io/computer_science_learning_path/</link>
       <pubDate>Mon, 03 Jul 2023 20:33:30 +0800</pubDate>
-      <guid>https://edinik.com/computer_science_learning_path/</guid>
+      <guid>https://edinik.github.io/computer_science_learning_path/</guid>
       <description>经典书籍推荐 编程语言 C程序设计语言 计算机系统 深入理解计算机系统 程序设计 计算机程序的构造和解释 设计模式 设计模式: 可复用面向对象软件的基础 算法与数据结构 算法导论 算法 计算机网络 计算机网络: 自顶向下方法 计算机体系结构 计算机体系结构: 量化研究方法 计算机组成与设计: 硬件/软件接口 操作系统 现代</description>
     </item>
     <item>
       <title>设计模式 | 工厂模式</title>
-      <link>https://edinik.com/design-pattern-factory-method/</link>
+      <link>https://edinik.github.io/design-pattern-factory-method/</link>
       <pubDate>Mon, 12 Jun 2023 21:53:37 +0800</pubDate>
-      <guid>https://edinik.com/design-pattern-factory-method/</guid>
+      <guid>https://edinik.github.io/design-pattern-factory-method/</guid>
       <description>参考资料 设计模式之工厂模式（factory pattern） - alpha_panda - 博客园 工厂模式 - 菜鸟教程</description>
     </item>
     <item>
       <title>WPF | TextBox输入范围验证</title>
-      <link>https://edinik.com/wpf-textbox-input-range-validation/</link>
+      <link>https://edinik.github.io/wpf-textbox-input-range-validation/</link>
       <pubDate>Thu, 25 May 2023 15:00:40 +0800</pubDate>
-      <guid>https://edinik.com/wpf-textbox-input-range-validation/</guid>
+      <guid>https://edinik.github.io/wpf-textbox-input-range-validation/</guid>
       <description>此类为TextBox的一个扩展类，其中包含四个附加属性，分别是： 属性 IntegerRange Minimum Maximum PreviousValue 类型 bool int int string 定义 是否启用范围判定 最小值 最大值 前一个有效值 默认值 false 0 int的最大值 空 实现了以下功能： 若输入的值不满足最小值和最大值的范围或输入不合法时，则会自动恢复为前一个有效值 解决了粘贴时的输入验证问题 解</description>
     </item>
     <item>
       <title>设计模式 | 单例模式</title>
-      <link>https://edinik.com/design-pattern-singleton/</link>
+      <link>https://edinik.github.io/design-pattern-singleton/</link>
       <pubDate>Mon, 22 May 2023 22:45:14 +0800</pubDate>
-      <guid>https://edinik.com/design-pattern-singleton/</guid>
+      <guid>https://edinik.github.io/design-pattern-singleton/</guid>
       <description>定义 单例模式（Singleton Design Pattern）是一种创建型设计模式，它能够保证一个类只有一个实例，并提供一个访问该实例的全局节点。 三个必要条件： 构造函数必须是私有的，保证类的外部不能创建类的实例。 通过一个私有的静态变量来存储其唯一实例。 通过提供一个公开的静态方法，使得外部使用</description>
     </item>
   </channel>

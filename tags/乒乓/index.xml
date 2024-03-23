@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>乒乓 on Edinik&#39;s Blog</title>
-    <link>https://edinik.com/tags/%E4%B9%92%E4%B9%93/</link>
+    <link>https://edinik.github.io/tags/%E4%B9%92%E4%B9%93/</link>
     <description>Recent content in 乒乓 on Edinik&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
     <lastBuildDate>Fri, 07 Apr 2023 22:32:27 +0800</lastBuildDate>
-    <atom:link href="https://edinik.com/tags/%E4%B9%92%E4%B9%93/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://edinik.github.io/tags/%E4%B9%92%E4%B9%93/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>乒乓球 | 接发球</title>
-      <link>https://edinik.com/table-tennis-serve-receive/</link>
+      <link>https://edinik.github.io/table-tennis-serve-receive/</link>
       <pubDate>Fri, 07 Apr 2023 22:32:27 +0800</pubDate>
-      <guid>https://edinik.com/table-tennis-serve-receive/</guid>
+      <guid>https://edinik.github.io/table-tennis-serve-receive/</guid>
       <description>&lt;!DOCTYPE HTML&gt; EP 34 长球和短球 观察对方发球的第一个落点，如果比较靠近台内的话，就是短球，如果比较靠近台外的话，就是长球。 旋转的判断 旋转球 在对方球拍接触球时的一刹那，观察发力方向。 如果接触球时，没有发力摩擦，只是碰过来的，那么就是没有加转的球。 如果接触球时，有发力摩擦，那么就是有加转的球。 侧旋</description>
     </item>
   </channel>
