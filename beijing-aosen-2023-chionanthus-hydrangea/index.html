@@ -36,8 +36,8 @@
 
 
     
-<link rel="prefetch" href="https://edinik.com/midjourney-styles-01/">
-<link rel="prefetch" href="https://edinik.com/midjourney_aspect_ratios/">
+  <link rel="prefetch" href="https://edinik.com/midjourney-styles-01/">
+  <link rel="prefetch" href="https://edinik.com/midjourney_aspect_ratios/">
 
   </head>
   <body class="">
@@ -145,12 +145,12 @@ function checkNightMode() {
 
       <div class="content">
         
-
-
-
-
-<div class="post life">
-  <div  class="breadcrumb">
+  
+  
+  
+  
+  <div class="post life">
+    <div  class="breadcrumb">
   
 
   
@@ -182,83 +182,20 @@ function checkNightMode() {
 
 
   
-  <h2 class="post-title"><a href="https://edinik.com/beijing-aosen-2023-chionanthus-hydrangea/">摄影集 | 奥森公园 流苏 绣球</a></h2>
-  <div class="post-meta">
-    
-    <span class="post-date">2023-04-30 19:37:23</span><span> / <span id="twikoo_visitors">0</span> 阅读</span>
-    
-    
-    
-    
-  </div>
-  
-
-  
-  <div class="post-ai" onclick="geminiAI()">
-  <img alt="Static Badge" src="https://api-shields.edui.fun/badge/Gemini-文章摘要-blue.svg?logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxwYXRoIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2ZmZmZmZiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2Utd2lkdGg9IjIiIGQ9Im0yMS42NCAzLjY0bC0xLjI4LTEuMjhhMS4yMSAxLjIxIDAgMCAwLTEuNzIgMEwyLjM2IDE4LjY0YTEuMjEgMS4yMSAwIDAgMCAwIDEuNzJsMS4yOCAxLjI4YTEuMiAxLjIgMCAwIDAgMS43MiAwTDIxLjY0IDUuMzZhMS4yIDEuMiAwIDAgMCAwLTEuNzJNMTQgN2wzIDNNNSA2djRtMTQgNHY0TTEwIDJ2Mk03IDhIM20xOCA4aC00TTExIDNIOSIvPjwvc3ZnPg==">
-</div>
-<style>
-@keyframes spin { from {transform: rotate(0deg);}to {transform: rotate(360deg);} }
-.post-ai-result svg{animation: spin 1s infinite linear;}
-</style>
-<script>
-let postAI = document.querySelector(".post-ai")
-let postTile = document.querySelector(".post-title a").textContent
-async function geminiAI() {
-  postAI.insertAdjacentHTML('afterend', '<div class="post-ai-result"><svg xmlns="http://www.w3.org/2000/svg" width="1.5rem" height="1.5rem" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 1 1-6.219-8.56"/></svg></div>');
-  postAI.classList.add("noclick")
-  let GeminiFetch = "https://gemini.edinik.com/v1/chat/completions"
-  try{
-    let postAIResult = document.querySelector(".post-ai-result")
-    let input = document.querySelector(".post-content").textContent
-    let inputHanzi = input.replace(/\n/g, '').replace(/[ ]+/g, ' ').replace(/<pre>[\s\S]*?<\/pre>/g, '').substring(0, 30000)
-    let toAI = `文章标题：${postTile}，具体内容：${inputHanzi}`
-    const res = await fetch(GeminiFetch, {
-      headers: {
-        'Authorization': 'Bearer $AIzaSyD3nybNeSCtSqwDWWDkNRNlbO7JtDe1iCM',
-        'Content-Type': 'application/json'
-      },
-      method: 'POST', 
-      body: JSON.stringify({
-        model: 'gemini-pro',
-        messages: [
-          { role: 'system',content:`You are a highly skilled AI trained in language comprehension and summarization. I would like you to read the text delimited by triple quotes and summarize it into a concise abstract paragraph. Aim to retain the most important points, providing a coherent and readable summary that could help a person understand the main points of the discussion without needing to read the entire text. Please avoid unnecessary details or tangential points.
-          Only give me the output and nothing else. Do not wrap responses in quotes. Respond in the Chinese language.`},
-          { role: 'user', content: toAI } 
-        ],
-        temperature: 0.7,
-        stream: true
-      })
-    })
-    const reader = res.body.getReader()
-    while(true) {
-      const {value, done} = await reader.read()
-      if (done) {
-        break
-      }
-      const text = new TextDecoder().decode(value)
-      const match = text.match(/DONE/)
-      if(!match){
-        const textJson = JSON.parse(text.substring(5))
-        const resData = textJson.choices[0].delta.content
-        if(resData.length > 0){
+    <h2 class="post-title"><a href="https://edinik.com/beijing-aosen-2023-chionanthus-hydrangea/">摄影集 | 奥森公园 流苏 绣球</a></h2>
+    <div class="post-meta">
+      
+        <span class="post-date">2023-04-30 19:37:23</span><span> / <span id="twikoo_visitors">0</span> 阅读</span>
+        
           
-          postAIResult.textContent += resData
-        }
-      }
-    }
-  } catch (error) {
-    document.querySelector(".post-ai-result").remove();
-    console.log(error);
-  }
-};
-</script>
-
-  
-
-  <div class="post-content">
+        
+      
+    </div>
     
-    <blockquote>
+  
+    <div class="post-content">
+      
+      <blockquote>
 <p>拍摄时间：2023/04/30</p>
 </blockquote>
 <h4 id="流苏">流苏</h4>
@@ -293,55 +230,56 @@ async function geminiAI() {
 <h4 id="黄鹌菜">黄鹌菜</h4>
 <p><a href="https://lsky.edinik.com/i/2023/04/30/644e5952cfcba.webp" target="_blank" rel="noopener nofollow noreferrer" ><img loading='lazy' decoding="async" src="https://lsky.edinik.com/i/2023/04/30/644e5952cfcba.webp" alt="1682856262252.webp"  /></a></p>
 
-    
-  </div>
-
-  
-  <span class="post-tags">
-    
-    #<a href="https://edinik.com/tags/%E6%91%84%E5%BD%B1/">摄影</a>&nbsp;
-    
-  </span>
-  
-  
-
-  <emoji-reaction theme="system" class="reaction" endpoint="https://api-emaction.immmmm.com"
-    reacttargetid="immmmm-beijing-aosen-2023-chionanthus-hydrangea"></emoji-reaction>
-
-  <div class="clear"></div>
-
-  
-  
-  <div class="pagination">
-    <div class="pagination__title">
-      <span class="pagination__title-h">阅读更多</span>
-      <hr />
-    </div>
-    <div class="pagination__buttons">
-      
-      <span class="button previous">
-        <a href="https://edinik.com/midjourney-styles-01/">
-          <span class="button__icon">←</span>
-          <span class="button__text">midjourney | styles 01</span>
-        </a>
-      </span>
-      
-      
-      <span class="button next">
-        <a href="https://edinik.com/midjourney_aspect_ratios/">
-          <span class="button__text">midjourney | aspect ratios</span>
-          <span class="button__icon">→</span>
-        </a>
-      </span>
       
     </div>
-  </div>
+
+    
+      <span class="post-tags">
+        
+          #<a href="https://edinik.com/tags/%E6%91%84%E5%BD%B1/">摄影</a>&nbsp;
+        
+      </span>
+    
   
   
+    <emoji-reaction theme="system" class="reaction" endpoint="https://api-emaction.immmmm.com" reacttargetid="immmmm-beijing-aosen-2023-chionanthus-hydrangea"></emoji-reaction>
+
+    <div class="clear"></div>
+    
+    
+      
+        <div class="pagination">
+          <div class="pagination__title">
+            
+              <span class="pagination__title-h">阅读更多</span>
+            
+            <hr />
+          </div>
+          <div class="pagination__buttons">
+            
+              <span class="button previous">
+                <a href="https://edinik.com/midjourney-styles-01/">
+                  <span class="button__icon">←</span>
+                  <span class="button__text">midjourney | styles 01</span>
+                </a>
+              </span>
+            
+            
+              <span class="button next">
+                <a href="https://edinik.com/midjourney_aspect_ratios/">
+                  <span class="button__text">midjourney | aspect ratios</span>
+                  <span class="button__icon">→</span>
+                </a>
+              </span>
+            
+          </div>
+        </div>
+      
+    
 
 
-  
-  
+    
+        
 <div class="pagination__title">
   <span class="pagination__title-h">欢迎评论</span>
   <hr />
@@ -349,9 +287,9 @@ async function geminiAI() {
   <div id="tcomment"></div>
   <script src="/twikoo1616.js"></script>
   <script>twikoo.init({ envId: 'https://tk.edinik.com/', el: '#tcomment' })</script>
-  
+    
 
-</div>
+    </div>
 
       </div>
 
