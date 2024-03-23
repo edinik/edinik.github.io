@@ -36,8 +36,8 @@
 
 
     
-  <link rel="prefetch" href="https://edinik.com/build-lsky-image-hosting-platform/">
-  <link rel="prefetch" href="https://edinik.com/game-of-thrones-character-relationship/">
+<link rel="prefetch" href="https://edinik.com/build-lsky-image-hosting-platform/">
+<link rel="prefetch" href="https://edinik.com/game-of-thrones-character-relationship/">
 
   </head>
   <body class="">
@@ -145,12 +145,12 @@ function checkNightMode() {
 
       <div class="content">
         
-  
-  
-  
-  
-  <div class="post read">
-    <div  class="breadcrumb">
+
+
+
+
+<div class="post read">
+  <div  class="breadcrumb">
   
 
   
@@ -182,20 +182,83 @@ function checkNightMode() {
 
 
   
-    <h2 class="post-title"><a href="https://edinik.com/game-of-thrones-maps/">权力的游戏 | 地图</a></h2>
-    <div class="post-meta">
-      
-        <span class="post-date">2023-04-16 21:18:17</span><span> / <span id="twikoo_visitors">0</span> 阅读</span>
-        
-          
-        
-      
-    </div>
+  <h2 class="post-title"><a href="https://edinik.com/game-of-thrones-maps/">权力的游戏 | 地图</a></h2>
+  <div class="post-meta">
     
+    <span class="post-date">2023-04-16 21:18:17</span><span> / <span id="twikoo_visitors">0</span> 阅读</span>
+    
+    
+    
+    
+  </div>
   
-    <div class="post-content">
-      
-      <p><a href="https://lsky.edinik.com/i/2023/04/23/644419a7d2971.webp" target="_blank" rel="noopener nofollow noreferrer" ><img loading='lazy' decoding="async" src="https://lsky.edinik.com/i/2023/04/23/644419a7d2971.webp" alt="1920px-世界地图.webp"  /></a></p>
+
+  
+  <div class="post-ai" onclick="geminiAI()">
+  <img alt="Static Badge" src="https://api-shields.edui.fun/badge/Gemini-文章摘要-blue.svg?logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxwYXRoIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2ZmZmZmZiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2Utd2lkdGg9IjIiIGQ9Im0yMS42NCAzLjY0bC0xLjI4LTEuMjhhMS4yMSAxLjIxIDAgMCAwLTEuNzIgMEwyLjM2IDE4LjY0YTEuMjEgMS4yMSAwIDAgMCAwIDEuNzJsMS4yOCAxLjI4YTEuMiAxLjIgMCAwIDAgMS43MiAwTDIxLjY0IDUuMzZhMS4yIDEuMiAwIDAgMCAwLTEuNzJNMTQgN2wzIDNNNSA2djRtMTQgNHY0TTEwIDJ2Mk03IDhIM20xOCA4aC00TTExIDNIOSIvPjwvc3ZnPg==">
+</div>
+<style>
+@keyframes spin { from {transform: rotate(0deg);}to {transform: rotate(360deg);} }
+.post-ai-result svg{animation: spin 1s infinite linear;}
+</style>
+<script>
+let postAI = document.querySelector(".post-ai")
+let postTile = document.querySelector(".post-title a").textContent
+async function geminiAI() {
+  postAI.insertAdjacentHTML('afterend', '<div class="post-ai-result"><svg xmlns="http://www.w3.org/2000/svg" width="1.5rem" height="1.5rem" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 1 1-6.219-8.56"/></svg></div>');
+  postAI.classList.add("noclick")
+  let GeminiFetch = $.Site.params.gemini.address
+  try{
+    let postAIResult = document.querySelector(".post-ai-result")
+    let input = document.querySelector(".post-content").textContent
+    let inputHanzi = input.replace(/\n/g, '').replace(/[ ]+/g, ' ').replace(/<pre>[\s\S]*?<\/pre>/g, '').substring(0, 30000)
+    let toAI = `文章标题：${postTile}，具体内容：${inputHanzi}`
+    const res = await fetch(GeminiFetch, {
+      headers: {
+        'Authorization': 'Bearer ' + $.Site.params.gemini.token,
+        'Content-Type': 'application/json'
+      },
+      method: 'POST', 
+      body: JSON.stringify({
+        model: 'gemini-pro',
+        messages: [
+          { role: 'system',content:`You are a highly skilled AI trained in language comprehension and summarization. I would like you to read the text delimited by triple quotes and summarize it into a concise abstract paragraph. Aim to retain the most important points, providing a coherent and readable summary that could help a person understand the main points of the discussion without needing to read the entire text. Please avoid unnecessary details or tangential points.
+          Only give me the output and nothing else. Do not wrap responses in quotes. Respond in the Chinese language.`},
+          { role: 'user', content: toAI } 
+        ],
+        temperature: 0.7,
+        stream: true
+      })
+    })
+    const reader = res.body.getReader()
+    while(true) {
+      const {value, done} = await reader.read()
+      if (done) {
+        break
+      }
+      const text = new TextDecoder().decode(value)
+      const match = text.match(/DONE/)
+      if(!match){
+        const textJson = JSON.parse(text.substring(5))
+        const resData = textJson.choices[0].delta.content
+        if(resData.length > 0){
+          
+          postAIResult.textContent += resData
+        }
+      }
+    }
+  } catch (error) {
+    document.querySelector(".post-ai-result").remove();
+    console.log(error);
+  }
+};
+</script>
+
+  
+
+  <div class="post-content">
+    
+    <p><a href="https://lsky.edinik.com/i/2023/04/23/644419a7d2971.webp" target="_blank" rel="noopener nofollow noreferrer" ><img loading='lazy' decoding="async" src="https://lsky.edinik.com/i/2023/04/23/644419a7d2971.webp" alt="1920px-世界地图.webp"  /></a></p>
 <h2 id="维斯特洛westeros">维斯特洛（Westeros）</h2>
 <p>也被称为日落国度（the Sunset Kingdoms），坐落於已知世界的最西端，狭长的维斯特洛大陆由北部的极地冰盖起向南延绵约3,000英里。绝境长城是一座巍峨挺立的不可逾越之物，横跨300英里，将最北的塞外地区与七大王国相互分离。一个统一的政治实体领导着南方的广阔土地，并形成九块相互联系又相互割据的区域。</p>
 <h3 id="双语地图">双语地图</h3>
@@ -211,56 +274,55 @@ function checkNightMode() {
 <h2 id="厄斯索斯essos">厄斯索斯（Essos）</h2>
 <p>是这个世界上已知的四块大陆中最大的一块。它位于维斯特洛以东，索斯罗斯以北，从颤抖海延伸至夏日之海，从狭海延伸到玉海周围的陆地。人们更多地使用狭海对岸、“东方大陆”或者“东方”来称呼它，经常也用“自由贸易城邦”或“多斯拉克海”等组成区域的名字来指代它。</p>
 
+    
+  </div>
+
+  
+  <span class="post-tags">
+    
+    #<a href="https://edinik.com/tags/%E6%9D%83%E5%8A%9B%E7%9A%84%E6%B8%B8%E6%88%8F/">权力的游戏</a>&nbsp;
+    
+  </span>
+  
+  
+
+  <emoji-reaction theme="system" class="reaction" endpoint="https://api-emaction.immmmm.com"
+    reacttargetid="immmmm-game-of-thrones-maps"></emoji-reaction>
+
+  <div class="clear"></div>
+
+  
+  
+  <div class="pagination">
+    <div class="pagination__title">
+      <span class="pagination__title-h">阅读更多</span>
+      <hr />
+    </div>
+    <div class="pagination__buttons">
+      
+      <span class="button previous">
+        <a href="https://edinik.com/build-lsky-image-hosting-platform/">
+          <span class="button__icon">←</span>
+          <span class="button__text">图床 | lsky图床平台搭建</span>
+        </a>
+      </span>
+      
+      
+      <span class="button next">
+        <a href="https://edinik.com/game-of-thrones-character-relationship/">
+          <span class="button__text">权力的游戏 | 人物关系图</span>
+          <span class="button__icon">→</span>
+        </a>
+      </span>
       
     </div>
-
-    
-      <span class="post-tags">
-        
-          #<a href="https://edinik.com/tags/%E6%9D%83%E5%8A%9B%E7%9A%84%E6%B8%B8%E6%88%8F/">权力的游戏</a>&nbsp;
-        
-      </span>
-    
+  </div>
   
   
-    <emoji-reaction theme="system" class="reaction" endpoint="https://api-emaction.immmmm.com" reacttargetid="immmmm-game-of-thrones-maps"></emoji-reaction>
-
-    <div class="clear"></div>
-    
-    
-      
-        <div class="pagination">
-          <div class="pagination__title">
-            
-              <span class="pagination__title-h">阅读更多</span>
-            
-            <hr />
-          </div>
-          <div class="pagination__buttons">
-            
-              <span class="button previous">
-                <a href="https://edinik.com/build-lsky-image-hosting-platform/">
-                  <span class="button__icon">←</span>
-                  <span class="button__text">图床 | lsky图床平台搭建</span>
-                </a>
-              </span>
-            
-            
-              <span class="button next">
-                <a href="https://edinik.com/game-of-thrones-character-relationship/">
-                  <span class="button__text">权力的游戏 | 人物关系图</span>
-                  <span class="button__icon">→</span>
-                </a>
-              </span>
-            
-          </div>
-        </div>
-      
-    
 
 
-    
-        
+  
+  
 <div class="pagination__title">
   <span class="pagination__title-h">欢迎评论</span>
   <hr />
@@ -268,9 +330,9 @@ function checkNightMode() {
   <div id="tcomment"></div>
   <script src="/twikoo1616.js"></script>
   <script>twikoo.init({ envId: 'https://tk.edinik.com/', el: '#tcomment' })</script>
-    
+  
 
-    </div>
+</div>
 
       </div>
 
