@@ -1690,7 +1690,7 @@ photos .photo:last-child {
 }
 
 .ai-title-icon {
-    width: 20px;
+    width: 10px;
     height: auto;
     margin-right: 0.25rem;
 }
@@ -1704,7 +1704,7 @@ photos .photo:last-child {
 .ai-explanation {
     margin-top: 1rem;
     padding: 0.5rem 1rem;
-    background: #fff;
+    background: #383232;
     border-radius: 0.5rem;
     border: 1px solid #cfe6f3;
     font-size: 0.95rem;
