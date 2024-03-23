@@ -215,6 +215,7 @@ async function geminiAI() {
     let toAI = `文章标题：${postTile}，具体内容：${inputHanzi}`
     const res = await fetch(GeminiFetch, {
       headers: {
+        'Authorization': 'Bearer YOUR',
         'Content-Type': 'application/json'
       },
       method: 'POST', 
